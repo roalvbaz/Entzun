@@ -43,6 +43,7 @@ jobs:
       - name: Compilar AhoTTS (UPV/EHU, CC BY-SA)
         env:
           CMAKE_POLICY_VERSION_MINIMUM: "3.5"   # AhoTTS usa un CMake antiguo
+          LIBRARY_PATH: ${{ github.workspace }}/AhoTTS/lib   # su link_directories apunta mal
         run: |
           git clone --depth 1 https://github.com/aholab/AhoTTS.git AhoTTS
           cd AhoTTS
