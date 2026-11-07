@@ -14,11 +14,10 @@ on:
         type: choice
         options: [aho, piper]
         default: aho
-      voz_edge_eu:
-        description: "Solo para motor edge: voz de euskera"
-        type: choice
-        options: [eu-ES-AinhoaNeural, eu-ES-AnderNeural]
-        default: eu-ES-AinhoaNeural
+      tono_eu:
+        description: "Solo para 'episodios': tono del euskera (1.0 = original, 0.85 = mas grave)"
+        type: string
+        default: "1.0"
 
 permissions:
   contents: write
@@ -58,14 +57,16 @@ jobs:
         run: |
           mkdir -p muestras
           M=herramientas/muestra.md
-          python generar_podcast.py $M --motor aho   --salida muestras/aho.mp3          || echo "FALLO aho"
-          python generar_podcast.py $M --motor piper --salida muestras/piper-dii.mp3    || echo "FALLO piper"
+          python generar_podcast.py $M --motor aho   --salida muestras/aho.mp3                       || echo "FALLO aho"
+          python generar_podcast.py $M --motor aho   --salida muestras/aho-grave.mp3  --tono-eu 0.85 || echo "FALLO aho-grave"
+          python generar_podcast.py $M --motor piper --salida muestras/piper-dii.mp3                 || echo "FALLO piper"
+          python generar_podcast.py $M --motor piper --salida muestras/piper-dii-grave.mp3 --tono-eu 0.9 || echo "FALLO piper-grave"
           ls -la muestras
 
       - name: Episodios
         if: ${{ inputs.modo == 'episodios' }}
         run: |
-          python generar_podcast.py guiones/*.md --motor "${{ inputs.motor }}" --voz-edge-eu "${{ inputs.voz_edge_eu }}"
+          python generar_podcast.py guiones/*.md --motor "${{ inputs.motor }}" --tono-eu "${{ inputs.tono_eu }}"
           ls -la podcasts
 
       - name: Subir resultado al repositorio

@@ -36,6 +36,7 @@ VOZ_EDGE_ES = "es-ES-ElviraNeural"    # alternativa: es-ES-AlvaroNeural
 VELOCIDAD_EDGE = "-10%"               # ritmo de edge-tts (negativo = mas lento)
 AHO_DIR = Path("AhoTTS/bin")          # carpeta bin de AhoTTS compilado (tts + data_tts)
 AHO_VELOCIDAD = 100                   # -Speed de AhoTTS (100 normal; menos = mas lento)
+TONO_EU = 1.0                         # <1 baja el tono del euskera sin cambiar la velocidad (p. ej. 0.88)
 BITRATE = "96k"
 HZ = 24000
 CARPETA_VOCES = Path("voces")
@@ -176,9 +177,12 @@ def duracion_wav(ruta):
         return w.getnframes() / w.getframerate()
 
 
-def normalizar(origen, destino):
-    run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(origen), "-ar", str(HZ), "-ac", "1",
-         "-c:a", "pcm_s16le", str(destino)])
+def normalizar(origen, destino, tono=1.0):
+    filtro = []
+    if tono != 1.0:  # cambia el tono y compensa la velocidad
+        filtro = ["-af", f"asetrate={HZ * tono:.0f},aresample={HZ},atempo={1 / tono:.4f}"]
+    run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(origen), "-ar", str(HZ), "-ac", "1"]
+        + filtro + ["-c:a", "pcm_s16le", str(destino)])
 
 
 def silencio(seg, destino):
@@ -191,13 +195,13 @@ def silencio(seg, destino):
 def trozo_voz(motor, nombre_motor, idioma, texto):
     """WAV normalizado de una frase; cacheado por (motor, idioma, texto, velocidad)."""
     CARPETA_CACHE.mkdir(exist_ok=True)
-    clave = f"{nombre_motor}|{idioma}|{texto}|{VELOCIDAD_EU}|{VELOCIDAD_ES}|{VOZ_ES}|{VOZ_EU}|{VOZ_EDGE_EU}|{VOZ_EDGE_ES}|{VELOCIDAD_EDGE}|{AHO_VELOCIDAD}"
+    clave = f"{nombre_motor}|{idioma}|{texto}|{VELOCIDAD_EU}|{VELOCIDAD_ES}|{VOZ_ES}|{VOZ_EU}|{VOZ_EDGE_EU}|{VOZ_EDGE_ES}|{VELOCIDAD_EDGE}|{AHO_VELOCIDAD}|{TONO_EU}"
     h = hashlib.sha1(clave.encode()).hexdigest()[:16]
     final = CARPETA_CACHE / f"{h}.wav"
     if not final.exists():
         crudo = CARPETA_CACHE / f"{h}.raw.wav"
         motor.sintetizar(idioma, texto, crudo)
-        normalizar(crudo, final)
+        normalizar(crudo, final, TONO_EU if idioma == "EU" else 1.0)
         crudo.unlink()
     return final
 
@@ -241,12 +245,15 @@ def main():
     ap.add_argument("--motor", choices=["piper", "espeak", "edge", "aho"], default="piper")
     ap.add_argument("--solo-medir", action="store_true")
     ap.add_argument("--voz-edge-eu", default=None, help="p. ej. eu-ES-AnderNeural")
+    ap.add_argument("--tono-eu", type=float, default=None, help="p. ej. 0.88 (mas grave)")
     ap.add_argument("--salida", default=None, help="ruta del MP3 (solo con un guion)")
     ap.add_argument("--bitrate", default=None, help="p. ej. 48k (por defecto 96k)")
     a = ap.parse_args()
-    global BITRATE, VOZ_EDGE_EU
+    global BITRATE, VOZ_EDGE_EU, TONO_EU
     if a.bitrate:
         BITRATE = a.bitrate
+    if a.tono_eu:
+        TONO_EU = a.tono_eu
     if a.voz_edge_eu:
         VOZ_EDGE_EU = a.voz_edge_eu
     if not shutil.which("ffmpeg") and not a.solo_medir:
