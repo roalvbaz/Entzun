@@ -35,6 +35,8 @@ def hay_password(page):
 
 
 def login(page):
+    page.on("response", lambda r: print("   [red]", r.request.method, r.status, r.url.split("?")[0][:110])
+            if r.request.method in ("POST", "PUT") or "login" in r.url or "session" in r.url or "token" in r.url else None)
     page.goto(HOME, wait_until="networkidle")
     page.wait_for_timeout(1500)
     for paso in range(3):
@@ -43,9 +45,10 @@ def login(page):
         campos = [e for e in page.query_selector_all("input") if e.is_visible()
                   and (e.get_attribute("type") or "text") in ("text", "email")]
         if campos:
-            campos[0].fill(USER)
+            campos[0].click(); campos[0].fill(""); campos[0].type(USER, delay=25)
         if hay_password(page):
-            page.fill("input[type=password]", PASS)
+            page.click("input[type=password]"); page.fill("input[type=password]", ""); page.type("input[type=password]", PASS, delay=25)
+        print(f"   paso {paso}: usuario con {len(USER)} caracteres, clave con {len(PASS)} caracteres")
         boton = None
         for sel in ("button[type=submit]", "input[type=submit]", "button:has-text('Sartu')", "button:has-text('Entrar')",
                     "button:has-text('Acceder')", "button:has-text('Iniciar')", "button:has-text('Login')", "button"):
@@ -58,10 +61,15 @@ def login(page):
         else:
             page.keyboard.press("Enter")
         page.wait_for_load_state("networkidle")
-        page.wait_for_timeout(2500)
-        if "/a/home" in page.url and not hay_password(page):
+        page.wait_for_timeout(3500)
+        print("   tras pulsar: url =", page.url)
+        try:
+            print("   texto de la pagina:", re.sub(r"\s+", " ", page.inner_text("body"))[:300])
+        except Exception:
+            pass
+        if "/a/" in page.url and "logged-out" not in page.url and not hay_password(page):
             return True
-    return "/a/home" in page.url and not hay_password(page)
+    return "/a/" in page.url and "logged-out" not in page.url and not hay_password(page)
 
 
 def texto(page):

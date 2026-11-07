@@ -30,8 +30,9 @@ jobs:
       - name: Dependencias de Python (PyTorch en CPU)
         working-directory: StyleTTS2_basque
         run: |
-          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -q torch==2.5.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu
           grep -v -E "monotonic_align|^torch$|^torchaudio$" requirements.txt > req2.txt
+          echo "numpy<2" >> req2.txt
           pip install -q -r req2.txt huggingface_hub cython numpy
           # monotonic_align solo hace falta para entrenar; si no compila, se usa un sustituto vacio
           pip install -q git+https://github.com/resemble-ai/monotonic_align.git || {
@@ -66,7 +67,9 @@ jobs:
 
       - name: Generar muestra
         working-directory: StyleTTS2_basque
-        run: python ../herramientas/styletts_muestra.py ../muestras 2>&1 | tail -60
+        run: |
+          set -o pipefail
+          python ../herramientas/styletts_muestra.py ../muestras 2>&1 | tail -60
 
       - name: Convertir a MP3 y subir al repositorio
         run: |
