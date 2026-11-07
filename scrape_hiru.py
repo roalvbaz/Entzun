@@ -5,7 +5,7 @@ Solo para usarlo como referencia al escribir guiones PROPIOS. La carpeta hiru_te
 no se sube ni se publica.
 
     pip install playwright && playwright install chromium
-    python scrape_hiru.py            # se abre un navegador: inicia sesion y pulsa Enter en la terminal
+    python scrape_hiru.py            # se abre un navegador: inicia sesion en el (espera hasta 10 min)
     python scrape_hiru.py 1 2 3      # solo esas lecciones (numero de episodio)
 """
 import json, re, sys
@@ -37,7 +37,10 @@ def main():
         nav = p.chromium.launch(headless=False)
         page = nav.new_context().new_page()
         page.goto("https://ikasten.siacco.com/a/home")
-        input("Inicia sesion en el navegador, entra en el curso y pulsa Enter aqui... ")
+        print("Se ha abierto un navegador: inicia sesion en ikasten (tienes 10 minutos)...", flush=True)
+        page.wait_for_url(lambda u: "/a/" in u and "logged-out" not in u, timeout=600_000)
+        page.wait_for_timeout(3000)
+        print("Sesion iniciada. Leyendo lecciones...", flush=True)
         for lec in LECCIONES:
             n = lec["ep"]
             if quiero and n not in quiero:
