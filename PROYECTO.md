@@ -50,7 +50,7 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 2. Medir duración; ajustar guion o `VELOCIDAD_EU` para llegar a ~10 min.
 3. ~~Conseguir la lista de unidades de Hiru~~ → hecho: `docs/unidades-hiru.md` (24 episodios, un episodio por unidad).
 4. Escribir el resto de guiones (mismo formato y estructura).
-5. Rehacer `index.html` como **reproductor de podcast**:
+5. ~~Rehacer `index.html` como reproductor de podcast~~ → hecho (`index.html`, `sw.js`, `manifest.json`, `icons/`, `episodios.json`). Falta probarlo en un iPhone real. Para publicar un episodio: poner el MP3 en `podcasts/NN.mp3` y `"disponible": true` en `episodios.json`. Requisitos originales:
    - Lista de episodios + botón grande "▶ Continuar" (siguiente episodio no terminado).
    - Recordar episodio y segundo donde se quedó (localStorage).
    - **Media Session API** para controles en la pantalla de bloqueo (play/pausa/±15 s/siguiente) — clave para pasear con el móvil en el bolsillo.

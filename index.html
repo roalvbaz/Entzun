@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Euskera paseando</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Euskera">
+<meta name="theme-color" content="#1b5e20">
+<style>
+:root{--fondo:#fff8e7;--texto:#1c1c1c;--verde:#1b5e20;--verde2:#2e7d32;--gris:#6b6b6b;--tarjeta:#fff;--borde:#d9cfae}
+@media (prefers-color-scheme:dark){:root{--fondo:#141a14;--texto:#f3f0e4;--verde:#66bb6a;--verde2:#81c784;--gris:#b0b0a0;--tarjeta:#1f281f;--borde:#3a463a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font:24px/1.35 -apple-system,system-ui,sans-serif;padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+h1{font-size:30px;margin:8px 0 16px}
+button{font:inherit;cursor:pointer;border:0;border-radius:20px;min-height:72px;padding:12px 20px;background:var(--verde);color:#fff;font-weight:700}
+@media (prefers-color-scheme:dark){button{color:#0c1a0c}}
+button:active{transform:scale(.98)}
+button.sec{background:var(--tarjeta);color:var(--texto);border:3px solid var(--borde)}
+#continuar{width:100%;min-height:110px;font-size:32px;margin-bottom:20px}
+#player{display:none;background:var(--tarjeta);border:3px solid var(--borde);border-radius:24px;padding:16px;margin-bottom:20px}
+#player.on{display:block}
+#titulo{font-weight:700;font-size:28px;margin:0 0 4px}
+#tiempo{color:var(--gris);margin-bottom:8px}
+input[type=range]{width:100%;height:48px;accent-color:var(--verde)}
+.fila{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:10px;margin-top:10px}
+.fila2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.ep{display:flex;align-items:center;gap:10px;background:var(--tarjeta);border:3px solid var(--borde);border-radius:20px;padding:12px 16px;margin-bottom:10px}
+.ep.actual{border-color:var(--verde)}
+.ep .t{flex:1;text-align:left;background:none;color:var(--texto);padding:0;min-height:56px;border-radius:0;font-weight:600}
+.ep .t small{display:block;font-weight:400;color:var(--gris);font-size:20px}
+.ep.no{opacity:.55}
+.ep .d{min-height:56px;padding:6px 12px;font-size:20px}
+h2{font-size:24px;color:var(--gris);margin:20px 0 8px}
+#aviso{color:var(--gris);font-size:20px;margin:8px 0}
+</style>
+</head>
+<body>
+<h1>🎧 Euskera paseando</h1>
+<button id="continuar">▶ Continuar</button>
+<section id="player" aria-label="Reproductor">
+  <p id="titulo"></p>
+  <div id="tiempo">0:00 / 0:00</div>
+  <input id="barra" type="range" min="0" max="1000" value="0" aria-label="Posición">
+  <div class="fila">
+    <button id="atras" class="sec" aria-label="Atrás 15 segundos">↺ 15</button>
+    <button id="play" aria-label="Reproducir o pausar">▶</button>
+    <button id="adelante" class="sec" aria-label="Adelante 15 segundos">15 ↻</button>
+  </div>
+  <div class="fila2">
+    <button id="anterior" class="sec">⏮ Anterior</button>
+    <button id="siguiente" class="sec">Siguiente ⏭</button>
+  </div>
+</section>
+<div id="aviso"></div>
+<h2>Episodios</h2>
+<div id="lista"></div>
+<audio id="audio" preload="metadata" playsinline></audio>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const audio=$("audio");
+const KEY="euskera-estado-v1";
+let eps=[], estado={actual:null,pos:{},hecho:{}}, cur=null, ultimoGuardado=0;
+
+try{Object.assign(estado,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
+const guardar=()=>{try{localStorage.setItem(KEY,JSON.stringify(estado))}catch(e){}};
+const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+const disp=e=>e&&e.disponible;
+
+async function init(){
+  try{eps=(await (await fetch("episodios.json")).json()).episodios}catch(e){
+    try{eps=JSON.parse(localStorage.getItem("eps-cache")||"[]")}catch(_){}
+    if(!eps.length){$("aviso").textContent="No se pudo cargar la lista.";}
+  }
+  if(eps.length) try{localStorage.setItem("eps-cache",JSON.stringify(eps))}catch(e){}
+  pintar();
+  const ult=eps.find(e=>e.id===estado.actual&&disp(e));
+  if(ult) cargar(ult,false);
+  if(!eps.some(disp)) $("aviso").textContent="Todavía no hay episodios con audio.";
+}
+
+function siguienteDe(id){return eps.find(e=>e.id>id&&disp(e))}
+function anteriorDe(id){return [...eps].reverse().find(e=>e.id<id&&disp(e))}
+function paraContinuar(){
+  const enCurso=eps.find(e=>disp(e)&&!estado.hecho[e.id]&&(estado.pos[e.id]||0)>5);
+  return enCurso||eps.find(e=>disp(e)&&!estado.hecho[e.id])||eps.find(disp);
+}
+
+function pintar(){
+  const c=paraContinuar();
+  $("continuar").textContent=c?"▶ Continuar: "+c.id+". "+c.titulo:"Sin episodios aún";
+  $("continuar").disabled=!c;
+  const l=$("lista");l.innerHTML="";
+  for(const e of eps){
+    const d=document.createElement("div");
+    d.className="ep"+(cur&&cur.id===e.id?" actual":"")+(disp(e)?"":" no");
+    const b=document.createElement("button");b.className="t";
+    const estadoTxt=!disp(e)?"Próximamente":estado.hecho[e.id]?"✅ Terminado":(estado.pos[e.id]>5?"En curso: "+fmt(estado.pos[e.id]):"");
+    b.innerHTML=`${e.id}. <span></span><small>${estadoTxt}</small>`;
+    b.querySelector("span").textContent=e.titulo;
+    b.disabled=!disp(e);
+    b.onclick=()=>{cargar(e,true)};
+    d.appendChild(b);
+    if(disp(e)&&"caches" in window){
+      const g=document.createElement("button");g.className="sec d";g.textContent="⬇";
+      g.title="Guardar para escuchar sin datos";g.setAttribute("aria-label","Guardar episodio para escuchar sin datos");
+      g.onclick=()=>descargar(e,g);
+      d.appendChild(g);
+      caches.open("audio-v1").then(ca=>ca.match(e.audio)).then(r=>{if(r)g.textContent="✓"});
+    }
+    l.appendChild(d);
+  }
+}
+
+async function descargar(e,btn){
+  btn.textContent="…";
+  try{const ca=await caches.open("audio-v1");const r=await fetch(e.audio);if(!r.ok)throw 0;await ca.put(e.audio,r);btn.textContent="✓"}
+  catch(_){btn.textContent="⚠"}
+}
+
+function cargar(e,reproducir){
+  cur=e;estado.actual=e.id;guardar();
+  audio.src=e.audio;
+  const pos=estado.hecho[e.id]?0:(estado.pos[e.id]||0);
+  audio.addEventListener("loadedmetadata",function f(){audio.removeEventListener("loadedmetadata",f);if(pos>0&&pos<audio.duration-3)audio.currentTime=pos;},{once:true});
+  $("titulo").textContent=e.id+". "+e.titulo;
+  $("player").classList.add("on");
+  metadata();
+  if(reproducir)audio.play().catch(()=>{});
+  pintar();
+}
+
+function metadata(){
+  if(!("mediaSession" in navigator)||!cur)return;
+  navigator.mediaSession.metadata=new MediaMetadata({title:cur.titulo,artist:"Euskera paseando",album:"Episodio "+cur.id,artwork:[{src:"icons/icon-512.png",sizes:"512x512",type:"image/png"}]});
+}
+function saltar(s){audio.currentTime=Math.min(Math.max(0,audio.currentTime+s),audio.duration||1e9)}
+function sig(){const n=cur&&siguienteDe(cur.id);if(n)cargar(n,true)}
+function ant(){if(audio.currentTime>5){audio.currentTime=0;return}const p=cur&&anteriorDe(cur.id);if(p)cargar(p,true)}
+function toggle(){audio.paused?audio.play().catch(()=>{}):audio.pause()}
+
+if("mediaSession" in navigator){
+  const ms=navigator.mediaSession;
+  const set=(a,f)=>{try{ms.setActionHandler(a,f)}catch(e){}};
+  set("play",()=>audio.play());set("pause",()=>audio.pause());
+  set("seekbackward",()=>saltar(-15));set("seekforward",()=>saltar(15));
+  set("previoustrack",ant);set("nexttrack",sig);
+  set("seekto",d=>{audio.currentTime=d.seekTime});
+}
+
+$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&cur.id===c.id)?audio.play().catch(()=>{}):cargar(c,true)};
+$("play").onclick=toggle;
+$("atras").onclick=()=>saltar(-15);
+$("adelante").onclick=()=>saltar(15);
+$("anterior").onclick=ant;
+$("siguiente").onclick=sig;
+let arrastrando=false;
+$("barra").oninput=()=>{arrastrando=true;if(audio.duration)$("tiempo").textContent=fmt($("barra").value/1000*audio.duration)+" / "+fmt(audio.duration)};
+$("barra").onchange=()=>{if(audio.duration)audio.currentTime=$("barra").value/1000*audio.duration;arrastrando=false};
+
+audio.addEventListener("play",()=>{$("play").textContent="⏸";if("mediaSession" in navigator)navigator.mediaSession.playbackState="playing"});
+audio.addEventListener("pause",()=>{$("play").textContent="▶";if("mediaSession" in navigator)navigator.mediaSession.playbackState="paused";if(cur){estado.pos[cur.id]=audio.currentTime;guardar();pintar()}});
+audio.addEventListener("timeupdate",()=>{
+  if(!cur)return;
+  if(!arrastrando){
+    $("tiempo").textContent=fmt(audio.currentTime)+" / "+fmt(audio.duration);
+    if(audio.duration)$("barra").value=audio.currentTime/audio.duration*1000;
+  }
+  if(Date.now()-ultimoGuardado>3000){ultimoGuardado=Date.now();estado.pos[cur.id]=audio.currentTime;guardar()}
+  if("mediaSession" in navigator&&isFinite(audio.duration)){try{navigator.mediaSession.setPositionState({duration:audio.duration,position:audio.currentTime,playbackRate:audio.playbackRate})}catch(e){}}
+});
+audio.addEventListener("ended",()=>{
+  if(!cur)return;
+  estado.hecho[cur.id]=true;estado.pos[cur.id]=0;guardar();
+  const n=siguienteDe(cur.id);
+  if(n)cargar(n,true);else pintar();
+});
+audio.addEventListener("error",()=>{$("aviso").textContent="No se pudo reproducir este episodio."});
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[cur.id]=audio.currentTime;guardar()}});
+
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+init();
+</script>
+</body>
+</html>
