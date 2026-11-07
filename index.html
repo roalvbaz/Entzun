@@ -221,8 +221,12 @@ const saludo=()=>{const h=new Date().getHours();return h<13?"Egun on":h<20?"Arra
 async function init(){
   $("saludo").textContent=saludo();
   let datos=null;
-  try{datos=await (await fetch("episodios.json")).json()}catch(e){try{datos=JSON.parse(localStorage.getItem("eps-cache"))}catch(_){}}
-  if(!datos||!datos.niveles){$("aviso").textContent="No se pudo cargar la lista de episodios.";return}
+  const norm=d=>d&&d.niveles?d:(d&&d.episodios?{niveles:[{id:"A1",nombre:"Nivel A1",descripcion:"Primeros pasos",color:"#1e8a6a",episodios:d.episodios}]}:null);
+  try{datos=norm(await (await fetch("episodios.json?v="+Date.now(),{cache:"no-store"})).json())}catch(e){}
+  if(!datos){try{datos=norm(JSON.parse(localStorage.getItem("eps-cache")))}catch(_){}}
+  if(!datos||!datos.niveles||!datos.niveles.length){
+    $("niveles").innerHTML='<p style="color:var(--suave);font-size:19px">No se pudo cargar la lista de niveles. Comprueba la conexión y vuelve a abrir la app.</p>';
+    $("continuar").disabled=true;$("continuar").textContent="Sin conexión";return}
   try{localStorage.setItem("eps-cache",JSON.stringify(datos))}catch(e){}
   niveles=datos.niveles;
   eps=[];for(const n of niveles)for(const e of n.episodios){e.nivel=n.id;eps.push(e)}

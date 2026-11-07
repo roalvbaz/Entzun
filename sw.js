@@ -1,4 +1,4 @@
-const SHELL="shell-v2", AUDIO="audio-v1";
+const SHELL="shell-v3", AUDIO="audio-v1";
 const ARCHIVOS=["./","index.html","manifest.json","episodios.json","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
@@ -39,7 +39,7 @@ self.addEventListener("fetch",e=>{
     return;
   }
   // Resto: red primero (para ver episodios nuevos), caché si no hay conexión.
-  e.respondWith(fetch(req).then(r=>{
+  e.respondWith(fetch(req,{cache:"no-store"}).then(r=>{
     if(r.ok){const copia=r.clone();caches.open(SHELL).then(c=>c.put(req,copia))}
     return r;
   }).catch(()=>caches.match(req,{ignoreSearch:true}).then(r=>r||caches.match("index.html"))));
