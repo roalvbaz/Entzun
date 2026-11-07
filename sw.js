@@ -1,5 +1,5 @@
-const SHELL="shell-v4", AUDIO="audio-v1";
-const ARCHIVOS=["./","index.html","manifest.json","episodios.json","ejercicios.json","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
+const SHELL="shell-v5", AUDIO="audio-v1";
+const ARCHIVOS=["./","index.html","manifest.json","episodios.json","ejercicios.json","nube.js","fb.js","firebase-config.js","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
   e.waitUntil(caches.open(SHELL).then(c=>c.addAll(ARCHIVOS)).then(()=>self.skipWaiting()));
@@ -28,6 +28,11 @@ self.addEventListener("fetch",e=>{
   const req=e.request;
   if(req.method!=="GET")return;
   const url=new URL(req.url);
+  if(url.hostname==="www.gstatic.com"&&url.pathname.startsWith("/firebasejs/")){
+    e.respondWith(caches.open(SHELL).then(async c=>{const hit=await c.match(req);if(hit)return hit;
+      try{const r=await fetch(req);if(r.ok)c.put(req,r.clone());return r}catch(err){return hit||Response.error()}}));
+    return;
+  }
   if(url.origin!==location.origin)return;
   if(url.pathname.endsWith(".mp3")){
     e.respondWith((async()=>{

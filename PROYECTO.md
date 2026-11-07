@@ -75,3 +75,8 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 - **Usuarios**: perfiles en el propio dispositivo (nombre + color, `localStorage`). La app obliga a crear uno al abrirla. Cada usuario guarda su propio progreso y notas; no se sincronizan entre dispositivos. Para cuentas reales haría falta un servicio externo (p. ej. Firebase Auth, gratis) y que el propietario cree el proyecto.
 - **Ejercicios**: `ejercicios.json` se genera con `python herramientas/crear_ejercicios.py` a partir de las frases de `herramientas/crear_guiones.py` (10 preguntas por episodio: tests y rellenar huecos, todo tocando opciones). Pestaña *Ejercicios* dentro de cada nivel, con práctica mixta (10 al azar) y mejor nota por episodio.
 - Limitación: las opciones incorrectas se eligen al azar; muy raramente puede valer más de una. Revisar con una persona que hable euskera.
+
+## Cuentas en la nube (Firebase)
+- Código listo: `fb.js`, `nube.js`, `firebase-config.js` (vale `null` hasta configurarlo), `firestore.rules`, guía `FIREBASE.md`. Con `null` la app usa perfiles locales. Con la configuración pegada exige cuenta (email/contraseña o Google), registro libre con aprobación del administrador (`admins/<uid>` creado a mano en Firestore) y sincroniza el progreso (`progreso/<uid>`).
+- Limitación: los MP3 siguen públicos (Firebase Storage ya exige plan de pago).
+- Probado con una API de Firebase simulada; falta probarlo contra un proyecto real.

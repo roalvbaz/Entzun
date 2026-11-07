@@ -188,6 +188,8 @@ header .fila-sup h1{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:
 .ej-res h2{margin:0 0 6px;font-size:30px}
 body.en-ejercicio #mini{display:none}
 </style>
+<script>window.FB_READY=window.FB_READY||new Promise(r=>{window.__fbResolve=r;setTimeout(()=>r("fallo"),12000)})</script>
+<script type="module" src="fb.js"></script>
 </head>
 <body>
 <div id="vista-usuarios" class="oculto">
@@ -265,6 +267,7 @@ body.en-ejercicio #mini{display:none}
 </section>
 
 <audio id="audio" preload="metadata" playsinline></audio>
+<script src="nube.js"></script>
 <script>
 "use strict";
 const $=id=>document.getElementById(id);
@@ -304,7 +307,7 @@ function cargarEstado(){
   try{Object.assign(estado,mig(JSON.parse(lsGet(claveEstado(usuario))||"{}")))}catch(e){}
   estado.ej=estado.ej||{};
 }
-const guardar=()=>{if(usuario)lsSet(claveEstado(usuario),JSON.stringify(estado))};
+const guardar=()=>{if(usuario){estado.actualizado=Date.now();lsSet(claveEstado(usuario),JSON.stringify(estado));if(Nube.activo)Nube.subir()}};
 const k=e=>e.nivel+"-"+e.id;
 const inicial=u=>(u.nombre.trim()[0]||"?").toUpperCase();
 
@@ -362,7 +365,7 @@ $("nuevo-nombre").addEventListener("input",()=>{$("crear-usuario").disabled=$("n
 $("nuevo-nombre").addEventListener("keydown",e=>{if(e.key==="Enter"&&!$("crear-usuario").disabled)$("crear-usuario").click()});
 $("crear-usuario").onclick=()=>{const n=$("nuevo-nombre").value.trim();if(!n)return;$("nuevo-nombre").value="";crearUsuario(n,colorElegido)};
 $("u-volver").onclick=()=>{location.hash="#/"};
-$("chip-usuario").onclick=()=>{location.hash="#/usuarios"};
+$("chip-usuario").onclick=()=>{location.hash=Nube.activo?"#/cuenta":"#/usuarios"};
 
 /* ================= Datos ================= */
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
@@ -373,7 +376,7 @@ const nivelDe=id=>niveles.find(n=>n.id===id);
 const saludo=()=>{const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"};
 
 async function init(){
-  cargarUsuarios();cargarEstado();
+  cargarUsuarios();
   let datos=null;
   const norm=d=>d&&d.niveles?d:(d&&d.episodios?{niveles:[{id:"A1",nombre:"Nivel A1",descripcion:"Primeros pasos",color:"#1e8a6a",episodios:d.episodios}]}:null);
   try{datos=norm(await (await fetch("episodios.json?v="+Date.now(),{cache:"no-store"})).json())}catch(e){}
@@ -384,6 +387,8 @@ async function init(){
   lsSet("eps-cache",JSON.stringify(datos));
   niveles=datos.niveles;
   eps=[];for(const n of niveles)for(const e of n.episodios){e.nivel=n.id;eps.push(e)}
+  const nube=await Nube.iniciar();
+  if(!nube)cargarEstado();
   $("play").innerHTML=ICO.play;$("m-play").innerHTML=ICO.play;
   const ult=eps.find(e=>k(e)===estado.actual&&disp(e));
   if(ult)cargar(ult,false);
@@ -393,20 +398,24 @@ async function init(){
 }
 
 /* ================= Navegación ================= */
-const VISTAS=["usuarios","inicio","nivel","ejercicio"];
+const VISTAS=["usuarios","entrar","pendiente","cuenta","admin","inicio","nivel","ejercicio"];
 function ruta(sinScroll){
   const h=location.hash||"#/";
-  if(!usuario&&h!=="#/usuarios"){location.hash="#/usuarios";return}
+  if(Nube.activo){const g=Nube.guardia(h);if(g&&g!==h){location.hash=g;return}}
+  else if(!usuario&&h!=="#/usuarios"){location.hash="#/usuarios";return}
   let vista="inicio",n=null,tab="ep",ej=null;
-  if(h==="#/usuarios")vista="usuarios";
+  if(["#/usuarios","#/entrar","#/pendiente","#/cuenta","#/admin"].includes(h))vista=h.slice(2);
   else{
     const m=/^#\/([A-Za-z0-9]+)(?:\/(ej)(?:\/([A-Za-z0-9]+))?)?$/.exec(h);
     n=m&&nivelDe(m[1]);
     if(n){vista="nivel";if(m[2]){tab="ej";if(m[3]){vista="ejercicio";ej=m[3]}}}
   }
-  for(const v of VISTAS)$("vista-"+v).classList.toggle("oculto",v!==vista);
+  for(const v of VISTAS){const el=$("vista-"+v);if(el)el.classList.toggle("oculto",v!==vista)}
   document.body.classList.toggle("en-ejercicio",vista==="ejercicio");
   if(vista==="usuarios")pintarUsuarios();
+  else if(vista==="cuenta")Nube.pintarCuenta();
+  else if(vista==="admin")Nube.pintarAdmin();
+  else if(vista==="entrar"||vista==="pendiente");
   else if(vista==="inicio")pintarInicio();
   else if(vista==="nivel")pintarNivel(n,tab);
   else iniciarEj(n,ej);
@@ -428,6 +437,7 @@ function paraContinuar(nivel){
 
 /* ================= Inicio ================= */
 function pintarInicio(){
+  if(Nube.activo)Nube.pintarAviso();
   $("saludo").textContent=usuario?saludo()+", "+usuario.nombre:"Entzun";
   const chip=$("chip-usuario");
   if(usuario){chip.style.background=usuario.color;chip.textContent=inicial(usuario)}
