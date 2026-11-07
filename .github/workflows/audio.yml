@@ -41,10 +41,15 @@ jobs:
           pip install -q piper-tts phoonnx edge-tts
 
       - name: Compilar AhoTTS (UPV/EHU, CC BY-SA)
+        env:
+          CMAKE_POLICY_VERSION_MINIMUM: "3.5"   # AhoTTS usa un CMake antiguo
         run: |
           git clone --depth 1 https://github.com/aholab/AhoTTS.git AhoTTS
-          cd AhoTTS && bash script_compile_all_linux.sh
-          ls bin
+          cd AhoTTS
+          rm -f bin/tts bin/tts_client bin/tts_server lib/libhtts.a   # forzar compilacion real
+          bash script_compile_all_linux.sh
+          test -x bin/tts || { echo "ERROR: AhoTTS no compilo"; exit 1; }
+          ls -la bin
 
       - name: Muestras de voz
         if: ${{ inputs.modo == 'muestra' }}
