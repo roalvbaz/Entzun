@@ -187,7 +187,11 @@ def main():
     ap.add_argument("guiones", nargs="+")
     ap.add_argument("--motor", choices=["piper", "espeak"], default="piper")
     ap.add_argument("--solo-medir", action="store_true")
+    ap.add_argument("--bitrate", default=None, help="p. ej. 48k (por defecto 96k)")
     a = ap.parse_args()
+    if a.bitrate:
+        global BITRATE
+        BITRATE = a.bitrate
     if not shutil.which("ffmpeg") and not a.solo_medir:
         sys.exit("Falta ffmpeg")
     for g in a.guiones:

@@ -62,3 +62,6 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 ## Notas
 - Probar en iPhone que el audio sigue sonando con la pantalla bloqueada y que los controles aparecen.
 - Mantener los MP3 ligeros (96 kbps mono ≈ 7 MB por episodio de 10 min) por el límite de GitHub Pages.
+
+## Estado de los audios
+- `podcasts/01-24.mp3` son de PRUEBA (voz robótica espeak-ng, 48 kbps, 85 MB en total). Sustituir por Piper+phoonnx cuando haya acceso a Hugging Face: `python generar_podcast.py guiones/*.md` (sin `--motor espeak`).

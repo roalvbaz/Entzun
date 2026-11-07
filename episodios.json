@@ -5,168 +5,192 @@
    "titulo": "Ni Amaia naiz",
    "bloque": "I",
    "audio": "podcasts/01.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 2,
    "titulo": "Auto hau berria da",
    "bloque": "I",
    "audio": "podcasts/02.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 3,
    "titulo": "Nor zara zu? Ni Xabi naiz, Zarauzkoa",
    "bloque": "I",
    "audio": "podcasts/03.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 4,
    "titulo": "Errepasoa I",
    "bloque": "I",
    "audio": "podcasts/04.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 5,
    "titulo": "Nolakoa da autoa?",
    "bloque": "II",
    "audio": "podcasts/05.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 6,
    "titulo": "Amaia Donostian bizi da",
    "bloque": "II",
    "audio": "podcasts/06.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 7,
    "titulo": "Amaia etxean dago",
    "bloque": "II",
    "audio": "podcasts/07.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 8,
    "titulo": "Errepasoa II",
    "bloque": "II",
    "audio": "podcasts/08.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 9,
    "titulo": "Amaia haserre dago",
    "bloque": "III",
    "audio": "podcasts/09.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 10,
    "titulo": "Noren autoa da hau?",
    "bloque": "III",
    "audio": "podcasts/10.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 11,
    "titulo": "Norena da auto hau?",
    "bloque": "III",
    "audio": "podcasts/11.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 12,
    "titulo": "Errepasoa III",
    "bloque": "III",
    "audio": "podcasts/12.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 13,
    "titulo": "Amaia Mikelen ondoan dago",
    "bloque": "IV",
    "audio": "podcasts/13.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 14,
    "titulo": "Amaiak liburu bat dauka",
    "bloque": "IV",
    "audio": "podcasts/14.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 15,
    "titulo": "Neska horrek ez dauka libururik",
    "bloque": "IV",
    "audio": "podcasts/15.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 16,
    "titulo": "Errepasoa IV",
    "bloque": "IV",
    "audio": "podcasts/16.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 17,
    "titulo": "Amaia dendara doa",
    "bloque": "V",
    "audio": "podcasts/17.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 18,
    "titulo": "Amaia amonarengana joan da",
    "bloque": "V",
    "audio": "podcasts/18.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 19,
    "titulo": "Amaia amonaren etxetik dator",
    "bloque": "V",
    "audio": "podcasts/19.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 20,
    "titulo": "Errepasoa V",
    "bloque": "V",
    "audio": "podcasts/20.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 21,
    "titulo": "Amaiak sagar bat dakar bere amonarentzat",
    "bloque": "VI",
    "audio": "podcasts/21.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 22,
    "titulo": "Amaiak sagar bat darama poltsan",
    "bloque": "VI",
    "audio": "podcasts/22.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 23,
    "titulo": "Bai auto garestia!",
    "bloque": "VI",
    "audio": "podcasts/23.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   },
   {
    "id": 24,
    "titulo": "Errepasoa VI",
    "bloque": "VI",
    "audio": "podcasts/24.mp3",
-   "disponible": false
+   "disponible": true,
+   "prueba": true
   }
  ]
 }
