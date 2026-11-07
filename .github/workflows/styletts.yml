@@ -1,0 +1,86 @@
+name: Muestra StyleTTS2-eu
+
+# Prueba de la voz neuronal de euskera StyleTTS2-eu (HiTZ / UPV-EHU, Apache-2.0).
+# Se lanza a mano: GitHub -> Actions -> "Muestra StyleTTS2-eu" -> Run workflow.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  muestra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Dependencias del sistema
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1 build-essential
+
+      - name: Clonar StyleTTS2_basque
+        run: git clone --depth 1 https://github.com/AArriandiaga/StyleTTS2_basque StyleTTS2_basque
+
+      - name: Dependencias de Python (PyTorch en CPU)
+        working-directory: StyleTTS2_basque
+        run: |
+          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          grep -v -E "monotonic_align|^torch$|^torchaudio$" requirements.txt > req2.txt
+          pip install -q -r req2.txt huggingface_hub cython numpy
+          # monotonic_align solo hace falta para entrenar; si no compila, se usa un sustituto vacio
+          pip install -q git+https://github.com/resemble-ai/monotonic_align.git || {
+            echo "monotonic_align no compilo: creando sustituto";
+            mkdir -p monotonic_align;
+            printf 'def maximum_path(*a, **k):\n    raise NotImplementedError\ndef mask_from_lens(*a, **k):\n    raise NotImplementedError\n' > monotonic_align/__init__.py;
+            printf 'def maximum_path_c(*a, **k):\n    raise NotImplementedError\n' > monotonic_align/core.py;
+          }
+
+      - name: Descargar modelos
+        working-directory: StyleTTS2_basque
+        run: |
+          mkdir -p Models/Basque_Multispeaker_Phoneme_wavlm_normal Utils/ASR_basque Utils/PLBERT_phoneme Utils/JDC refs
+          wget -q -P Utils/JDC https://github.com/yl4579/StyleTTS2/raw/main/Utils/JDC/bst.t7
+          python - <<'PY'
+          from huggingface_hub import hf_hub_download
+          import shutil
+          repo = "HiTZ/StyleTTS2-eu"
+          files = {
+              "config_basque_multispeaker_phoneme_wavlm_800_2nd_normal.yml": "Models/Basque_Multispeaker_Phoneme_wavlm_normal/config_basque_multispeaker_phoneme_wavlm_800_2nd_normal.yml",
+              "epoch_2nd_00030.pth": "Models/Basque_Multispeaker_Phoneme_wavlm_normal/epoch_2nd_00030.pth",
+              "epoch_00200.pth": "Utils/ASR_basque/epoch_00200.pth",
+              "step_4000000.t7": "Utils/PLBERT_phoneme/step_4000000.t7",
+              "sample_antton.wav": "refs/antton.wav",
+              "sample_maider.wav": "refs/maider.wav",
+          }
+          for hf_name, local in files.items():
+              shutil.copy(hf_hub_download(repo_id=repo, filename=hf_name), local)
+              print("ok", local)
+          PY
+          chmod +x phonemizer/modulo1y2/modulo1y2
+          ls -la Models/* Utils/* refs
+
+      - name: Generar muestra
+        working-directory: StyleTTS2_basque
+        run: python ../herramientas/styletts_muestra.py ../muestras 2>&1 | tail -60
+
+      - name: Convertir a MP3 y subir al repositorio
+        run: |
+          cd muestras
+          for v in antton maider; do
+            [ -f styletts-$v.wav ] && ffmpeg -y -loglevel error -i styletts-$v.wav -ac 1 -b:a 96k styletts-$v.mp3 && rm styletts-$v.wav
+          done
+          ls -la
+          cd ..
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add muestras
+          git diff --cached --quiet && { echo "Nada que subir"; exit 0; }
+          git commit -m "Muestra StyleTTS2-eu (antton y maider)"
+          git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
+          git push
