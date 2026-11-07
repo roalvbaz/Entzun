@@ -91,7 +91,7 @@ class PiperPhoonnx:
             if VOZ_EU not in mgr.voices:
                 print("Actualizando lista de voces de phoonnx ...")
                 try:
-                    mgr.get_ovos_voice_list()
+                    mgr.merge_default_voices(store=True)
                 except Exception as e:  # noqa
                     sys.exit(f"No se pudo obtener la lista de voces: {e}")
                 if VOZ_EU not in mgr.voices:
