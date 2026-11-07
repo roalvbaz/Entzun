@@ -139,9 +139,16 @@ class Aho:
             sys.exit(f"No se encuentra {AHO_DIR}/tts (compila AhoTTS y ajusta AHO_DIR)")
 
     def sintetizar(self, idioma, texto, destino):
+        salida = AHO_DIR / "Output.wav"
+        salida.unlink(missing_ok=True)
         (AHO_DIR / "input.txt").write_bytes(texto.encode("cp1252", errors="replace"))
-        run(["./tts", f"-Speed={AHO_VELOCIDAD}", "-Lang=eu"], cwd=str(AHO_DIR))
-        shutil.copy(AHO_DIR / "Output.wav", destino)
+        # AhoTTS imprime avisos y puede devolver un codigo distinto de 0 aun generando audio:
+        # se comprueba que exista Output.wav en vez de fiarse del codigo de salida.
+        r = subprocess.run(["./tts", f"-Speed={AHO_VELOCIDAD}", "-Lang=eu"], cwd=str(AHO_DIR), capture_output=True)
+        if not salida.exists() or salida.stat().st_size < 1000:
+            sys.exit(f"AhoTTS no genero audio (codigo {r.returncode})\n"
+                     f"{r.stdout.decode(errors='replace')[-600:]}\n{r.stderr.decode(errors='replace')[-600:]}")
+        shutil.copy(salida, destino)
 
 
 class Mixto:
