@@ -23,7 +23,7 @@ from pathlib import Path
 
 # ---------------- Parametros ----------------
 VOZ_ES = "es_ES-davefx-medium"                       # voz de Piper (se descarga con piper.download_voices)
-VOZ_EU = "OpenVoiceOS/phoonnx_eu-ES_miro_espeak"     # alternativa: ..._dii_espeak
+VOZ_EU = "OpenVoiceOS/phoonnx_eu-ES_dii_espeak"      # alternativa mas grave: ..._miro_espeak
 HUECO_ENTRE_FRASES = 0.6   # segundos de silencio entre dos pasos de voz seguidos
 VELOCIDAD_EU = 1.15        # length_scale de phoonnx (>1 = mas lento; bueno para aprender)
 VELOCIDAD_ES = 1.0
