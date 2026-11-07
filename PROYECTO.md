@@ -49,7 +49,7 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 1. (Parcial: `generar_podcast.py` reescrito, guion 01 en `guiones/01-ni-amaia-naiz.md`, probado con espeak-ng → 12:13; falta probar Piper+phoonnx con voces reales, ver INSTALAR.md) **Probar la generación** del episodio 1 (Docker o WSL) y arreglar errores. Verificar la API real de phoonnx y el comando de descarga de voces de Piper.
 2. Medir duración; ajustar guion o `VELOCIDAD_EU` para llegar a ~10 min.
 3. ~~Conseguir la lista de unidades de Hiru~~ → hecho: `docs/unidades-hiru.md` (24 episodios, un episodio por unidad).
-4. Escribir el resto de guiones (mismo formato y estructura).
+4. (Hecho en borrador: guiones 02-24 generados con `herramientas/crear_guiones.py` a partir de los títulos, SIN el contenido real de las lecciones de Hiru; pendiente revisión por una persona que hable euskera) Escribir el resto de guiones (mismo formato y estructura).
 5. ~~Rehacer `index.html` como reproductor de podcast~~ → hecho (`index.html`, `sw.js`, `manifest.json`, `icons/`, `episodios.json`). Falta probarlo en un iPhone real. Para publicar un episodio: poner el MP3 en `podcasts/NN.mp3` y `"disponible": true` en `episodios.json`. Requisitos originales:
    - Lista de episodios + botón grande "▶ Continuar" (siguiente episodio no terminado).
    - Recordar episodio y segundo donde se quedó (localStorage).

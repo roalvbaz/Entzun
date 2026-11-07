@@ -1,0 +1,163 @@
+# Episodio 15 - Esa chica no tiene libros (guion propio; del curso de Hiru solo se toma el tema)
+
+ES: Kaixo, aitona. Bienvenido al episodio quince de Euskera paseando.
+ES: Hoy hablamos de esto: esa chica no tiene libros.
+ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+[PAUSA 2]
+
+ES: Para decir que no se tiene algo, se pone ez delante del verbo, y el nombre termina en rik.
+ES: Escucha la frase.
+ES: Esta frase significa: Esa chica no tiene libros.
+EU: Neska horrek ez dauka libururik.
+[PAUSA 3]
+ES: Repite.
+EU: Neska horrek ez dauka libururik.
+[PAUSA 11]
+EU: Neska horrek ez dauka libururik.
+[PAUSA 11]
+
+ES: Esta frase significa: Ese chico no tiene coche.
+EU: Mutil horrek ez dauka autorik.
+[PAUSA 3]
+ES: Repite.
+EU: Mutil horrek ez dauka autorik.
+[PAUSA 11]
+EU: Mutil horrek ez dauka autorik.
+[PAUSA 11]
+
+ES: Esta frase significa: Yo no tengo libros.
+EU: Nik ez daukat libururik.
+[PAUSA 3]
+ES: Repite.
+EU: Nik ez daukat libururik.
+[PAUSA 9]
+EU: Nik ez daukat libururik.
+[PAUSA 9]
+
+ES: Repasamos las últimas.
+EU: Neska horrek ez dauka libururik.
+[PAUSA 11]
+EU: Mutil horrek ez dauka autorik.
+[PAUSA 11]
+EU: Nik ez daukat libururik.
+[PAUSA 9]
+
+ES: Esta frase significa: Tú no tienes coche.
+EU: Zuk ez daukazu autorik.
+[PAUSA 3]
+ES: Repite.
+EU: Zuk ez daukazu autorik.
+[PAUSA 9]
+EU: Zuk ez daukazu autorik.
+[PAUSA 9]
+
+ES: Esta frase significa: Amaia no tiene gato.
+EU: Amaiak ez dauka gaturik.
+[PAUSA 3]
+ES: Repite.
+EU: Amaiak ez dauka gaturik.
+[PAUSA 9]
+EU: Amaiak ez dauka gaturik.
+[PAUSA 9]
+
+ES: Esta frase significa: ¿Tienes un libro?
+EU: Zuk liburu bat daukazu?
+[PAUSA 3]
+ES: Repite.
+EU: Zuk liburu bat daukazu?
+[PAUSA 9]
+EU: Zuk liburu bat daukazu?
+[PAUSA 9]
+
+ES: Repasamos las últimas.
+EU: Zuk ez daukazu autorik.
+[PAUSA 9]
+EU: Amaiak ez dauka gaturik.
+[PAUSA 9]
+EU: Zuk liburu bat daukazu?
+[PAUSA 9]
+
+ES: Esta frase significa: Sí, tengo un libro.
+EU: Bai, liburu bat daukat.
+[PAUSA 3]
+ES: Repite.
+EU: Bai, liburu bat daukat.
+[PAUSA 9]
+EU: Bai, liburu bat daukat.
+[PAUSA 9]
+
+ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
+EU: Neska horrek ez dauka libururik.
+[PAUSA 11]
+EU: Mutil horrek ez dauka autorik.
+[PAUSA 11]
+EU: Nik ez daukat libururik.
+[PAUSA 9]
+EU: Zuk ez daukazu autorik.
+[PAUSA 9]
+EU: Amaiak ez dauka gaturik.
+[PAUSA 9]
+EU: Zuk liburu bat daukazu?
+[PAUSA 9]
+EU: Bai, liburu bat daukat.
+[PAUSA 9]
+
+ES: Ahora escucha una conversación sencilla. Primero entera.
+EU: Zuk liburu bat daukazu?
+[PAUSA 2]
+EU: Ez, nik ez daukat libururik.
+[PAUSA 2]
+EU: Eta neska horrek?
+[PAUSA 2]
+EU: Neska horrek liburu bat dauka.
+[PAUSA 2]
+
+ES: En español sería así.
+ES: ¿Tienes un libro?
+ES: No, yo no tengo libros.
+ES: ¿Y esa chica?
+ES: Esa chica tiene un libro.
+
+ES: Ahora la repetimos frase por frase. Repite en voz alta.
+EU: Zuk liburu bat daukazu?
+[PAUSA 11]
+EU: Ez, nik ez daukat libururik.
+[PAUSA 13]
+EU: Eta neska horrek?
+[PAUSA 9]
+EU: Neska horrek liburu bat dauka.
+[PAUSA 13]
+
+ES: Y ahora el repaso final. Yo te digo la frase en español, tú la dices en euskera, y después oyes la respuesta correcta.
+ES: Esa chica no tiene libros.
+[PAUSA 14]
+EU: Neska horrek ez dauka libururik.
+[PAUSA 2]
+ES: Ese chico no tiene coche.
+[PAUSA 14]
+EU: Mutil horrek ez dauka autorik.
+[PAUSA 2]
+ES: Yo no tengo libros.
+[PAUSA 12]
+EU: Nik ez daukat libururik.
+[PAUSA 2]
+ES: Tú no tienes coche.
+[PAUSA 12]
+EU: Zuk ez daukazu autorik.
+[PAUSA 2]
+ES: Amaia no tiene gato.
+[PAUSA 12]
+EU: Amaiak ez dauka gaturik.
+[PAUSA 2]
+ES: ¿Tienes un libro?
+[PAUSA 12]
+EU: Zuk liburu bat daukazu?
+[PAUSA 2]
+ES: Sí, tengo un libro.
+[PAUSA 12]
+EU: Bai, liburu bat daukat.
+[PAUSA 2]
+
+ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: En el próximo episodio veremos a dónde va Amaia. Hasta pronto.
+EU: Agur!
