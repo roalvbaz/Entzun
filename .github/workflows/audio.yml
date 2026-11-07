@@ -12,8 +12,13 @@ on:
       motor:
         description: "Solo para 'episodios': motor de voz"
         type: choice
-        options: [aho, piper]
-        default: aho
+        options: [styletts, aho, piper]
+        default: styletts
+      preguntas:
+        description: "Solo con styletts: entonacion de las preguntas"
+        type: choice
+        options: [subida, expresiva, normal]
+        default: subida
       tono_eu:
         description: "Solo para 'episodios': tono del euskera (1.0 = original, 0.85 = mas grave)"
         type: string
@@ -40,6 +45,7 @@ jobs:
           pip install -q piper-tts phoonnx edge-tts
 
       - name: Compilar AhoTTS (UPV/EHU, CC BY-SA)
+        if: ${{ inputs.modo == 'muestra' || inputs.motor == 'aho' }}
         env:
           CMAKE_POLICY_VERSION_MINIMUM: "3.5"   # AhoTTS usa un CMake antiguo
           LIBRARY_PATH: ${{ github.workspace }}/AhoTTS/lib   # su link_directories apunta mal
@@ -50,6 +56,38 @@ jobs:
           bash script_compile_all_linux.sh
           test -x bin/tts || { echo "ERROR: AhoTTS no compilo"; exit 1; }
           ls -la bin
+
+      - name: Preparar StyleTTS2-eu (solo motor styletts)
+        if: ${{ inputs.modo == 'episodios' && inputs.motor == 'styletts' }}
+        run: |
+          git clone --depth 1 https://github.com/AArriandiaga/StyleTTS2_basque StyleTTS2_basque
+          cd StyleTTS2_basque
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          grep -v -E "monotonic_align|^torch$|^torchaudio$" requirements.txt > req2.txt
+          echo "numpy<2" >> req2.txt
+          pip install -q -r req2.txt huggingface_hub cython praat-parselmouth soundfile
+          pip install -q git+https://github.com/resemble-ai/monotonic_align.git || {
+            mkdir -p monotonic_align
+            printf 'def maximum_path(*a, **k):\n    raise NotImplementedError\ndef mask_from_lens(*a, **k):\n    raise NotImplementedError\n' > monotonic_align/__init__.py
+            printf 'def maximum_path_c(*a, **k):\n    raise NotImplementedError\n' > monotonic_align/core.py
+          }
+          mkdir -p Models/Basque_Multispeaker_Phoneme_wavlm_normal Utils/ASR_basque Utils/PLBERT_phoneme refs
+          python - <<'PY'
+          from huggingface_hub import hf_hub_download
+          import shutil
+          repo = "HiTZ/StyleTTS2-eu"
+          files = {
+              "config_basque_multispeaker_phoneme_wavlm.yml": "Models/Basque_Multispeaker_Phoneme_wavlm_normal/config_basque_multispeaker_phoneme_wavlm_800_2nd_normal.yml",
+              "epoch_2nd_00030.pth": "Models/Basque_Multispeaker_Phoneme_wavlm_normal/epoch_2nd_00030.pth",
+              "epoch_00200.pth": "Utils/ASR_basque/epoch_00200.pth",
+              "step_4000000.t7": "Utils/PLBERT_phoneme/step_4000000.t7",
+              "sample_antton.wav": "refs/antton.wav",
+              "sample_maider.wav": "refs/maider.wav",
+          }
+          for hf_name, local in files.items():
+              shutil.copy(hf_hub_download(repo_id=repo, filename=hf_name), local)
+          PY
+          chmod +x phonemizer/modulo1y2/modulo1y2
 
       - name: Muestras de voz
         if: ${{ inputs.modo == 'muestra' }}
@@ -66,7 +104,8 @@ jobs:
       - name: Episodios
         if: ${{ inputs.modo == 'episodios' }}
         run: |
-          python generar_podcast.py guiones/*.md --motor "${{ inputs.motor }}" --tono-eu "${{ inputs.tono_eu }}"
+          set -o pipefail
+          python generar_podcast.py guiones/*.md --motor "${{ inputs.motor }}" --tono-eu "${{ inputs.tono_eu }}" --preguntas "${{ inputs.preguntas }}" 2>&1 | grep -E "^->|pasos|Error|error|Traceback|File " | tail -200
           ls -la podcasts
 
       - name: Subir resultado al repositorio
@@ -76,4 +115,5 @@ jobs:
           git add muestras podcasts
           git diff --cached --quiet && { echo "Nada que subir"; exit 0; }
           git commit -m "Audio generado (${{ inputs.modo }}, motor ${{ inputs.motor }})"
+          git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
           git push

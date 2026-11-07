@@ -17,6 +17,7 @@ Motores (--motor):
     espeak    ES y EU con espeak-ng                                   [robotico, sin descargas]
     edge      ES y EU con voces de Microsoft (edge-tts, internet)      [natural]
     aho       ES con Piper + EU con AhoTTS (UPV/EHU)                   [pronunciacion vasca fiable]
+    styletts  ES con Piper + EU con StyleTTS2-eu (HiTZ), voz Antton     [neuronal, la mas natural]
 
 Requisitos: ffmpeg. Para `piper`: pip install piper-tts phoonnx  y  espeak-ng instalado en el sistema.
 """
@@ -36,6 +37,9 @@ VOZ_EDGE_ES = "es-ES-ElviraNeural"    # alternativa: es-ES-AlvaroNeural
 VELOCIDAD_EDGE = "-10%"               # ritmo de edge-tts (negativo = mas lento)
 AHO_DIR = Path("AhoTTS/bin")          # carpeta bin de AhoTTS compilado (tts + data_tts)
 AHO_VELOCIDAD = 100                   # -Speed de AhoTTS (100 normal; menos = mas lento)
+STYLETTS_DIR = Path("StyleTTS2_basque")  # repo clonado de StyleTTS2-eu con sus modelos (ver .github/workflows/audio.yml)
+STYLETTS_VOZ = "antton"               # antton (masculina) o maider (femenina): refs/<voz>.wav
+PREGUNTAS = "subida"                  # normal | expresiva | subida  (entonacion de las preguntas en euskera)
 TONO_EU = 1.0                         # <1 baja el tono del euskera sin cambiar la velocidad (p. ej. 0.88)
 BITRATE = "96k"
 HZ = 24000
@@ -152,6 +156,42 @@ class Aho:
         shutil.copy(salida, destino)
 
 
+class StyleTTS:
+    """StyleTTS2-eu (HiTZ / UPV-EHU, Apache-2.0), voz neuronal de euskera. Solo para EU."""
+    def __init__(self):
+        import os
+        base = STYLETTS_DIR.resolve()
+        if not (base / "inference.py").exists():
+            sys.exit(f"No encuentro StyleTTS2 en {base} (clona AArriandiaga/StyleTTS2_basque y descarga los modelos)")
+        sys.path.insert(0, str(base))
+        sys.path.insert(0, str(Path(__file__).resolve().parent / "herramientas"))
+        anterior = os.getcwd()
+        os.chdir(base)                              # el modelo usa rutas relativas a su carpeta
+        try:
+            from inference import Synthesizer
+            d = "Models/Basque_Multispeaker_Phoneme_wavlm_normal/"
+            self.ref = str(base / "refs" / f"{STYLETTS_VOZ}.wav")
+            self.synth = Synthesizer(config=d + "config_basque_multispeaker_phoneme_wavlm_800_2nd_normal.yml",
+                                     checkpoint=d + "epoch_2nd_00030.pth", ref=self.ref, device="cpu")
+        finally:
+            os.chdir(anterior)
+
+    def sintetizar(self, idioma, texto, destino):
+        import numpy as np
+        import soundfile as sf
+        pregunta = texto.strip().endswith("?")
+        if pregunta and PREGUNTAS == "expresiva":
+            wav = self.synth.run(texto, ref=self.ref, beta=0.95, embedding_scale=2.0)
+        else:
+            wav = self.synth.run(texto, ref=self.ref)
+        wav = np.asarray(wav, dtype=np.float32)
+        if pregunta and PREGUNTAS == "subida":
+            from entonacion import subir_final
+            wav = subir_final(wav, 24000, texto)
+        pico = float(np.abs(wav).max()) or 1.0
+        sf.write(str(destino), wav / pico * 0.9, 24000)
+
+
 class Mixto:
     def __init__(self, es, eu):
         self.es, self.eu = es, eu
@@ -168,6 +208,8 @@ def crear_motor(nombre):
         return Mixto(e, e)
     if nombre == "aho":
         return Mixto(PiperPhoonnx(), Aho())
+    if nombre == "styletts":
+        return Mixto(PiperPhoonnx(), StyleTTS())
     return PiperPhoonnx()
 
 
@@ -195,7 +237,7 @@ def silencio(seg, destino):
 def trozo_voz(motor, nombre_motor, idioma, texto):
     """WAV normalizado de una frase; cacheado por (motor, idioma, texto, velocidad)."""
     CARPETA_CACHE.mkdir(exist_ok=True)
-    clave = f"{nombre_motor}|{idioma}|{texto}|{VELOCIDAD_EU}|{VELOCIDAD_ES}|{VOZ_ES}|{VOZ_EU}|{VOZ_EDGE_EU}|{VOZ_EDGE_ES}|{VELOCIDAD_EDGE}|{AHO_VELOCIDAD}|{TONO_EU}"
+    clave = f"{nombre_motor}|{idioma}|{texto}|{VELOCIDAD_EU}|{VELOCIDAD_ES}|{VOZ_ES}|{VOZ_EU}|{VOZ_EDGE_EU}|{VOZ_EDGE_ES}|{VELOCIDAD_EDGE}|{AHO_VELOCIDAD}|{TONO_EU}|{STYLETTS_VOZ}|{PREGUNTAS}"
     h = hashlib.sha1(clave.encode()).hexdigest()[:16]
     final = CARPETA_CACHE / f"{h}.wav"
     if not final.exists():
@@ -242,14 +284,20 @@ def generar(guion, nombre_motor, solo_medir, salida_forzada=None):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("guiones", nargs="+")
-    ap.add_argument("--motor", choices=["piper", "espeak", "edge", "aho"], default="piper")
+    ap.add_argument("--motor", choices=["piper", "espeak", "edge", "aho", "styletts"], default="piper")
     ap.add_argument("--solo-medir", action="store_true")
     ap.add_argument("--voz-edge-eu", default=None, help="p. ej. eu-ES-AnderNeural")
     ap.add_argument("--tono-eu", type=float, default=None, help="p. ej. 0.88 (mas grave)")
+    ap.add_argument("--preguntas", choices=["normal", "expresiva", "subida"], default=None)
+    ap.add_argument("--voz-styletts", choices=["antton", "maider"], default=None)
     ap.add_argument("--salida", default=None, help="ruta del MP3 (solo con un guion)")
     ap.add_argument("--bitrate", default=None, help="p. ej. 48k (por defecto 96k)")
     a = ap.parse_args()
-    global BITRATE, VOZ_EDGE_EU, TONO_EU
+    global BITRATE, VOZ_EDGE_EU, TONO_EU, PREGUNTAS, STYLETTS_VOZ
+    if a.preguntas:
+        PREGUNTAS = a.preguntas
+    if a.voz_styletts:
+        STYLETTS_VOZ = a.voz_styletts
     if a.bitrate:
         BITRATE = a.bitrate
     if a.tono_eu:
