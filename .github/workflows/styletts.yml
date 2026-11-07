@@ -30,7 +30,7 @@ jobs:
       - name: Dependencias de Python (PyTorch en CPU)
         working-directory: StyleTTS2_basque
         run: |
-          pip install -q torch==2.5.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           grep -v -E "monotonic_align|^torch$|^torchaudio$" requirements.txt > req2.txt
           echo "numpy<2" >> req2.txt
           pip install -q -r req2.txt huggingface_hub cython numpy
