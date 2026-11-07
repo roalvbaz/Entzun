@@ -1,0 +1,41 @@
+name: Leer lecciones de ikasten
+
+# Usa los secretos IKASTEN_USER e IKASTEN_PASS. El texto leido NO se sube al repositorio:
+# queda como artefacto privado de esta ejecucion durante 1 dia.
+on:
+  workflow_dispatch:
+    inputs:
+      episodios:
+        description: "Episodios a leer, separados por espacios (vacio = los 24)"
+        type: string
+        default: "1 2"
+
+permissions:
+  contents: read
+
+jobs:
+  leer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar Playwright
+        run: |
+          pip install -q playwright
+          playwright install --with-deps chromium
+      - name: Leer lecciones
+        env:
+          IKASTEN_USER: ${{ secrets.IKASTEN_USER }}
+          IKASTEN_PASS: ${{ secrets.IKASTEN_PASS }}
+        run: python herramientas/scrape_ikasten.py ${{ inputs.episodios }}
+      - name: Guardar texto como artefacto (1 dia)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ikasten-texto
+          path: salida_ikasten/
+          retention-days: 1
+          if-no-files-found: ignore
