@@ -4,6 +4,12 @@ name: Muestra StyleTTS2-eu
 # Se lanza a mano: GitHub -> Actions -> "Muestra StyleTTS2-eu" -> Run workflow.
 on:
   workflow_dispatch:
+    inputs:
+      prueba:
+        description: "voces = Antton y Maider; preguntas = entonación de preguntas (Antton, 3 versiones)"
+        type: choice
+        options: [voces, preguntas]
+        default: voces
 
 permissions:
   contents: write
@@ -33,7 +39,7 @@ jobs:
           pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           grep -v -E "monotonic_align|^torch$|^torchaudio$" requirements.txt > req2.txt
           echo "numpy<2" >> req2.txt
-          pip install -q -r req2.txt huggingface_hub cython numpy
+          pip install -q -r req2.txt huggingface_hub cython numpy praat-parselmouth
           # monotonic_align solo hace falta para entrenar; si no compila, se usa un sustituto vacio
           pip install -q git+https://github.com/resemble-ai/monotonic_align.git || {
             echo "monotonic_align no compilo: creando sustituto";
@@ -69,13 +75,17 @@ jobs:
         working-directory: StyleTTS2_basque
         run: |
           set -o pipefail
-          python ../herramientas/styletts_muestra.py ../muestras 2>&1 | tail -60
+          if [ "${{ inputs.prueba }}" = "preguntas" ]; then
+            python ../herramientas/styletts_preguntas.py ../muestras 2>&1 | tail -60
+          else
+            python ../herramientas/styletts_muestra.py ../muestras 2>&1 | tail -60
+          fi
 
       - name: Convertir a MP3 y subir al repositorio
         run: |
           cd muestras
-          for v in antton maider; do
-            [ -f styletts-$v.wav ] && ffmpeg -y -loglevel error -i styletts-$v.wav -ac 1 -b:a 96k styletts-$v.mp3 && rm styletts-$v.wav
+          for w in *.wav; do
+            [ -f "$w" ] && ffmpeg -y -loglevel error -i "$w" -ac 1 -b:a 96k "${w%.wav}.mp3" && rm "$w"
           done
           ls -la
           cd ..
@@ -83,6 +93,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add muestras
           git diff --cached --quiet && { echo "Nada que subir"; exit 0; }
-          git commit -m "Muestra StyleTTS2-eu (antton y maider)"
+          git commit -m "Muestra StyleTTS2-eu (${{ inputs.prueba }})"
           git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
           git push
