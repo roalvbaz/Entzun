@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Euskera paseando</title>
+<title>Entzun</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Euskera">
+<meta name="apple-mobile-web-app-title" content="Entzun">
 <meta name="theme-color" content="#121212">
 <style>
 :root{
@@ -108,15 +108,60 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .ctrl .grande svg{width:44px;height:44px}
 .ctrl button:disabled{opacity:.3}
 .ctrl button:active{transform:scale(.94)}
+
+/* ---------- Niveles ---------- */
+.tarjeta-nivel{display:flex;align-items:center;gap:16px;width:100%;text-align:left;background:var(--fila);border-radius:14px;padding:10px;margin-bottom:12px;min-height:104px}
+.tarjeta-nivel:active{background:var(--fila2)}
+.tarjeta-nivel .portada{width:84px;height:84px;font-size:34px}
+.tarjeta-nivel .txt{flex:1;min-width:0}
+.tarjeta-nivel .tit{font-size:24px;font-weight:800}
+.tarjeta-nivel .sub{color:var(--suave);font-size:17px;margin-top:2px}
+.tarjeta-nivel .prog{height:4px;background:#444;border-radius:2px;margin-top:8px;overflow:hidden}
+.tarjeta-nivel .prog i{display:block;height:100%;background:var(--verde)}
+#instalar{margin:12px 20px 8px;background:var(--fila2);border-radius:14px;padding:16px 18px;display:none}
+#instalar.on{display:block}
+#instalar b{font-size:21px}
+#instalar p{margin:6px 0 12px;color:var(--suave);font-size:18px;line-height:1.4}
+#instalar button{background:var(--verde);color:#000;font-weight:700;border-radius:24px;min-height:52px;padding:0 24px}
+.cab-nivel{padding:calc(12px + env(safe-area-inset-top)) 20px 8px;background:linear-gradient(var(--tinte-n,#1e8a6a) 0,#121212 360px)}
+#atras-lista{width:64px;height:64px;display:grid;place-items:center;margin-left:-14px}
+#atras-lista svg{width:34px;height:34px}
+.cab-nivel .portada{width:min(46vw,180px);height:min(46vw,180px);font-size:64px;margin:4px 0 16px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.cab-nivel h1{margin:0 0 4px}
+.cab-nivel p{margin:0 0 16px;color:var(--suave);font-size:18px}
+#reproducir-nivel{display:flex;align-items:center;gap:14px;background:var(--verde);color:#000;font-weight:800;font-size:22px;border-radius:40px;padding:0 28px 0 12px;min-height:64px}
+#reproducir-nivel svg{width:34px;height:34px}
+.oculto{display:none!important}
 </style>
 </head>
 <body>
+<div id="vista-inicio">
 <header>
-  <h1 id="saludo">Euskera paseando</h1>
+  <h1 id="saludo">Entzun</h1>
   <button id="continuar" aria-label="Continuar"></button>
 </header>
-<div id="aviso"></div>
+<section id="instalar" aria-label="Instalar en iPhone">
+  <b>Instala Entzun en tu iPhone</b>
+  <p>En Safari, toca el botón Compartir (el cuadrado con una flecha hacia arriba) y elige «Añadir a pantalla de inicio». Así se abre como una app.</p>
+  <button id="instalar-ok">Entendido</button>
+</section>
+<main>
+  <h2>Niveles</h2>
+  <div id="niveles"></div>
+</main>
+</div>
+
+<div id="vista-nivel" class="oculto">
+<div class="cab-nivel">
+  <button id="atras-lista" aria-label="Volver a niveles"><svg viewBox="0 0 24 24"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+  <div class="portada" id="n-por"></div>
+  <h1 id="n-tit"></h1>
+  <p id="n-sub"></p>
+  <button id="reproducir-nivel"><span class="play-verde" style="background:#000;color:var(--verde);width:44px;height:44px"></span><span>Reproducir</span></button>
+</div>
 <main id="lista"></main>
+</div>
+<div id="aviso"></div>
 
 <div id="mini" role="group" aria-label="Reproductor">
   <div class="portada" id="m-por"></div>
@@ -146,7 +191,7 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 "use strict";
 const $=id=>document.getElementById(id);
 const audio=$("audio");
-const KEY="euskera-estado-v1";
+const KEY="euskera-estado-v2";
 const ICO={
   play:'<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>',
   pausa:'<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>',
@@ -154,63 +199,113 @@ const ICO={
   ok:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 15-5-5 1.4-1.4L10 14.2l7.6-7.6L19 8z"/></svg>'
 };
 const COLORES=["#2d46b9","#8d67ab","#e8115b","#1e8a6a","#e8742a","#477d95"];
-let eps=[], estado={actual:null,pos:{},hecho:{}}, cur=null, ultimoGuardado=0, arrastrando=false;
+let niveles=[], eps=[], estado={actual:null,pos:{},hecho:{},instalarOculto:false}, cur=null, ultimoGuardado=0, arrastrando=false;
 
-try{Object.assign(estado,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
+/* estado: claves "A1-3" (nivel-episodio). Se migra el formato antiguo (solo número). */
+try{
+  const g=JSON.parse(localStorage.getItem(KEY)||"null")||JSON.parse(localStorage.getItem("euskera-estado-v1")||"null")||{};
+  Object.assign(estado,g);
+  const mig=o=>{const r={};for(const k in (o||{}))r[/^\d+$/.test(k)?"A1-"+k:k]=o[k];return r};
+  estado.pos=mig(estado.pos);estado.hecho=mig(estado.hecho);
+  if(typeof estado.actual==="number")estado.actual="A1-"+estado.actual;
+}catch(e){}
 const guardar=()=>{try{localStorage.setItem(KEY,JSON.stringify(estado))}catch(e){}};
+const k=e=>e.nivel+"-"+e.id;
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
 const disp=e=>e&&e.disponible;
 const idxBloque=e=>Math.max(0,["I","II","III","IV","V","VI"].indexOf(e.bloque));
 const portada=(el,e)=>{el.className=el.className.replace(/\bb\d\b/g,"").trim()+" b"+idxBloque(e);el.textContent=e.id};
-
-function saludo(){const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"}
+const nivelDe=id=>niveles.find(n=>n.id===id);
+const saludo=()=>{const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"};
 
 async function init(){
   $("saludo").textContent=saludo();
-  try{eps=(await (await fetch("episodios.json")).json()).episodios}catch(e){
-    try{eps=JSON.parse(localStorage.getItem("eps-cache")||"[]")}catch(_){}
-    if(!eps.length)$("aviso").textContent="No se pudo cargar la lista de episodios.";
-  }
-  if(eps.length)try{localStorage.setItem("eps-cache",JSON.stringify(eps))}catch(e){}
+  let datos=null;
+  try{datos=await (await fetch("episodios.json")).json()}catch(e){try{datos=JSON.parse(localStorage.getItem("eps-cache"))}catch(_){}}
+  if(!datos||!datos.niveles){$("aviso").textContent="No se pudo cargar la lista de episodios.";return}
+  try{localStorage.setItem("eps-cache",JSON.stringify(datos))}catch(e){}
+  niveles=datos.niveles;
+  eps=[];for(const n of niveles)for(const e of n.episodios){e.nivel=n.id;eps.push(e)}
   $("play").innerHTML=ICO.play;$("m-play").innerHTML=ICO.play;
-  pintar();
-  const ult=eps.find(e=>e.id===estado.actual&&disp(e));
+  const ult=eps.find(e=>k(e)===estado.actual&&disp(e));
   if(ult)cargar(ult,false);
-  if(eps.length&&!eps.some(disp))$("aviso").textContent="Todavía no hay episodios con audio.";
+  mostrarInstalar();
+  ruta();
+  if(!eps.some(disp))$("aviso").textContent="Todavía no hay episodios con audio.";
 }
 
-const siguienteDe=id=>eps.find(e=>e.id>id&&disp(e));
-const anteriorDe=id=>[...eps].reverse().find(e=>e.id<id&&disp(e));
-function paraContinuar(){
-  return eps.find(e=>disp(e)&&!estado.hecho[e.id]&&(estado.pos[e.id]||0)>5)
-      ||eps.find(e=>disp(e)&&!estado.hecho[e.id])||eps.find(disp);
+/* ---------- navegación ---------- */
+function ruta(){
+  const m=/^#\/([A-Za-z0-9]+)$/.exec(location.hash);
+  const n=m&&nivelDe(m[1]);
+  $("vista-inicio").classList.toggle("oculto",!!n);
+  $("vista-nivel").classList.toggle("oculto",!n);
+  if(n)pintarNivel(n);else pintarInicio();
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",ruta);
+$("atras-lista").onclick=()=>{location.hash="#/"};
+
+/* ---------- siguiente / anterior dentro del nivel ---------- */
+const lista=e=>nivelDe(e.nivel).episodios;
+const siguienteDe=e=>lista(e).find(x=>x.id>e.id&&disp(x));
+const anteriorDe=e=>[...lista(e)].reverse().find(x=>x.id<e.id&&disp(x));
+function paraContinuar(nivel){
+  const L=nivel?nivel.episodios:eps;
+  return L.find(e=>disp(e)&&!estado.hecho[k(e)]&&(estado.pos[k(e)]||0)>5)
+      ||L.find(e=>disp(e)&&!estado.hecho[k(e)])||L.find(disp);
 }
 
-function pintar(){
+/* ---------- inicio ---------- */
+function pintarInicio(){
   const c=paraContinuar(), b=$("continuar");
   b.disabled=!c;
   if(c){
-    const enCurso=(estado.pos[c.id]||0)>5;
-    b.innerHTML=`<div class="portada b${idxBloque(c)}">${c.id}</div><div class="txt"><div class="etq">${enCurso?"Seguir escuchando":"Empezar"}</div><div class="tit"></div></div><div class="play-verde">${ICO.play}</div>`;
+    const enCurso=(estado.pos[k(c)]||0)>5;
+    b.innerHTML=`<div class="portada b${idxBloque(c)}">${c.id}</div><div class="txt"><div class="etq">${enCurso?"Seguir escuchando":"Empezar"} · ${c.nivel}</div><div class="tit"></div></div><div class="play-verde">${ICO.play}</div>`;
     b.querySelector(".tit").textContent=c.titulo;
   }else b.innerHTML='<div class="txt" style="padding:20px"><div class="tit">Sin episodios todavía</div></div>';
+  const cont=$("niveles");cont.innerHTML="";
+  for(const n of niveles){
+    const total=n.episodios.length, hechos=n.episodios.filter(e=>estado.hecho[k(e)]).length;
+    const t=document.createElement("button");t.className="tarjeta-nivel";
+    t.innerHTML=`<div class="portada" style="background:${n.color||"#1e8a6a"}">${n.id}</div><div class="txt"><div class="tit"></div><div class="sub"></div><div class="prog"><i style="width:${total?hechos/total*100:0}%"></i></div></div>`;
+    t.querySelector(".tit").textContent=n.nombre;
+    t.querySelector(".sub").textContent=`${hechos} de ${total} episodios · ${n.descripcion||""}`;
+    t.onclick=()=>{location.hash="#/"+n.id};
+    cont.appendChild(t);
+  }
+}
+
+/* ---------- nivel (playlist) ---------- */
+function pintarNivel(n){
+  $("n-por").textContent=n.id;$("n-por").style.background=n.color||"#1e8a6a";
+  document.querySelector(".cab-nivel").style.setProperty("--tinte-n",n.color||"#1e8a6a");
+  $("n-tit").textContent=n.nombre;
+  const hechos=n.episodios.filter(e=>estado.hecho[k(e)]).length;
+  $("n-sub").textContent=`${n.episodios.length} episodios · ${hechos} terminados`;
+  const c=paraContinuar(n), r=$("reproducir-nivel");
+  r.querySelector(".play-verde").innerHTML=ICO.play;
+  r.querySelector("span:last-child").textContent=c&&(estado.pos[k(c)]||0)>5?"Continuar":"Reproducir";
+  r.disabled=!c;
+  r.onclick=()=>{if(!c)return;(cur&&k(cur)===k(c))?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
   const l=$("lista");l.innerHTML="";
   let bloque=null;
-  for(const e of eps){
+  for(const e of n.episodios){
     if(e.bloque!==bloque){
       bloque=e.bloque;
-      const hechos=eps.filter(x=>x.bloque===bloque&&estado.hecho[x.id]).length, tot=eps.filter(x=>x.bloque===bloque).length;
-      const h=document.createElement("h2");h.innerHTML=`Bloque ${bloque}<small>${hechos} de ${tot}</small>`;l.appendChild(h);
+      const del=n.episodios.filter(x=>x.bloque===bloque), h=del.filter(x=>estado.hecho[k(x)]).length;
+      const h2=document.createElement("h2");h2.innerHTML=`Bloque ${bloque}<small>${h} de ${del.length}</small>`;l.appendChild(h2);
     }
     const d=document.createElement("div");
-    d.className="ep"+(cur&&cur.id===e.id?" actual":"")+(disp(e)?"":" no");
+    d.className="ep"+(cur&&k(cur)===k(e)?" actual":"")+(disp(e)?"":" no");
     const por=document.createElement("div");por.className="portada";portada(por,e);d.appendChild(por);
     const a=document.createElement("button");a.className="abrir";a.disabled=!disp(e);
-    const pos=estado.pos[e.id]||0;
-    const sub=!disp(e)?"Próximamente":estado.hecho[e.id]?"Terminado":(pos>5?"Por el minuto "+Math.floor(pos/60):"Episodio "+e.id);
+    const pos=estado.pos[k(e)]||0;
+    const sub=!disp(e)?"Próximamente":estado.hecho[k(e)]?"Terminado":(pos>5?"Por el minuto "+Math.floor(pos/60):"Episodio "+e.id);
     a.innerHTML='<span class="tit"></span><span class="sub"></span>';
     a.querySelector(".tit").textContent=e.titulo;a.querySelector(".sub").textContent=sub;
-    if(disp(e)&&pos>5&&!estado.hecho[e.id]&&e.dur){const pr=document.createElement("div");pr.className="prog";pr.innerHTML=`<i style="width:${Math.min(100,pos/e.dur*100)}%"></i>`;a.appendChild(pr)}
+    if(disp(e)&&pos>5&&!estado.hecho[k(e)]&&e.dur){const pr=document.createElement("div");pr.className="prog";pr.innerHTML=`<i style="width:${Math.min(100,pos/e.dur*100)}%"></i>`;a.appendChild(pr)}
     a.onclick=()=>cargar(e,true);
     d.appendChild(a);
     if(disp(e)&&"caches" in window){
@@ -223,6 +318,7 @@ function pintar(){
     l.appendChild(d);
   }
 }
+const repintar=()=>{const m=/^#\/([A-Za-z0-9]+)$/.exec(location.hash),n=m&&nivelDe(m[1]);n?pintarNivel(n):pintarInicio()};
 
 async function descargar(e,btn){
   btn.textContent="…";
@@ -230,29 +326,38 @@ async function descargar(e,btn){
   catch(_){btn.textContent="Error"}
 }
 
+/* ---------- aviso de instalación en iPhone/iPad ---------- */
+function mostrarInstalar(){
+  const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  const instalada=window.navigator.standalone===true||matchMedia("(display-mode: standalone)").matches;
+  if(ios&&!instalada&&!estado.instalarOculto)$("instalar").classList.add("on");
+  $("instalar-ok").onclick=()=>{estado.instalarOculto=true;guardar();$("instalar").classList.remove("on")};
+}
+
+/* ---------- reproductor ---------- */
 function cargar(e,reproducir){
-  cur=e;estado.actual=e.id;guardar();
+  cur=e;estado.actual=k(e);guardar();
   audio.src=e.audio;
-  const pos=estado.hecho[e.id]?0:(estado.pos[e.id]||0);
+  const pos=estado.hecho[k(e)]?0:(estado.pos[k(e)]||0);
   audio.addEventListener("loadedmetadata",()=>{if(pos>0&&pos<audio.duration-3)audio.currentTime=pos},{once:true});
-  $("m-tit").textContent=e.titulo;$("m-sub").textContent="Episodio "+e.id;
+  $("m-tit").textContent=e.titulo;$("m-sub").textContent=e.nivel+" · Episodio "+e.id;
   portada($("m-por"),e);portada($("f-por"),e);
-  $("f-tit").textContent=e.titulo;$("f-sub").textContent="Episodio "+e.id+" · Bloque "+e.bloque;
+  $("f-tit").textContent=e.titulo;$("f-sub").textContent=e.nivel+" · Episodio "+e.id+" · Bloque "+e.bloque;
   $("full").style.setProperty("--tinte",COLORES[idxBloque(e)]);
   $("mini").classList.add("on");
-  $("anterior").disabled=!anteriorDe(e.id);$("siguiente").disabled=!siguienteDe(e.id);
+  $("anterior").disabled=!anteriorDe(e);$("siguiente").disabled=!siguienteDe(e);
   metadata();
   if(reproducir)audio.play().catch(()=>{});
-  pintar();
+  repintar();
 }
 
 function metadata(){
   if(!("mediaSession" in navigator)||!cur)return;
-  navigator.mediaSession.metadata=new MediaMetadata({title:cur.titulo,artist:"Euskera paseando",album:"Episodio "+cur.id,artwork:[{src:"icons/icon-512.png",sizes:"512x512",type:"image/png"}]});
+  navigator.mediaSession.metadata=new MediaMetadata({title:cur.titulo,artist:"Entzun",album:cur.nivel+" · Episodio "+cur.id,artwork:[{src:"icons/icon-512.png",sizes:"512x512",type:"image/png"}]});
 }
 const saltar=s=>{audio.currentTime=Math.min(Math.max(0,audio.currentTime+s),audio.duration||1e9)};
-const sig=()=>{const n=cur&&siguienteDe(cur.id);if(n)cargar(n,true)};
-function ant(){if(audio.currentTime>5){audio.currentTime=0;return}const p=cur&&anteriorDe(cur.id);if(p)cargar(p,true)}
+const sig=()=>{const n=cur&&siguienteDe(cur);if(n)cargar(n,true)};
+function ant(){if(audio.currentTime>5){audio.currentTime=0;return}const p=cur&&anteriorDe(cur);if(p)cargar(p,true)}
 const toggle=()=>{if(!cur){const c=paraContinuar();if(c)cargar(c,true);return}audio.paused?audio.play().catch(()=>{}):audio.pause()};
 
 if("mediaSession" in navigator){
@@ -263,7 +368,7 @@ if("mediaSession" in navigator){
   set("seekto",d=>{audio.currentTime=d.seekTime});
 }
 
-$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&cur.id===c.id)?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
+$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&k(cur)===k(c))?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
 const abrirFull=()=>$("full").classList.add("on"), cerrarFull=()=>$("full").classList.remove("on");
 $("m-abrir").onclick=abrirFull;$("cerrar").onclick=cerrarFull;
 $("play").onclick=toggle;$("m-play").onclick=toggle;
@@ -276,7 +381,7 @@ $("barra").onchange=()=>{if(audio.duration)audio.currentTime=$("barra").value/10
 const estadoPlay=p=>{$("play").innerHTML=p?ICO.pausa:ICO.play;$("m-play").innerHTML=p?ICO.pausa:ICO.play;
   if("mediaSession" in navigator)navigator.mediaSession.playbackState=p?"playing":"paused"};
 audio.addEventListener("play",()=>estadoPlay(true));
-audio.addEventListener("pause",()=>{estadoPlay(false);if(cur){estado.pos[cur.id]=audio.currentTime;guardar();pintar()}});
+audio.addEventListener("pause",()=>{estadoPlay(false);if(cur){estado.pos[k(cur)]=audio.currentTime;guardar();repintar()}});
 audio.addEventListener("loadedmetadata",()=>{if(cur&&isFinite(audio.duration)){cur.dur=audio.duration;$("t-tot").textContent=fmt(audio.duration)}});
 audio.addEventListener("timeupdate",()=>{
   if(!cur)return;
@@ -284,17 +389,17 @@ audio.addEventListener("timeupdate",()=>{
     $("t-act").textContent=fmt(audio.currentTime);
     if(audio.duration){const v=audio.currentTime/audio.duration*1000;$("barra").value=v;pintarBarra();$("m-lin").style.width=v/10+"%"}
   }
-  if(Date.now()-ultimoGuardado>3000){ultimoGuardado=Date.now();estado.pos[cur.id]=audio.currentTime;guardar()}
+  if(Date.now()-ultimoGuardado>3000){ultimoGuardado=Date.now();estado.pos[k(cur)]=audio.currentTime;guardar()}
   if("mediaSession" in navigator&&isFinite(audio.duration)){try{navigator.mediaSession.setPositionState({duration:audio.duration,position:audio.currentTime,playbackRate:audio.playbackRate})}catch(e){}}
 });
 audio.addEventListener("ended",()=>{
   if(!cur)return;
-  estado.hecho[cur.id]=true;estado.pos[cur.id]=0;guardar();
-  const n=siguienteDe(cur.id);
-  if(n)cargar(n,true);else{estadoPlay(false);pintar()}
+  estado.hecho[k(cur)]=true;estado.pos[k(cur)]=0;guardar();
+  const n=siguienteDe(cur);
+  if(n)cargar(n,true);else{estadoPlay(false);repintar()}
 });
 audio.addEventListener("error",()=>{$("aviso").textContent="No se pudo reproducir este episodio."});
-document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[cur.id]=audio.currentTime;guardar()}});
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[k(cur)]=audio.currentTime;guardar()}});
 
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 init();

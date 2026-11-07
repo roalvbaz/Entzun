@@ -1,6 +1,6 @@
 {
-  "name": "Euskera paseando",
-  "short_name": "Euskera",
+  "name": "Entzun",
+  "short_name": "Entzun",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

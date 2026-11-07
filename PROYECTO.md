@@ -65,3 +65,8 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 
 ## Estado de los audios
 - `podcasts/01-24.mp3` son de PRUEBA (voz robótica espeak-ng, 48 kbps, 85 MB en total). Sustituir por Piper+phoonnx cuando haya acceso a Hugging Face: `python generar_podcast.py guiones/*.md` (sin `--motor espeak`).
+
+## Niveles (playlists)
+- La app se llama **Entzun**. `episodios.json` tiene `niveles[]`; cada nivel es una playlist con `id`, `nombre`, `descripcion`, `color` y `episodios[]`. Hoy solo existe **A1** (24 episodios). Para añadir A2: añadir otro objeto en `niveles` con sus episodios (`audio`: `podcasts/A2-NN.mp3` por ejemplo).
+- El progreso se guarda por `nivel-episodio` (p. ej. `A1-3`) y migra el formato antiguo.
+- En iPhone se instala desde Safari → Compartir → Añadir a pantalla de inicio; la web muestra un aviso con esos pasos (una sola vez).

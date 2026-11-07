@@ -1,4 +1,4 @@
-const SHELL="shell-v1", AUDIO="audio-v1";
+const SHELL="shell-v2", AUDIO="audio-v1";
 const ARCHIVOS=["./","index.html","manifest.json","episodios.json","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
