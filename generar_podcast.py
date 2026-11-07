@@ -15,6 +15,8 @@ Formato del guion (una instruccion por linea; lo demas se ignora):
 Motores (--motor):
     piper     ES con Piper (es_ES-davefx-medium) + EU con phoonnx   [calidad buena, por defecto]
     espeak    ES y EU con espeak-ng                                   [robotico, sin descargas]
+    edge      ES y EU con voces de Microsoft (edge-tts, internet)      [natural]
+    aho       ES con Piper + EU con AhoTTS (UPV/EHU)                   [pronunciacion vasca fiable]
 
 Requisitos: ffmpeg. Para `piper`: pip install piper-tts phoonnx  y  espeak-ng instalado en el sistema.
 """
@@ -29,6 +31,11 @@ VELOCIDAD_EU = 1.15        # length_scale de phoonnx (>1 = mas lento; bueno para
 VELOCIDAD_ES = 1.0
 ESPEAK_VEL_ES = 150        # palabras/minuto en modo espeak
 ESPEAK_VEL_EU = 120
+VOZ_EDGE_EU = "eu-ES-AinhoaNeural"    # alternativa: eu-ES-AnderNeural (voz masculina)
+VOZ_EDGE_ES = "es-ES-ElviraNeural"    # alternativa: es-ES-AlvaroNeural
+VELOCIDAD_EDGE = "-10%"               # ritmo de edge-tts (negativo = mas lento)
+AHO_DIR = Path("AhoTTS/bin")          # carpeta bin de AhoTTS compilado (tts + data_tts)
+AHO_VELOCIDAD = 100                   # -Speed de AhoTTS (100 normal; menos = mas lento)
 BITRATE = "96k"
 HZ = 24000
 CARPETA_VOCES = Path("voces")
@@ -114,8 +121,46 @@ class PiperPhoonnx:
                 voz.synthesize_wav(texto, w, syn_config=cfg)
 
 
+class EdgeTTS:
+    """Voces neuronales de Microsoft via edge-tts (necesita internet; pip install edge-tts)."""
+    def sintetizar(self, idioma, texto, destino):
+        try:
+            import asyncio, edge_tts
+        except ImportError:
+            sys.exit("Falta edge-tts: pip install edge-tts")
+        voz = VOZ_EDGE_EU if idioma == "EU" else VOZ_EDGE_ES
+        asyncio.run(edge_tts.Communicate(texto, voz, rate=VELOCIDAD_EDGE).save(str(destino)))
+
+
+class Aho:
+    """AhoTTS (UPV/EHU) solo para euskera. Compilar antes: sh script_compile_all_linux.sh"""
+    def __init__(self):
+        if not (AHO_DIR / "tts").exists():
+            sys.exit(f"No se encuentra {AHO_DIR}/tts (compila AhoTTS y ajusta AHO_DIR)")
+
+    def sintetizar(self, idioma, texto, destino):
+        (AHO_DIR / "input.txt").write_bytes(texto.encode("cp1252", errors="replace"))
+        run(["./tts", f"-Speed={AHO_VELOCIDAD}", "-Lang=eu"], cwd=str(AHO_DIR))
+        shutil.copy(AHO_DIR / "Output.wav", destino)
+
+
+class Mixto:
+    def __init__(self, es, eu):
+        self.es, self.eu = es, eu
+
+    def sintetizar(self, idioma, texto, destino):
+        (self.es if idioma == "ES" else self.eu).sintetizar(idioma, texto, destino)
+
+
 def crear_motor(nombre):
-    return Espeak() if nombre == "espeak" else PiperPhoonnx()
+    if nombre == "espeak":
+        return Espeak()
+    if nombre == "edge":
+        e = EdgeTTS()
+        return Mixto(e, e)
+    if nombre == "aho":
+        return Mixto(PiperPhoonnx(), Aho())
+    return PiperPhoonnx()
 
 
 # ---------------- Audio ----------------
@@ -139,7 +184,7 @@ def silencio(seg, destino):
 def trozo_voz(motor, nombre_motor, idioma, texto):
     """WAV normalizado de una frase; cacheado por (motor, idioma, texto, velocidad)."""
     CARPETA_CACHE.mkdir(exist_ok=True)
-    clave = f"{nombre_motor}|{idioma}|{texto}|{VELOCIDAD_EU}|{VELOCIDAD_ES}|{VOZ_ES}|{VOZ_EU}"
+    clave = f"{nombre_motor}|{idioma}|{texto}|{VELOCIDAD_EU}|{VELOCIDAD_ES}|{VOZ_ES}|{VOZ_EU}|{VOZ_EDGE_EU}|{VOZ_EDGE_ES}|{VELOCIDAD_EDGE}|{AHO_VELOCIDAD}"
     h = hashlib.sha1(clave.encode()).hexdigest()[:16]
     final = CARPETA_CACHE / f"{h}.wav"
     if not final.exists():
@@ -150,7 +195,7 @@ def trozo_voz(motor, nombre_motor, idioma, texto):
     return final
 
 
-def generar(guion, nombre_motor, solo_medir):
+def generar(guion, nombre_motor, solo_medir, salida_forzada=None):
     pasos = parsear(guion)
     n_voz = sum(1 for p in pasos if p[0] == "voz")
     pausas = sum(p[2] for p in pasos if p[0] == "pausa")
@@ -176,7 +221,8 @@ def generar(guion, nombre_motor, solo_medir):
     CARPETA_SALIDA.mkdir(exist_ok=True)
     txt = CARPETA_CACHE / "lista.txt"
     txt.write_text("".join(f"file '{p.resolve()}'\n" for p in lista), encoding="utf-8")
-    salida = CARPETA_SALIDA / (Path(guion).stem.split("-")[0] + ".mp3")
+    salida = Path(salida_forzada) if salida_forzada else CARPETA_SALIDA / (Path(guion).stem.split("-")[0] + ".mp3")
+    salida.parent.mkdir(parents=True, exist_ok=True)
     run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(txt),
          "-c:a", "libmp3lame", "-b:a", BITRATE, "-ar", str(HZ), "-ac", "1", str(salida)])
     print(f"-> {salida}  duracion {int(total//60)}:{int(total%60):02d}  ({salida.stat().st_size/1e6:.1f} MB)")
@@ -185,17 +231,21 @@ def generar(guion, nombre_motor, solo_medir):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("guiones", nargs="+")
-    ap.add_argument("--motor", choices=["piper", "espeak"], default="piper")
+    ap.add_argument("--motor", choices=["piper", "espeak", "edge", "aho"], default="piper")
     ap.add_argument("--solo-medir", action="store_true")
+    ap.add_argument("--voz-edge-eu", default=None, help="p. ej. eu-ES-AnderNeural")
+    ap.add_argument("--salida", default=None, help="ruta del MP3 (solo con un guion)")
     ap.add_argument("--bitrate", default=None, help="p. ej. 48k (por defecto 96k)")
     a = ap.parse_args()
+    global BITRATE, VOZ_EDGE_EU
     if a.bitrate:
-        global BITRATE
         BITRATE = a.bitrate
+    if a.voz_edge_eu:
+        VOZ_EDGE_EU = a.voz_edge_eu
     if not shutil.which("ffmpeg") and not a.solo_medir:
         sys.exit("Falta ffmpeg")
     for g in a.guiones:
-        generar(g, a.motor, a.solo_medir)
+        generar(g, a.motor, a.solo_medir, a.salida if len(a.guiones) == 1 else None)
 
 
 if __name__ == "__main__":

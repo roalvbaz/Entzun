@@ -1,0 +1,74 @@
+name: Generar audio
+
+# Se lanza a mano: GitHub -> Actions -> "Generar audio" -> Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "muestra = 4 voces de euskera en un audio corto; episodios = los 24 MP3"
+        type: choice
+        options: [muestra, episodios]
+        default: muestra
+      motor:
+        description: "Solo para 'episodios': motor de voz"
+        type: choice
+        options: [aho, edge, piper]
+        default: aho
+      voz_edge_eu:
+        description: "Solo para motor edge: voz de euskera"
+        type: choice
+        options: [eu-ES-AinhoaNeural, eu-ES-AnderNeural]
+        default: eu-ES-AinhoaNeural
+
+permissions:
+  contents: write
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng cmake g++ make
+          pip install -q piper-tts phoonnx edge-tts
+
+      - name: Compilar AhoTTS (UPV/EHU, CC BY-SA)
+        run: |
+          git clone --depth 1 https://github.com/aholab/AhoTTS.git AhoTTS
+          cd AhoTTS && bash script_compile_all_linux.sh
+          ls bin
+
+      - name: Muestras de voz
+        if: ${{ inputs.modo == 'muestra' }}
+        continue-on-error: true
+        run: |
+          mkdir -p muestras
+          M=herramientas/muestra.md
+          python generar_podcast.py $M --motor aho   --salida muestras/aho.mp3          || echo "FALLO aho"
+          python generar_podcast.py $M --motor edge  --salida muestras/edge-ainhoa.mp3  --voz-edge-eu eu-ES-AinhoaNeural || echo "FALLO ainhoa"
+          python generar_podcast.py $M --motor edge  --salida muestras/edge-ander.mp3   --voz-edge-eu eu-ES-AnderNeural  || echo "FALLO ander"
+          python generar_podcast.py $M --motor piper --salida muestras/piper-dii.mp3    || echo "FALLO piper"
+          ls -la muestras
+
+      - name: Episodios
+        if: ${{ inputs.modo == 'episodios' }}
+        run: |
+          python generar_podcast.py guiones/*.md --motor "${{ inputs.motor }}" --voz-edge-eu "${{ inputs.voz_edge_eu }}"
+          ls -la podcasts
+
+      - name: Subir resultado al repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add muestras podcasts
+          git diff --cached --quiet && { echo "Nada que subir"; exit 0; }
+          git commit -m "Audio generado (${{ inputs.modo }}, motor ${{ inputs.motor }})"
+          git push
