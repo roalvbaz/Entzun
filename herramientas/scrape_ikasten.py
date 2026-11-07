@@ -43,7 +43,7 @@ def login(page):
             if r.request.method in ("POST", "PUT") or "login" in r.url or "session" in r.url or "token" in r.url else None)
     page.goto(HOME, wait_until="networkidle")
     page.wait_for_timeout(1500)
-    for paso in range(4):                       # a veces la API responde 403 a la primera: se reintenta
+    for paso in range(1):                       # un solo intento: evitar bloqueos de cuenta
         if not hay_password(page):
             page.goto(HOME, wait_until="networkidle")
             page.wait_for_timeout(1500)
@@ -82,6 +82,43 @@ def login(page):
     return False
 
 
+def login_hiru(page):
+    """Un solo intento de entrar por https://www.hiru.eus/es/entra y luego abrir ikasten con esa sesion.
+    No imprime nada del contenido tras entrar (los logs del repositorio son publicos)."""
+    def ver(r):
+        if r.request.method in ("POST", "PUT"):
+            print("   [red]", r.request.method, r.status, r.url.split("?")[0][:110])
+    page.on("response", ver)
+    page.goto("https://www.hiru.eus/es/entra", wait_until="networkidle")
+    page.wait_for_timeout(2000)
+    for txt in ("Aceptar", "Onartu", "Aceptar todas", "Accept"):          # aviso de cookies
+        b = page.query_selector(f"button:has-text('{txt}')")
+        if b and b.is_visible():
+            b.click(); page.wait_for_timeout(800); break
+    estructura(page, "hiru: antes de entrar")
+    formulario = page.locator("form:has(input[type=password])").first
+    if formulario.count() == 0:
+        print("   no hay formulario con contrasena en esta pagina")
+        return False
+    usuario = formulario.locator("input[type=email], input[type=text]").first
+    usuario.click(); usuario.fill(USER)
+    formulario.locator("input[type=password]").first.fill(PASS)
+    print(f"   usuario con {len(USER)} caracteres, clave con {len(PASS)} caracteres")
+    enviar = formulario.locator("button[type=submit], input[type=submit], button").first
+    enviar.click()
+    page.wait_for_load_state("networkidle")
+    page.wait_for_timeout(5000)
+    print("   url tras entrar en hiru:", page.url, "| sigue pidiendo contrasena:", hay_password(page))
+    enlaces = page.eval_on_selector_all("a[href]", "els => [...new Set(els.map(e => e.href))]")
+    for u in enlaces:
+        if any(k in u for k in ("ikasten", "siacco", "e-ikasi", "ikastaro", "curso", "course")):
+            print("   enlace:", u[:140])
+    page.goto(HOME, wait_until="networkidle")
+    page.wait_for_timeout(3000)
+    print("   ikasten con esa sesion:", page.url)
+    return dentro(page)
+
+
 def texto(page):
     partes = []
     for fr in page.frames:
@@ -107,7 +144,9 @@ def main():
         page.goto(HOME, wait_until="networkidle")
         page.wait_for_timeout(1500)
         estructura(page, "antes de entrar")
-        if not login(page):
+        entrada = os.environ.get("ENTRADA", "ikasten")
+        ok = login_hiru(page) if entrada == "hiru" else login(page)
+        if not ok:
             estructura(page, "login FALLIDO")
             page.screenshot(path=str(SALIDA / "login-fallido.png"))
             nav.close()

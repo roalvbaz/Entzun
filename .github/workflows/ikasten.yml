@@ -9,6 +9,11 @@ on:
         description: "Episodios a leer, separados por espacios (vacio = los 24)"
         type: string
         default: "1 2"
+      entrada:
+        description: "Por donde iniciar sesion"
+        type: choice
+        options: [hiru, ikasten]
+        default: hiru
 
 permissions:
   contents: read
@@ -30,6 +35,7 @@ jobs:
         env:
           IKASTEN_USER: ${{ secrets.IKASTEN_USER }}
           IKASTEN_PASS: ${{ secrets.IKASTEN_PASS }}
+          ENTRADA: ${{ inputs.entrada }}
         run: python herramientas/scrape_ikasten.py ${{ inputs.episodios }}
       - name: Guardar texto como artefacto (1 dia)
         if: always()
