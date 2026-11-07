@@ -1,14 +1,14 @@
 # Unidades del curso de Hiru (Ikasten)
 
 Fuente: https://www.hiru.eus/es/e-ikasi/idiomas/ikasten
-Lista copiada a mano por el usuario (no se pudo acceder desde la sesión). Solo títulos; no se copia contenido de Hiru.
-Un episodio de podcast por unidad → 24 episodios. Los títulos van tal cual se recibieron.
+Lista copiada a mano por el usuario y contrastada con las páginas guardadas de ikasten.siacco.com (la plataforma de Hiru). Esas páginas solo traen el índice; el contenido de las lecciones (Hiztegia / Jakin / Egin) no se guardó. El curso se llama "Ortografia eta ahoskera (1/3)". Solo títulos; no se copia contenido de Hiru.
+Un episodio de podcast por unidad → 24 episodios. Los títulos van tal cual aparecen en la plataforma.
 
 | Ep | Bloque | Unidad |
 |----|--------|--------|
 | 01 | I | Ni Amaia naiz |
 | 02 | I | Auto hau berria da |
-| 03 | I | ¿Ni zara zu? Ni Xabi Naiz, Zarauzkoa |
+| 03 | I | Nor zara zu? Ni Xabi naiz, Zarauzkoa |
 | 04 | I | Errepasoa I |
 | 05 | II | Nolakoa da autoa? |
 | 06 | II | Amaia Donostian bizi da |
@@ -22,7 +22,7 @@ Un episodio de podcast por unidad → 24 episodios. Los títulos van tal cual se
 | 14 | IV | Amaiak liburu bat dauka |
 | 15 | IV | Neska horrek ez dauka libururik |
 | 16 | IV | Errepasoa IV |
-| 17 | V | Amaia dendera doa |
+| 17 | V | Amaia dendara doa |
 | 18 | V | Amaia amonarengana joan da |
 | 19 | V | Amaia amonaren etxetik dator |
 | 20 | V | Errepasoa V |

@@ -46,7 +46,7 @@ Estructura de cada episodio: bienvenida → frases nuevas (oír, explicar, repet
 Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótico); edge-tts (voces Microsoft `eu-ES-AinhoaNeural`/`AnderNeural`, necesita internet, no oficial).
 
 ## Próximos pasos
-1. **Probar la generación** del episodio 1 (Docker o WSL) y arreglar errores. Verificar la API real de phoonnx y el comando de descarga de voces de Piper.
+1. (Parcial: `generar_podcast.py` reescrito, guion 01 en `guiones/01-ni-amaia-naiz.md`, probado con espeak-ng → 12:13; falta probar Piper+phoonnx con voces reales, ver INSTALAR.md) **Probar la generación** del episodio 1 (Docker o WSL) y arreglar errores. Verificar la API real de phoonnx y el comando de descarga de voces de Piper.
 2. Medir duración; ajustar guion o `VELOCIDAD_EU` para llegar a ~10 min.
 3. ~~Conseguir la lista de unidades de Hiru~~ → hecho: `docs/unidades-hiru.md` (24 episodios, un episodio por unidad).
 4. Escribir el resto de guiones (mismo formato y estructura).
