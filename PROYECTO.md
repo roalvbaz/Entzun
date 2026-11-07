@@ -64,7 +64,7 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 - Mantener los MP3 ligeros (96 kbps mono ≈ 7 MB por episodio de 10 min) por el límite de GitHub Pages.
 
 ## Estado de los audios
-- `podcasts/01-24.mp3` son de PRUEBA (voz robótica espeak-ng, 48 kbps, 85 MB en total). Sustituir por Piper+phoonnx cuando haya acceso a Hugging Face: `python generar_podcast.py guiones/*.md` (sin `--motor espeak`).
+- `podcasts/01-24.mp3` DEFINITIVOS (96 kbps, ~158 MB): euskera con **StyleTTS2-eu, voz Antton** (HiTZ/UPV-EHU, Apache-2.0) con subida de tono al final de las preguntas (`herramientas/entonacion.py`); español con Piper `es_ES-davefx-medium`. Se regeneran con GitHub Actions → *Generar audio* → modo `episodios`, motor `styletts`, preguntas `subida`.
 
 ## Niveles (playlists)
 - La app se llama **Entzun**. `episodios.json` tiene `niveles[]`; cada nivel es una playlist con `id`, `nombre`, `descripcion`, `color` y `episodios[]`. Hoy solo existe **A1** (24 episodios). Para añadir A2: añadir otro objeto en `niveles` con sus episodios (`audio`: `podcasts/A2-NN.mp3` por ejemplo).
