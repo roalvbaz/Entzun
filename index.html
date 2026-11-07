@@ -8,109 +8,217 @@
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Euskera">
-<meta name="theme-color" content="#1b5e20">
+<meta name="theme-color" content="#121212">
 <style>
-:root{--fondo:#fff8e7;--texto:#1c1c1c;--verde:#1b5e20;--verde2:#2e7d32;--gris:#6b6b6b;--tarjeta:#fff;--borde:#d9cfae}
-@media (prefers-color-scheme:dark){:root{--fondo:#141a14;--texto:#f3f0e4;--verde:#66bb6a;--verde2:#81c784;--gris:#b0b0a0;--tarjeta:#1f281f;--borde:#3a463a}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--fondo);color:var(--texto);font:24px/1.35 -apple-system,system-ui,sans-serif;padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
-h1{font-size:30px;margin:8px 0 16px}
-button{font:inherit;cursor:pointer;border:0;border-radius:20px;min-height:72px;padding:12px 20px;background:var(--verde);color:#fff;font-weight:700}
-@media (prefers-color-scheme:dark){button{color:#0c1a0c}}
-button:active{transform:scale(.98)}
-button.sec{background:var(--tarjeta);color:var(--texto);border:3px solid var(--borde)}
-#continuar{width:100%;min-height:110px;font-size:32px;margin-bottom:20px}
-#player{display:none;background:var(--tarjeta);border:3px solid var(--borde);border-radius:24px;padding:16px;margin-bottom:20px}
-#player.on{display:block}
-#titulo{font-weight:700;font-size:28px;margin:0 0 4px}
-#tiempo{color:var(--gris);margin-bottom:8px}
-input[type=range]{width:100%;height:48px;accent-color:var(--verde)}
-.fila{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:10px;margin-top:10px}
-.fila2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-.ep{display:flex;align-items:center;gap:10px;background:var(--tarjeta);border:3px solid var(--borde);border-radius:20px;padding:12px 16px;margin-bottom:10px}
-.ep.actual{border-color:var(--verde)}
-.ep .t{flex:1;text-align:left;background:none;color:var(--texto);padding:0;min-height:56px;border-radius:0;font-weight:600}
-.ep .t small{display:block;font-weight:400;color:var(--gris);font-size:20px}
-.ep.no{opacity:.55}
-.ep .d{min-height:56px;padding:6px 12px;font-size:20px}
-h2{font-size:24px;color:var(--gris);margin:20px 0 8px}
-#aviso{color:var(--gris);font-size:20px;margin:8px 0}
+:root{
+  --bg:#121212; --panel:#181818; --fila:#222; --fila2:#2c2c2c;
+  --texto:#fff; --suave:#b3b3b3; --verde:#1ed760; --verde-osc:#169c46;
+  --c0:#2d46b9; --c1:#8d67ab; --c2:#e8115b; --c3:#1e8a6a; --c4:#e8742a; --c5:#477d95;
+  --mini:92px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--texto);
+  font:500 20px/1.3 "Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  padding-bottom:calc(var(--mini) + 24px + env(safe-area-inset-bottom));
+  -webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;padding:0}
+svg{display:block;fill:currentColor}
+:focus-visible{outline:3px solid var(--verde);outline-offset:2px}
+
+/* ---------- Cabecera + continuar ---------- */
+header{padding:calc(20px + env(safe-area-inset-top)) 20px 8px;
+  background:linear-gradient(#2a3a30 0,#121212 340px)}
+h1{font-size:32px;font-weight:800;margin:0 0 18px;letter-spacing:-.5px}
+#continuar{display:flex;align-items:center;gap:16px;width:100%;text-align:left;
+  background:var(--fila2);border-radius:14px;overflow:hidden;min-height:96px;padding-right:12px}
+#continuar:disabled{opacity:.5}
+#continuar .portada{width:96px;height:96px;border-radius:0;font-size:40px}
+#continuar .txt{flex:1;min-width:0}
+#continuar .etq{color:var(--suave);font-size:17px;font-weight:600}
+#continuar .tit{font-size:22px;font-weight:700;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.play-verde{width:64px;height:64px;border-radius:50%;background:var(--verde);color:#000;display:grid;place-items:center;flex:none}
+.play-verde svg{width:30px;height:30px}
+
+/* ---------- Lista ---------- */
+main{padding:8px 20px 0}
+h2{font-size:24px;font-weight:800;margin:28px 0 10px;letter-spacing:-.3px}
+h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
+.ep{display:flex;align-items:center;gap:14px;border-radius:12px;padding:8px;margin:0 -8px}
+.ep:active{background:var(--fila)}
+.ep.actual .tit{color:var(--verde)}
+.ep.no{opacity:.45}
+.portada{width:72px;height:72px;border-radius:8px;flex:none;display:grid;place-items:center;
+  font-weight:800;font-size:30px;letter-spacing:-1px;color:#fff;background:var(--c0);
+  box-shadow:inset 0 -40px 40px -30px rgba(0,0,0,.35)}
+.b0{background:var(--c0)}.b1{background:var(--c1)}.b2{background:var(--c2)}
+.b3{background:var(--c3)}.b4{background:var(--c4)}.b5{background:var(--c5)}
+.ep .abrir{flex:1;min-width:0;text-align:left;min-height:72px;display:flex;flex-direction:column;justify-content:center}
+.ep .tit{font-size:20px;font-weight:700;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.ep .sub{color:var(--suave);font-size:17px;font-weight:500;margin-top:2px}
+.ep .prog{height:4px;background:#444;border-radius:2px;margin-top:6px;overflow:hidden}
+.ep .prog i{display:block;height:100%;background:var(--verde)}
+.ep .bajar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:var(--suave);flex:none}
+.ep .bajar svg{width:28px;height:28px}
+.ep .bajar.ok{color:var(--verde)}
+#aviso{color:var(--suave);font-size:18px;padding:0 20px}
+
+/* ---------- Mini reproductor ---------- */
+#mini{position:fixed;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));height:var(--mini);
+  background:#3a3a3a;border-radius:16px;display:none;align-items:center;gap:12px;padding:10px 12px 10px 10px;
+  box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:5;overflow:hidden}
+#mini.on{display:flex}
+#mini .portada{width:68px;height:68px}
+#mini .abrir{flex:1;min-width:0;text-align:left;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+#mini .tit{font-size:19px;font-weight:700;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#mini .sub{color:#d0d0d0;font-size:16px}
+#mini .play-blanco{width:68px;height:68px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;flex:none}
+#mini .play-blanco svg{width:32px;height:32px}
+#mini .linea{position:absolute;left:12px;right:12px;bottom:0;height:3px;background:rgba(255,255,255,.25)}
+#mini .linea i{display:block;height:100%;background:#fff}
+
+/* ---------- Reproductor completo ---------- */
+#full{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;
+  background:linear-gradient(var(--tinte,#2d46b9) 0,#121212 78%);
+  padding:calc(12px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
+  transform:translateY(100%);visibility:hidden;transition:transform .28s ease,visibility 0s .28s;overflow-y:auto}
+#full.on{transform:none;visibility:visible;transition:transform .28s ease}
+@media (prefers-reduced-motion:reduce){#full,#full.on{transition:none}}
+#cerrar{width:64px;height:64px;display:grid;place-items:center;margin-left:-12px}
+#cerrar svg{width:36px;height:36px}
+#full .portada-g{width:min(100%,44vh);height:min(calc(100vw - 48px),44vh);margin:8px auto 24px;border-radius:12px;display:grid;place-items:center;
+  font-size:clamp(90px,34vw,190px);font-weight:800;letter-spacing:-4px;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+#f-tit{font-size:28px;font-weight:800;margin:0;letter-spacing:-.4px}
+#f-sub{color:var(--suave);font-size:19px;margin:4px 0 14px}
+#barra{width:100%;height:44px;-webkit-appearance:none;appearance:none;background:transparent;margin:0}
+#barra::-webkit-slider-runnable-track{height:8px;border-radius:4px;background:linear-gradient(to right,#fff var(--p,0%),rgba(255,255,255,.3) var(--p,0%))}
+#barra::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;margin-top:-10px}
+#barra::-moz-range-track{height:8px;border-radius:4px;background:rgba(255,255,255,.3)}
+#barra::-moz-range-progress{height:8px;border-radius:4px;background:#fff}
+#barra::-moz-range-thumb{width:28px;height:28px;border:0;border-radius:50%;background:#fff}
+.tiempos{display:flex;justify-content:space-between;color:var(--suave);font-size:18px;margin-top:-4px}
+.ctrl{display:flex;align-items:center;justify-content:space-between;margin:12px 0 4px}
+.ctrl button{flex:none;width:56px;height:56px;display:grid;place-items:center;border-radius:50%;position:relative}
+.ctrl svg{width:34px;height:34px}
+.ctrl .salto{width:64px;height:64px}.ctrl .salto svg{width:56px;height:56px}
+.ctrl .salto b{position:absolute;font-size:16px;font-weight:800;top:50%;left:50%;transform:translate(-50%,-44%)}
+.ctrl .grande{width:88px;height:88px;background:#fff;color:#000}
+.ctrl .grande svg{width:44px;height:44px}
+.ctrl button:disabled{opacity:.3}
+.ctrl button:active{transform:scale(.94)}
 </style>
 </head>
 <body>
-<h1>🎧 Euskera paseando</h1>
-<button id="continuar">▶ Continuar</button>
-<section id="player" aria-label="Reproductor">
-  <p id="titulo"></p>
-  <div id="tiempo">0:00 / 0:00</div>
+<header>
+  <h1 id="saludo">Euskera paseando</h1>
+  <button id="continuar" aria-label="Continuar"></button>
+</header>
+<div id="aviso"></div>
+<main id="lista"></main>
+
+<div id="mini" role="group" aria-label="Reproductor">
+  <div class="portada" id="m-por"></div>
+  <button class="abrir" id="m-abrir" aria-label="Abrir reproductor"><span class="tit" id="m-tit"></span><span class="sub" id="m-sub"></span></button>
+  <button class="play-blanco" id="m-play" aria-label="Reproducir o pausar"></button>
+  <div class="linea"><i id="m-lin" style="width:0"></i></div>
+</div>
+
+<section id="full" aria-label="Reproduciendo">
+  <button id="cerrar" aria-label="Cerrar reproductor"><svg viewBox="0 0 24 24"><path d="M7.4 8.6 12 13.2l4.6-4.6L18 10l-6 6-6-6z"/></svg></button>
+  <div class="portada-g portada" id="f-por"></div>
+  <h3 id="f-tit"></h3>
+  <p id="f-sub"></p>
   <input id="barra" type="range" min="0" max="1000" value="0" aria-label="Posición">
-  <div class="fila">
-    <button id="atras" class="sec" aria-label="Atrás 15 segundos">↺ 15</button>
-    <button id="play" aria-label="Reproducir o pausar">▶</button>
-    <button id="adelante" class="sec" aria-label="Adelante 15 segundos">15 ↻</button>
-  </div>
-  <div class="fila2">
-    <button id="anterior" class="sec">⏮ Anterior</button>
-    <button id="siguiente" class="sec">Siguiente ⏭</button>
+  <div class="tiempos"><span id="t-act">0:00</span><span id="t-tot">0:00</span></div>
+  <div class="ctrl">
+    <button id="anterior" aria-label="Episodio anterior"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+    <button id="atras" class="salto" aria-label="Atrás 15 segundos"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg><b>15</b></button>
+    <button id="play" class="grande" aria-label="Reproducir o pausar"></button>
+    <button id="adelante" class="salto" aria-label="Adelante 15 segundos"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z"/></svg><b>15</b></button>
+    <button id="siguiente" aria-label="Episodio siguiente"><svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg></button>
   </div>
 </section>
-<div id="aviso"></div>
-<h2>Episodios</h2>
-<div id="lista"></div>
+
 <audio id="audio" preload="metadata" playsinline></audio>
 <script>
 "use strict";
 const $=id=>document.getElementById(id);
 const audio=$("audio");
 const KEY="euskera-estado-v1";
-let eps=[], estado={actual:null,pos:{},hecho:{}}, cur=null, ultimoGuardado=0;
+const ICO={
+  play:'<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>',
+  pausa:'<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>',
+  bajar:'<svg viewBox="0 0 24 24"><path d="M12 3v10.2l3.6-3.6L17 11l-5 5-5-5 1.4-1.4 3.6 3.6V3zM5 18h14v2H5z"/></svg>',
+  ok:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 15-5-5 1.4-1.4L10 14.2l7.6-7.6L19 8z"/></svg>'
+};
+const COLORES=["#2d46b9","#8d67ab","#e8115b","#1e8a6a","#e8742a","#477d95"];
+let eps=[], estado={actual:null,pos:{},hecho:{}}, cur=null, ultimoGuardado=0, arrastrando=false;
 
 try{Object.assign(estado,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
 const guardar=()=>{try{localStorage.setItem(KEY,JSON.stringify(estado))}catch(e){}};
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
 const disp=e=>e&&e.disponible;
+const idxBloque=e=>Math.max(0,["I","II","III","IV","V","VI"].indexOf(e.bloque));
+const portada=(el,e)=>{el.className=el.className.replace(/\bb\d\b/g,"").trim()+" b"+idxBloque(e);el.textContent=e.id};
+
+function saludo(){const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"}
 
 async function init(){
+  $("saludo").textContent=saludo();
   try{eps=(await (await fetch("episodios.json")).json()).episodios}catch(e){
     try{eps=JSON.parse(localStorage.getItem("eps-cache")||"[]")}catch(_){}
-    if(!eps.length){$("aviso").textContent="No se pudo cargar la lista.";}
+    if(!eps.length)$("aviso").textContent="No se pudo cargar la lista de episodios.";
   }
-  if(eps.length) try{localStorage.setItem("eps-cache",JSON.stringify(eps))}catch(e){}
+  if(eps.length)try{localStorage.setItem("eps-cache",JSON.stringify(eps))}catch(e){}
+  $("play").innerHTML=ICO.play;$("m-play").innerHTML=ICO.play;
   pintar();
   const ult=eps.find(e=>e.id===estado.actual&&disp(e));
-  if(ult) cargar(ult,false);
-  if(!eps.some(disp)) $("aviso").textContent="Todavía no hay episodios con audio.";
+  if(ult)cargar(ult,false);
+  if(eps.length&&!eps.some(disp))$("aviso").textContent="Todavía no hay episodios con audio.";
 }
 
-function siguienteDe(id){return eps.find(e=>e.id>id&&disp(e))}
-function anteriorDe(id){return [...eps].reverse().find(e=>e.id<id&&disp(e))}
+const siguienteDe=id=>eps.find(e=>e.id>id&&disp(e));
+const anteriorDe=id=>[...eps].reverse().find(e=>e.id<id&&disp(e));
 function paraContinuar(){
-  const enCurso=eps.find(e=>disp(e)&&!estado.hecho[e.id]&&(estado.pos[e.id]||0)>5);
-  return enCurso||eps.find(e=>disp(e)&&!estado.hecho[e.id])||eps.find(disp);
+  return eps.find(e=>disp(e)&&!estado.hecho[e.id]&&(estado.pos[e.id]||0)>5)
+      ||eps.find(e=>disp(e)&&!estado.hecho[e.id])||eps.find(disp);
 }
 
 function pintar(){
-  const c=paraContinuar();
-  $("continuar").textContent=c?"▶ Continuar: "+c.id+". "+c.titulo:"Sin episodios aún";
-  $("continuar").disabled=!c;
+  const c=paraContinuar(), b=$("continuar");
+  b.disabled=!c;
+  if(c){
+    const enCurso=(estado.pos[c.id]||0)>5;
+    b.innerHTML=`<div class="portada b${idxBloque(c)}">${c.id}</div><div class="txt"><div class="etq">${enCurso?"Seguir escuchando":"Empezar"}</div><div class="tit"></div></div><div class="play-verde">${ICO.play}</div>`;
+    b.querySelector(".tit").textContent=c.titulo;
+  }else b.innerHTML='<div class="txt" style="padding:20px"><div class="tit">Sin episodios todavía</div></div>';
   const l=$("lista");l.innerHTML="";
+  let bloque=null;
   for(const e of eps){
+    if(e.bloque!==bloque){
+      bloque=e.bloque;
+      const hechos=eps.filter(x=>x.bloque===bloque&&estado.hecho[x.id]).length, tot=eps.filter(x=>x.bloque===bloque).length;
+      const h=document.createElement("h2");h.innerHTML=`Bloque ${bloque}<small>${hechos} de ${tot}</small>`;l.appendChild(h);
+    }
     const d=document.createElement("div");
     d.className="ep"+(cur&&cur.id===e.id?" actual":"")+(disp(e)?"":" no");
-    const b=document.createElement("button");b.className="t";
-    const estadoTxt=!disp(e)?"Próximamente":estado.hecho[e.id]?"✅ Terminado":(estado.pos[e.id]>5?"En curso: "+fmt(estado.pos[e.id]):"");
-    b.innerHTML=`${e.id}. <span></span><small>${estadoTxt}</small>`;
-    b.querySelector("span").textContent=e.titulo;
-    b.disabled=!disp(e);
-    b.onclick=()=>{cargar(e,true)};
-    d.appendChild(b);
+    const por=document.createElement("div");por.className="portada";portada(por,e);d.appendChild(por);
+    const a=document.createElement("button");a.className="abrir";a.disabled=!disp(e);
+    const pos=estado.pos[e.id]||0;
+    const sub=!disp(e)?"Próximamente":estado.hecho[e.id]?"Terminado":(pos>5?"Por el minuto "+Math.floor(pos/60):"Episodio "+e.id);
+    a.innerHTML='<span class="tit"></span><span class="sub"></span>';
+    a.querySelector(".tit").textContent=e.titulo;a.querySelector(".sub").textContent=sub;
+    if(disp(e)&&pos>5&&!estado.hecho[e.id]&&e.dur){const pr=document.createElement("div");pr.className="prog";pr.innerHTML=`<i style="width:${Math.min(100,pos/e.dur*100)}%"></i>`;a.appendChild(pr)}
+    a.onclick=()=>cargar(e,true);
+    d.appendChild(a);
     if(disp(e)&&"caches" in window){
-      const g=document.createElement("button");g.className="sec d";g.textContent="⬇";
-      g.title="Guardar para escuchar sin datos";g.setAttribute("aria-label","Guardar episodio para escuchar sin datos");
+      const g=document.createElement("button");g.className="bajar";g.innerHTML=ICO.bajar;
+      g.setAttribute("aria-label","Guardar episodio para escuchar sin datos");
       g.onclick=()=>descargar(e,g);
       d.appendChild(g);
-      caches.open("audio-v1").then(ca=>ca.match(e.audio)).then(r=>{if(r)g.textContent="✓"});
+      caches.open("audio-v1").then(ca=>ca.match(e.audio)).then(r=>{if(r){g.innerHTML=ICO.ok;g.classList.add("ok")}}).catch(()=>{});
     }
     l.appendChild(d);
   }
@@ -118,17 +226,21 @@ function pintar(){
 
 async function descargar(e,btn){
   btn.textContent="…";
-  try{const ca=await caches.open("audio-v1");const r=await fetch(e.audio);if(!r.ok)throw 0;await ca.put(e.audio,r);btn.textContent="✓"}
-  catch(_){btn.textContent="⚠"}
+  try{const ca=await caches.open("audio-v1");const r=await fetch(e.audio);if(!r.ok)throw 0;await ca.put(e.audio,r);btn.innerHTML=ICO.ok;btn.classList.add("ok")}
+  catch(_){btn.textContent="Error"}
 }
 
 function cargar(e,reproducir){
   cur=e;estado.actual=e.id;guardar();
   audio.src=e.audio;
   const pos=estado.hecho[e.id]?0:(estado.pos[e.id]||0);
-  audio.addEventListener("loadedmetadata",function f(){audio.removeEventListener("loadedmetadata",f);if(pos>0&&pos<audio.duration-3)audio.currentTime=pos;},{once:true});
-  $("titulo").textContent=e.id+". "+e.titulo;
-  $("player").classList.add("on");
+  audio.addEventListener("loadedmetadata",()=>{if(pos>0&&pos<audio.duration-3)audio.currentTime=pos},{once:true});
+  $("m-tit").textContent=e.titulo;$("m-sub").textContent="Episodio "+e.id;
+  portada($("m-por"),e);portada($("f-por"),e);
+  $("f-tit").textContent=e.titulo;$("f-sub").textContent="Episodio "+e.id+" · Bloque "+e.bloque;
+  $("full").style.setProperty("--tinte",COLORES[idxBloque(e)]);
+  $("mini").classList.add("on");
+  $("anterior").disabled=!anteriorDe(e.id);$("siguiente").disabled=!siguienteDe(e.id);
   metadata();
   if(reproducir)audio.play().catch(()=>{});
   pintar();
@@ -138,37 +250,39 @@ function metadata(){
   if(!("mediaSession" in navigator)||!cur)return;
   navigator.mediaSession.metadata=new MediaMetadata({title:cur.titulo,artist:"Euskera paseando",album:"Episodio "+cur.id,artwork:[{src:"icons/icon-512.png",sizes:"512x512",type:"image/png"}]});
 }
-function saltar(s){audio.currentTime=Math.min(Math.max(0,audio.currentTime+s),audio.duration||1e9)}
-function sig(){const n=cur&&siguienteDe(cur.id);if(n)cargar(n,true)}
+const saltar=s=>{audio.currentTime=Math.min(Math.max(0,audio.currentTime+s),audio.duration||1e9)};
+const sig=()=>{const n=cur&&siguienteDe(cur.id);if(n)cargar(n,true)};
 function ant(){if(audio.currentTime>5){audio.currentTime=0;return}const p=cur&&anteriorDe(cur.id);if(p)cargar(p,true)}
-function toggle(){audio.paused?audio.play().catch(()=>{}):audio.pause()}
+const toggle=()=>{if(!cur){const c=paraContinuar();if(c)cargar(c,true);return}audio.paused?audio.play().catch(()=>{}):audio.pause()};
 
 if("mediaSession" in navigator){
-  const ms=navigator.mediaSession;
-  const set=(a,f)=>{try{ms.setActionHandler(a,f)}catch(e){}};
+  const ms=navigator.mediaSession,set=(a,f)=>{try{ms.setActionHandler(a,f)}catch(e){}};
   set("play",()=>audio.play());set("pause",()=>audio.pause());
   set("seekbackward",()=>saltar(-15));set("seekforward",()=>saltar(15));
   set("previoustrack",ant);set("nexttrack",sig);
   set("seekto",d=>{audio.currentTime=d.seekTime});
 }
 
-$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&cur.id===c.id)?audio.play().catch(()=>{}):cargar(c,true)};
-$("play").onclick=toggle;
-$("atras").onclick=()=>saltar(-15);
-$("adelante").onclick=()=>saltar(15);
-$("anterior").onclick=ant;
-$("siguiente").onclick=sig;
-let arrastrando=false;
-$("barra").oninput=()=>{arrastrando=true;if(audio.duration)$("tiempo").textContent=fmt($("barra").value/1000*audio.duration)+" / "+fmt(audio.duration)};
+$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&cur.id===c.id)?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
+const abrirFull=()=>$("full").classList.add("on"), cerrarFull=()=>$("full").classList.remove("on");
+$("m-abrir").onclick=abrirFull;$("cerrar").onclick=cerrarFull;
+$("play").onclick=toggle;$("m-play").onclick=toggle;
+$("atras").onclick=()=>saltar(-15);$("adelante").onclick=()=>saltar(15);
+$("anterior").onclick=ant;$("siguiente").onclick=sig;
+function pintarBarra(){const v=$("barra").value/10;$("barra").style.setProperty("--p",v+"%")}
+$("barra").oninput=()=>{arrastrando=true;pintarBarra();if(audio.duration)$("t-act").textContent=fmt($("barra").value/1000*audio.duration)};
 $("barra").onchange=()=>{if(audio.duration)audio.currentTime=$("barra").value/1000*audio.duration;arrastrando=false};
 
-audio.addEventListener("play",()=>{$("play").textContent="⏸";if("mediaSession" in navigator)navigator.mediaSession.playbackState="playing"});
-audio.addEventListener("pause",()=>{$("play").textContent="▶";if("mediaSession" in navigator)navigator.mediaSession.playbackState="paused";if(cur){estado.pos[cur.id]=audio.currentTime;guardar();pintar()}});
+const estadoPlay=p=>{$("play").innerHTML=p?ICO.pausa:ICO.play;$("m-play").innerHTML=p?ICO.pausa:ICO.play;
+  if("mediaSession" in navigator)navigator.mediaSession.playbackState=p?"playing":"paused"};
+audio.addEventListener("play",()=>estadoPlay(true));
+audio.addEventListener("pause",()=>{estadoPlay(false);if(cur){estado.pos[cur.id]=audio.currentTime;guardar();pintar()}});
+audio.addEventListener("loadedmetadata",()=>{if(cur&&isFinite(audio.duration)){cur.dur=audio.duration;$("t-tot").textContent=fmt(audio.duration)}});
 audio.addEventListener("timeupdate",()=>{
   if(!cur)return;
   if(!arrastrando){
-    $("tiempo").textContent=fmt(audio.currentTime)+" / "+fmt(audio.duration);
-    if(audio.duration)$("barra").value=audio.currentTime/audio.duration*1000;
+    $("t-act").textContent=fmt(audio.currentTime);
+    if(audio.duration){const v=audio.currentTime/audio.duration*1000;$("barra").value=v;pintarBarra();$("m-lin").style.width=v/10+"%"}
   }
   if(Date.now()-ultimoGuardado>3000){ultimoGuardado=Date.now();estado.pos[cur.id]=audio.currentTime;guardar()}
   if("mediaSession" in navigator&&isFinite(audio.duration)){try{navigator.mediaSession.setPositionState({duration:audio.duration,position:audio.currentTime,playbackRate:audio.playbackRate})}catch(e){}}
@@ -177,7 +291,7 @@ audio.addEventListener("ended",()=>{
   if(!cur)return;
   estado.hecho[cur.id]=true;estado.pos[cur.id]=0;guardar();
   const n=siguienteDe(cur.id);
-  if(n)cargar(n,true);else pintar();
+  if(n)cargar(n,true);else{estadoPlay(false);pintar()}
 });
 audio.addEventListener("error",()=>{$("aviso").textContent="No se pudo reproducir este episodio."});
 document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[cur.id]=audio.currentTime;guardar()}});
