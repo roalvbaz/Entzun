@@ -132,12 +132,80 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 #reproducir-nivel{display:flex;align-items:center;gap:14px;background:var(--verde);color:#000;font-weight:800;font-size:22px;border-radius:40px;padding:0 28px 0 12px;min-height:64px}
 #reproducir-nivel svg{width:34px;height:34px}
 .oculto{display:none!important}
+
+/* ---------- Usuarios ---------- */
+.pad{padding:calc(20px + env(safe-area-inset-top)) 20px 24px}
+.ayuda{color:var(--suave);font-size:18px;margin:0 0 18px;line-height:1.4}
+.usuario{display:flex;align-items:center;gap:14px;background:var(--fila);border-radius:14px;padding:10px;margin-bottom:10px}
+.usuario .elegir{flex:1;display:flex;align-items:center;gap:14px;text-align:left;min-height:64px;min-width:0}
+.avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:26px;color:#fff;flex:none}
+.usuario .nom{font-size:22px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.usuario .act{color:var(--verde);font-size:16px;font-weight:600}
+.usuario .borrar{color:var(--suave);font-size:17px;min-height:56px;padding:0 10px}
+#nuevo-nombre{width:100%;font:600 22px/1.2 inherit;font-family:inherit;color:#fff;background:var(--fila);border:2px solid #444;border-radius:14px;padding:16px;margin:4px 0 14px}
+#nuevo-nombre:focus{outline:none;border-color:var(--verde)}
+#colores{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+#colores button{width:52px;height:52px;border-radius:50%;border:3px solid transparent}
+#colores button[aria-checked=true]{border-color:#fff;box-shadow:0 0 0 3px #121212 inset}
+.btn-verde{display:block;width:100%;background:var(--verde);color:#000;font-weight:800;font-size:22px;border-radius:40px;min-height:64px;margin-bottom:12px}
+.btn-sec{display:block;width:100%;background:var(--fila2);color:#fff;font-weight:700;font-size:20px;border-radius:40px;min-height:60px;margin-bottom:12px}
+.btn-verde:disabled{opacity:.4}
+header .fila-sup{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+header .fila-sup h1{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#chip-usuario{width:60px;height:60px;border-radius:50%;font-weight:800;font-size:26px;color:#fff;flex:none;display:grid;place-items:center}
+
+/* ---------- Pestañas ---------- */
+.tabs{display:flex;gap:10px;padding:8px 20px 0;position:sticky;top:0;background:#121212;z-index:3}
+.tabs button{flex:1;min-height:56px;border-radius:30px;background:var(--fila);color:var(--suave);font-weight:700;font-size:20px}
+.tabs button.on{background:#fff;color:#000}
+
+/* ---------- Ejercicios ---------- */
+.mixta{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:linear-gradient(135deg,#1e8a6a,#2d46b9);border-radius:14px;padding:16px;margin:16px 0 4px;min-height:88px}
+.mixta .tit{font-size:22px;font-weight:800}.mixta .sub{font-size:17px;opacity:.9}
+.mixta .play-verde{width:56px;height:56px;margin-left:auto;background:#fff}
+.ep .ir{color:var(--suave);width:44px;height:44px;display:grid;place-items:center;flex:none}
+.ep .ir svg{width:30px;height:30px}
+.ej-top{display:flex;align-items:center;gap:14px;padding:calc(10px + env(safe-area-inset-top)) 16px 6px}
+#ej-cerrar{width:56px;height:56px;display:grid;place-items:center;flex:none}
+#ej-cerrar svg{width:32px;height:32px}
+.ej-prog{flex:1;height:8px;border-radius:4px;background:#333;overflow:hidden}
+.ej-prog i{display:block;height:100%;background:var(--verde);width:0;transition:width .25s}
+#ej-num{color:var(--suave);font-size:18px;min-width:58px;text-align:right}
+#ej-cuerpo{padding:12px 20px calc(24px + env(safe-area-inset-bottom))}
+.ej-tipo{color:var(--suave);font-size:17px;font-weight:600;margin:8px 0 6px}
+.ej-preg{font-size:28px;font-weight:800;line-height:1.25;margin:0 0 8px;letter-spacing:-.3px}
+.ej-pista{color:var(--suave);font-size:19px;margin:0 0 14px}
+.ej-op{display:block;width:100%;text-align:left;background:var(--fila);border:3px solid transparent;border-radius:14px;padding:16px 18px;margin-bottom:12px;font-size:22px;font-weight:600;min-height:72px;line-height:1.25}
+.ej-op:active{background:var(--fila2)}
+.ej-op.bien{background:#14532d;border-color:var(--verde)}
+.ej-op.mal{background:#5b1a1a;border-color:#ff6b6b}
+.ej-op[disabled]{opacity:1;color:#fff}
+.ej-op.apagada{opacity:.45}
+.ej-fb{font-size:22px;font-weight:700;margin:8px 0 14px;min-height:30px}
+.ej-fb.bien{color:var(--verde)}.ej-fb.mal{color:#ff8a8a}
+.ej-res{text-align:center;padding-top:30px}
+.ej-res .nota{font-size:84px;font-weight:800;letter-spacing:-3px;margin:10px 0}
+.ej-res h2{margin:0 0 6px;font-size:30px}
+body.en-ejercicio #mini{display:none}
 </style>
 </head>
 <body>
+<div id="vista-usuarios" class="oculto">
+  <div class="pad">
+    <h1 id="u-tit">¿Quién eres?</h1>
+    <p class="ayuda" id="u-ayuda">Crea tu usuario para guardar tu progreso. Cada persona tiene el suyo en este dispositivo.</p>
+    <div id="lista-usuarios"></div>
+    <h2 id="u-nuevo-tit">Nuevo usuario</h2>
+    <input id="nuevo-nombre" type="text" maxlength="20" placeholder="Tu nombre" autocomplete="off" autocapitalize="words" aria-label="Tu nombre">
+    <div id="colores" role="radiogroup" aria-label="Color"></div>
+    <button id="crear-usuario" class="btn-verde">Crear usuario</button>
+    <button id="u-volver" class="btn-sec oculto">Volver</button>
+  </div>
+</div>
+
 <div id="vista-inicio">
 <header>
-  <h1 id="saludo">Entzun</h1>
+  <div class="fila-sup"><h1 id="saludo">Entzun</h1><button id="chip-usuario" aria-label="Cambiar de usuario"></button></div>
   <button id="continuar" aria-label="Continuar"></button>
 </header>
 <section id="instalar" aria-label="Instalar en iPhone">
@@ -159,7 +227,17 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
   <p id="n-sub"></p>
   <button id="reproducir-nivel"><span class="play-verde" style="background:#000;color:var(--verde);width:44px;height:44px"></span><span>Reproducir</span></button>
 </div>
+<div class="tabs" role="tablist"><button id="tab-ep" class="on" role="tab">Episodios</button><button id="tab-ej" role="tab">Ejercicios</button></div>
 <main id="lista"></main>
+<main id="lista-ej" class="oculto"></main>
+</div>
+<div id="vista-ejercicio" class="oculto">
+  <div class="ej-top">
+    <button id="ej-cerrar" aria-label="Salir de los ejercicios"><svg viewBox="0 0 24 24"><path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4l-6.3 6.3L2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3z"/></svg></button>
+    <div class="ej-prog"><i id="ej-barra"></i></div>
+    <span id="ej-num"></span>
+  </div>
+  <div id="ej-cuerpo"></div>
 </div>
 <div id="aviso"></div>
 
@@ -191,26 +269,102 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 "use strict";
 const $=id=>document.getElementById(id);
 const audio=$("audio");
-const KEY="euskera-estado-v2";
 const ICO={
   play:'<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>',
   pausa:'<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>',
   bajar:'<svg viewBox="0 0 24 24"><path d="M12 3v10.2l3.6-3.6L17 11l-5 5-5-5 1.4-1.4 3.6 3.6V3zM5 18h14v2H5z"/></svg>',
-  ok:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 15-5-5 1.4-1.4L10 14.2l7.6-7.6L19 8z"/></svg>'
+  ok:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 15-5-5 1.4-1.4L10 14.2l7.6-7.6L19 8z"/></svg>',
+  ir:'<svg viewBox="0 0 24 24"><path d="M8.6 6 7.2 7.4 11.8 12l-4.6 4.6L8.6 18l6-6z"/></svg>'
 };
 const COLORES=["#2d46b9","#8d67ab","#e8115b","#1e8a6a","#e8742a","#477d95"];
-let niveles=[], eps=[], estado={actual:null,pos:{},hecho:{},instalarOculto:false}, cur=null, ultimoGuardado=0, arrastrando=false;
+const COLORES_USUARIO=["#1e8a6a","#2d46b9","#e8115b","#e8742a","#8d67ab","#477d95"];
+const VACIO=()=>({actual:null,pos:{},hecho:{},ej:{},instalarOculto:false});
+let niveles=[], eps=[], estado=VACIO(), cur=null, ultimoGuardado=0, arrastrando=false;
+let usuarios=[], usuario=null, ejDatos=null, ses=null;
 
-/* estado: claves "A1-3" (nivel-episodio). Se migra el formato antiguo (solo número). */
-try{
-  const g=JSON.parse(localStorage.getItem(KEY)||"null")||JSON.parse(localStorage.getItem("euskera-estado-v1")||"null")||{};
-  Object.assign(estado,g);
-  const mig=o=>{const r={};for(const k in (o||{}))r[/^\d+$/.test(k)?"A1-"+k:k]=o[k];return r};
-  estado.pos=mig(estado.pos);estado.hecho=mig(estado.hecho);
-  if(typeof estado.actual==="number")estado.actual="A1-"+estado.actual;
-}catch(e){}
-const guardar=()=>{try{localStorage.setItem(KEY,JSON.stringify(estado))}catch(e){}};
+/* ================= Usuarios (perfiles en este dispositivo) ================= */
+const U_KEY="entzun-usuarios", A_KEY="entzun-activo", claveEstado=u=>"entzun-u-"+u.id;
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+const lsDel=k=>{try{localStorage.removeItem(k)}catch(e){}};
+function cargarUsuarios(){
+  try{usuarios=JSON.parse(lsGet(U_KEY)||"[]")}catch(e){usuarios=[]}
+  usuario=usuarios.find(u=>u.id===lsGet(A_KEY))||null;
+}
+const guardarUsuarios=()=>lsSet(U_KEY,JSON.stringify(usuarios));
+function mig(g){
+  const m=o=>{const r={};for(const k in (o||{}))r[/^\d+$/.test(k)?"A1-"+k:k]=o[k];return r};
+  g.pos=m(g.pos);g.hecho=m(g.hecho);
+  if(typeof g.actual==="number")g.actual="A1-"+g.actual;
+  return g;
+}
+function cargarEstado(){
+  estado=VACIO();
+  if(!usuario)return;
+  try{Object.assign(estado,mig(JSON.parse(lsGet(claveEstado(usuario))||"{}")))}catch(e){}
+  estado.ej=estado.ej||{};
+}
+const guardar=()=>{if(usuario)lsSet(claveEstado(usuario),JSON.stringify(estado))};
 const k=e=>e.nivel+"-"+e.id;
+const inicial=u=>(u.nombre.trim()[0]||"?").toUpperCase();
+
+function crearUsuario(nombre,color){
+  const u={id:Date.now().toString(36)+Math.random().toString(36).slice(2,5),nombre:nombre.trim(),color};
+  if(!usuarios.length){ // el primer usuario hereda el progreso anterior (versión sin usuarios)
+    const viejo=lsGet("euskera-estado-v2")||lsGet("euskera-estado-v1");
+    if(viejo)lsSet(claveEstado(u),viejo);
+  }
+  usuarios.push(u);guardarUsuarios();
+  activarUsuario(u);
+}
+function activarUsuario(u){
+  audio.pause();audio.removeAttribute("src");cur=null;$("mini").classList.remove("on");
+  usuario=u;lsSet(A_KEY,u.id);cargarEstado();
+  const ult=eps.find(e=>k(e)===estado.actual&&disp(e));
+  if(ult)cargar(ult,false);
+  if(location.hash==="#/")ruta();else location.hash="#/";
+}
+function borrarUsuario(u){
+  if(!confirm("¿Borrar a "+u.nombre+" y todo su progreso?"))return;
+  usuarios=usuarios.filter(x=>x.id!==u.id);guardarUsuarios();lsDel(claveEstado(u));
+  if(usuario&&usuario.id===u.id){usuario=null;lsDel(A_KEY);audio.pause();cur=null;$("mini").classList.remove("on");estado=VACIO()}
+  pintarUsuarios();
+}
+let colorElegido=COLORES_USUARIO[0];
+function pintarUsuarios(){
+  const hay=usuarios.length>0;
+  $("u-tit").textContent=hay?"¿Quién eres?":"Crea tu usuario";
+  $("u-ayuda").textContent=hay?"Elige tu usuario o crea uno nuevo. Cada uno guarda su progreso y sus notas.":"Para guardar tu progreso, escribe tu nombre y elige un color. Cada persona tiene el suyo en este dispositivo.";
+  $("u-nuevo-tit").classList.toggle("oculto",!hay);
+  $("u-volver").classList.toggle("oculto",!usuario);
+  const l=$("lista-usuarios");l.innerHTML="";
+  for(const u of usuarios){
+    const d=document.createElement("div");d.className="usuario";
+    const e=document.createElement("button");e.className="elegir";
+    e.innerHTML='<div class="avatar"></div><div style="min-width:0"><div class="nom"></div><div class="act"></div></div>';
+    const av=e.querySelector(".avatar");av.style.background=u.color;av.textContent=inicial(u);
+    e.querySelector(".nom").textContent=u.nombre;
+    e.querySelector(".act").textContent=usuario&&usuario.id===u.id?"Usuario actual":"";
+    e.onclick=()=>activarUsuario(u);
+    const b=document.createElement("button");b.className="borrar";b.textContent="Borrar";b.onclick=()=>borrarUsuario(u);
+    d.appendChild(e);d.appendChild(b);l.appendChild(d);
+  }
+  const c=$("colores");c.innerHTML="";
+  for(const col of COLORES_USUARIO){
+    const b=document.createElement("button");b.style.background=col;b.setAttribute("role","radio");
+    b.setAttribute("aria-checked",col===colorElegido);b.setAttribute("aria-label","Color");
+    b.onclick=()=>{colorElegido=col;pintarUsuarios()};
+    c.appendChild(b);
+  }
+  $("crear-usuario").disabled=$("nuevo-nombre").value.trim().length===0;
+}
+$("nuevo-nombre").addEventListener("input",()=>{$("crear-usuario").disabled=$("nuevo-nombre").value.trim().length===0});
+$("nuevo-nombre").addEventListener("keydown",e=>{if(e.key==="Enter"&&!$("crear-usuario").disabled)$("crear-usuario").click()});
+$("crear-usuario").onclick=()=>{const n=$("nuevo-nombre").value.trim();if(!n)return;$("nuevo-nombre").value="";crearUsuario(n,colorElegido)};
+$("u-volver").onclick=()=>{location.hash="#/"};
+$("chip-usuario").onclick=()=>{location.hash="#/usuarios"};
+
+/* ================= Datos ================= */
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
 const disp=e=>e&&e.disponible;
 const idxBloque=e=>Math.max(0,["I","II","III","IV","V","VI"].indexOf(e.bloque));
@@ -219,15 +373,15 @@ const nivelDe=id=>niveles.find(n=>n.id===id);
 const saludo=()=>{const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"};
 
 async function init(){
-  $("saludo").textContent=saludo();
+  cargarUsuarios();cargarEstado();
   let datos=null;
   const norm=d=>d&&d.niveles?d:(d&&d.episodios?{niveles:[{id:"A1",nombre:"Nivel A1",descripcion:"Primeros pasos",color:"#1e8a6a",episodios:d.episodios}]}:null);
   try{datos=norm(await (await fetch("episodios.json?v="+Date.now(),{cache:"no-store"})).json())}catch(e){}
-  if(!datos){try{datos=norm(JSON.parse(localStorage.getItem("eps-cache")))}catch(_){}}
+  if(!datos){try{datos=norm(JSON.parse(lsGet("eps-cache")))}catch(_){}}
   if(!datos||!datos.niveles||!datos.niveles.length){
     $("niveles").innerHTML='<p style="color:var(--suave);font-size:19px">No se pudo cargar la lista de niveles. Comprueba la conexión y vuelve a abrir la app.</p>';
-    $("continuar").disabled=true;$("continuar").textContent="Sin conexión";return}
-  try{localStorage.setItem("eps-cache",JSON.stringify(datos))}catch(e){}
+    $("continuar").disabled=true;$("continuar").textContent="Sin conexión";ruta();return}
+  lsSet("eps-cache",JSON.stringify(datos));
   niveles=datos.niveles;
   eps=[];for(const n of niveles)for(const e of n.episodios){e.nivel=n.id;eps.push(e)}
   $("play").innerHTML=ICO.play;$("m-play").innerHTML=ICO.play;
@@ -238,19 +392,31 @@ async function init(){
   if(!eps.some(disp))$("aviso").textContent="Todavía no hay episodios con audio.";
 }
 
-/* ---------- navegación ---------- */
-function ruta(){
-  const m=/^#\/([A-Za-z0-9]+)$/.exec(location.hash);
-  const n=m&&nivelDe(m[1]);
-  $("vista-inicio").classList.toggle("oculto",!!n);
-  $("vista-nivel").classList.toggle("oculto",!n);
-  if(n)pintarNivel(n);else pintarInicio();
-  window.scrollTo(0,0);
+/* ================= Navegación ================= */
+const VISTAS=["usuarios","inicio","nivel","ejercicio"];
+function ruta(sinScroll){
+  const h=location.hash||"#/";
+  if(!usuario&&h!=="#/usuarios"){location.hash="#/usuarios";return}
+  let vista="inicio",n=null,tab="ep",ej=null;
+  if(h==="#/usuarios")vista="usuarios";
+  else{
+    const m=/^#\/([A-Za-z0-9]+)(?:\/(ej)(?:\/([A-Za-z0-9]+))?)?$/.exec(h);
+    n=m&&nivelDe(m[1]);
+    if(n){vista="nivel";if(m[2]){tab="ej";if(m[3]){vista="ejercicio";ej=m[3]}}}
+  }
+  for(const v of VISTAS)$("vista-"+v).classList.toggle("oculto",v!==vista);
+  document.body.classList.toggle("en-ejercicio",vista==="ejercicio");
+  if(vista==="usuarios")pintarUsuarios();
+  else if(vista==="inicio")pintarInicio();
+  else if(vista==="nivel")pintarNivel(n,tab);
+  else iniciarEj(n,ej);
+  if(sinScroll!==true)window.scrollTo(0,0);
 }
 window.addEventListener("hashchange",ruta);
 $("atras-lista").onclick=()=>{location.hash="#/"};
+$("tab-ep").onclick=()=>{const n=/^#\/([A-Za-z0-9]+)/.exec(location.hash);if(n)location.hash="#/"+n[1]};
+$("tab-ej").onclick=()=>{const n=/^#\/([A-Za-z0-9]+)/.exec(location.hash);if(n)location.hash="#/"+n[1]+"/ej"};
 
-/* ---------- siguiente / anterior dentro del nivel ---------- */
 const lista=e=>nivelDe(e.nivel).episodios;
 const siguienteDe=e=>lista(e).find(x=>x.id>e.id&&disp(x));
 const anteriorDe=e=>[...lista(e)].reverse().find(x=>x.id<e.id&&disp(x));
@@ -260,8 +426,11 @@ function paraContinuar(nivel){
       ||L.find(e=>disp(e)&&!estado.hecho[k(e)])||L.find(disp);
 }
 
-/* ---------- inicio ---------- */
+/* ================= Inicio ================= */
 function pintarInicio(){
+  $("saludo").textContent=usuario?saludo()+", "+usuario.nombre:"Entzun";
+  const chip=$("chip-usuario");
+  if(usuario){chip.style.background=usuario.color;chip.textContent=inicial(usuario)}
   const c=paraContinuar(), b=$("continuar");
   b.disabled=!c;
   if(c){
@@ -281,8 +450,8 @@ function pintarInicio(){
   }
 }
 
-/* ---------- nivel (playlist) ---------- */
-function pintarNivel(n){
+/* ================= Nivel (playlist) ================= */
+function pintarNivel(n,tab){
   $("n-por").textContent=n.id;$("n-por").style.background=n.color||"#1e8a6a";
   document.querySelector(".cab-nivel").style.setProperty("--tinte-n",n.color||"#1e8a6a");
   $("n-tit").textContent=n.nombre;
@@ -293,6 +462,11 @@ function pintarNivel(n){
   r.querySelector("span:last-child").textContent=c&&(estado.pos[k(c)]||0)>5?"Continuar":"Reproducir";
   r.disabled=!c;
   r.onclick=()=>{if(!c)return;(cur&&k(cur)===k(c))?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
+  $("tab-ep").classList.toggle("on",tab==="ep");$("tab-ej").classList.toggle("on",tab==="ej");
+  $("lista").classList.toggle("oculto",tab!=="ep");$("lista-ej").classList.toggle("oculto",tab!=="ej");
+  if(tab==="ep")pintarEpisodios(n);else pintarListaEj(n);
+}
+function pintarEpisodios(n){
   const l=$("lista");l.innerHTML="";
   let bloque=null;
   for(const e of n.episodios){
@@ -322,7 +496,7 @@ function pintarNivel(n){
     l.appendChild(d);
   }
 }
-const repintar=()=>{const m=/^#\/([A-Za-z0-9]+)$/.exec(location.hash),n=m&&nivelDe(m[1]);n?pintarNivel(n):pintarInicio()};
+const repintar=()=>{ruta(true)};
 
 async function descargar(e,btn){
   btn.textContent="…";
@@ -330,15 +504,120 @@ async function descargar(e,btn){
   catch(_){btn.textContent="Error"}
 }
 
-/* ---------- aviso de instalación en iPhone/iPad ---------- */
+/* ================= Ejercicios ================= */
+async function datosEj(){
+  if(ejDatos)return ejDatos;
+  try{ejDatos=await (await fetch("ejercicios.json?v="+Date.now(),{cache:"no-store"})).json()}
+  catch(e){try{ejDatos=JSON.parse(lsGet("ej-cache"))}catch(_){}}
+  if(ejDatos)lsSet("ej-cache",JSON.stringify(ejDatos));
+  return ejDatos;
+}
+const claveEj=(n,c)=>n.id+"-"+c;
+async function pintarListaEj(n){
+  const l=$("lista-ej");l.innerHTML='<p class="ayuda" style="margin-top:18px">Cargando…</p>';
+  const D=await datosEj();
+  const dn=D&&D[n.id];
+  if(!dn){l.innerHTML='<p class="ayuda" style="margin-top:18px">Todavía no hay ejercicios para este nivel.</p>';return}
+  l.innerHTML="";
+  const mix=document.createElement("button");mix.className="mixta";
+  const sm=estado.ej[claveEj(n,"mix")];
+  mix.innerHTML=`<div><div class="tit">Práctica mixta</div><div class="sub"></div></div><div class="play-verde">${ICO.play}</div>`;
+  mix.querySelector(".sub").textContent=sm?`10 preguntas al azar · mejor: ${sm.mejor} de ${sm.total}`:"10 preguntas al azar de todo el nivel";
+  mix.onclick=()=>{location.hash="#/"+n.id+"/ej/mix"};
+  l.appendChild(mix);
+  const h=document.createElement("h2");h.textContent="Por episodio";l.appendChild(h);
+  for(const e of n.episodios){
+    const q=dn[e.id];
+    const d=document.createElement("div");d.className="ep"+(q?"":" no");
+    const por=document.createElement("div");por.className="portada";portada(por,e);d.appendChild(por);
+    const a=document.createElement("button");a.className="abrir";a.disabled=!q;
+    const sc=estado.ej[claveEj(n,e.id)];
+    a.innerHTML='<span class="tit"></span><span class="sub"></span>';
+    a.querySelector(".tit").textContent=e.titulo;
+    a.querySelector(".sub").textContent=!q?"Sin ejercicios":sc?`Mejor: ${sc.mejor} de ${sc.total}`:`${q.length} preguntas`;
+    a.onclick=()=>{location.hash="#/"+n.id+"/ej/"+e.id};
+    d.appendChild(a);
+    const ir=document.createElement("div");ir.className="ir";ir.innerHTML=ICO.ir;d.appendChild(ir);
+    l.appendChild(d);
+  }
+}
+const barajar=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+async function iniciarEj(n,clave){
+  $("ej-cuerpo").innerHTML="";
+  const D=await datosEj();
+  const dn=D&&D[n.id];
+  let preg=[];
+  if(dn){
+    if(clave==="mix")preg=barajar(Object.values(dn).flat()).slice(0,10);
+    else if(dn[clave])preg=dn[clave];
+  }
+  if(!preg.length){$("ej-cuerpo").innerHTML='<p class="ayuda">No hay ejercicios para esto.</p>';return}
+  ses={n,clave,preg,i:0,ok:0,resp:false};
+  pintarPregunta();
+}
+function pintarPregunta(){
+  const q=ses.preg[ses.i], total=ses.preg.length;
+  $("ej-barra").style.width=(ses.i/total*100)+"%";
+  $("ej-num").textContent=(ses.i+1)+" de "+total;
+  const cuerpo=$("ej-cuerpo");cuerpo.innerHTML="";
+  const tipo=document.createElement("div");tipo.className="ej-tipo";
+  tipo.textContent=q.t==="hueco"?"Completa la frase":"Test";cuerpo.appendChild(tipo);
+  const p=document.createElement("p");p.className="ej-preg";p.textContent=q.p;cuerpo.appendChild(p);
+  if(q.s){const s=document.createElement("p");s.className="ej-pista";s.textContent=q.s;cuerpo.appendChild(s)}
+  const botones=[];
+  q.o.forEach((txt,i)=>{
+    const b=document.createElement("button");b.className="ej-op";b.textContent=txt;
+    b.onclick=()=>responder(i,botones,fb,sig);
+    botones.push(b);cuerpo.appendChild(b);
+  });
+  const fb=document.createElement("div");fb.className="ej-fb";cuerpo.appendChild(fb);
+  const sig=document.createElement("button");sig.className="btn-verde oculto";
+  sig.textContent=ses.i+1<total?"Siguiente":"Ver resultado";
+  sig.onclick=()=>{ses.i++;if(ses.i<total)pintarPregunta();else resultadoEj()};
+  cuerpo.appendChild(sig);
+  ses.resp=false;
+}
+function responder(i,botones,fb,sig){
+  if(ses.resp)return;ses.resp=true;
+  const q=ses.preg[ses.i], bien=i===q.c;
+  if(bien)ses.ok++;
+  botones.forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add("bien");else if(j===i)b.classList.add("mal");else b.classList.add("apagada")});
+  fb.className="ej-fb "+(bien?"bien":"mal");
+  fb.textContent=bien?"¡Muy bien!":"No es esa. La correcta está en verde.";
+  sig.classList.remove("oculto");
+  sig.scrollIntoView({block:"nearest",behavior:"smooth"});
+}
+function resultadoEj(){
+  const {n,clave,preg,ok}=ses, total=preg.length;
+  $("ej-barra").style.width="100%";$("ej-num").textContent="";
+  const key=claveEj(n,clave), prev=estado.ej[key];
+  estado.ej[key]={mejor:Math.max(ok,prev?prev.mejor:0),total,veces:(prev?prev.veces:0)+1};
+  guardar();
+  const msg=ok===total?"¡Perfecto!":ok>=total*.8?"¡Muy bien!":ok>=total*.5?"Vas bien. Repasa un poco.":"Escucha el episodio otra vez y vuelve a intentarlo.";
+  const c=$("ej-cuerpo");c.innerHTML="";
+  const d=document.createElement("div");d.className="ej-res";
+  d.innerHTML='<h2></h2><div class="nota"></div><p class="ayuda"></p>';
+  d.querySelector("h2").textContent=msg;
+  d.querySelector(".nota").textContent=ok+" / "+total;
+  d.querySelector(".ayuda").textContent="Aciertos en esta ronda. Tu mejor nota: "+estado.ej[key].mejor+" de "+total+".";
+  c.appendChild(d);
+  const r=document.createElement("button");r.className="btn-verde";r.textContent="Repetir";
+  r.onclick=()=>iniciarEj(n,clave);
+  const v=document.createElement("button");v.className="btn-sec";v.textContent="Volver a ejercicios";
+  v.onclick=()=>{location.hash="#/"+n.id+"/ej"};
+  c.appendChild(r);c.appendChild(v);
+}
+$("ej-cerrar").onclick=()=>{ if(ses)location.hash="#/"+ses.n.id+"/ej"; else history.back() };
+
+/* ================= Aviso de instalación en iPhone/iPad ================= */
 function mostrarInstalar(){
   const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
   const instalada=window.navigator.standalone===true||matchMedia("(display-mode: standalone)").matches;
-  if(ios&&!instalada&&!estado.instalarOculto)$("instalar").classList.add("on");
-  $("instalar-ok").onclick=()=>{estado.instalarOculto=true;guardar();$("instalar").classList.remove("on")};
+  if(ios&&!instalada&&lsGet("entzun-inst")!=="1")$("instalar").classList.add("on");
+  $("instalar-ok").onclick=()=>{lsSet("entzun-inst","1");$("instalar").classList.remove("on")};
 }
 
-/* ---------- reproductor ---------- */
+/* ================= Reproductor ================= */
 function cargar(e,reproducir){
   cur=e;estado.actual=k(e);guardar();
   audio.src=e.audio;
@@ -352,7 +631,7 @@ function cargar(e,reproducir){
   $("anterior").disabled=!anteriorDe(e);$("siguiente").disabled=!siguienteDe(e);
   metadata();
   if(reproducir)audio.play().catch(()=>{});
-  repintar();
+  if(usuario&&!$("vista-nivel").classList.contains("oculto"))repintar();
 }
 
 function metadata(){
@@ -385,7 +664,7 @@ $("barra").onchange=()=>{if(audio.duration)audio.currentTime=$("barra").value/10
 const estadoPlay=p=>{$("play").innerHTML=p?ICO.pausa:ICO.play;$("m-play").innerHTML=p?ICO.pausa:ICO.play;
   if("mediaSession" in navigator)navigator.mediaSession.playbackState=p?"playing":"paused"};
 audio.addEventListener("play",()=>estadoPlay(true));
-audio.addEventListener("pause",()=>{estadoPlay(false);if(cur){estado.pos[k(cur)]=audio.currentTime;guardar();repintar()}});
+audio.addEventListener("pause",()=>{estadoPlay(false);if(cur){estado.pos[k(cur)]=audio.currentTime;guardar()}});
 audio.addEventListener("loadedmetadata",()=>{if(cur&&isFinite(audio.duration)){cur.dur=audio.duration;$("t-tot").textContent=fmt(audio.duration)}});
 audio.addEventListener("timeupdate",()=>{
   if(!cur)return;
@@ -400,9 +679,9 @@ audio.addEventListener("ended",()=>{
   if(!cur)return;
   estado.hecho[k(cur)]=true;estado.pos[k(cur)]=0;guardar();
   const n=siguienteDe(cur);
-  if(n)cargar(n,true);else{estadoPlay(false);repintar()}
+  if(n)cargar(n,true);else{estadoPlay(false)}
 });
-audio.addEventListener("error",()=>{$("aviso").textContent="No se pudo reproducir este episodio."});
+audio.addEventListener("error",()=>{if(cur)$("aviso").textContent="No se pudo reproducir este episodio."});
 document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[k(cur)]=audio.currentTime;guardar()}});
 
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});

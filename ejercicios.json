@@ -1,0 +1,2670 @@
+{
+ "A1": {
+  "1": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zu Mikel zara.»",
+    "o": [
+     "Tú eres Mikel.",
+     "¿De dónde eres?",
+     "Mikel lleva el pan en la bolsa.",
+     "El coche es grande."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Ella es Amaia.»",
+    "o": [
+     "Ni Xabi naiz.",
+     "Ondo, eskerrik asko.",
+     "Bai auto garestia!",
+     "Hura Amaia da."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Zu Mikel _____.",
+    "s": "Tú eres Mikel.",
+    "o": [
+     "dendara",
+     "nirea",
+     "zara"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Ni Amaia naiz.»",
+    "o": [
+     "Yo no tengo libros.",
+     "Yo soy Amaia.",
+     "¡Hola!",
+     "¡Qué casa tan grande!"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Qué tal?»",
+    "o": [
+     "Zu kalera zoaz.",
+     "Amaia amonaren etxetik dator.",
+     "Neska horrek ez dauka libururik.",
+     "Zer moduz?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Ni Amaia _____.",
+    "s": "Yo soy Amaia.",
+    "o": [
+     "naiz",
+     "asko",
+     "etxetik"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Egun on.»",
+    "o": [
+     "Amaia viene de casa de la abuela.",
+     "Buenos días.",
+     "Yo vengo de casa.",
+     "Bien, gracias."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¡Hola!»",
+    "o": [
+     "Neska horrek ez dauka libururik.",
+     "Mikelena da.",
+     "Kaixo!",
+     "Poltsa txikia da."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Zer _____?",
+    "s": "¿Qué tal?",
+    "o": [
+     "poltsan",
+     "moduz",
+     "daramat"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Ondo, _____ asko.",
+    "s": "Bien, gracias.",
+    "o": [
+     "gainean",
+     "eskerrik",
+     "autorik"
+    ],
+    "c": 1
+   }
+  ],
+  "2": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Gela hori zuria da.»",
+    "o": [
+     "Bien, gracias.",
+     "Ese es tu coche.",
+     "Soy de San Sebastián.",
+     "Esa habitación es blanca."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Aquella casa es grande.»",
+    "o": [
+     "Amaia haserre dago.",
+     "Bai, liburu bat daukat.",
+     "Etxe hura handia da.",
+     "Mikel triste dago."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Gela _____ zuria da.",
+    "s": "Esa habitación es blanca.",
+    "o": [
+     "bere",
+     "hori",
+     "nora"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Auto hau berria da.»",
+    "o": [
+     "Tú vas a la calle.",
+     "Este coche es nuevo.",
+     "Tú vienes de la calle.",
+     "Amaia está enfadada."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Ese coche es viejo.»",
+    "o": [
+     "Noren autoa da hau?",
+     "Eta zu, nora zoaz?",
+     "Auto hori zaharra da.",
+     "Mikel Amaiaren ondoan dago."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Etxe _____ handia da.",
+    "s": "Aquella casa es grande.",
+    "o": [
+     "dakar",
+     "azkarra",
+     "hura"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mahai hau txikia da.»",
+    "o": [
+     "Esta es la casa de Amaia.",
+     "Yo estoy en casa.",
+     "¡Hola!",
+     "Esta mesa es pequeña."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Este coche es nuevo?»",
+    "o": [
+     "Nik liburu bat daukat.",
+     "Amaiak sagar bat dakar bere amonarentzat.",
+     "Nondik zatoz?",
+     "Auto hau berria da?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Auto hau _____ da.",
+    "s": "Este coche es nuevo.",
+    "o": [
+     "berria",
+     "azkarra",
+     "non"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Auto _____ zaharra da.",
+    "s": "Ese coche es viejo.",
+    "o": [
+     "bat",
+     "etxera",
+     "hori"
+    ],
+    "c": 2
+   }
+  ],
+  "3": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nor zara zu?»",
+    "o": [
+     "Tú no tienes coche.",
+     "Mikel vive en Bilbao.",
+     "¿Quién eres tú?",
+     "No estoy bien."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Y tú?»",
+    "o": [
+     "Amaiak ez dauka gaturik.",
+     "Eta zu?",
+     "Mikel Bilbon bizi da.",
+     "Mikel parketik dator."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Nor _____ zu?",
+    "s": "¿Quién eres tú?",
+    "o": [
+     "nirea",
+     "hau",
+     "zara"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nongoa zara?»",
+    "o": [
+     "¿Qué tienes?",
+     "¿De dónde eres?",
+     "¿Quién eres tú?",
+     "Esta es la casa de Amaia."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo soy Xabi.»",
+    "o": [
+     "Bai neska polita!",
+     "Non dago Amaia?",
+     "Nik liburu bat daukat.",
+     "Ni Xabi naiz."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Nongoa _____?",
+    "s": "¿De dónde eres?",
+    "o": [
+     "etxean",
+     "nora",
+     "zara"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zarauzkoa naiz.»",
+    "o": [
+     "Tú vas a la calle.",
+     "Yo vengo de casa.",
+     "Tú traes una manzana para mí.",
+     "Soy de Zarautz."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Soy de Bilbao.»",
+    "o": [
+     "Bilbokoa naiz.",
+     "Mikelena da.",
+     "Amaia dendara doa.",
+     "Etxea polita da."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Ni Xabi _____.",
+    "s": "Yo soy Xabi.",
+    "o": [
+     "dator",
+     "etxean",
+     "naiz"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Zarauzkoa _____.",
+    "s": "Soy de Zarautz.",
+    "o": [
+     "neska",
+     "autoa",
+     "naiz"
+    ],
+    "c": 2
+   }
+  ],
+  "4": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nongoa zara?»",
+    "o": [
+     "¿De dónde eres?",
+     "Amaia va a la tienda.",
+     "Bien, gracias.",
+     "El coche es caro."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo soy Xabi.»",
+    "o": [
+     "Amonarengana joan da.",
+     "Hura Amaia da.",
+     "Amaia amonarengana joan da.",
+     "Ni Xabi naiz."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Nongoa _____?",
+    "s": "¿De dónde eres?",
+    "o": [
+     "daramat",
+     "parkera",
+     "zara"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Eta zu?»",
+    "o": [
+     "¿Este coche es nuevo?",
+     "Esta es la casa de Amaia.",
+     "Tú tienes un coche.",
+     "¿Y tú?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Ese coche es viejo.»",
+    "o": [
+     "Auto hori zaharra da.",
+     "Zu kalera zoaz.",
+     "Zer moduz?",
+     "Non dago liburua?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Ni Xabi _____.",
+    "s": "Yo soy Xabi.",
+    "o": [
+     "auto",
+     "naiz",
+     "daukazu"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Gela hori zuria da.»",
+    "o": [
+     "Esa habitación es blanca.",
+     "¿De quién es este coche?",
+     "¡Qué casa tan grande!",
+     "Amaia tiene un gato."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Este coche es nuevo.»",
+    "o": [
+     "Hura Xabiren autoa da.",
+     "Auto hau berria da.",
+     "Zarautzen bizi naiz.",
+     "Mikel kalean dago."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Auto hori _____ da.",
+    "s": "Ese coche es viejo.",
+    "o": [
+     "zaharra",
+     "txikia",
+     "auto"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Gela _____ zuria da.",
+    "s": "Esa habitación es blanca.",
+    "o": [
+     "hori",
+     "kalera",
+     "ondoan"
+    ],
+    "c": 0
+   }
+  ],
+  "5": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nolakoa da autoa?»",
+    "o": [
+     "Tú tienes un coche.",
+     "¿Cómo es el coche?",
+     "Yo soy Amaia.",
+     "La bolsa es grande."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «El coche es grande.»",
+    "o": [
+     "Ni Xabi naiz.",
+     "Eta zuk?",
+     "Autoa handia da.",
+     "Zu nekatuta zaude."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Nolakoa da _____?",
+    "s": "¿Cómo es el coche?",
+    "o": [
+     "autoa",
+     "zaude",
+     "nekatuta"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Autoa txikia da.»",
+    "o": [
+     "Yo tengo un libro.",
+     "Vivo en San Sebastián.",
+     "Yo soy Xabi.",
+     "El coche es pequeño."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «El coche es rápido.»",
+    "o": [
+     "Etxea polita da.",
+     "Amaiak sagar bat dakar.",
+     "Autoa azkarra da.",
+     "Mikel kalean dago."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Autoa _____ da.",
+    "s": "El coche es grande.",
+    "o": [
+     "ondoan",
+     "handia",
+     "joan"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Autoa merkea da.»",
+    "o": [
+     "Yo soy Amaia.",
+     "Esta mesa es pequeña.",
+     "El coche es barato.",
+     "Aquella casa es grande."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «La casa es bonita.»",
+    "o": [
+     "Zu nekatuta zaude.",
+     "Zer moduz?",
+     "Ez, ez da nirea.",
+     "Etxea polita da."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Autoa _____ da.",
+    "s": "El coche es pequeño.",
+    "o": [
+     "txikia",
+     "zaude",
+     "liburu"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Autoa _____ da.",
+    "s": "El coche es rápido.",
+    "o": [
+     "azkarra",
+     "zatoz",
+     "etxea"
+    ],
+    "c": 0
+   }
+  ],
+  "6": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikel Bilbon bizi da.»",
+    "o": [
+     "Este es mi coche.",
+     "Vengo de la tienda.",
+     "Yo soy Xabi.",
+     "Mikel vive en Bilbao."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Y tú, dónde vives?»",
+    "o": [
+     "Autoa azkarra da.",
+     "Ni etxean nago.",
+     "Nik liburu bat daramat poltsan.",
+     "Eta zu, non bizi zara?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Mikel Bilbon _____ da.",
+    "s": "Mikel vive en Bilbao.",
+    "o": [
+     "bizi",
+     "parkera",
+     "haserre"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Non bizi da Amaia?»",
+    "o": [
+     "Amaia está al lado de Mikel.",
+     "Ese coche es viejo.",
+     "Este coche es nuevo.",
+     "¿Dónde vive Amaia?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia vive en San Sebastián.»",
+    "o": [
+     "Amaia haserre dago.",
+     "Poltsa handia da.",
+     "Amaia Donostian bizi da.",
+     "Dendara noa."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Eta zu, non _____ zara?",
+    "s": "¿Y tú, dónde vives?",
+    "o": [
+     "bizi",
+     "etxean",
+     "bere"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zarautzen bizi naiz.»",
+    "o": [
+     "¿Qué traes?",
+     "Mikel está en la calle.",
+     "Yo estoy contento.",
+     "Vivo en Zarautz."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Dónde vives?»",
+    "o": [
+     "Ez nago ondo.",
+     "Mikel aitonarengana joan da.",
+     "Non bizi zara?",
+     "Eta zu?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Non _____ da Amaia?",
+    "s": "¿Dónde vive Amaia?",
+    "o": [
+     "dator",
+     "bizi",
+     "doa"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Amaia Donostian _____ da.",
+    "s": "Amaia vive en San Sebastián.",
+    "o": [
+     "txikia",
+     "dago",
+     "bizi"
+    ],
+    "c": 2
+   }
+  ],
+  "7": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zu etxean zaude.»",
+    "o": [
+     "Amaia tiene un gato.",
+     "Tú estás en casa.",
+     "Tú estás cansado.",
+     "Es de Mikel."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Dónde está Amaia?»",
+    "o": [
+     "Ni Xabi naiz.",
+     "Liburu hau polita da.",
+     "Donostiakoa naiz.",
+     "Non dago Amaia?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Zu _____ zaude.",
+    "s": "Tú estás en casa.",
+    "o": [
+     "etxean",
+     "merkea",
+     "nirea"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikel kalean dago.»",
+    "o": [
+     "¿Dónde estás?",
+     "El gato está debajo de la mesa.",
+     "Es mío.",
+     "Mikel está en la calle."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo estoy en casa.»",
+    "o": [
+     "Ni etxean nago.",
+     "Dendatik nator.",
+     "Zu nekatuta zaude.",
+     "Zurea da?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Non _____ Amaia?",
+    "s": "¿Dónde está Amaia?",
+    "o": [
+     "dago",
+     "neska",
+     "autorik"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Amaia parkean dago.»",
+    "o": [
+     "Amaia está en el parque.",
+     "Es mío.",
+     "Amaia ha ido a ver a su abuela.",
+     "Yo llevo un libro en la bolsa."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia está en casa.»",
+    "o": [
+     "Amaia Mikelen ondoan dago.",
+     "Amaiak sagar bat dakar.",
+     "Begira!",
+     "Amaia etxean dago."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Mikel _____ dago.",
+    "s": "Mikel está en la calle.",
+    "o": [
+     "kalean",
+     "eskerrik",
+     "aurrean"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Ni etxean _____.",
+    "s": "Yo estoy en casa.",
+    "o": [
+     "etxe",
+     "pozik",
+     "nago"
+    ],
+    "c": 2
+   }
+  ],
+  "8": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Etxea polita da.»",
+    "o": [
+     "Es de Amaia.",
+     "La casa es bonita.",
+     "Amaia lleva una manzana en la bolsa.",
+     "Tú no tienes coche."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Dónde vives?»",
+    "o": [
+     "Bai neska polita!",
+     "Gela hori zuria da.",
+     "Etxea polita da.",
+     "Non bizi zara?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Etxea _____ da.",
+    "s": "La casa es bonita.",
+    "o": [
+     "kalera",
+     "polita",
+     "azkarra"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Non zaude?»",
+    "o": [
+     "La casa es bonita.",
+     "Es de Mikel.",
+     "¿Dónde estás?",
+     "¿Cómo estás?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Y tú, dónde vives?»",
+    "o": [
+     "Liburua mahaiaren gainean dago.",
+     "Eta zu, non bizi zara?",
+     "Liburu hau polita da.",
+     "Nongoa zara?"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Non bizi _____?",
+    "s": "¿Dónde vives?",
+    "o": [
+     "dauka",
+     "joan",
+     "zara"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zarautzen bizi naiz.»",
+    "o": [
+     "Vivo en Zarautz.",
+     "Mikel viene del parque.",
+     "No estoy bien.",
+     "La bolsa es pequeña."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Dónde vive Amaia?»",
+    "o": [
+     "Non bizi da Amaia?",
+     "Nirea da.",
+     "Zuk ez daukazu autorik.",
+     "Zu Amaiarengana joan zara."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Non _____?",
+    "s": "¿Dónde estás?",
+    "o": [
+     "zaude",
+     "hori",
+     "gatua"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Eta zu, non bizi _____?",
+    "s": "¿Y tú, dónde vives?",
+    "o": [
+     "parkera",
+     "zara",
+     "gainean"
+    ],
+    "c": 1
+   }
+  ],
+  "9": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zu nekatuta zaude.»",
+    "o": [
+     "¿Qué llevas tú en la bolsa?",
+     "Tú estás cansado.",
+     "¿Este coche es nuevo?",
+     "¿Y tú, dónde vives?"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «No estoy bien.»",
+    "o": [
+     "Bai gatu txikia!",
+     "Dendatik nator.",
+     "Amaiak sagar bat dakar bere amonarentzat.",
+     "Ez nago ondo."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Zu nekatuta _____.",
+    "s": "Tú estás cansado.",
+    "o": [
+     "zaude",
+     "haserre",
+     "niretzat"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Amaia haserre dago.»",
+    "o": [
+     "Vivo en San Sebastián.",
+     "Amaia trae una manzana.",
+     "Amaia está enfadada.",
+     "Yo traigo un libro para ti."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Mikel está triste.»",
+    "o": [
+     "Ni Xabi naiz.",
+     "Mahai hau txikia da.",
+     "Etxe hura handia da.",
+     "Mikel triste dago."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Ez _____ ondo.",
+    "s": "No estoy bien.",
+    "o": [
+     "nago",
+     "nator",
+     "non"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Ni pozik nago.»",
+    "o": [
+     "Vivo en Zarautz.",
+     "La bolsa es grande.",
+     "Yo estoy contento.",
+     "¿Este coche es nuevo?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Cómo estás?»",
+    "o": [
+     "Zu Mikel zara.",
+     "Ondo nago.",
+     "Zer moduz zaude?",
+     "Bai gatu txikia!"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Amaia _____ dago.",
+    "s": "Amaia está enfadada.",
+    "o": [
+     "haserre",
+     "triste",
+     "niretzat"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Mikel _____ dago.",
+    "s": "Mikel está triste.",
+    "o": [
+     "triste",
+     "daramat",
+     "darama"
+    ],
+    "c": 0
+   }
+  ],
+  "10": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Hura Xabiren autoa da.»",
+    "o": [
+     "Mikel tiene un coche.",
+     "Aquel es el coche de Xabi.",
+     "El coche es rápido.",
+     "El coche es caro."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Ese es el coche de Mikel.»",
+    "o": [
+     "Nor zara zu?",
+     "Hori Mikelen autoa da.",
+     "Amaiak sagar bat darama poltsan.",
+     "Zer daukazu?"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Hura Xabiren _____ da.",
+    "s": "Aquel es el coche de Xabi.",
+    "o": [
+     "pozik",
+     "autoa",
+     "azpian"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Hau Amaiaren etxea da.»",
+    "o": [
+     "Mikel ha ido a ver a su abuelo.",
+     "Esta es la casa de Amaia.",
+     "Y tú, ¿a dónde vas?",
+     "Soy de San Sebastián."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿De quién es este coche?»",
+    "o": [
+     "Amaia Mikelen ondoan dago.",
+     "Noren autoa da hau?",
+     "Mikel triste dago.",
+     "Mikelek auto bat dauka."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Hori Mikelen _____ da.",
+    "s": "Ese es el coche de Mikel.",
+    "o": [
+     "etxe",
+     "etxera",
+     "autoa"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Hau Amaiaren autoa da.»",
+    "o": [
+     "¿Tienes un libro?",
+     "Este es el coche de Amaia.",
+     "Tú eres Mikel.",
+     "El coche es barato."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Este es mi coche.»",
+    "o": [
+     "Autoa txikia da.",
+     "Amaiak sagar bat darama poltsan.",
+     "Kaixo!",
+     "Hau nire autoa da."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Hau Amaiaren _____ da.",
+    "s": "Esta es la casa de Amaia.",
+    "o": [
+     "txikia",
+     "hau",
+     "etxea"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Noren _____ da hau?",
+    "s": "¿De quién es este coche?",
+    "o": [
+     "daramazu",
+     "autoa",
+     "hura"
+    ],
+    "c": 1
+   }
+  ],
+  "11": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zurea da?»",
+    "o": [
+     "¿Es tuyo?",
+     "Mikel ha ido a ver a su abuelo.",
+     "¿Cómo estás?",
+     "Yo traigo un libro para ti."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Es de Amaia.»",
+    "o": [
+     "Amaiarena da.",
+     "Autoa merkea da.",
+     "Mikel Amaiaren ondoan dago.",
+     "Auto hau berria da."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Norena da _____ hau?",
+    "s": "¿De quién es este coche?",
+    "o": [
+     "auto",
+     "gatua",
+     "parkean"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nirea da.»",
+    "o": [
+     "¿Y tú, dónde vives?",
+     "Aquel es el coche de Xabi.",
+     "Es mío.",
+     "Yo estoy en casa."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Es de Xabi.»",
+    "o": [
+     "Neska horrek ez dauka libururik.",
+     "Xabirena da.",
+     "Hura Xabiren autoa da.",
+     "Zer dakarzu?"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Ez, ez da _____.",
+    "s": "No, no es mío.",
+    "o": [
+     "bizi",
+     "ondoan",
+     "nirea"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Norena da auto hau?»",
+    "o": [
+     "¿Dónde está el libro?",
+     "¿De quién es este coche?",
+     "¿Dónde vive Amaia?",
+     "Pero es caro."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «No, no es mío.»",
+    "o": [
+     "Mikelek ogia dakar Amaiarentzat.",
+     "Ez, ez da nirea.",
+     "Dendara noa.",
+     "Non dago Amaia?"
+    ],
+    "c": 1
+   }
+  ],
+  "12": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Noren autoa da hau?»",
+    "o": [
+     "¿De quién es este coche?",
+     "Y tú, ¿a dónde vas?",
+     "¿Qué tienes?",
+     "Soy de Bilbao."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Esta es la casa de Amaia.»",
+    "o": [
+     "Ez, ez da nirea.",
+     "Zer dakarzu?",
+     "Hau Amaiaren etxea da.",
+     "Nongoa zara?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Noren _____ da hau?",
+    "s": "¿De quién es este coche?",
+    "o": [
+     "bat",
+     "autoa",
+     "doa"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Ondo nago.»",
+    "o": [
+     "Estoy bien.",
+     "¿Dónde está el gato?",
+     "Tú vas a la calle.",
+     "¿Qué tal?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿De quién es este coche?»",
+    "o": [
+     "Amaiak sagar bat darama poltsan.",
+     "Nongoa zara?",
+     "Norena da auto hau?",
+     "Bai liburu zaharra!"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Hau Amaiaren _____ da.",
+    "s": "Esta es la casa de Amaia.",
+    "o": [
+     "etxea",
+     "pozik",
+     "parkera"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Amaiarena da.»",
+    "o": [
+     "¿Qué traes?",
+     "¿Tienes un libro?",
+     "¡Qué casa tan grande!",
+     "Es de Amaia."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Este es mi coche.»",
+    "o": [
+     "Xabirena da.",
+     "Hau nire autoa da.",
+     "Mikel parketik dator.",
+     "Bai liburu zaharra!"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Ondo _____.",
+    "s": "Estoy bien.",
+    "o": [
+     "zatoz",
+     "moduz",
+     "nago"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Norena da _____ hau?",
+    "s": "¿De quién es este coche?",
+    "o": [
+     "etxea",
+     "autorik",
+     "auto"
+    ],
+    "c": 2
+   }
+  ],
+  "13": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Non dago liburua?»",
+    "o": [
+     "¿Qué tienes?",
+     "Mikel está en la calle.",
+     "¿Dónde está el libro?",
+     "Esa chica no tiene libros."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Dónde está el gato?»",
+    "o": [
+     "Amaiak gatu bat dauka.",
+     "Liburu hau polita da.",
+     "Non dago gatua?",
+     "Ni etxera noa."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Non dago _____?",
+    "s": "¿Dónde está el libro?",
+    "o": [
+     "haserre",
+     "zuria",
+     "liburua"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Gatua mahaiaren azpian dago.»",
+    "o": [
+     "El gato está debajo de la mesa.",
+     "Esta mesa es pequeña.",
+     "¡Qué gato tan pequeño!",
+     "Ese chico no tiene coche."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia está al lado de Mikel.»",
+    "o": [
+     "Non bizi zara?",
+     "Nik liburu bat dakart zuretzat.",
+     "Amaia Mikelen ondoan dago.",
+     "Eta zuk?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Non dago _____?",
+    "s": "¿Dónde está el gato?",
+    "o": [
+     "gatua",
+     "parkean",
+     "parketik"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikel Amaiaren ondoan dago.»",
+    "o": [
+     "Mikel tiene un coche.",
+     "Amaia vive en San Sebastián.",
+     "Mikel ha ido a ver a su abuelo.",
+     "Mikel está al lado de Amaia."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «El coche está delante de la casa.»",
+    "o": [
+     "Autoa txikia da.",
+     "Mikel parketik dator.",
+     "Nondik zatoz?",
+     "Autoa etxearen aurrean dago."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Gatua mahaiaren _____ dago.",
+    "s": "El gato está debajo de la mesa.",
+    "o": [
+     "azpian",
+     "bere",
+     "parkera"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Amaia Mikelen ondoan _____.",
+    "s": "Amaia está al lado de Mikel.",
+    "o": [
+     "dago",
+     "triste",
+     "non"
+    ],
+    "c": 0
+   }
+  ],
+  "14": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zuk auto bat daukazu.»",
+    "o": [
+     "Tú tienes un coche.",
+     "Yo traigo un libro para ti.",
+     "Yo estoy en casa.",
+     "Mikel trae el pan para Amaia."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Y tú?»",
+    "o": [
+     "Eta zuk?",
+     "Begira!",
+     "Zarautzen bizi naiz.",
+     "Non dago liburua?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Zuk auto bat _____.",
+    "s": "Tú tienes un coche.",
+    "o": [
+     "poltsan",
+     "nire",
+     "daukazu"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zer daukazu?»",
+    "o": [
+     "¿Es tuyo?",
+     "¿Qué tienes?",
+     "Amaia está al lado de Mikel.",
+     "Amaia vive en San Sebastián."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo tengo un libro.»",
+    "o": [
+     "Nik liburu bat daukat.",
+     "Mikel triste dago.",
+     "Zu kaletik zatoz.",
+     "Baina garestia da."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Zer _____?",
+    "s": "¿Qué tienes?",
+    "o": [
+     "txikia",
+     "zure",
+     "daukazu"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikelek auto bat dauka.»",
+    "o": [
+     "Tú tienes un coche.",
+     "¿Cómo estás?",
+     "Mikel tiene un coche.",
+     "Tú has ido a ver a Amaia."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia tiene un libro.»",
+    "o": [
+     "Amaiak liburu bat dauka.",
+     "Amaia parkean dago.",
+     "Norena da auto hau?",
+     "Donostiakoa naiz."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Nik liburu bat _____.",
+    "s": "Yo tengo un libro.",
+    "o": [
+     "dakart",
+     "daukat",
+     "etxea"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Mikelek _____ bat dauka.",
+    "s": "Mikel tiene un coche.",
+    "o": [
+     "pozik",
+     "auto",
+     "berria"
+    ],
+    "c": 1
+   }
+  ],
+  "15": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Bai, liburu bat daukat.»",
+    "o": [
+     "¿Dónde está el libro?",
+     "Sí, tengo un libro.",
+     "Vivo en Zarautz.",
+     "Yo soy Xabi."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Tienes un libro?»",
+    "o": [
+     "Nora joan da Amaia?",
+     "Zuk auto bat daukazu.",
+     "Ni amonarengana joan naiz.",
+     "Zuk liburu bat daukazu?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Bai, liburu bat _____.",
+    "s": "Sí, tengo un libro.",
+    "o": [
+     "darama",
+     "dakar",
+     "daukat"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mutil horrek ez dauka autorik.»",
+    "o": [
+     "¿Qué tal?",
+     "Ese chico no tiene coche.",
+     "Tú eres Mikel.",
+     "Mikel tiene un coche."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia no tiene gato.»",
+    "o": [
+     "Bai, liburu bat daukat.",
+     "Nondik zatoz?",
+     "Eta zu, non bizi zara?",
+     "Amaiak ez dauka gaturik."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Zuk _____ bat daukazu?",
+    "s": "¿Tienes un libro?",
+    "o": [
+     "merkea",
+     "moduz",
+     "liburu"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zuk ez daukazu autorik.»",
+    "o": [
+     "Tú no tienes coche.",
+     "Amaia tiene un libro.",
+     "Vivo en Zarautz.",
+     "Aquel es el coche de Xabi."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo no tengo libros.»",
+    "o": [
+     "Zu Amaiarengana joan zara.",
+     "Nik ez daukat libururik.",
+     "Ni amonarengana joan naiz.",
+     "Kaixo!"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Mutil _____ ez dauka autorik.",
+    "s": "Ese chico no tiene coche.",
+    "o": [
+     "etxetik",
+     "etxean",
+     "horrek"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Amaiak ez _____ gaturik.",
+    "s": "Amaia no tiene gato.",
+    "o": [
+     "nora",
+     "bat",
+     "dauka"
+    ],
+    "c": 2
+   }
+  ],
+  "16": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Neska horrek ez dauka libururik.»",
+    "o": [
+     "Esa chica no tiene libros.",
+     "Este libro es bonito.",
+     "Vivo en Zarautz.",
+     "Ese es el coche de Mikel."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Ese chico no tiene coche.»",
+    "o": [
+     "Eta zuk?",
+     "Mutil horrek ez dauka autorik.",
+     "Zu kalera zoaz.",
+     "Zer moduz?"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Neska horrek ez dauka _____.",
+    "s": "Esa chica no tiene libros.",
+    "o": [
+     "kalera",
+     "parkean",
+     "libururik"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zuk liburu bat daukazu?»",
+    "o": [
+     "Y tú, ¿a dónde vas?",
+     "¿Tienes un libro?",
+     "¿Dónde está Amaia?",
+     "Ha ido a ver a la abuela."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «El libro está sobre la mesa.»",
+    "o": [
+     "Mahai hau txikia da.",
+     "Autoa merkea da.",
+     "Liburua mahaiaren gainean dago.",
+     "Nik liburu bat daukat."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Mutil _____ ez dauka autorik.",
+    "s": "Ese chico no tiene coche.",
+    "o": [
+     "triste",
+     "horrek",
+     "hau"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nik liburu bat daukat.»",
+    "o": [
+     "Vengo de la tienda.",
+     "Yo tengo un libro.",
+     "Ha ido a ver a la abuela.",
+     "Estoy bien."
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Mikel está al lado de Amaia.»",
+    "o": [
+     "Eta zu, non bizi zara?",
+     "Eta zuk?",
+     "Mikel Amaiaren ondoan dago.",
+     "Ez nago ondo."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Zuk _____ bat daukazu?",
+    "s": "¿Tienes un libro?",
+    "o": [
+     "liburu",
+     "mahaiaren",
+     "haserre"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Liburua mahaiaren _____ dago.",
+    "s": "El libro está sobre la mesa.",
+    "o": [
+     "daukat",
+     "etxera",
+     "gainean"
+    ],
+    "c": 2
+   }
+  ],
+  "17": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Amaia dendara doa.»",
+    "o": [
+     "Esta mesa es pequeña.",
+     "Este es el coche de Amaia.",
+     "Amaia va a la tienda.",
+     "Aquel es el coche de Xabi."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo voy a casa.»",
+    "o": [
+     "Ni etxera noa.",
+     "Zer moduz?",
+     "Mikel Bilbon bizi da.",
+     "Zu etxean zaude."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Amaia _____ doa.",
+    "s": "Amaia va a la tienda.",
+    "o": [
+     "naiz",
+     "horrek",
+     "dendara"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nora zoaz?»",
+    "o": [
+     "Estoy bien.",
+     "Vengo de la tienda.",
+     "¿A dónde vas?",
+     "Ese chico no tiene coche."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Voy a la tienda.»",
+    "o": [
+     "Mikel Amaiaren ondoan dago.",
+     "Dendara noa.",
+     "Amaiak gatu bat dauka.",
+     "Nik liburu bat daramat poltsan."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Ni _____ noa.",
+    "s": "Yo voy a casa.",
+    "o": [
+     "hori",
+     "etxera",
+     "auto"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Eta zu, nora zoaz?»",
+    "o": [
+     "¿Tienes un libro?",
+     "Sí, tengo un libro.",
+     "¿Este coche es nuevo?",
+     "Y tú, ¿a dónde vas?"
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Tú vas a la calle.»",
+    "o": [
+     "Dendatik nator.",
+     "Auto hori zaharra da.",
+     "Zu kalera zoaz.",
+     "Bai auto garestia!"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Nora _____?",
+    "s": "¿A dónde vas?",
+    "o": [
+     "zoaz",
+     "darama",
+     "zaude"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Eta zu, nora _____?",
+    "s": "Y tú, ¿a dónde vas?",
+    "o": [
+     "nirea",
+     "nire",
+     "zoaz"
+    ],
+    "c": 2
+   }
+  ],
+  "18": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikel aitonarengana joan da.»",
+    "o": [
+     "Este es el coche de Amaia.",
+     "Mikel ha ido a ver a su abuelo.",
+     "Vivo en Zarautz.",
+     "¿De dónde eres?"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿A dónde ha ido Amaia?»",
+    "o": [
+     "Zuk auto bat daukazu.",
+     "Mikelek auto bat dauka.",
+     "Nora joan da Amaia?",
+     "Nondik zatoz?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Mikel aitonarengana _____ da.",
+    "s": "Mikel ha ido a ver a su abuelo.",
+    "o": [
+     "aurrean",
+     "naiz",
+     "joan"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Ni amonarengana joan naiz.»",
+    "o": [
+     "¿Tienes un libro?",
+     "Yo he ido a ver a la abuela.",
+     "¡Qué casa tan grande!",
+     "¡Mira!"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia ha ido a ver a su abuela.»",
+    "o": [
+     "Hau Amaiaren etxea da.",
+     "Autoa azkarra da.",
+     "Ni amonarengana joan naiz.",
+     "Amaia amonarengana joan da."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Nora _____ da Amaia?",
+    "s": "¿A dónde ha ido Amaia?",
+    "o": [
+     "daukat",
+     "darama",
+     "joan"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Amonarengana joan da.»",
+    "o": [
+     "El coche es caro.",
+     "Mikel está triste.",
+     "Ha ido a ver a la abuela.",
+     "Voy a la tienda."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Tú has ido a ver a Amaia.»",
+    "o": [
+     "Zu Amaiarengana joan zara.",
+     "Ni pozik nago.",
+     "Amaia haserre dago.",
+     "Eta zu, nora zoaz?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Ni amonarengana joan _____.",
+    "s": "Yo he ido a ver a la abuela.",
+    "o": [
+     "etxea",
+     "asko",
+     "naiz"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Amaia _____ joan da.",
+    "s": "Amaia ha ido a ver a su abuela.",
+    "o": [
+     "mahaiaren",
+     "aitonarengana",
+     "amonarengana"
+    ],
+    "c": 2
+   }
+  ],
+  "19": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikel parketik dator.»",
+    "o": [
+     "Mikel viene del parque.",
+     "Yo estoy contento.",
+     "Tú tienes un coche.",
+     "No estoy bien."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Tú vienes de la calle.»",
+    "o": [
+     "Donostiakoa naiz.",
+     "Zu kaletik zatoz.",
+     "Bilbokoa naiz.",
+     "Hau Amaiaren autoa da."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Mikel _____ dator.",
+    "s": "Mikel viene del parque.",
+    "o": [
+     "gaturik",
+     "niretzat",
+     "parketik"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Ni etxetik nator.»",
+    "o": [
+     "¿Cómo estás?",
+     "Yo no tengo libros.",
+     "Yo vengo de casa.",
+     "Ha ido a ver a la abuela."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿De dónde vienes?»",
+    "o": [
+     "Nondik zatoz?",
+     "Zer moduz zaude?",
+     "Kaixo!",
+     "Donostiakoa naiz."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Zu kaletik _____.",
+    "s": "Tú vienes de la calle.",
+    "o": [
+     "nirea",
+     "zatoz",
+     "dakar"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Dendatik nator.»",
+    "o": [
+     "Amaia lleva una manzana en la bolsa.",
+     "¿Dónde estás?",
+     "Vengo de la tienda.",
+     "Aquella casa es grande."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia viene de casa de la abuela.»",
+    "o": [
+     "Amaia amonaren etxetik dator.",
+     "Mikelek ogia dakar Amaiarentzat.",
+     "Zarautzen bizi naiz.",
+     "Non bizi zara?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Ni etxetik _____.",
+    "s": "Yo vengo de casa.",
+    "o": [
+     "nekatuta",
+     "daukazu",
+     "nator"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Nondik _____?",
+    "s": "¿De dónde vienes?",
+    "o": [
+     "etxe",
+     "nire",
+     "zatoz"
+    ],
+    "c": 2
+   }
+  ],
+  "20": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Ni etxetik nator.»",
+    "o": [
+     "Bien, gracias.",
+     "Mikel vive en Bilbao.",
+     "Yo vengo de casa.",
+     "Amaia lleva una manzana en la bolsa."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Tú vienes de la calle.»",
+    "o": [
+     "Nik liburu bat daukat.",
+     "Ni amonarengana joan naiz.",
+     "Amonarengana joan da.",
+     "Zu kaletik zatoz."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Ni _____ nator.",
+    "s": "Yo vengo de casa.",
+    "o": [
+     "dago",
+     "etxetik",
+     "liburu"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Dendara noa.»",
+    "o": [
+     "Tú estás en casa.",
+     "¿Cómo estás?",
+     "Mikel ha ido a ver a su abuelo.",
+     "Voy a la tienda."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Mikel ha ido a ver a su abuelo.»",
+    "o": [
+     "Hau Amaiaren autoa da.",
+     "Hau Amaiaren etxea da.",
+     "Mikel aitonarengana joan da.",
+     "Amaia Donostian bizi da."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Zu kaletik _____.",
+    "s": "Tú vienes de la calle.",
+    "o": [
+     "bizi",
+     "daukazu",
+     "zatoz"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nora joan da Amaia?»",
+    "o": [
+     "¿De dónde vienes?",
+     "¿Qué tal?",
+     "¿A dónde ha ido Amaia?",
+     "Aquel es el coche de Xabi."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia ha ido a ver a su abuela.»",
+    "o": [
+     "Gela hori zuria da.",
+     "Bai, liburu bat daukat.",
+     "Bilbokoa naiz.",
+     "Amaia amonarengana joan da."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Mikel aitonarengana _____ da.",
+    "s": "Mikel ha ido a ver a su abuelo.",
+    "o": [
+     "asko",
+     "zoaz",
+     "joan"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Nora _____ da Amaia?",
+    "s": "¿A dónde ha ido Amaia?",
+    "o": [
+     "joan",
+     "dakarzu",
+     "nago"
+    ],
+    "c": 0
+   }
+  ],
+  "21": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zuk sagar bat dakarzu niretzat.»",
+    "o": [
+     "Tú traes una manzana para mí.",
+     "¿Y tú, dónde vives?",
+     "Esa habitación es blanca.",
+     "Tú has ido a ver a Amaia."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia trae una manzana.»",
+    "o": [
+     "Hori zure autoa da.",
+     "Non dago Amaia?",
+     "Etxe hura handia da.",
+     "Amaiak sagar bat dakar."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Zuk _____ bat dakarzu niretzat.",
+    "s": "Tú traes una manzana para mí.",
+    "o": [
+     "sagar",
+     "gaturik",
+     "parkean"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nik liburu bat dakart zuretzat.»",
+    "o": [
+     "El coche está delante de la casa.",
+     "Mikel trae el pan para Amaia.",
+     "Esa habitación es blanca.",
+     "Yo traigo un libro para ti."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia trae una manzana para su abuela.»",
+    "o": [
+     "Mikel Bilbon bizi da.",
+     "Amaiak sagar bat dakar bere amonarentzat.",
+     "Bai, liburu bat daukat.",
+     "Ni etxera noa."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Amaiak _____ bat dakar.",
+    "s": "Amaia trae una manzana.",
+    "o": [
+     "sagar",
+     "dauka",
+     "zure"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Zer dakarzu?»",
+    "o": [
+     "¿Qué traes?",
+     "La bolsa es grande.",
+     "Es mío.",
+     "La casa es bonita."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Mikel trae el pan para Amaia.»",
+    "o": [
+     "Amaia amonarengana joan da.",
+     "Mikelek ogia dakar Amaiarentzat.",
+     "Amaia amonaren etxetik dator.",
+     "Hau Amaiaren etxea da."
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Nik liburu bat _____ zuretzat.",
+    "s": "Yo traigo un libro para ti.",
+    "o": [
+     "niretzat",
+     "dakart",
+     "aurrean"
+    ],
+    "c": 1
+   },
+   {
+    "t": "hueco",
+    "p": "Amaiak sagar bat dakar bere _____.",
+    "s": "Amaia trae una manzana para su abuela.",
+    "o": [
+     "libururik",
+     "mahaiaren",
+     "amonarentzat"
+    ],
+    "c": 2
+   }
+  ],
+  "22": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Poltsa handia da.»",
+    "o": [
+     "Yo soy Xabi.",
+     "Tú tienes un coche.",
+     "Yo tengo un libro.",
+     "La bolsa es grande."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «La bolsa es pequeña.»",
+    "o": [
+     "Poltsa txikia da.",
+     "Amaia parkean dago.",
+     "Bai, liburu bat daukat.",
+     "Hura Xabiren autoa da."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Poltsa _____ da.",
+    "s": "La bolsa es grande.",
+    "o": [
+     "handia",
+     "kalera",
+     "non"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Amaiak sagar bat darama poltsan.»",
+    "o": [
+     "¿Dónde vive Amaia?",
+     "Mikel está en la calle.",
+     "Amaia lleva una manzana en la bolsa.",
+     "¡Qué chica tan bonita!"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¿Qué llevas tú en la bolsa?»",
+    "o": [
+     "Hau Amaiaren etxea da.",
+     "Non bizi zara?",
+     "Zuk zer daramazu poltsan?",
+     "Nirea da."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Poltsa _____ da.",
+    "s": "La bolsa es pequeña.",
+    "o": [
+     "berria",
+     "dago",
+     "txikia"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Mikelek ogia darama poltsan.»",
+    "o": [
+     "El coche es pequeño.",
+     "Vivo en San Sebastián.",
+     "¿Es tuyo?",
+     "Mikel lleva el pan en la bolsa."
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Yo llevo un libro en la bolsa.»",
+    "o": [
+     "Nik liburu bat daramat poltsan.",
+     "Nik liburu bat dakart zuretzat.",
+     "Ni Xabi naiz.",
+     "Zurea da?"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Amaiak _____ bat darama poltsan.",
+    "s": "Amaia lleva una manzana en la bolsa.",
+    "o": [
+     "dakart",
+     "neska",
+     "sagar"
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Zuk zer daramazu _____?",
+    "s": "¿Qué llevas tú en la bolsa?",
+    "o": [
+     "mahaiaren",
+     "poltsan",
+     "kalera"
+    ],
+    "c": 1
+   }
+  ],
+  "23": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Bai neska polita!»",
+    "o": [
+     "¡Qué chica tan bonita!",
+     "Amaia está al lado de Mikel.",
+     "Este coche es nuevo.",
+     "Yo no tengo libros."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¡Qué casa tan grande!»",
+    "o": [
+     "Hura Amaia da.",
+     "Gela hori zuria da.",
+     "Bai etxe handia!",
+     "Hau nire autoa da."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Bai neska _____!",
+    "s": "¡Qué chica tan bonita!",
+    "o": [
+     "triste",
+     "polita",
+     "nire"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Bai auto garestia!»",
+    "o": [
+     "Yo estoy en casa.",
+     "Amaia vive en San Sebastián.",
+     "¡Qué coche tan caro!",
+     "No, no es mío."
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¡Qué libro tan viejo!»",
+    "o": [
+     "Bai liburu zaharra!",
+     "Dendara noa.",
+     "Amaiak sagar bat darama poltsan.",
+     "Etxea polita da."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Bai etxe _____!",
+    "s": "¡Qué casa tan grande!",
+    "o": [
+     "zoaz",
+     "zuretzat",
+     "handia"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Baina garestia da.»",
+    "o": [
+     "Este libro es bonito.",
+     "Pero es caro.",
+     "Soy de Bilbao.",
+     "¡Qué libro tan viejo!"
+    ],
+    "c": 1
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «¡Mira!»",
+    "o": [
+     "Begira!",
+     "Mikel Amaiaren ondoan dago.",
+     "Neska horrek ez dauka libururik.",
+     "Zu Mikel zara."
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Bai _____ garestia!",
+    "s": "¡Qué coche tan caro!",
+    "o": [
+     "auto",
+     "autoa",
+     "neska"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Bai _____ zaharra!",
+    "s": "¡Qué libro tan viejo!",
+    "o": [
+     "merkea",
+     "dator",
+     "liburu"
+    ],
+    "c": 2
+   }
+  ],
+  "24": [
+   {
+    "t": "test",
+    "p": "Elige el significado de «Nik liburu bat dakart zuretzat.»",
+    "o": [
+     "Yo traigo un libro para ti.",
+     "El coche es caro.",
+     "Mikel va al parque.",
+     "Pero es caro."
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Mikel trae el pan para Amaia.»",
+    "o": [
+     "Ni pozik nago.",
+     "Zuk auto bat daukazu.",
+     "Ni etxetik nator.",
+     "Mikelek ogia dakar Amaiarentzat."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Nik liburu bat dakart _____.",
+    "s": "Yo traigo un libro para ti.",
+    "o": [
+     "gatua",
+     "pozik",
+     "zuretzat"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Begira!»",
+    "o": [
+     "Amaia trae una manzana.",
+     "¿Cómo es el coche?",
+     "Yo he ido a ver a la abuela.",
+     "¡Mira!"
+    ],
+    "c": 3
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Amaia lleva una manzana en la bolsa.»",
+    "o": [
+     "Zu etxean zaude.",
+     "Gela hori zuria da.",
+     "Amaiak sagar bat darama poltsan.",
+     "Amaia Donostian bizi da."
+    ],
+    "c": 2
+   },
+   {
+    "t": "hueco",
+    "p": "Mikelek _____ dakar Amaiarentzat.",
+    "s": "Mikel trae el pan para Amaia.",
+    "o": [
+     "ogia",
+     "liburu",
+     "daukat"
+    ],
+    "c": 0
+   },
+   {
+    "t": "test",
+    "p": "Elige el significado de «Poltsa txikia da.»",
+    "o": [
+     "El coche es grande.",
+     "Mikel está triste.",
+     "La bolsa es pequeña.",
+     "¿Y tú, dónde vives?"
+    ],
+    "c": 2
+   },
+   {
+    "t": "test",
+    "p": "Elige cómo se dice en euskera «Pero es caro.»",
+    "o": [
+     "Zer dakarzu?",
+     "Ni amonarengana joan naiz.",
+     "Bai neska polita!",
+     "Baina garestia da."
+    ],
+    "c": 3
+   },
+   {
+    "t": "hueco",
+    "p": "Amaiak sagar bat darama _____.",
+    "s": "Amaia lleva una manzana en la bolsa.",
+    "o": [
+     "poltsan",
+     "dendara",
+     "zaharra"
+    ],
+    "c": 0
+   },
+   {
+    "t": "hueco",
+    "p": "Poltsa _____ da.",
+    "s": "La bolsa es pequeña.",
+    "o": [
+     "libururik",
+     "bat",
+     "txikia"
+    ],
+    "c": 2
+   }
+  ]
+ }
+}

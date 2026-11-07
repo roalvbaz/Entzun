@@ -1,5 +1,5 @@
-const SHELL="shell-v3", AUDIO="audio-v1";
-const ARCHIVOS=["./","index.html","manifest.json","episodios.json","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
+const SHELL="shell-v4", AUDIO="audio-v1";
+const ARCHIVOS=["./","index.html","manifest.json","episodios.json","ejercicios.json","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
   e.waitUntil(caches.open(SHELL).then(c=>c.addAll(ARCHIVOS)).then(()=>self.skipWaiting()));

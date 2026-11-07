@@ -70,3 +70,8 @@ Alternativas si algo falla: AhoTTS (UPV/EHU, euskera + castellano, más robótic
 - La app se llama **Entzun**. `episodios.json` tiene `niveles[]`; cada nivel es una playlist con `id`, `nombre`, `descripcion`, `color` y `episodios[]`. Hoy solo existe **A1** (24 episodios). Para añadir A2: añadir otro objeto en `niveles` con sus episodios (`audio`: `podcasts/A2-NN.mp3` por ejemplo).
 - El progreso se guarda por `nivel-episodio` (p. ej. `A1-3`) y migra el formato antiguo.
 - En iPhone se instala desde Safari → Compartir → Añadir a pantalla de inicio; la web muestra un aviso con esos pasos (una sola vez).
+
+## Usuarios y ejercicios
+- **Usuarios**: perfiles en el propio dispositivo (nombre + color, `localStorage`). La app obliga a crear uno al abrirla. Cada usuario guarda su propio progreso y notas; no se sincronizan entre dispositivos. Para cuentas reales haría falta un servicio externo (p. ej. Firebase Auth, gratis) y que el propietario cree el proyecto.
+- **Ejercicios**: `ejercicios.json` se genera con `python herramientas/crear_ejercicios.py` a partir de las frases de `herramientas/crear_guiones.py` (10 preguntas por episodio: tests y rellenar huecos, todo tocando opciones). Pestaña *Ejercicios* dentro de cada nivel, con práctica mixta (10 al azar) y mejor nota por episodio.
+- Limitación: las opciones incorrectas se eligen al azar; muy raramente puede valer más de una. Revisar con una persona que hable euskera.
