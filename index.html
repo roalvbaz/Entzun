@@ -19,6 +19,7 @@
   --c0:#2d46b9; --c1:#8d67ab; --c2:#e8115b; --c3:#1e8a6a; --c4:#e8742a; --c5:#477d95;
   --mini:92px;
   --lado:max(20px,env(safe-area-inset-left),env(safe-area-inset-right),calc(50% - 340px));
+  --ease-out:cubic-bezier(0.23, 1, 0.32, 1); --ease-drawer:cubic-bezier(0.32, 0.72, 0, 1);
   --linea:#444; --pista:#333; --mini-fondo:#3a3a3a; --mini-sub:#d0d0d0; --cabecera:#2a3a30;
   --claro:#fff; --sobre-claro:#000; --bien-fondo:#14532d; --mal-fondo:#5b1a1a; --mal:#ff6b6b; --mal-suave:#ff8a8a;
 }
@@ -75,6 +76,9 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
   background:var(--mini-fondo);border-radius:16px;display:none;align-items:center;gap:12px;padding:10px 12px 10px 10px;
   box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:5;overflow:hidden}
 #mini.on{display:flex}
+#aviso-logro{position:fixed;left:max(8px,env(safe-area-inset-left),calc(50% - 352px));right:max(8px,env(safe-area-inset-right),calc(50% - 352px));bottom:calc(var(--mini) + 16px + env(safe-area-inset-bottom));z-index:6;min-height:64px;padding:12px 18px;border-radius:16px;background:var(--verde);color:var(--sobre-claro);font-weight:800;font-size:20px;text-align:left;opacity:0;transform:translateY(12px);visibility:hidden;transition:transform 240ms var(--ease-out),opacity 240ms var(--ease-out),visibility 0s 240ms}
+#aviso-logro.on{opacity:1;transform:none;visibility:visible;transition:transform 240ms var(--ease-out),opacity 240ms var(--ease-out)}
+@media (prefers-reduced-motion:reduce){#aviso-logro{transform:none}}
 #mini .portada{width:68px;height:68px}
 #mini .abrir{flex:1;min-width:0;text-align:left;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
 #mini .tit{font-size:19px;font-weight:700;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
@@ -88,9 +92,9 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 #full{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;
   background:linear-gradient(var(--tinte,var(--c0)) 0,var(--bg) 78%);
   padding:calc(12px + env(safe-area-inset-top)) max(24px,env(safe-area-inset-left),env(safe-area-inset-right),calc(50% - 320px)) calc(24px + env(safe-area-inset-bottom));
-  transform:translateY(100%);visibility:hidden;transition:transform .28s ease,visibility 0s .28s;overflow-y:auto}
-#full.on{transform:none;visibility:visible;transition:transform .28s ease}
-@media (prefers-reduced-motion:reduce){#full,#full.on,.ej-prog i{transition:none}.ctrl button:active{transform:none}}
+  transform:translateY(100%);visibility:hidden;transition:transform 300ms var(--ease-drawer),visibility 0s 300ms;overflow-y:auto}
+#full.on{transform:none;visibility:visible;transition:transform 300ms var(--ease-drawer)}
+@media (prefers-reduced-motion:reduce){#full,#full.on,.ej-prog i{transition:none}}
 #cerrar{width:64px;height:64px;display:grid;place-items:center;margin-left:-12px}
 #cerrar svg{width:36px;height:36px}
 #full .portada-g{width:min(100%,44vh);height:min(calc(100vw - 48px),44vh);margin:8px auto 24px;border-radius:12px;display:grid;place-items:center;
@@ -112,7 +116,9 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .ctrl .grande{width:88px;height:88px;background:var(--claro);color:var(--sobre-claro)}
 .ctrl .grande svg{width:44px;height:44px}
 .ctrl button:disabled{opacity:.3}
-.ctrl button:active{transform:scale(.94)}
+#continuar,.mixta,.tarjeta-nivel,.ej-op,.btn-verde,.btn-sec,#reproducir-nivel,#mini .play-blanco,.ctrl button,.tabs button{transition:transform 160ms var(--ease-out)}
+#continuar:active:not(:disabled),.mixta:active:not(:disabled),.tarjeta-nivel:active:not(:disabled),.ej-op:active:not(:disabled),.btn-verde:active:not(:disabled),.btn-sec:active:not(:disabled),#reproducir-nivel:active:not(:disabled),#mini .play-blanco:active,.ctrl button:active:not(:disabled),.tabs button:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){#continuar:active:not(:disabled),.mixta:active:not(:disabled),.tarjeta-nivel:active:not(:disabled),.ej-op:active:not(:disabled),.btn-verde:active:not(:disabled),.btn-sec:active:not(:disabled),#reproducir-nivel:active:not(:disabled),#mini .play-blanco:active,.ctrl button:active:not(:disabled),.tabs button:active{transform:none;opacity:.8}}
 /* Movil en horizontal: portada a la izquierda y controles a la derecha, todo a la vista */
 @media (orientation:landscape) and (max-height:500px){
   #full{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:32px;align-content:center;padding-top:calc(4px + env(safe-area-inset-top));padding-bottom:calc(4px + env(safe-area-inset-bottom))}
@@ -264,6 +270,7 @@ body.en-ejercicio #mini{display:none}
 </div>
 <div id="aviso"></div>
 
+<div role="status"><button id="aviso-logro"></button></div>
 <div id="mini" role="group" aria-label="Reproductor">
   <div class="portada" id="m-por"></div>
   <button class="abrir" id="m-abrir" aria-label="Abrir reproductor"><span class="tit" id="m-tit"></span><span class="sub" id="m-sub"></span></button>
@@ -704,7 +711,7 @@ $("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&k(cur)===
 let focoPrevio=null;
 const fondoFull=v=>{for(const e of document.body.children)if(e.id!=="full"&&e.tagName!=="SCRIPT")e.inert=v};
 const abrirFull=()=>{if($("full").classList.contains("on"))return;focoPrevio=document.activeElement;$("full").classList.add("on");fondoFull(true);$("cerrar").focus({preventScroll:true})};
-const cerrarFull=()=>{if(!$("full").classList.contains("on"))return;$("full").classList.remove("on");fondoFull(false);if(focoPrevio&&focoPrevio.focus)focoPrevio.focus({preventScroll:true})};
+const cerrarFull=()=>{if(!$("full").classList.contains("on"))return;$("full").classList.remove("on");fondoFull(false);if(focoPrevio&&focoPrevio.focus)focoPrevio.focus({preventScroll:true});mostrarLogro()};
 document.addEventListener("keydown",e=>{if(e.key==="Escape")cerrarFull()});
 $("m-abrir").onclick=abrirFull;$("cerrar").onclick=cerrarFull;
 $("play").onclick=toggle;$("m-play").onclick=toggle;
@@ -728,15 +735,30 @@ audio.addEventListener("timeupdate",()=>{
   if(Date.now()-ultimoGuardado>3000){ultimoGuardado=Date.now();estado.pos[k(cur)]=audio.currentTime;guardar()}
   if("mediaSession" in navigator&&isFinite(audio.duration)){try{navigator.mediaSession.setPositionState({duration:audio.duration,position:audio.currentTime,playbackRate:audio.playbackRate})}catch(e){}}
 });
+let logroPendiente=null,tLogro=null;
+function mostrarLogro(){
+  if(!logroPendiente||document.hidden||$("full").classList.contains("on"))return;
+  const {texto,hash}=logroPendiente;logroPendiente=null;
+  const b=$("aviso-logro");b.textContent=texto;
+  b.onclick=()=>{b.classList.remove("on");location.hash=hash};
+  b.classList.add("on");clearTimeout(tLogro);
+  tLogro=setTimeout(()=>b.classList.remove("on"),8000);
+}
 audio.addEventListener("ended",()=>{
   if(!cur)return;
+  const nv=nivelDe(cur.nivel),sig=niveles[niveles.indexOf(nv)+1];
+  const ejAntes=abiertoEj(nv,cur),sigAntes=sig&&nivelAbierto(sig);
   estado.hecho[k(cur)]=true;estado.pos[k(cur)]=0;guardar();
+  if(sig&&!sigAntes&&nivelAbierto(sig))logroPendiente={texto:`${sig.nombre} desbloqueado`,hash:"#/"};
+  else if(!ejAntes)logroPendiente={texto:"Ejercicio desbloqueado. Toca para hacerlo.",hash:`#/${nv.id}/ej/${cur.id}`};
+  mostrarLogro();
   const n=siguienteDe(cur);
   if(n)cargar(n,true);else{estadoPlay(false)}
 });
 audio.addEventListener("error",()=>{if(cur)$("aviso").textContent="No se pudo reproducir este episodio."});
-document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[k(cur)]=audio.currentTime;guardar()}});
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&cur){estado.pos[k(cur)]=audio.currentTime;guardar()}else if(!document.hidden)mostrarLogro()});
 
+document.addEventListener("touchstart",()=>{},{passive:true}); // Safari en iOS no aplica :active sin esto
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 init();
 </script>
