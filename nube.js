@@ -157,7 +157,7 @@ const Nube = {
 .e.pendiente{color:#ffb74d}.e.aprobado{color:var(--verde)}.e.bloqueado{color:var(--mal-suave)}
 .fila-u .b{display:flex;gap:10px}.fila-u .b button{flex:1;min-height:56px;border-radius:30px;font-weight:700;font-size:19px;background:var(--fila2)}
 .fila-u .b .si{background:var(--verde);color:#000}
-#aviso-admin{margin:0 20px 12px;background:#4a3b12;border-radius:14px;padding:16px 18px;display:none;width:calc(100% - 40px);text-align:left;font-size:20px;font-weight:700}
+#aviso-admin{margin:0 var(--lado) 12px;background:#4a3b12;border-radius:14px;padding:16px 18px;display:none;width:calc(100% - 2 * var(--lado));text-align:left;font-size:20px;font-weight:700}
 #aviso-admin.on{display:block}`;
     document.head.appendChild(css);
 

@@ -1,4 +1,4 @@
-const SHELL="shell-v11", AUDIO="audio-v1";
+const SHELL="shell-v13", AUDIO="audio-v1";
 const ARCHIVOS=["./","index.html","manifest.json","episodios.json","ejercicios.json","nube.js","fb.js","firebase-config.js","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
@@ -44,13 +44,14 @@ self.addEventListener("fetch",e=>{
     return;
   }
   // Resto: red primero, pero con poca cobertura no se hace esperar: a los 3 s sale lo guardado.
+  const clave=url.origin+url.pathname; // sin ?v=...: una sola copia por archivo, siempre la ultima
   const red=fetch(req,{cache:"no-store"}).then(async r=>{
-    if(r.ok){const c=await caches.open(SHELL);await c.put(req,r.clone())}
+    if(r.ok){const c=await caches.open(SHELL);await c.put(clave,r.clone())}
     return r;
   });
   e.waitUntil(red.catch(()=>{}));
   e.respondWith((async()=>{
-    const guardado=await caches.match(req,{ignoreSearch:true});
+    const guardado=await caches.match(clave);
     if(!guardado)return red.catch(async()=>await caches.match("index.html")||Response.error());
     return Promise.race([red.catch(()=>guardado),new Promise(ok=>setTimeout(()=>ok(guardado),3000))]);
   })());

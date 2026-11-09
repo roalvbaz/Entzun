@@ -33,13 +33,14 @@ def mezclar(rng, correcta, distractores):
 
 
 def main():
-    pool = [it for n in EPISODIOS for it in (EPISODIOS[n]["items"] if not EPISODIOS[n].get("repaso") else [])]
-    pool_eu = sorted({limpio(e) for e, s, _ in pool})
-    pool_es = sorted({limpio(s) for e, s, _ in pool})
-    palabras = sorted({w for e, _, _ in pool for w in PALABRA.findall(e) if len(w) >= 3 and not w[0].isupper()})
     out = {}
     for n in sorted(EPISODIOS):
         rng = random.Random(1000 + n)
+        # las opciones falsas salen del mismo nivel: en A1 no deben aparecer frases de B1
+        pool = [it for m in EPISODIOS if nivel_de(m) == nivel_de(n) and not EPISODIOS[m].get("repaso") for it in EPISODIOS[m]["items"]]
+        pool_eu = sorted({limpio(e) for e, s, _ in pool})
+        pool_es = sorted({limpio(s) for e, s, _ in pool})
+        palabras = sorted({w for e, _, _ in pool for w in PALABRA.findall(e) if len(w) >= 3 and not w[0].isupper()})
         items = items_de(n)
         # un test por frase (alterna sentido), hasta 6; luego huecos, hasta 4
         orden = items[:]

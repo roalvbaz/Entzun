@@ -18,6 +18,7 @@
   --texto:#fff; --suave:#b3b3b3; --verde:#1ed760; --verde-osc:#169c46;
   --c0:#2d46b9; --c1:#8d67ab; --c2:#e8115b; --c3:#1e8a6a; --c4:#e8742a; --c5:#477d95;
   --mini:92px;
+  --lado:max(20px,env(safe-area-inset-left),env(safe-area-inset-right),calc(50% - 340px));
   --linea:#444; --pista:#333; --mini-fondo:#3a3a3a; --mini-sub:#d0d0d0; --cabecera:#2a3a30;
   --claro:#fff; --sobre-claro:#000; --bien-fondo:#14532d; --mal-fondo:#5b1a1a; --mal:#ff6b6b; --mal-suave:#ff8a8a;
 }
@@ -33,7 +34,7 @@ svg{display:block;fill:currentColor}
 [tabindex="-1"]:focus{outline:none}
 
 /* ---------- Cabecera + continuar ---------- */
-header{padding:calc(20px + env(safe-area-inset-top)) 20px 8px;
+header{padding:calc(20px + env(safe-area-inset-top)) var(--lado) 8px;
   background:linear-gradient(var(--cabecera) 0,var(--bg) 340px)}
 h1{font-size:32px;font-weight:800;margin:0 0 18px;letter-spacing:-.5px}
 #continuar{display:flex;align-items:center;gap:16px;width:100%;text-align:left;
@@ -47,7 +48,7 @@ h1{font-size:32px;font-weight:800;margin:0 0 18px;letter-spacing:-.5px}
 .play-verde svg{width:30px;height:30px}
 
 /* ---------- Lista ---------- */
-main{padding:8px 20px 0}
+main{padding:8px var(--lado) 0}
 h2{font-size:24px;font-weight:800;margin:28px 0 10px;letter-spacing:-.3px}
 h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .ep{display:flex;align-items:center;gap:14px;border-radius:12px;padding:8px;margin:0 -8px}
@@ -67,10 +68,10 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .ep .bajar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:var(--suave);flex:none}
 .ep .bajar svg{width:28px;height:28px}
 .ep .bajar.ok{color:var(--verde)}
-#aviso{color:var(--suave);font-size:18px;padding:0 20px}
+#aviso{color:var(--suave);font-size:18px;padding:0 var(--lado)}
 
 /* ---------- Mini reproductor ---------- */
-#mini{position:fixed;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));height:var(--mini);
+#mini{position:fixed;left:max(8px,env(safe-area-inset-left),calc(50% - 352px));right:max(8px,env(safe-area-inset-right),calc(50% - 352px));bottom:calc(8px + env(safe-area-inset-bottom));height:var(--mini);
   background:var(--mini-fondo);border-radius:16px;display:none;align-items:center;gap:12px;padding:10px 12px 10px 10px;
   box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:5;overflow:hidden}
 #mini.on{display:flex}
@@ -86,14 +87,14 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 /* ---------- Reproductor completo ---------- */
 #full{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;
   background:linear-gradient(var(--tinte,var(--c0)) 0,var(--bg) 78%);
-  padding:calc(12px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
+  padding:calc(12px + env(safe-area-inset-top)) max(24px,env(safe-area-inset-left),env(safe-area-inset-right),calc(50% - 320px)) calc(24px + env(safe-area-inset-bottom));
   transform:translateY(100%);visibility:hidden;transition:transform .28s ease,visibility 0s .28s;overflow-y:auto}
 #full.on{transform:none;visibility:visible;transition:transform .28s ease}
 @media (prefers-reduced-motion:reduce){#full,#full.on,.ej-prog i{transition:none}.ctrl button:active{transform:none}}
 #cerrar{width:64px;height:64px;display:grid;place-items:center;margin-left:-12px}
 #cerrar svg{width:36px;height:36px}
 #full .portada-g{width:min(100%,44vh);height:min(calc(100vw - 48px),44vh);margin:8px auto 24px;border-radius:12px;display:grid;place-items:center;
-  font-size:clamp(90px,34vw,190px);font-weight:800;letter-spacing:-4px;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  font-size:clamp(60px,min(34vw,26vh),190px);font-weight:800;letter-spacing:-4px;box-shadow:0 16px 40px rgba(0,0,0,.5)}
 #f-tit{font-size:28px;font-weight:800;margin:0;letter-spacing:-.4px}
 #f-sub{color:var(--suave);font-size:19px;margin:4px 0 14px}
 #barra{width:100%;height:44px;-webkit-appearance:none;appearance:none;background:transparent;margin:0}
@@ -112,6 +113,16 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .ctrl .grande svg{width:44px;height:44px}
 .ctrl button:disabled{opacity:.3}
 .ctrl button:active{transform:scale(.94)}
+/* Movil en horizontal: portada a la izquierda y controles a la derecha, todo a la vista */
+@media (orientation:landscape) and (max-height:500px){
+  #full{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:32px;align-content:center;padding-top:calc(4px + env(safe-area-inset-top));padding-bottom:calc(4px + env(safe-area-inset-bottom))}
+  #full>*{grid-column:2}
+  #full .portada-g{grid-column:1;grid-row:1/span 7;width:62vh;height:62vh;margin:0;align-self:center;font-size:38vh}
+  #cerrar{width:52px;height:52px}
+  #f-tit{font-size:24px}#f-sub{font-size:17px;margin-bottom:0}
+  .ctrl{margin:0}
+}
+@media (orientation:landscape) and (max-height:500px) and (max-width:619px){.ctrl button{width:48px;height:48px}.ctrl .salto{width:56px;height:56px}.ctrl .salto svg{width:48px;height:48px}.ctrl .grande{width:76px;height:76px}}
 @media (max-width:379px){#full{padding-left:14px;padding-right:14px}.ctrl button{width:48px;height:48px}.ctrl .salto{width:56px;height:56px}.ctrl .salto svg{width:48px;height:48px}.ctrl .grande{width:76px;height:76px}}
 
 /* ---------- Niveles ---------- */
@@ -123,12 +134,12 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .tarjeta-nivel .sub{color:var(--suave);font-size:17px;margin-top:2px}
 .tarjeta-nivel .prog{height:4px;background:var(--linea);border-radius:2px;margin-top:8px;overflow:hidden}
 .tarjeta-nivel .prog i{display:block;height:100%;background:var(--verde)}
-#instalar{margin:12px 20px 8px;background:var(--fila2);border-radius:14px;padding:16px 18px;display:none}
+#instalar{margin:12px var(--lado) 8px;background:var(--fila2);border-radius:14px;padding:16px 18px;display:none}
 #instalar.on{display:block}
 #instalar b{font-size:21px}
 #instalar p{margin:6px 0 12px;color:var(--suave);font-size:18px;line-height:1.4}
 #instalar button{background:var(--verde);color:var(--sobre-claro);font-weight:700;border-radius:24px;min-height:52px;padding:0 24px}
-.cab-nivel{padding:calc(12px + env(safe-area-inset-top)) 20px 8px;background:linear-gradient(var(--tinte-n,var(--c3)) 0,var(--bg) 360px)}
+.cab-nivel{padding:calc(12px + env(safe-area-inset-top)) var(--lado) 8px;background:linear-gradient(var(--tinte-n,var(--c3)) 0,var(--bg) 360px)}
 #atras-lista{width:64px;height:64px;display:grid;place-items:center;margin-left:-14px}
 #atras-lista svg{width:34px;height:34px}
 .cab-nivel .portada{width:min(46vw,180px);height:min(46vw,180px);font-size:64px;margin:4px 0 16px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
@@ -139,7 +150,7 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .oculto{display:none!important}
 
 /* ---------- Usuarios ---------- */
-.pad{padding:calc(20px + env(safe-area-inset-top)) 20px 24px}
+.pad{padding:calc(20px + env(safe-area-inset-top)) var(--lado) 24px}
 .ayuda{color:var(--suave);font-size:18px;margin:0 0 18px;line-height:1.4}
 .usuario{display:flex;align-items:center;gap:14px;background:var(--fila);border-radius:14px;padding:10px;margin-bottom:10px}
 .usuario .elegir{flex:1;display:flex;align-items:center;gap:14px;text-align:left;min-height:64px;min-width:0}
@@ -156,11 +167,11 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 .btn-sec{display:block;width:100%;background:var(--fila2);color:var(--claro);font-weight:700;font-size:20px;border-radius:40px;min-height:60px;margin-bottom:12px}
 .btn-verde:disabled{opacity:.4}
 header .fila-sup{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-header .fila-sup h1{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+header .fila-sup h1{margin:0;min-width:0;overflow-wrap:anywhere}
 #chip-usuario{width:60px;height:60px;border-radius:50%;font-weight:800;font-size:26px;color:var(--claro);flex:none;display:grid;place-items:center}
 
 /* ---------- Pestañas ---------- */
-.tabs{display:flex;gap:10px;padding:8px 20px 0;position:sticky;top:env(safe-area-inset-top);background:var(--bg);z-index:3}
+.tabs{display:flex;gap:10px;padding:8px var(--lado) 0;position:sticky;top:env(safe-area-inset-top);background:var(--bg);z-index:3}
 .tabs::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:env(safe-area-inset-top);background:var(--bg)}
 .tabs button{flex:1;min-height:56px;border-radius:30px;background:var(--fila);color:var(--suave);font-weight:700;font-size:20px}
 .tabs button.on{background:var(--claro);color:var(--sobre-claro)}
@@ -174,13 +185,13 @@ header .fila-sup h1{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:
 .mixta .play-verde{width:56px;height:56px;margin-left:auto;background:var(--claro)}
 .ep .ir{color:var(--suave);width:44px;height:44px;display:grid;place-items:center;flex:none}
 .ep .ir svg{width:30px;height:30px}
-.ej-top{display:flex;align-items:center;gap:14px;padding:calc(10px + env(safe-area-inset-top)) 16px 6px}
+.ej-top{display:flex;align-items:center;gap:14px;padding:calc(10px + env(safe-area-inset-top)) var(--lado) 6px}
 #ej-cerrar{width:56px;height:56px;display:grid;place-items:center;flex:none}
 #ej-cerrar svg{width:32px;height:32px}
 .ej-prog{flex:1;height:8px;border-radius:4px;background:var(--pista);overflow:hidden}
 .ej-prog i{display:block;height:100%;background:var(--verde);transform:scaleX(0);transform-origin:left;transition:transform .25s}
 #ej-num{color:var(--suave);font-size:18px;min-width:58px;text-align:right}
-#ej-cuerpo{padding:12px 20px calc(24px + env(safe-area-inset-bottom))}
+#ej-cuerpo{padding:12px var(--lado) calc(24px + env(safe-area-inset-bottom))}
 .ej-tipo{color:var(--suave);font-size:17px;font-weight:600;margin:8px 0 6px}
 .ej-preg{font-size:28px;font-weight:800;line-height:1.25;margin:0 0 8px;letter-spacing:-.3px}
 .ej-pista{color:var(--suave);font-size:19px;margin:0 0 14px}
@@ -457,7 +468,7 @@ function paraContinuar(nivel){
 /* ================= Inicio ================= */
 function pintarInicio(){
   if(Nube.activo)Nube.pintarAviso();
-  $("saludo").textContent=usuario?saludo()+", "+usuario.nombre:"Entzun";
+  $("saludo").textContent=usuario?saludo()+", "+usuario.nombre.trim().split(/ +/)[0]:"Entzun";
   const chip=$("chip-usuario");
   if(usuario){chip.style.background=usuario.color;chip.textContent=inicial(usuario)}
   const c=paraContinuar(), b=$("continuar");
