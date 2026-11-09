@@ -145,16 +145,16 @@ const Nube = {
 
     const css = document.createElement("style");
     css.textContent = `
-.campo{width:100%;font:600 22px/1.2 inherit;font-family:inherit;color:#fff;background:var(--fila);border:2px solid #444;border-radius:14px;padding:16px;margin:0 0 12px}
+.campo{width:100%;font:600 22px/1.2 inherit;font-family:inherit;color:#fff;background:var(--fila);border:2px solid var(--linea);border-radius:14px;padding:16px;margin:0 0 12px}
 .campo:focus{outline:none;border-color:var(--verde)}
-.error{color:#ff8a8a;font-size:19px;font-weight:600;min-height:26px;margin:0 0 10px}
+.error{color:var(--mal-suave);font-size:19px;font-weight:600;min-height:26px;margin:0 0 10px}
 .enlace{display:block;width:100%;color:var(--verde);font-size:20px;font-weight:700;min-height:56px}
 .atras{width:64px;height:64px;display:grid;place-items:center;margin-left:-14px}.atras svg{width:34px;height:34px}
 .avatar.grande{width:96px;height:96px;font-size:44px}
 .fila-u{background:var(--fila);border-radius:14px;padding:14px;margin-bottom:12px}
 .fila-u .n{font-size:22px;font-weight:700}.fila-u .c{color:var(--suave);font-size:17px;word-break:break-all}
 .fila-u .e{font-size:17px;font-weight:700;margin:6px 0 10px}
-.e.pendiente{color:#ffb74d}.e.aprobado{color:var(--verde)}.e.bloqueado{color:#ff8a8a}
+.e.pendiente{color:#ffb74d}.e.aprobado{color:var(--verde)}.e.bloqueado{color:var(--mal-suave)}
 .fila-u .b{display:flex;gap:10px}.fila-u .b button{flex:1;min-height:56px;border-radius:30px;font-weight:700;font-size:19px;background:var(--fila2)}
 .fila-u .b .si{background:var(--verde);color:#000}
 #aviso-admin{margin:0 20px 12px;background:#4a3b12;border-radius:14px;padding:16px 18px;display:none;width:calc(100% - 40px);text-align:left;font-size:20px;font-weight:700}

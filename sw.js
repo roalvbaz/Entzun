@@ -1,4 +1,4 @@
-const SHELL="shell-v10", AUDIO="audio-v1";
+const SHELL="shell-v11", AUDIO="audio-v1";
 const ARCHIVOS=["./","index.html","manifest.json","episodios.json","ejercicios.json","nube.js","fb.js","firebase-config.js","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
@@ -43,9 +43,15 @@ self.addEventListener("fetch",e=>{
     })());
     return;
   }
-  // Resto: red primero (para ver episodios nuevos), caché si no hay conexión.
-  e.respondWith(fetch(req,{cache:"no-store"}).then(r=>{
-    if(r.ok){const copia=r.clone();caches.open(SHELL).then(c=>c.put(req,copia))}
+  // Resto: red primero, pero con poca cobertura no se hace esperar: a los 3 s sale lo guardado.
+  const red=fetch(req,{cache:"no-store"}).then(async r=>{
+    if(r.ok){const c=await caches.open(SHELL);await c.put(req,r.clone())}
     return r;
-  }).catch(()=>caches.match(req,{ignoreSearch:true}).then(r=>r||caches.match("index.html"))));
+  });
+  e.waitUntil(red.catch(()=>{}));
+  e.respondWith((async()=>{
+    const guardado=await caches.match(req,{ignoreSearch:true});
+    if(!guardado)return red.catch(async()=>await caches.match("index.html")||Response.error());
+    return Promise.race([red.catch(()=>guardado),new Promise(ok=>setTimeout(()=>ok(guardado),3000))]);
+  })());
 });
