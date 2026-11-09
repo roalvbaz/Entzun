@@ -161,6 +161,7 @@ header .fila-sup h1{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:
 
 /* ---------- Ejercicios ---------- */
 .mixta{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:linear-gradient(135deg,#1e8a6a,#2d46b9);border-radius:14px;padding:16px;margin:16px 0 4px;min-height:88px}
+.mixta[disabled]{opacity:.5}
 .mixta .tit{font-size:22px;font-weight:800}.mixta .sub{font-size:17px;opacity:.9}
 .mixta .play-verde{width:56px;height:56px;margin-left:auto;background:#fff}
 .ep .ir{color:var(--suave);width:44px;height:44px;display:grid;place-items:center;flex:none}
@@ -209,6 +210,7 @@ body.en-ejercicio #mini{display:none}
 <header>
   <div class="fila-sup"><h1 id="saludo">Entzun</h1><button id="chip-usuario" aria-label="Cambiar de usuario"></button></div>
   <button id="continuar" aria-label="Continuar"></button>
+  <button id="ir-ejercicios" class="mixta"><div><div class="tit">Ejercicios</div><div class="sub">Practica lo que ya has escuchado</div></div><div class="play-verde"><svg viewBox="0 0 24 24"><path d="M8.6 6 7.2 7.4 11.8 12l-4.6 4.6L8.6 18l6-6z"/></svg></div></button>
 </header>
 <section id="instalar" aria-label="Instalar en iPhone">
   <b>Instala Entzun en tu iPhone</b>
@@ -448,6 +450,7 @@ function pintarInicio(){
     b.innerHTML=`<div class="portada b${idxBloque(c)}">${c.id}</div><div class="txt"><div class="etq">${enCurso?"Seguir escuchando":"Empezar"} · ${c.nivel}</div><div class="tit"></div></div><div class="play-verde">${ICO.play}</div>`;
     b.querySelector(".tit").textContent=c.titulo;
   }else b.innerHTML='<div class="txt" style="padding:20px"><div class="tit">Sin episodios todavía</div></div>';
+  $("ir-ejercicios").onclick=()=>{location.hash="#/"+(c?c.nivel:niveles[0].id)+"/ej"};
   const cont=$("niveles");cont.innerHTML="";
   for(const n of niveles){
     const total=n.episodios.length, hechos=n.episodios.filter(e=>estado.hecho[k(e)]).length;
@@ -523,6 +526,9 @@ async function datosEj(){
   return ejDatos;
 }
 const claveEj=(n,c)=>n.id+"-"+c;
+// Se abre al terminar el episodio; lo ya practicado sigue abierto.
+const abiertoEj=(n,e)=>!!(estado.hecho[k(e)]||estado.ej[claveEj(n,e.id)]);
+const pregAbiertas=(n,dn)=>n.episodios.filter(e=>abiertoEj(n,e)).flatMap(e=>dn[e.id]||[]);
 async function pintarListaEj(n){
   const l=$("lista-ej");l.innerHTML='<p class="ayuda" style="margin-top:18px">Cargando…</p>';
   const D=await datosEj();
@@ -532,19 +538,21 @@ async function pintarListaEj(n){
   const mix=document.createElement("button");mix.className="mixta";
   const sm=estado.ej[claveEj(n,"mix")];
   mix.innerHTML=`<div><div class="tit">Práctica mixta</div><div class="sub"></div></div><div class="play-verde">${ICO.play}</div>`;
-  mix.querySelector(".sub").textContent=sm?`10 preguntas al azar · mejor: ${sm.mejor} de ${sm.total}`:"10 preguntas al azar de todo el nivel";
+  mix.disabled=!pregAbiertas(n,dn).length;
+  mix.querySelector(".sub").textContent=mix.disabled?"Termina un episodio para empezar":sm?`10 preguntas al azar · mejor: ${sm.mejor} de ${sm.total}`:"10 preguntas al azar de lo que ya has escuchado";
   mix.onclick=()=>{location.hash="#/"+n.id+"/ej/mix"};
   l.appendChild(mix);
   const h=document.createElement("h2");h.textContent="Por episodio";l.appendChild(h);
   for(const e of n.episodios){
     const q=dn[e.id];
-    const d=document.createElement("div");d.className="ep"+(q?"":" no");
+    const abierto=abiertoEj(n,e);
+    const d=document.createElement("div");d.className="ep"+(q&&abierto?"":" no");
     const por=document.createElement("div");por.className="portada";portada(por,e);d.appendChild(por);
-    const a=document.createElement("button");a.className="abrir";a.disabled=!q;
+    const a=document.createElement("button");a.className="abrir";a.disabled=!q||!abierto;
     const sc=estado.ej[claveEj(n,e.id)];
     a.innerHTML='<span class="tit"></span><span class="sub"></span>';
     a.querySelector(".tit").textContent=e.titulo;
-    a.querySelector(".sub").textContent=!q?"Sin ejercicios":sc?`Mejor: ${sc.mejor} de ${sc.total}`:`${q.length} preguntas`;
+    a.querySelector(".sub").textContent=!q?"Sin ejercicios":!abierto?"🔒 Termina el episodio para abrirlo":sc?`Mejor: ${sc.mejor} de ${sc.total}`:`${q.length} preguntas`;
     a.onclick=()=>{location.hash="#/"+n.id+"/ej/"+e.id};
     d.appendChild(a);
     const ir=document.createElement("div");ir.className="ir";ir.innerHTML=ICO.ir;d.appendChild(ir);
@@ -558,8 +566,8 @@ async function iniciarEj(n,clave){
   const dn=D&&D[n.id];
   let preg=[];
   if(dn){
-    if(clave==="mix")preg=barajar(Object.values(dn).flat()).slice(0,10);
-    else if(dn[clave])preg=dn[clave];
+    if(clave==="mix")preg=barajar(pregAbiertas(n,dn)).slice(0,10);
+    else if(dn[clave]&&n.episodios.some(e=>String(e.id)===String(clave)&&abiertoEj(n,e)))preg=dn[clave];
   }
   if(!preg.length){$("ej-cuerpo").innerHTML='<p class="ayuda">No hay ejercicios para esto.</p>';return}
   ses={n,clave,preg,i:0,ok:0,resp:false};

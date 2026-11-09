@@ -4,3 +4,12 @@ voces/
 hiru_texto/
 AhoTTS/
 salida_ikasten/
+curso/
+.claude-flow/
+.swarm/
+__pycache__/
+
+# Los .md no se suben, salvo los que usa el workflow de audio
+*.md
+!guiones/*.md
+!herramientas/muestra.md
