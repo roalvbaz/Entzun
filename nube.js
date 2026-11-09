@@ -2,7 +2,7 @@
    Se carga antes del script principal; usa sus variables globales (usuario, estado, ruta, guardar...) solo al ejecutarse. */
 "use strict";
 const Nube = {
-  api: null, activo: false, admin: false, perfil: null, acceso: null, uid: null,
+  api: null, activo: false, authListo: false, admin: false, perfil: null, acceso: null, uid: null,
   nombreNuevo: "", modoRegistro: false, timer: null, pendientes: 0,
 
   /* ---------- arranque ---------- */
@@ -18,6 +18,7 @@ const Nube = {
   },
 
   sinConexion() {
+    this.authListo = true;
     let ult = null;
     try { ult = JSON.parse(lsGet("entzun-ultimo") || "null"); } catch (e) {}
     if (ult) { this.entrarLocal(ult.uid, ult.nombre); return; }
@@ -37,6 +38,7 @@ const Nube = {
   /* ---------- sesión ---------- */
   async cambioAuth(u) {
     if (!u) {
+      this.authListo = true;
       this.uid = null; this.admin = false; this.perfil = null; this.acceso = null;
       audio.pause(); audio.removeAttribute("src"); cur = null; $("mini").classList.remove("on");
       usuario = null; estado = VACIO();
@@ -51,9 +53,10 @@ const Nube = {
       if (!p) { await this.api.crearPerfil(u, this.nombreNuevo); p = await this.api.perfil(u.uid); }
       this.admin = await this.api.esAdmin(u.uid);
       if (this.admin && p.estado !== "aprobado") { await this.api.cambiarEstado(u.uid, "aprobado"); p.estado = "aprobado"; }
-      this.perfil = p; this.acceso = p.estado; lsSet("entzun-nube", "1");
+      this.perfil = p; this.acceso = p.estado; lsSet("entzun-nube", "1"); this.authListo = true;
       if (p.estado === "aprobado") await this.activar(u, p); else { usuario = null; this.pintarEspera(p); location.hash = "#/pendiente"; ruta(); }
     } catch (e) {
+      this.authListo = true;
       let ult = null; try { ult = JSON.parse(lsGet("entzun-ultimo") || "null"); } catch (_) {}
       if (ult && ult.uid === u.uid) { this.entrarLocal(ult.uid, ult.nombre); return; }
       this.mostrarError("No se pudo comprobar tu cuenta. Revisa la conexión e inténtalo otra vez.");
