@@ -1,13 +1,13 @@
 # Episodio 7 - Amaia está en casa (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio siete de Euskera paseando.
-ES: Hoy hablamos de esto: amaia está en casa.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Suena el teléfono, y lo primero que te preguntan siempre es dónde estás. Como si fueras a estar en la luna.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Hoy aprendemos otro verbo, estar. Se usa para decir dónde está alguien.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia está en casa.
+ES: Y esta otra significa: Amaia está en casa.
 EU: Amaia etxean dago.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Ni etxean nago.
 EU: Ni etxean nago.
 [PAUSA 7]
 
-ES: Esta frase significa: Tú estás en casa.
+ES: Escucha cómo se dice: Tú estás en casa.
 EU: Zu etxean zaude.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Zu etxean zaude.
 EU: Zu etxean zaude.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Amaia etxean dago.
 [PAUSA 7]
 EU: Ni etxean nago.
@@ -42,7 +42,7 @@ EU: Ni etxean nago.
 EU: Zu etxean zaude.
 [PAUSA 7]
 
-ES: Esta frase significa: Mikel está en la calle.
+ES: Ahora, para decir: Mikel está en la calle.
 EU: Mikel kalean dago.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Mikel kalean dago.
 EU: Mikel kalean dago.
 [PAUSA 7]
 
-ES: Esta frase significa: Amaia está en el parque.
+ES: Y esta otra significa: Amaia está en el parque.
 EU: Amaia parkean dago.
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Amaia parkean dago.
 EU: Non dago Amaia?
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Dónde estás?
+ES: Escucha cómo se dice: ¿Dónde estás?
 EU: Non zaude?
 [PAUSA 3]
 ES: Repite.
@@ -86,7 +86,7 @@ EU: Non zaude?
 EU: Non zaude?
 [PAUSA 6]
 
-ES: Esta frase significa: La madre está en la cocina.
+ES: Ahora, para decir: La madre está en la cocina.
 EU: Ama sukaldean dago.
 [PAUSA 3]
 ES: Repite.
@@ -95,7 +95,7 @@ EU: Ama sukaldean dago.
 EU: Ama sukaldean dago.
 [PAUSA 7]
 
-ES: Esta frase significa: Los niños están en la escuela.
+ES: Y esta otra significa: Los niños están en la escuela.
 EU: Haurrak eskolan daude.
 [PAUSA 3]
 ES: Repite.
@@ -104,7 +104,7 @@ EU: Haurrak eskolan daude.
 EU: Haurrak eskolan daude.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Non zaude?
 [PAUSA 6]
 EU: Ama sukaldean dago.
@@ -143,7 +143,7 @@ EU: Haurrak eskolan daude.
 EU: Gu tabernan gaude.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Kaixo, Amaia! Non zaude?
 [PAUSA 2]
 EU: Etxean nago. Eta zu?
@@ -289,6 +289,8 @@ EU: zinema
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Hoy, cada vez que cambies de sitio, di dónde estás. En la cocina, en la calle, en el bar, lo que toque.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo se siente Amaia. Hasta pronto.
 EU: Agur!

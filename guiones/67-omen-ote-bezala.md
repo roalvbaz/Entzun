@@ -1,13 +1,13 @@
 # Episodio 67 - Dicen que, ¿será que?, y como (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y siete de Euskera paseando.
-ES: Hoy hablamos de esto: dicen que, ¿será que?, y como.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Dicen que, parece ser, a saber dónde estará. Hoy el chismorreo se convierte en gramática.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: La palabra omen indica que lo sabes por otros.
 ES: Escucha la frase.
-ES: Esta frase significa: Dicen que ha venido.
+ES: Y esta otra significa: Dicen que ha venido.
 EU: Etorri omen da.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Aberatsa omen da.
 
 ES: La palabra ote expresa duda.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Dónde estará?
+ES: Escucha cómo se dice: ¿Dónde estará?
 EU: Non ote dago?
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Non ote dago?
 EU: Non ote dago?
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Etorri omen da.
 [PAUSA 7]
 EU: Aberatsa omen da.
@@ -44,7 +44,7 @@ EU: Aberatsa omen da.
 EU: Non ote dago?
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Vendrá?
+ES: Ahora, para decir: ¿Vendrá?
 EU: Etorriko ote da?
 [PAUSA 3]
 ES: Repite.
@@ -55,7 +55,7 @@ EU: Etorriko ote da?
 
 ES: Tomar a alguien por algo se dice con tzat.
 ES: Escucha la frase.
-ES: Esta frase significa: Te considero un amigo.
+ES: Y esta otra significa: Te considero un amigo.
 EU: Laguntzat hartzen zaitut.
 [PAUSA 3]
 ES: Repite.
@@ -83,7 +83,7 @@ EU: Ergeltzat hartu nau.
 
 ES: Como se dice bezala.
 ES: Escucha la frase.
-ES: Esta frase significa: Lo he hecho como yo he dicho.
+ES: Escucha cómo se dice: Lo he hecho como yo he dicho.
 EU: Nik esan bezala egin dut.
 [PAUSA 3]
 ES: Repite.
@@ -92,7 +92,7 @@ EU: Nik esan bezala egin dut.
 EU: Nik esan bezala egin dut.
 [PAUSA 11]
 
-ES: Esta frase significa: Necesito amigos como tú.
+ES: Ahora, para decir: Necesito amigos como tú.
 EU: Zu bezalako lagunak behar ditut.
 [PAUSA 3]
 ES: Repite.
@@ -119,7 +119,7 @@ EU: Nik esan bezala egin dut.
 EU: Zu bezalako lagunak behar ditut.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Mikel etorri omen da.
 [PAUSA 2]
 EU: Non ote dago?
@@ -293,6 +293,8 @@ EU: miragarri
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Cuenta un rumor inofensivo, de esos de pueblo.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo graduar lo que dices. Hasta pronto.
 EU: Agur!

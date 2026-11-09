@@ -1,6 +1,6 @@
 # Episodio 80 - Repaso (guion propio; repaso de los episodios [77, 78, 79])
 
-ES: Kaixo, aitona. Bienvenido al episodio ochenta. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio ochenta. Hoy hacemos limpieza general de lo aprendido.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

@@ -1,13 +1,13 @@
 # Episodio 2 - Este coche es nuevo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio dos de Euskera paseando.
-ES: Hoy hablamos de esto: este coche es nuevo.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Imagina que tu vecino aparca un coche reluciente delante de casa. Antes de preguntar cuánto le ha costado, vas a querer comentarlo.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: En euskera la palabra para este va detrás del nombre. Primero se dice el coche, y después este.
 ES: Escucha la frase.
-ES: Esta frase significa: Este coche es nuevo.
+ES: Ahora, para decir: Este coche es nuevo.
 EU: Auto hau berria da.
 [PAUSA 3]
 ES: Repite.
@@ -18,7 +18,7 @@ EU: Auto hau berria da.
 
 ES: Para decir ese se usa otra palabra distinta.
 ES: Escucha la frase.
-ES: Esta frase significa: Ese coche es viejo.
+ES: Y esta otra significa: Ese coche es viejo.
 EU: Auto hori zaharra da.
 [PAUSA 3]
 ES: Repite.
@@ -46,7 +46,7 @@ EU: Auto hori zaharra da.
 EU: Etxe hura handia da.
 [PAUSA 9]
 
-ES: Esta frase significa: Esta mesa es pequeña.
+ES: Escucha cómo se dice: Esta mesa es pequeña.
 EU: Mahai hau txikia da.
 [PAUSA 3]
 ES: Repite.
@@ -55,7 +55,7 @@ EU: Mahai hau txikia da.
 EU: Mahai hau txikia da.
 [PAUSA 9]
 
-ES: Esta frase significa: Este libro es bonito.
+ES: Ahora, para decir: Este libro es bonito.
 EU: Liburu hau polita da.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Liburu hau polita da.
 EU: Liburu hau polita da.
 [PAUSA 9]
 
-ES: Esta frase significa: Esa habitación es blanca.
+ES: Y esta otra significa: Esa habitación es blanca.
 EU: Gela hori zuria da.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Gela hori zuria da.
 EU: Gela hori zuria da.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Mahai hau txikia da.
 [PAUSA 9]
 EU: Liburu hau polita da.
@@ -92,7 +92,7 @@ EU: Auto hau berria da?
 
 ES: El plural se forma terminando el nombre en ak. Y el adjetivo tambien va en plural.
 ES: Escucha la frase.
-ES: Esta frase significa: Los coches son nuevos.
+ES: Escucha cómo se dice: Los coches son nuevos.
 EU: Autoak berriak dira.
 [PAUSA 3]
 ES: Repite.
@@ -103,7 +103,7 @@ EU: Autoak berriak dira.
 
 ES: Un o una se dice bat, y va detras del nombre.
 ES: Escucha la frase.
-ES: Esta frase significa: Tengo un libro.
+ES: Ahora, para decir: Tengo un libro.
 EU: Liburu bat daukat.
 [PAUSA 3]
 ES: Repite.
@@ -112,7 +112,7 @@ EU: Liburu bat daukat.
 EU: Liburu bat daukat.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Auto hau berria da?
 [PAUSA 9]
 EU: Autoak berriak dira.
@@ -122,7 +122,7 @@ EU: Liburu bat daukat.
 
 ES: Unos o unas se dice batzuk.
 ES: Escucha la frase.
-ES: Esta frase significa: Han venido unos amigos.
+ES: Y esta otra significa: Han venido unos amigos.
 EU: Lagun batzuk etorri dira.
 [PAUSA 3]
 ES: Repite.
@@ -153,7 +153,7 @@ EU: Liburu bat daukat.
 EU: Lagun batzuk etorri dira.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Auto hau berria da.
 [PAUSA 2]
 EU: Bai, berria da.
@@ -341,6 +341,8 @@ EU: tentela
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Cuando salgas hoy, fíjate en tres cosas de la calle y di en voz baja si son grandes, pequeñas, nuevas o viejas.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo son las cosas. Hasta pronto.
 EU: Agur!

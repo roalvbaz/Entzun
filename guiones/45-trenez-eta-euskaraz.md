@@ -1,13 +1,13 @@
 # Episodio 45 - En tren, a mano, en euskera (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y cinco de Euskera paseando.
-ES: Hoy hablamos de esto: en tren, a mano, en euskera.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: A Bilbao se puede ir en tren, en autobús o andando, si tienes paciencia. Hoy aprendemos a decir cómo se hacen las cosas.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para decir con qué medio se hace algo, se añade z o ez.
 ES: Escucha la frase.
-ES: Esta frase significa: Voy a Bilbao en tren.
+ES: Escucha cómo se dice: Voy a Bilbao en tren.
 EU: Trenez noa Bilbora.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Trenez noa Bilbora.
 EU: Trenez noa Bilbora.
 [PAUSA 7]
 
-ES: Esta frase significa: Hemos ido en autobús.
+ES: Ahora, para decir: Hemos ido en autobús.
 EU: Autobusez joan gara.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Autobusez joan gara.
 EU: Autobusez joan gara.
 [PAUSA 7]
 
-ES: Esta frase significa: He venido a pie.
+ES: Y esta otra significa: He venido a pie.
 EU: Oinez etorri naiz.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Oinez etorri naiz.
 EU: Oinez etorri naiz.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Trenez noa Bilbora.
 [PAUSA 7]
 EU: Autobusez joan gara.
@@ -51,7 +51,7 @@ EU: Hegazkinez joango gara.
 EU: Hegazkinez joango gara.
 [PAUSA 7]
 
-ES: Esta frase significa: Hablo en euskera.
+ES: Escucha cómo se dice: Hablo en euskera.
 EU: Euskaraz hitz egiten dut.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Euskaraz hitz egiten dut.
 EU: Euskaraz hitz egiten dut.
 [PAUSA 9]
 
-ES: Esta frase significa: Lo he escrito a mano.
+ES: Ahora, para decir: Lo he escrito a mano.
 EU: Eskuz idatzi dut.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Eskuz idatzi dut.
 EU: Eskuz idatzi dut.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Hegazkinez joango gara.
 [PAUSA 7]
 EU: Euskaraz hitz egiten dut.
@@ -79,7 +79,7 @@ EU: Eskuz idatzi dut.
 
 ES: De qué tema se habla también se dice con z.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿De qué estás hablando?
+ES: Y esta otra significa: ¿De qué estás hablando?
 EU: Zertaz ari zara?
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Zertaz ari zara?
 EU: Politikaz hitz egiten ari gara.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Nola etorri zara?
 [PAUSA 2]
 EU: Trenez etorri naiz. Eta zu?
@@ -241,6 +241,8 @@ EU: zura
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Di cómo has venido hoy, y en qué idioma hablas con tus amigos.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo hablar de las acciones. Hasta pronto.
 EU: Agur!

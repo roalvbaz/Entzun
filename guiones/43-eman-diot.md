@@ -1,13 +1,13 @@
 # Episodio 43 - Dar algo a alguien (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y tres de Euskera paseando.
-ES: Hoy hablamos de esto: dar algo a alguien.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Dar, decir, escribir, traer: siempre hay alguien que recibe. Hoy el verbo se complica un poco, pero se puede con él.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Cuando hay alguien que recibe, el verbo cambia. Le he dado, se dice diot.
 ES: Escucha la frase.
-ES: Esta frase significa: Le he dado el pan al abuelo.
+ES: Y esta otra significa: Le he dado el pan al abuelo.
 EU: Aitonari ogia eman diot.
 [PAUSA 3]
 ES: Repite.
@@ -29,7 +29,7 @@ EU: Amak gutun bat idatzi dit.
 
 ES: Te lo he dado, dizut.
 ES: Escucha la frase.
-ES: Esta frase significa: Te he traído un regalo.
+ES: Escucha cómo se dice: Te he traído un regalo.
 EU: Zuri opari bat ekarri dizut.
 [PAUSA 3]
 ES: Repite.
@@ -38,7 +38,7 @@ EU: Zuri opari bat ekarri dizut.
 EU: Zuri opari bat ekarri dizut.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Aitonari ogia eman diot.
 [PAUSA 9]
 EU: Amak gutun bat idatzi dit.
@@ -46,7 +46,7 @@ EU: Amak gutun bat idatzi dit.
 EU: Zuri opari bat ekarri dizut.
 [PAUSA 11]
 
-ES: Esta frase significa: Me has dado dinero.
+ES: Ahora, para decir: Me has dado dinero.
 EU: Niri dirua eman didazu.
 [PAUSA 3]
 ES: Repite.
@@ -55,7 +55,7 @@ EU: Niri dirua eman didazu.
 EU: Niri dirua eman didazu.
 [PAUSA 9]
 
-ES: Esta frase significa: Se lo hemos dicho al padre.
+ES: Y esta otra significa: Se lo hemos dicho al padre.
 EU: Aitari esan diogu.
 [PAUSA 3]
 ES: Repite.
@@ -81,7 +81,7 @@ EU: Aitari esan diogu.
 EU: Lagunei idatzi diet.
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Qué te ha dicho?
+ES: Escucha cómo se dice: ¿Qué te ha dicho?
 EU: Zer esan dizu?
 [PAUSA 3]
 ES: Repite.
@@ -90,7 +90,7 @@ EU: Zer esan dizu?
 EU: Zer esan dizu?
 [PAUSA 7]
 
-ES: Esta frase significa: Me ha dicho la verdad.
+ES: Ahora, para decir: Me ha dicho la verdad.
 EU: Egia esan dit.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Zer esan dizu?
 EU: Egia esan dit.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Zer esan dizu aitonak?
 [PAUSA 2]
 EU: Egia esan dit.
@@ -219,6 +219,8 @@ EU: zulagailua
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Piensa qué le has dado o dicho hoy a alguien, y dilo.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir en tren o en euskera. Hasta pronto.
 EU: Agur!

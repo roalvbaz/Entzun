@@ -1,13 +1,13 @@
 # Episodio 77 - Opinar, hablar sobre, y de dos en dos (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y siete de Euskera paseando.
-ES: Hoy hablamos de esto: opinar, hablar sobre, y de dos en dos.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Qué te parece. Con esa pregunta empiezan todas las discusiones buenas.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para opinar se usa un verbo especial, deritzot.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Qué te parece?
+ES: Escucha cómo se dice: ¿Qué te parece?
 EU: Zer deritzozu?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zer deritzozu?
 EU: Zer deritzozu?
 [PAUSA 6]
 
-ES: Esta frase significa: Me parece bueno.
+ES: Ahora, para decir: Me parece bueno.
 EU: Ona deritzot.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Ona deritzot.
 EU: Ona deritzot.
 [PAUSA 6]
 
-ES: Esta frase significa: ¿Qué te parece este libro?
+ES: Y esta otra significa: ¿Qué te parece este libro?
 EU: Zer deritzozu liburu honi?
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Zer deritzozu liburu honi?
 EU: Zer deritzozu liburu honi?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zer deritzozu?
 [PAUSA 6]
 EU: Ona deritzot.
@@ -53,7 +53,7 @@ EU: Zuri buruz hitz egin dugu.
 EU: Zuri buruz hitz egin dugu.
 [PAUSA 11]
 
-ES: Esta frase significa: Es un libro sobre el euskera.
+ES: Escucha cómo se dice: Es un libro sobre el euskera.
 EU: Euskarari buruzko liburua da.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Euskarari buruzko liburua da.
 EU: Euskarari buruzko liburua da.
 [PAUSA 9]
 
-ES: Esta frase significa: Sabe mucho sobre el monte.
+ES: Ahora, para decir: Sabe mucho sobre el monte.
 EU: Mendiari buruz asko daki.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Mendiari buruz asko daki.
 EU: Mendiari buruz asko daki.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Zuri buruz hitz egin dugu.
 [PAUSA 11]
 EU: Euskarari buruzko liburua da.
@@ -81,7 +81,7 @@ EU: Mendiari buruz asko daki.
 
 ES: De dos en dos se dice bina, y de tres en tres hiruna.
 ES: Escucha la frase.
-ES: Esta frase significa: Hemos cogido dos manzanas cada uno.
+ES: Y esta otra significa: Hemos cogido dos manzanas cada uno.
 EU: Bina sagar hartu ditugu.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Bina sagar hartu ditugu.
 EU: Hiruna euro ordaindu dugu.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zer deritzozu liburu honi?
 [PAUSA 2]
 EU: Ona deritzot.
@@ -279,6 +279,8 @@ EU: onura
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Da tu opinión sobre algo que hayas visto hoy.
+[PAUSA 3]
 ES: En el próximo episodio veremos cada vez mejor. Hasta pronto.
 EU: Agur!

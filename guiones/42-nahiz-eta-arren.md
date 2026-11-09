@@ -1,13 +1,13 @@
 # Episodio 42 - Aunque: nahiz eta (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y dos de Euskera paseando.
-ES: Hoy hablamos de esto: aunque: nahiz eta.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Llueve, estás cansado, y aun así sales a andar. Para eso sirve lo de hoy: para decir aunque.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Aunque se dice nahiz eta, y el verbo va sin terminación.
 ES: Escucha la frase.
-ES: Esta frase significa: Aunque llueva, salgo a la calle.
+ES: Ahora, para decir: Aunque llueva, salgo a la calle.
 EU: Nahiz eta euria egin, kalera noa.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Nahiz eta euria egin, kalera noa.
 EU: Nahiz eta euria egin, kalera noa.
 [PAUSA 12]
 
-ES: Esta frase significa: Aunque está enfermo, ha ido a trabajar.
+ES: Y esta otra significa: Aunque está enfermo, ha ido a trabajar.
 EU: Nahiz eta gaixorik egon, lanera joan da.
 [PAUSA 3]
 ES: Repite.
@@ -44,7 +44,7 @@ EU: Nahiz eta gaixorik egon, lanera joan da.
 EU: Garestia bada ere, erosiko dut.
 [PAUSA 11]
 
-ES: Esta frase significa: Aunque llueva, salgo.
+ES: Escucha cómo se dice: Aunque llueva, salgo.
 EU: Euria ari badu ere, ateratzen naiz.
 [PAUSA 3]
 ES: Repite.
@@ -55,7 +55,7 @@ EU: Euria ari badu ere, ateratzen naiz.
 
 ES: Y a pesar de se dice arren.
 ES: Escucha la frase.
-ES: Esta frase significa: A pesar de ser mayor, es fuerte.
+ES: Ahora, para decir: A pesar de ser mayor, es fuerte.
 EU: Zaharra izan arren, indartsua da.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Zaharra izan arren, indartsua da.
 EU: Zaharra izan arren, indartsua da.
 [PAUSA 11]
 
-ES: Esta frase significa: A pesar de estudiar bien, no lo recuerdo.
+ES: Y esta otra significa: A pesar de estudiar bien, no lo recuerdo.
 EU: Ondo ikasi arren, ez dut gogoratzen.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Ondo ikasi arren, ez dut gogoratzen.
 EU: Ondo ikasi arren, ez dut gogoratzen.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Euria ari badu ere, ateratzen naiz.
 [PAUSA 12]
 EU: Zaharra izan arren, indartsua da.
@@ -90,7 +90,7 @@ EU: Hala ere, etorri da.
 EU: Hala ere, etorri da.
 [PAUSA 9]
 
-ES: Esta frase significa: Aun así, estoy contento.
+ES: Escucha cómo se dice: Aun así, estoy contento.
 EU: Hala ere, pozik nago.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Hala ere, etorri da.
 EU: Hala ere, pozik nago.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Kalera zoaz?
 [PAUSA 2]
 EU: Bai, nahiz eta euria egin.
@@ -243,6 +243,8 @@ EU: zabortegia
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Piensa en algo que haces aunque no te apetezca nada.
+[PAUSA 3]
 ES: En el próximo episodio veremos dar algo a alguien. Hasta pronto.
 EU: Agur!

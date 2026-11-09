@@ -1,13 +1,13 @@
 # Episodio 37 - Cuando era joven (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y siete de Euskera paseando.
-ES: Hoy hablamos de esto: cuando era joven.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Cuando eras joven todo era distinto, eso ya lo sabemos. Hoy aprendemos a contarlo en euskera.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para decir cuando, en el pasado, se añade enean al verbo.
 ES: Escucha la frase.
-ES: Esta frase significa: Cuando era joven, vivía en Bilbao.
+ES: Escucha cómo se dice: Cuando era joven, vivía en Bilbao.
 EU: Gazte nintzenean, Bilbon bizi nintzen.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Gazte nintzenean, Bilbon bizi nintzen.
 EU: Gazte nintzenean, Bilbon bizi nintzen.
 [PAUSA 11]
 
-ES: Esta frase significa: Iba a casa.
+ES: Ahora, para decir: Iba a casa.
 EU: Etxera nindoan.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Etxera nindoan.
 EU: Etxera nindoan.
 [PAUSA 6]
 
-ES: Esta frase significa: Amaia estaba en la calle.
+ES: Y esta otra significa: Amaia estaba en la calle.
 EU: Amaia kalean zegoen.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Amaia kalean zegoen.
 EU: Amaia kalean zegoen.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Gazte nintzenean, Bilbon bizi nintzen.
 [PAUSA 11]
 EU: Etxera nindoan.
@@ -51,7 +51,7 @@ EU: Ni etxean nengoen euria hasi zenean.
 EU: Ni etxean nengoen euria hasi zenean.
 [PAUSA 12]
 
-ES: Esta frase significa: Tenía coche.
+ES: Escucha cómo se dice: Tenía coche.
 EU: Autoa neukan.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Autoa neukan.
 EU: Autoa neukan.
 [PAUSA 6]
 
-ES: Esta frase significa: Traía el pan.
+ES: Ahora, para decir: Traía el pan.
 EU: Ogia zekarren.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Ogia zekarren.
 EU: Ogia zekarren.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Ni etxean nengoen euria hasi zenean.
 [PAUSA 12]
 EU: Autoa neukan.
@@ -77,7 +77,7 @@ EU: Autoa neukan.
 EU: Ogia zekarren.
 [PAUSA 6]
 
-ES: Esta frase significa: Cuando vino el abuelo, estábamos cenando.
+ES: Y esta otra significa: Cuando vino el abuelo, estábamos cenando.
 EU: Aitona etorri zenean, afaltzen ari ginen.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Aitona etorri zenean, afaltzen ari ginen.
 EU: Zer zeneukan poltsan?
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Non bizi zinen gazte zinenean?
 [PAUSA 2]
 EU: Bilbon bizi nintzen.
@@ -239,6 +239,8 @@ EU: saskibaloia
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Cuenta dónde vivías de joven y en qué trabajabas. Aquí tienes público.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo dar órdenes y pedir cosas. Hasta pronto.
 EU: Agur!

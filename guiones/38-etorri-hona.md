@@ -1,13 +1,13 @@
 # Episodio 38 - Dar órdenes y pedir cosas (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y ocho de Euskera paseando.
-ES: Hoy hablamos de esto: dar órdenes y pedir cosas.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hay casas donde se pide por favor, y casas donde se manda. Hoy aprendemos las dos cosas.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: La forma más sencilla de mandar es decir el verbo solo.
 ES: Escucha la frase.
-ES: Esta frase significa: ¡Ven aquí!
+ES: Ahora, para decir: ¡Ven aquí!
 EU: Etorri hona!
 [PAUSA 3]
 ES: Repite.
@@ -18,7 +18,7 @@ EU: Etorri hona!
 
 ES: Y esta otra forma es un poco más completa.
 ES: Escucha la frase.
-ES: Esta frase significa: ¡Ven aquí!
+ES: Y esta otra significa: ¡Ven aquí!
 EU: Etor zaitez hona!
 [PAUSA 3]
 ES: Repite.
@@ -44,7 +44,7 @@ EU: Etor zaitez hona!
 EU: Zoaz etxera!
 [PAUSA 6]
 
-ES: Esta frase significa: ¡Quédate ahí!
+ES: Escucha cómo se dice: ¡Quédate ahí!
 EU: Egon hor!
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Egon hor!
 EU: Egon hor!
 [PAUSA 6]
 
-ES: Esta frase significa: Siéntate aquí.
+ES: Ahora, para decir: Siéntate aquí.
 EU: Eseri hemen.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Eseri hemen.
 EU: Eseri hemen.
 [PAUSA 6]
 
-ES: Esta frase significa: Trae agua, por favor.
+ES: Y esta otra significa: Trae agua, por favor.
 EU: Ekarri ura, mesedez.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Ekarri ura, mesedez.
 EU: Ekarri ura, mesedez.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Egon hor!
 [PAUSA 6]
 EU: Eseri hemen.
@@ -90,7 +90,7 @@ EU: Bilboko autobusa da.
 EU: Bilboko autobusa da.
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Dónde están las llaves de casa?
+ES: Escucha cómo se dice: ¿Dónde están las llaves de casa?
 EU: Etxeko giltzak non daude?
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Bilboko autobusa da.
 EU: Etxeko giltzak non daude?
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Etorri hona, aitona!
 [PAUSA 2]
 EU: Zer gertatzen da?
@@ -243,6 +243,8 @@ EU: sudurra
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Manda algo a alguien en euskera. Con cariño, que luego hay que convivir.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir el libro que he comprado. Hasta pronto.
 EU: Agur!

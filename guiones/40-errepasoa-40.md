@@ -1,6 +1,6 @@
 # Episodio 40 - Repaso (guion propio; repaso de los episodios [37, 38, 39])
 
-ES: Kaixo, aitona. Bienvenido al episodio cuarenta. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio cuarenta. Hoy no hay nada nuevo. Hoy vamos a comprobar lo que ya sabes, que es bastante.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

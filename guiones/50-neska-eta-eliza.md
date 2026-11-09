@@ -1,13 +1,13 @@
 # Episodio 50 - Las palabras que ya terminan en a (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta de Euskera paseando.
-ES: Hoy hablamos de esto: las palabras que ya terminan en a.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hay palabras que ya traen la a de casa, y conviene no ponerles otra. Es un detalle pequeño que delata al que está aprendiendo.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Algunas palabras terminan en a de por sí, como neska. No se le añade otra.
 ES: Escucha la frase.
-ES: Esta frase significa: La chica ha venido.
+ES: Ahora, para decir: La chica ha venido.
 EU: Neska etorri da.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Neska etorri da.
 EU: Neska etorri da.
 [PAUSA 7]
 
-ES: Esta frase significa: Han venido tres chicas.
+ES: Y esta otra significa: Han venido tres chicas.
 EU: Hiru neska etorri dira.
 [PAUSA 3]
 ES: Repite.
@@ -44,7 +44,7 @@ EU: Hiru neska etorri dira.
 EU: Neskek kantatu dute.
 [PAUSA 7]
 
-ES: Esta frase significa: Esto es una iglesia.
+ES: Escucha cómo se dice: Esto es una iglesia.
 EU: Hau eliza da.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Hau eliza da.
 EU: Hau eliza da.
 [PAUSA 7]
 
-ES: Esta frase significa: Estoy en la iglesia.
+ES: Ahora, para decir: Estoy en la iglesia.
 EU: Elizan nago.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Elizan nago.
 EU: Elizan nago.
 [PAUSA 6]
 
-ES: Esta frase significa: Voy a la escuela.
+ES: Y esta otra significa: Voy a la escuela.
 EU: Eskolara noa.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Eskolara noa.
 EU: Eskolara noa.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Hau eliza da.
 [PAUSA 7]
 EU: Elizan nago.
@@ -88,7 +88,7 @@ EU: Eskolatik nator.
 EU: Eskolatik nator.
 [PAUSA 6]
 
-ES: Esta frase significa: Lo he comprado en una tienda.
+ES: Escucha cómo se dice: Lo he comprado en una tienda.
 EU: Denda batean erosi dut.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Eskolatik nator.
 EU: Denda batean erosi dut.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Non dago neska?
 [PAUSA 2]
 EU: Eskolara joan da.
@@ -253,6 +253,8 @@ EU: hodeia
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Busca palabras que ya acaben en a, como tienda o iglesia, y úsalas en una frase.
+[PAUSA 3]
 ES: En el próximo episodio veremos otra forma de decir que puedes. Hasta pronto.
 EU: Agur!

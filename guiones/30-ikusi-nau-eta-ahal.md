@@ -1,13 +1,13 @@
 # Episodio 30 - Quién ve a quién, y poder hacer algo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta de Euskera paseando.
-ES: Hoy hablamos de esto: quién ve a quién, y poder hacer algo.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: En un pueblo siempre hay alguien que te ha visto. Hoy aprendemos a decir quién ha visto a quién, y qué puedes y qué no puedes hacer.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Cuando la acción recae sobre mí, se dice nau. Sobre ti, zaitu.
 ES: Escucha la frase.
-ES: Esta frase significa: El abuelo me ha visto.
+ES: Ahora, para decir: El abuelo me ha visto.
 EU: Aitonak ikusi nau.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Aitonak ikusi nau.
 EU: Aitonak ikusi nau.
 [PAUSA 7]
 
-ES: Esta frase significa: Yo te he visto a ti.
+ES: Y esta otra significa: Yo te he visto a ti.
 EU: Nik zu ikusi zaitut.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Nik zu ikusi zaitut.
 EU: Zuk ni ikusi nauzu.
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel nos ha visto.
+ES: Escucha cómo se dice: Mikel nos ha visto.
 EU: Mikelek gu ikusi gaitu.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Mikelek gu ikusi gaitu.
 
 ES: Poder se dice ahal, y va detrás del verbo.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Puedes venir?
+ES: Ahora, para decir: ¿Puedes venir?
 EU: Etorri ahal zara?
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Etorri ahal zara?
 EU: Etorri ahal zara?
 [PAUSA 7]
 
-ES: Esta frase significa: Sí, puedo venir.
+ES: Y esta otra significa: Sí, puedo venir.
 EU: Bai, etorri ahal naiz.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Bai, etorri ahal naiz.
 EU: Bai, etorri ahal naiz.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Mikelek gu ikusi gaitu.
 [PAUSA 9]
 EU: Etorri ahal zara?
@@ -90,7 +90,7 @@ EU: Liburu hau irakurri ahal dut?
 
 ES: Para no poder se dice ezin.
 ES: Escucha la frase.
-ES: Esta frase significa: No puedo venir.
+ES: Escucha cómo se dice: No puedo venir.
 EU: Ezin dut etorri.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Liburu hau irakurri ahal dut?
 EU: Ezin dut etorri.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Gaur ikusi zaitut kalean.
 [PAUSA 2]
 EU: Ni? Ez nauzu ikusi.
@@ -231,6 +231,8 @@ EU: idazmen
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Piensa a quién has visto hoy y dilo. Y luego, una cosa que puedes hacer y otra que ya no.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo comparar las cosas. Hasta pronto.
 EU: Agur!

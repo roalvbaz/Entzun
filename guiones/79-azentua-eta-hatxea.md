@@ -1,13 +1,13 @@
 # Episodio 79 - El acento vasco y la hache (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y nueve de Euskera paseando.
-ES: Hoy hablamos de esto: el acento vasco y la hache.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Último esfuerzo, y este va de sonar bien: el acento, y esa hache que se escribe pero casi no suena.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Hoy cuidamos la pronunciación. En euskera, las sílabas suenan parejas, sin golpes fuertes como en castellano.
 ES: Escucha la frase.
-ES: Esta frase significa: El País Vasco.
+ES: Y esta otra significa: El País Vasco.
 EU: Euskal Herria.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Hitz bat esan.
 EU: Hitz bat esan.
 [PAUSA 7]
 
-ES: Esta frase significa: Los niños están en la playa.
+ES: Escucha cómo se dice: Los niños están en la playa.
 EU: Haurrak hondartzan daude.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Haurrak hondartzan daude.
 EU: Haurrak hondartzan daude.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Euskal Herria.
 [PAUSA 6]
 EU: Hitz bat esan.
@@ -44,7 +44,7 @@ EU: Hitz bat esan.
 EU: Haurrak hondartzan daude.
 [PAUSA 7]
 
-ES: Esta frase significa: Vivo en este pueblo.
+ES: Ahora, para decir: Vivo en este pueblo.
 EU: Herri honetan bizi naiz.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Herri honetan bizi naiz.
 EU: Herri honetan bizi naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Estoy en la cama.
+ES: Y esta otra significa: Estoy en la cama.
 EU: Ohean nago.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Ohean nago.
 EU: Ez ahaztu.
 [PAUSA 6]
 
-ES: Esta frase significa: Etcétera.
+ES: Escucha cómo se dice: Etcétera.
 EU: Eta abar.
 [PAUSA 3]
 ES: Repite.
@@ -88,7 +88,7 @@ EU: Eta abar.
 EU: Eta abar.
 [PAUSA 6]
 
-ES: Esta frase significa: Pronuncio bien el euskera.
+ES: Ahora, para decir: Pronuncio bien el euskera.
 EU: Euskara ondo ahoskatzen dut.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Eta abar.
 EU: Euskara ondo ahoskatzen dut.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Non daude haurrak?
 [PAUSA 2]
 EU: Hondartzan daude.
@@ -247,5 +247,7 @@ EU: aintzat hartu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Repite despacio las palabras que más te cuesten. Aquí ya solo falta sacar pecho.
+[PAUSA 3]
 EU: Agur!

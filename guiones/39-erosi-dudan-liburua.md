@@ -1,13 +1,13 @@
 # Episodio 39 - El libro que he comprado (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y nueve de Euskera paseando.
-ES: Hoy hablamos de esto: el libro que he comprado.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: A veces hay que concretar: no cualquier libro, sino el que compraste ayer. Hoy aprendemos a precisar.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: El que va pegado al verbo, con una n final, y delante del nombre.
 ES: Escucha la frase.
-ES: Esta frase significa: El libro que he comprado es bueno.
+ES: Y esta otra significa: El libro que he comprado es bueno.
 EU: Erosi dudan liburua ona da.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Atzo ikusi zenuen gizona nire osaba da.
 EU: Atzo ikusi zenuen gizona nire osaba da.
 [PAUSA 12]
 
-ES: Esta frase significa: El chico que ha venido es Xabi.
+ES: Escucha cómo se dice: El chico que ha venido es Xabi.
 EU: Etorri den mutila Xabi da.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Etorri den mutila Xabi da.
 EU: Etorri den mutila Xabi da.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Erosi dudan liburua ona da.
 [PAUSA 11]
 EU: Atzo ikusi zenuen gizona nire osaba da.
@@ -42,7 +42,7 @@ EU: Atzo ikusi zenuen gizona nire osaba da.
 EU: Etorri den mutila Xabi da.
 [PAUSA 11]
 
-ES: Esta frase significa: El coche que está aquí es mío.
+ES: Ahora, para decir: El coche que está aquí es mío.
 EU: Hemen dagoen autoa nirea da.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Hemen dagoen autoa nirea da.
 
 ES: De qué material es algo se dice con zko.
 ES: Escucha la frase.
-ES: Esta frase significa: Es una mesa de madera.
+ES: Y esta otra significa: Es una mesa de madera.
 EU: Zurezko mahaia da.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Zurezko mahaia da.
 EU: Harrizko etxea da.
 [PAUSA 7]
 
-ES: Esta frase significa: Es un anillo de oro.
+ES: Escucha cómo se dice: Es un anillo de oro.
 EU: Urrezko eraztuna da.
 [PAUSA 3]
 ES: Repite.
@@ -90,7 +90,7 @@ EU: Urrezko eraztuna da.
 
 ES: Repetir el adjetivo lo refuerza.
 ES: Escucha la frase.
-ES: Esta frase significa: Es una casa blanquísima.
+ES: Ahora, para decir: Es una casa blanquísima.
 EU: Etxe zuri-zuria da.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Urrezko eraztuna da.
 EU: Etxe zuri-zuria da.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Nor da etorri den gizona?
 [PAUSA 2]
 EU: Nire osaba da.
@@ -249,6 +249,8 @@ EU: zeren eta
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Busca algo que compraste hace poco y descríbelo así: el libro que compré, la silla que arreglé.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir por qué. Hasta pronto.
 EU: Agur!

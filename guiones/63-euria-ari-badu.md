@@ -1,13 +1,13 @@
 # Episodio 63 - Si llueve: el condicional real (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y tres de Euskera paseando.
-ES: Hoy hablamos de esto: si llueve: el condicional real.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Si llueve, me quedo en casa. Si no llueve, ya veremos. Hoy hablamos de condiciones.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Si se dice poniendo ba delante del verbo.
 ES: Escucha la frase.
-ES: Esta frase significa: Si llueve, me quedaré en casa.
+ES: Y esta otra significa: Si llueve, me quedaré en casa.
 EU: Euria ari badu, etxean geratuko naiz.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Etortzen bazara, pozik egongo naiz.
 EU: Etortzen bazara, pozik egongo naiz.
 [PAUSA 11]
 
-ES: Esta frase significa: Si tengo dinero, lo compraré.
+ES: Escucha cómo se dice: Si tengo dinero, lo compraré.
 EU: Dirua badaukat, erosiko dut.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Dirua badaukat, erosiko dut.
 EU: Dirua badaukat, erosiko dut.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Euria ari badu, etxean geratuko naiz.
 [PAUSA 12]
 EU: Etortzen bazara, pozik egongo naiz.
@@ -42,7 +42,7 @@ EU: Etortzen bazara, pozik egongo naiz.
 EU: Dirua badaukat, erosiko dut.
 [PAUSA 9]
 
-ES: Esta frase significa: Si quieres, te ayudaré.
+ES: Ahora, para decir: Si quieres, te ayudaré.
 EU: Nahi baduzu, lagunduko dizut.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Nahi baduzu, lagunduko dizut.
 EU: Nahi baduzu, lagunduko dizut.
 [PAUSA 9]
 
-ES: Esta frase significa: Si tienes hambre, come.
+ES: Y esta otra significa: Si tienes hambre, come.
 EU: Gose bazara, jan.
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Gose bazara, jan.
 EU: Gaixorik bazaude, joan medikuarengana.
 [PAUSA 9]
 
-ES: Esta frase significa: Si no vienes, llama.
+ES: Escucha cómo se dice: Si no vienes, llama.
 EU: Ez bazatoz, deitu.
 [PAUSA 3]
 ES: Repite.
@@ -86,7 +86,7 @@ EU: Ez bazatoz, deitu.
 EU: Ez bazatoz, deitu.
 [PAUSA 7]
 
-ES: Esta frase significa: Si estudias bien, lo entenderás.
+ES: Ahora, para decir: Si estudias bien, lo entenderás.
 EU: Ondo ikasten baduzu, ulertuko duzu.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Ez bazatoz, deitu.
 EU: Ondo ikasten baduzu, ulertuko duzu.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Bihar etorriko zara?
 [PAUSA 2]
 EU: Euria ari badu, ez.
@@ -269,6 +269,8 @@ EU: harana
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Haz un plan para mañana que empiece por si.
+[PAUSA 3]
 ES: En el próximo episodio veremos lo que harías si pudieras. Hasta pronto.
 EU: Agur!

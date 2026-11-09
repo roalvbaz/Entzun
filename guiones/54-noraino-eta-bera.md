@@ -1,13 +1,13 @@
 # Episodio 54 - Hasta dónde, y el mismo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y cuatro de Euskera paseando.
-ES: Hoy hablamos de esto: hasta dónde, y el mismo.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: ¿Hasta dónde llega el paseo de hoy? Y además, vamos a distinguir lo mismo de lo igual, que no es lo mismo.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Hasta un lugar se dice añadiendo raino.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Hasta dónde vas?
+ES: Ahora, para decir: ¿Hasta dónde vas?
 EU: Noraino zoaz?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Noraino zoaz?
 EU: Noraino zoaz?
 [PAUSA 6]
 
-ES: Esta frase significa: Voy hasta Bilbao.
+ES: Y esta otra significa: Voy hasta Bilbao.
 EU: Bilboraino noa.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Bilboraino noa.
 EU: Etxeraino lagunduko zaitut.
 [PAUSA 7]
 
-ES: Esta frase significa: Hemos ido a pie hasta la playa.
+ES: Escucha cómo se dice: Hemos ido a pie hasta la playa.
 EU: Hondartzaraino oinez joan gara.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Hondartzaraino oinez joan gara.
 EU: Hondartzaraino oinez joan gara.
 [PAUSA 9]
 
-ES: Esta frase significa: He leído hasta la página diez.
+ES: Ahora, para decir: He leído hasta la página diez.
 EU: Hamargarren orrialderaino irakurri dut.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Hamargarren orrialderaino irakurri dut.
 
 ES: El mismo se dice bera, detrás del nombre.
 ES: Escucha la frase.
-ES: Esta frase significa: Es el mismo hombre.
+ES: Y esta otra significa: Es el mismo hombre.
 EU: Gizon bera da.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Gizon bera da.
 EU: Gizon bera da.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Hondartzaraino oinez joan gara.
 [PAUSA 9]
 EU: Hamargarren orrialderaino irakurri dut.
@@ -90,7 +90,7 @@ EU: Etxe bera da.
 
 ES: Igual se dice berdina.
 ES: Escucha la frase.
-ES: Esta frase significa: Tu coche es igual que el mío.
+ES: Escucha cómo se dice: Tu coche es igual que el mío.
 EU: Zure autoa nirearen berdina da.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Etxe bera da.
 EU: Zure autoa nirearen berdina da.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Noraino zoaz?
 [PAUSA 2]
 EU: Hondartzaraino noa.
@@ -261,6 +261,8 @@ EU: distirarazi
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Al volver, di hasta dónde has llegado.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir no sé dónde está. Hasta pronto.
 EU: Agur!

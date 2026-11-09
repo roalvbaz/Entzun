@@ -1,11 +1,11 @@
 # Episodio 10 - ¿De quién es este coche? (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio diez de Euskera paseando.
-ES: Hoy hablamos de esto: ¿De quién es este coche?
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hay un coche tapando tu garaje y alguien tiene que ser el dueño. Hoy aprendemos a preguntarlo.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
-ES: Esta frase significa: ¿De quién es este coche?
+ES: Ahora, para decir: ¿De quién es este coche?
 EU: Noren autoa da hau?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Noren autoa da hau?
 
 ES: Para decir de alguien, se añade ren al nombre si termina en vocal.
 ES: Escucha la frase.
-ES: Esta frase significa: Este es el coche de Amaia.
+ES: Y esta otra significa: Este es el coche de Amaia.
 EU: Hau Amaiaren autoa da.
 [PAUSA 3]
 ES: Repite.
@@ -44,7 +44,7 @@ EU: Hau Amaiaren autoa da.
 EU: Hori Mikelen autoa da.
 [PAUSA 9]
 
-ES: Esta frase significa: Aquel es el coche de Xabi.
+ES: Escucha cómo se dice: Aquel es el coche de Xabi.
 EU: Hura Xabiren autoa da.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Hura Xabiren autoa da.
 EU: Hura Xabiren autoa da.
 [PAUSA 9]
 
-ES: Esta frase significa: Este es mi coche.
+ES: Ahora, para decir: Este es mi coche.
 EU: Hau nire autoa da.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Hau nire autoa da.
 EU: Hau nire autoa da.
 [PAUSA 9]
 
-ES: Esta frase significa: Ese es tu coche.
+ES: Y esta otra significa: Ese es tu coche.
 EU: Hori zure autoa da.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Hori zure autoa da.
 EU: Hori zure autoa da.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Hura Xabiren autoa da.
 [PAUSA 9]
 EU: Hau nire autoa da.
@@ -88,7 +88,7 @@ EU: Hau Amaiaren etxea da.
 EU: Hau Amaiaren etxea da.
 [PAUSA 9]
 
-ES: Esta frase significa: Esta es la casa de mi madre.
+ES: Escucha cómo se dice: Esta es la casa de mi madre.
 EU: Hau nire amaren etxea da.
 [PAUSA 3]
 ES: Repite.
@@ -97,7 +97,7 @@ EU: Hau nire amaren etxea da.
 EU: Hau nire amaren etxea da.
 [PAUSA 11]
 
-ES: Esta frase significa: Ese es el coche de mi padre.
+ES: Ahora, para decir: Ese es el coche de mi padre.
 EU: Hori nire aitaren autoa da.
 [PAUSA 3]
 ES: Repite.
@@ -106,7 +106,7 @@ EU: Hori nire aitaren autoa da.
 EU: Hori nire aitaren autoa da.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Hau Amaiaren etxea da.
 [PAUSA 9]
 EU: Hau nire amaren etxea da.
@@ -114,7 +114,7 @@ EU: Hau nire amaren etxea da.
 EU: Hori nire aitaren autoa da.
 [PAUSA 11]
 
-ES: Esta frase significa: Aquel es el hijo de mi hermano.
+ES: Y esta otra significa: Aquel es el hijo de mi hermano.
 EU: Hura nire anaiaren semea da.
 [PAUSA 3]
 ES: Repite.
@@ -145,7 +145,7 @@ EU: Hori nire aitaren autoa da.
 EU: Hura nire anaiaren semea da.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Noren autoa da hau?
 [PAUSA 2]
 EU: Hau Mikelen autoa da.
@@ -339,6 +339,8 @@ EU: lehengusu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Mira las fotos de casa y di de quién es cada cosa.
+[PAUSA 3]
 ES: En el próximo episodio veremos de quién es cada cosa. Hasta pronto.
 EU: Agur!

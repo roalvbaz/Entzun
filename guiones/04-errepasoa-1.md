@@ -1,6 +1,6 @@
 # Episodio 4 - Repaso uno (guion propio; repaso de los episodios [1, 2, 3])
 
-ES: Kaixo, aitona. Bienvenido al episodio cuatro. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio cuatro. Hoy no hay nada nuevo. Hoy vamos a comprobar lo que ya sabes, que es bastante.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

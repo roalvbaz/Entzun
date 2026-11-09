@@ -1,11 +1,11 @@
 # Episodio 17 - Amaia va a la tienda (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio diecisiete de Euskera paseando.
-ES: Hoy hablamos de esto: amaia va a la tienda.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Sales de casa y siempre hay alguien que te pregunta a dónde vas. Hoy ya tienes respuesta.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
-ES: Esta frase significa: ¿A dónde vas?
+ES: Escucha cómo se dice: ¿A dónde vas?
 EU: Nora zoaz?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Nora zoaz?
 
 ES: Para decir a un lugar, se añade ra al final.
 ES: Escucha la frase.
-ES: Esta frase significa: Voy a la tienda.
+ES: Ahora, para decir: Voy a la tienda.
 EU: Dendara noa.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Dendara noa.
 EU: Dendara noa.
 [PAUSA 6]
 
-ES: Esta frase significa: Amaia va a la tienda.
+ES: Y esta otra significa: Amaia va a la tienda.
 EU: Amaia dendara doa.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Amaia dendara doa.
 EU: Amaia dendara doa.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Nora zoaz?
 [PAUSA 6]
 EU: Dendara noa.
@@ -51,7 +51,7 @@ EU: Mikel parkera doa.
 EU: Mikel parkera doa.
 [PAUSA 7]
 
-ES: Esta frase significa: Yo voy a casa.
+ES: Escucha cómo se dice: Yo voy a casa.
 EU: Ni etxera noa.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Ni etxera noa.
 EU: Ni etxera noa.
 [PAUSA 7]
 
-ES: Esta frase significa: Tú vas a la calle.
+ES: Ahora, para decir: Tú vas a la calle.
 EU: Zu kalera zoaz.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Zu kalera zoaz.
 EU: Zu kalera zoaz.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Mikel parkera doa.
 [PAUSA 7]
 EU: Ni etxera noa.
@@ -77,7 +77,7 @@ EU: Ni etxera noa.
 EU: Zu kalera zoaz.
 [PAUSA 7]
 
-ES: Esta frase significa: Y tú, ¿a dónde vas?
+ES: Y esta otra significa: Y tú, ¿a dónde vas?
 EU: Eta zu, nora zoaz?
 [PAUSA 3]
 ES: Repite.
@@ -99,7 +99,7 @@ EU: Bilbora goaz.
 
 ES: En plural se dice etara.
 ES: Escucha la frase.
-ES: Esta frase significa: Voy a las tiendas.
+ES: Escucha cómo se dice: Voy a las tiendas.
 EU: Dendetara noa.
 [PAUSA 3]
 ES: Repite.
@@ -108,7 +108,7 @@ EU: Dendetara noa.
 EU: Dendetara noa.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Eta zu, nora zoaz?
 [PAUSA 9]
 EU: Bilbora goaz.
@@ -116,7 +116,7 @@ EU: Bilbora goaz.
 EU: Dendetara noa.
 [PAUSA 6]
 
-ES: Esta frase significa: Vamos a la playa.
+ES: Ahora, para decir: Vamos a la playa.
 EU: Hondartzara goaz.
 [PAUSA 3]
 ES: Repite.
@@ -147,7 +147,7 @@ EU: Dendetara noa.
 EU: Hondartzara goaz.
 [PAUSA 6]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Kaixo! Nora zoaz?
 [PAUSA 2]
 EU: Dendara noa. Eta zu?
@@ -227,6 +227,8 @@ EU: bulego
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Mientras andas, di en voz alta a dónde vas. Al parque, a la tienda, o a ninguna parte, que también vale.
+[PAUSA 3]
 ES: En el próximo episodio veremos ir a casa de la abuela. Hasta pronto.
 EU: Agur!

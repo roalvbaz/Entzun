@@ -1,13 +1,13 @@
 # Episodio 35 - Lo que me gusta y lo que me pasa (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y cinco de Euskera paseando.
-ES: Hoy hablamos de esto: lo que me gusta y lo que me pasa.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Que si me gusta esto, que si se me ha olvidado lo otro. Hoy hablamos de lo que nos gusta y de lo que nos pasa sin querer.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Me gusta se dice gustatzen zait. A ti, zaizu. A él, zaio.
 ES: Escucha la frase.
-ES: Esta frase significa: Me gusta este libro.
+ES: Y esta otra significa: Me gusta este libro.
 EU: Liburu hau gustatzen zait.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Kafea gustatzen zaizu?
 EU: Kafea gustatzen zaizu?
 [PAUSA 7]
 
-ES: Esta frase significa: Al abuelo le gusta la pelota.
+ES: Escucha cómo se dice: Al abuelo le gusta la pelota.
 EU: Aitonari pilota gustatzen zaio.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Aitonari pilota gustatzen zaio.
 EU: Aitonari pilota gustatzen zaio.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Liburu hau gustatzen zait.
 [PAUSA 9]
 EU: Kafea gustatzen zaizu?
@@ -42,7 +42,7 @@ EU: Kafea gustatzen zaizu?
 EU: Aitonari pilota gustatzen zaio.
 [PAUSA 9]
 
-ES: Esta frase significa: A mí no me gusta.
+ES: Ahora, para decir: A mí no me gusta.
 EU: Niri ez zait gustatzen.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Niri ez zait gustatzen.
 
 ES: Si lo que pasa es plural, se dice zaizkit.
 ES: Escucha la frase.
-ES: Esta frase significa: Se me han olvidado las llaves.
+ES: Y esta otra significa: Se me han olvidado las llaves.
 EU: Giltzak ahaztu zaizkit.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Giltzak ahaztu zaizkit.
 EU: Autoa hondatu zait.
 [PAUSA 7]
 
-ES: Esta frase significa: Me ha venido un amigo a casa.
+ES: Escucha cómo se dice: Me ha venido un amigo a casa.
 EU: Lagun bat etorri zait etxera.
 [PAUSA 3]
 ES: Repite.
@@ -88,7 +88,7 @@ EU: Lagun bat etorri zait etxera.
 EU: Lagun bat etorri zait etxera.
 [PAUSA 11]
 
-ES: Esta frase significa: ¿Qué te ha pasado?
+ES: Ahora, para decir: ¿Qué te ha pasado?
 EU: Zer gertatu zaizu?
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Lagun bat etorri zait etxera.
 EU: Zer gertatu zaizu?
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zer gertatu zaizu?
 [PAUSA 2]
 EU: Giltzak ahaztu zaizkit.
@@ -235,6 +235,8 @@ EU: oina
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Di tres cosas que te gustan y una que se te olvida siempre.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo contar lo que pasaba antes. Hasta pronto.
 EU: Agur!

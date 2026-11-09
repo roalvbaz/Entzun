@@ -1,6 +1,6 @@
 # Episodio 72 - Repaso (guion propio; repaso de los episodios [69, 70, 71])
 
-ES: Kaixo, aitona. Bienvenido al episodio setenta y dos. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio setenta y dos. Hoy toca repasar, que lo aprendido se va si no se usa.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

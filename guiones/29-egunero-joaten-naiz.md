@@ -1,13 +1,13 @@
 # Episodio 29 - Lo que haces cada día (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio veintinueve de Euskera paseando.
-ES: Hoy hablamos de esto: lo que haces cada día.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Todos tenemos costumbres: el café de siempre, a la misma hora, en la misma silla. Hoy hablamos de lo que haces cada día.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para lo que se hace habitualmente, el verbo termina en ten o tzen, seguido de naiz o dut.
 ES: Escucha la frase.
-ES: Esta frase significa: Todos los días ando a pie.
+ES: Escucha cómo se dice: Todos los días ando a pie.
 EU: Egunero oinez ibiltzen naiz.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Egunero oinez ibiltzen naiz.
 EU: Egunero oinez ibiltzen naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Cada semana voy al mercado.
+ES: Ahora, para decir: Cada semana voy al mercado.
 EU: Astero joaten naiz azokara.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Astero joaten naiz azokara.
 EU: Astero joaten naiz azokara.
 [PAUSA 9]
 
-ES: Esta frase significa: Todas las mañanas compro el pan.
+ES: Y esta otra significa: Todas las mañanas compro el pan.
 EU: Goizero ogia erosten dut.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Goizero ogia erosten dut.
 EU: Goizero ogia erosten dut.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Egunero oinez ibiltzen naiz.
 [PAUSA 9]
 EU: Astero joaten naiz azokara.
@@ -51,7 +51,7 @@ EU: Batzuetan kafea hartzen dut.
 EU: Batzuetan kafea hartzen dut.
 [PAUSA 9]
 
-ES: Esta frase significa: Nunca veo la televisión.
+ES: Escucha cómo se dice: Nunca veo la televisión.
 EU: Inoiz ez dut telebista ikusten.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Inoiz ez dut telebista ikusten.
 EU: Inoiz ez dut telebista ikusten.
 [PAUSA 11]
 
-ES: Esta frase significa: Los domingos como con los amigos.
+ES: Ahora, para decir: Los domingos como con los amigos.
 EU: Igandeetan lagunekin bazkaltzen dut.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Igandeetan lagunekin bazkaltzen dut.
 EU: Igandeetan lagunekin bazkaltzen dut.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Batzuetan kafea hartzen dut.
 [PAUSA 9]
 EU: Inoiz ez dut telebista ikusten.
@@ -77,7 +77,7 @@ EU: Inoiz ez dut telebista ikusten.
 EU: Igandeetan lagunekin bazkaltzen dut.
 [PAUSA 9]
 
-ES: Esta frase significa: Voy a Bilbao una vez al año.
+ES: Y esta otra significa: Voy a Bilbao una vez al año.
 EU: Urtean behin joaten naiz Bilbora.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Urtean behin joaten naiz Bilbora.
 EU: Noiz joaten zara hondartzara?
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Egunero ibiltzen zara?
 [PAUSA 2]
 EU: Bai, goizero ibiltzen naiz.
@@ -251,6 +251,8 @@ EU: Abendu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Cuenta tu rutina de la mañana, paso a paso.
+[PAUSA 3]
 ES: En el próximo episodio veremos quién ve a quién, y cómo decir que puedes. Hasta pronto.
 EU: Agur!

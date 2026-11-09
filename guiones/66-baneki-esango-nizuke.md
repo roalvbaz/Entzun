@@ -1,13 +1,13 @@
 # Episodio 66 - Si lo supiera, te lo diría (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y seis de Euskera paseando.
-ES: Hoy hablamos de esto: si lo supiera, te lo diría.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Si lo supiera, te lo diría. Seguimos con lo imaginario, que es gratis.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Con verbos como saber se dice baneki.
 ES: Escucha la frase.
-ES: Esta frase significa: Si lo supiera, te lo diría.
+ES: Ahora, para decir: Si lo supiera, te lo diría.
 EU: Baneki, esango nizuke.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Baneki, esango nizuke.
 EU: Baneki, esango nizuke.
 [PAUSA 7]
 
-ES: Esta frase significa: Si tuviera más dinero, viajaría.
+ES: Y esta otra significa: Si tuviera más dinero, viajaría.
 EU: Diru gehiago banu, bidaiatuko nuke.
 [PAUSA 3]
 ES: Repite.
@@ -44,7 +44,7 @@ EU: Ikusiko banu, agurtuko nuke.
 
 ES: Si le pasa algo a alguien, se dice balitzait.
 ES: Escucha la frase.
-ES: Esta frase significa: Si me gustara, lo compraría.
+ES: Escucha cómo se dice: Si me gustara, lo compraría.
 EU: Gustatuko balitzait, erosiko nuke.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Gustatuko balitzait, erosiko nuke.
 EU: Gustatuko balitzait, erosiko nuke.
 [PAUSA 9]
 
-ES: Esta frase significa: Si se te olvidara, te llamaría.
+ES: Ahora, para decir: Si se te olvidara, te llamaría.
 EU: Ahaztuko balitzaizu, deituko nizuke.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Ahaztuko balitzaizu, deituko nizuke.
 EU: Ahaztuko balitzaizu, deituko nizuke.
 [PAUSA 9]
 
-ES: Esta frase significa: Si me lo trajeras, te lo agradecería.
+ES: Y esta otra significa: Si me lo trajeras, te lo agradecería.
 EU: Ekarriko bazenit, eskertuko nizuke.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Ekarriko bazenit, eskertuko nizuke.
 EU: Ekarriko bazenit, eskertuko nizuke.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Gustatuko balitzait, erosiko nuke.
 [PAUSA 9]
 EU: Ahaztuko balitzaizu, deituko nizuke.
@@ -88,7 +88,7 @@ EU: Esango bazenio, pozik egongo litzateke.
 EU: Esango bazenio, pozik egongo litzateke.
 [PAUSA 11]
 
-ES: Esta frase significa: Si se lo diera, se enfadaría.
+ES: Escucha cómo se dice: Si se lo diera, se enfadaría.
 EU: Emango banio, haserretuko litzateke.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Esango bazenio, pozik egongo litzateke.
 EU: Emango banio, haserretuko litzateke.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Badakizu non dagoen?
 [PAUSA 2]
 EU: Baneki, esango nizuke.
@@ -253,6 +253,8 @@ EU: aldaka
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Piensa en algo que harías si tuvieras más tiempo.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo contar lo que se dice. Hasta pronto.
 EU: Agur!

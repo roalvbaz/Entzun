@@ -1,6 +1,6 @@
 # Episodio 32 - Repaso (guion propio; repaso de los episodios [29, 30, 31])
 
-ES: Kaixo, aitona. Bienvenido al episodio treinta y dos. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio treinta y dos. Hoy hacemos limpieza general de lo aprendido.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

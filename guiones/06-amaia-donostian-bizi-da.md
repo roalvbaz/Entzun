@@ -1,11 +1,11 @@
 # Episodio 6 - Amaia vive en San Sebastián (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio seis de Euskera paseando.
-ES: Hoy hablamos de esto: amaia vive en San Sebastián.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: En cualquier sobremesa acaba saliendo la misma pregunta: y tú, ¿dónde vives? Hoy la vas a poder responder sin pensarlo.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
-ES: Esta frase significa: ¿Dónde vives?
+ES: Ahora, para decir: ¿Dónde vives?
 EU: Non bizi zara?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Non bizi zara?
 
 ES: Para decir en, se añade una n, o en, al final del nombre del lugar.
 ES: Escucha la frase.
-ES: Esta frase significa: Vivo en Zarautz.
+ES: Y esta otra significa: Vivo en Zarautz.
 EU: Zarautzen bizi naiz.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Zarautzen bizi naiz.
 EU: Donostian bizi naiz.
 [PAUSA 7]
 
-ES: Esta frase significa: Amaia vive en San Sebastián.
+ES: Escucha cómo se dice: Amaia vive en San Sebastián.
 EU: Amaia Donostian bizi da.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Amaia Donostian bizi da.
 EU: Amaia Donostian bizi da.
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel vive en Bilbao.
+ES: Ahora, para decir: Mikel vive en Bilbao.
 EU: Mikel Bilbon bizi da.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Mikel Bilbon bizi da.
 EU: Mikel Bilbon bizi da.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Dónde vive Amaia?
+ES: Y esta otra significa: ¿Dónde vive Amaia?
 EU: Non bizi da Amaia?
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Non bizi da Amaia?
 EU: Non bizi da Amaia?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Amaia Donostian bizi da.
 [PAUSA 9]
 EU: Mikel Bilbon bizi da.
@@ -86,7 +86,7 @@ EU: Eta zu, non bizi zara?
 EU: Eta zu, non bizi zara?
 [PAUSA 11]
 
-ES: Esta frase significa: Vivo en un pueblo pequeño.
+ES: Escucha cómo se dice: Vivo en un pueblo pequeño.
 EU: Herri txiki batean bizi naiz.
 [PAUSA 3]
 ES: Repite.
@@ -95,7 +95,7 @@ EU: Herri txiki batean bizi naiz.
 EU: Herri txiki batean bizi naiz.
 [PAUSA 11]
 
-ES: Esta frase significa: Vivimos en una ciudad grande.
+ES: Ahora, para decir: Vivimos en una ciudad grande.
 EU: Hiri handi batean bizi gara.
 [PAUSA 3]
 ES: Repite.
@@ -104,7 +104,7 @@ EU: Hiri handi batean bizi gara.
 EU: Hiri handi batean bizi gara.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Eta zu, non bizi zara?
 [PAUSA 11]
 EU: Herri txiki batean bizi naiz.
@@ -112,7 +112,7 @@ EU: Herri txiki batean bizi naiz.
 EU: Hiri handi batean bizi gara.
 [PAUSA 11]
 
-ES: Esta frase significa: Vivo en este barrio.
+ES: Y esta otra significa: Vivo en este barrio.
 EU: Auzo honetan bizi naiz.
 [PAUSA 3]
 ES: Repite.
@@ -143,7 +143,7 @@ EU: Hiri handi batean bizi gara.
 EU: Auzo honetan bizi naiz.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Non bizi zara?
 [PAUSA 2]
 EU: Donostian bizi naiz. Eta zu?
@@ -253,6 +253,8 @@ EU: probintzia
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Piensa en tres amigos tuyos y di en voz alta dónde vive cada uno.
+[PAUSA 3]
 ES: En el próximo episodio veremos dónde está Amaia. Hasta pronto.
 EU: Agur!

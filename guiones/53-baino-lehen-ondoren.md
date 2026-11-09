@@ -1,13 +1,13 @@
 # Episodio 53 - Antes, mientras y después (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y tres de Euskera paseando.
-ES: Hoy hablamos de esto: antes, mientras y después.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: El orden de las cosas importa: primero el café, después el periódico, y mientras tanto la radio.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Antes de se dice baino lehen.
 ES: Escucha la frase.
-ES: Esta frase significa: Antes de llegar a casa, he comprado el pan.
+ES: Escucha cómo se dice: Antes de llegar a casa, he comprado el pan.
 EU: Etxera iritsi baino lehen, ogia erosi dut.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Etxera iritsi baino lehen, ogia erosi dut.
 EU: Etxera iritsi baino lehen, ogia erosi dut.
 [PAUSA 12]
 
-ES: Esta frase significa: Antes de dormir, leo.
+ES: Ahora, para decir: Antes de dormir, leo.
 EU: Lo egin aurretik, irakurtzen dut.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Lo egin aurretik, irakurtzen dut.
 
 ES: Mientras se dice bitartean.
 ES: Escucha la frase.
-ES: Esta frase significa: Mientras cenamos, escuchamos la radio.
+ES: Y esta otra significa: Mientras cenamos, escuchamos la radio.
 EU: Afaltzen dugun bitartean, irratia entzuten dugu.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Afaltzen dugun bitartean, irratia entzuten dugu.
 EU: Afaltzen dugun bitartean, irratia entzuten dugu.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Etxera iritsi baino lehen, ogia erosi dut.
 [PAUSA 12]
 EU: Lo egin aurretik, irakurtzen dut.
@@ -55,7 +55,7 @@ EU: Bazkaldu ondoren, ibiltzen naiz.
 EU: Bazkaldu ondoren, ibiltzen naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Nada más levantarme, tomo café.
+ES: Escucha cómo se dice: Nada más levantarme, tomo café.
 EU: Jaiki eta berehala, kafea hartzen dut.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Jaiki eta berehala, kafea hartzen dut.
 EU: Jaiki eta berehala, kafea hartzen dut.
 [PAUSA 12]
 
-ES: Esta frase significa: En cuanto venga, te llamaré.
+ES: Ahora, para decir: En cuanto venga, te llamaré.
 EU: Etorri bezain laster, deituko dizut.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Etorri bezain laster, deituko dizut.
 EU: Etorri bezain laster, deituko dizut.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Bazkaldu ondoren, ibiltzen naiz.
 [PAUSA 9]
 EU: Jaiki eta berehala, kafea hartzen dut.
@@ -81,7 +81,7 @@ EU: Jaiki eta berehala, kafea hartzen dut.
 EU: Etorri bezain laster, deituko dizut.
 [PAUSA 11]
 
-ES: Esta frase significa: Cuando lo vea, se lo diré.
+ES: Y esta otra significa: Cuando lo vea, se lo diré.
 EU: Ikusten dudanean, esango diot.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Ikusten dudanean, esango diot.
 EU: Gaztetan asko lan egiten nuen.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Noiz deituko didazu?
 [PAUSA 2]
 EU: Etorri bezain laster.
@@ -279,6 +279,8 @@ EU: zimeldu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Cuenta tu mañana con antes, mientras y después.
+[PAUSA 3]
 ES: En el próximo episodio veremos hasta dónde llegamos. Hasta pronto.
 EU: Agur!

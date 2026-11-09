@@ -1,13 +1,13 @@
 # Episodio 11 - ¿De quién es este coche? Es de Amaia (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio once de Euskera paseando.
-ES: Hoy hablamos de esto: ¿De quién es este coche? Es de Amaia.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: En toda casa aparece un paraguas que nadie reconoce. Hoy vamos a aclarar de quién es cada cosa.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Ahora una forma más corta. Ya no repetimos la palabra coche.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿De quién es este coche?
+ES: Y esta otra significa: ¿De quién es este coche?
 EU: Norena da auto hau?
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Amaiarena da.
 EU: Amaiarena da.
 [PAUSA 6]
 
-ES: Esta frase significa: Es de Mikel.
+ES: Escucha cómo se dice: Es de Mikel.
 EU: Mikelena da.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Mikelena da.
 EU: Mikelena da.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Norena da auto hau?
 [PAUSA 9]
 EU: Amaiarena da.
@@ -42,7 +42,7 @@ EU: Amaiarena da.
 EU: Mikelena da.
 [PAUSA 6]
 
-ES: Esta frase significa: Es de Xabi.
+ES: Ahora, para decir: Es de Xabi.
 EU: Xabirena da.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Xabirena da.
 EU: Xabirena da.
 [PAUSA 6]
 
-ES: Esta frase significa: Es mío.
+ES: Y esta otra significa: Es mío.
 EU: Nirea da.
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Nirea da.
 EU: Zurea da?
 [PAUSA 6]
 
-ES: Esta frase significa: No, no es mío.
+ES: Escucha cómo se dice: No, no es mío.
 EU: Ez, ez da nirea.
 [PAUSA 3]
 ES: Repite.
@@ -86,7 +86,7 @@ EU: Ez, ez da nirea.
 EU: Ez, ez da nirea.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿De quién es esta carta?
+ES: Ahora, para decir: ¿De quién es esta carta?
 EU: Norena da gutun hau?
 [PAUSA 3]
 ES: Repite.
@@ -95,7 +95,7 @@ EU: Norena da gutun hau?
 EU: Norena da gutun hau?
 [PAUSA 9]
 
-ES: Esta frase significa: Esta corbata es del padre.
+ES: Y esta otra significa: Esta corbata es del padre.
 EU: Gorbata hau aitarena da.
 [PAUSA 3]
 ES: Repite.
@@ -104,7 +104,7 @@ EU: Gorbata hau aitarena da.
 EU: Gorbata hau aitarena da.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Ez, ez da nirea.
 [PAUSA 9]
 EU: Norena da gutun hau?
@@ -143,7 +143,7 @@ EU: Gorbata hau aitarena da.
 EU: Baloi hau mutilarena da.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Norena da liburu hau?
 [PAUSA 2]
 EU: Amaiarena da.
@@ -277,6 +277,8 @@ EU: maleta
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Coge tres cosas de casa y di de quién son. Si son tuyas, mejor.
+[PAUSA 3]
 ES: En el próximo episodio veremos dónde está cada cosa. Hasta pronto.
 EU: Agur!

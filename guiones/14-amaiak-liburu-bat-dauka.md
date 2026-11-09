@@ -1,13 +1,13 @@
 # Episodio 14 - Amaia tiene un libro (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio catorce de Euskera paseando.
-ES: Hoy hablamos de esto: amaia tiene un libro.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hay gente a la que le encanta contar todo lo que tiene. Hoy te preparamos para estar a su altura.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Para decir tener, se usa un verbo nuevo, y el nombre de quien tiene lleva una k al final.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia tiene un libro.
+ES: Ahora, para decir: Amaia tiene un libro.
 EU: Amaiak liburu bat dauka.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Amaiak liburu bat dauka.
 EU: Amaiak liburu bat dauka.
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel tiene un coche.
+ES: Y esta otra significa: Mikel tiene un coche.
 EU: Mikelek auto bat dauka.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Mikelek auto bat dauka.
 EU: Nik liburu bat daukat.
 [PAUSA 9]
 
-ES: Esta frase significa: Tú tienes un coche.
+ES: Escucha cómo se dice: Tú tienes un coche.
 EU: Zuk auto bat daukazu.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Zuk auto bat daukazu.
 EU: Zuk auto bat daukazu.
 [PAUSA 9]
 
-ES: Esta frase significa: Amaia tiene un gato.
+ES: Ahora, para decir: Amaia tiene un gato.
 EU: Amaiak gatu bat dauka.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Amaiak gatu bat dauka.
 EU: Amaiak gatu bat dauka.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Qué tienes?
+ES: Y esta otra significa: ¿Qué tienes?
 EU: Zer daukazu?
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Zer daukazu?
 EU: Zer daukazu?
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zuk auto bat daukazu.
 [PAUSA 9]
 EU: Amaiak gatu bat dauka.
@@ -86,7 +86,7 @@ EU: Eta zuk?
 EU: Eta zuk?
 [PAUSA 6]
 
-ES: Esta frase significa: Nosotros tenemos una casa.
+ES: Escucha cómo se dice: Nosotros tenemos una casa.
 EU: Guk etxe bat daukagu.
 [PAUSA 3]
 ES: Repite.
@@ -97,7 +97,7 @@ EU: Guk etxe bat daukagu.
 
 ES: Cuando lo que se tiene es plural, el verbo cambia un poco.
 ES: Escucha la frase.
-ES: Esta frase significa: Ellos tienen tres hijos.
+ES: Ahora, para decir: Ellos tienen tres hijos.
 EU: Haiek hiru seme dauzkate.
 [PAUSA 3]
 ES: Repite.
@@ -126,7 +126,7 @@ EU: Guk etxe bat daukagu.
 EU: Haiek hiru seme dauzkate.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zer daukazu?
 [PAUSA 2]
 EU: Liburu bat daukat. Eta zuk?
@@ -262,6 +262,8 @@ EU: hamar
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Haz inventario de lo que llevas encima ahora mismo. Una llave, un móvil y unas ganas de sentarte.
+[PAUSA 3]
 ES: En el próximo episodio veremos lo que no se tiene. Hasta pronto.
 EU: Agur!

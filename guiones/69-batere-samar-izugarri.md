@@ -1,13 +1,13 @@
 # Episodio 69 - Nada, bastante, muchísimo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y nueve de Euskera paseando.
-ES: Hoy hablamos de esto: nada, bastante, muchísimo.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Nada, un poco, bastante, muchísimo. Hoy aprendemos a graduar lo que sentimos.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Nada en absoluto se dice batere.
 ES: Escucha la frase.
-ES: Esta frase significa: No tengo nada de ganas.
+ES: Escucha cómo se dice: No tengo nada de ganas.
 EU: Ez dut batere gogorik.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Ez dut batere gogorik.
 EU: Ez dut batere gogorik.
 [PAUSA 9]
 
-ES: Esta frase significa: No me gusta nada.
+ES: Ahora, para decir: No me gusta nada.
 EU: Batere ez zait gustatzen.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Batere ez zait gustatzen.
 
 ES: Un poco se dice samar, y va detrás.
 ES: Escucha la frase.
-ES: Esta frase significa: Estoy bastante cansado.
+ES: Y esta otra significa: Estoy bastante cansado.
 EU: Nekatuta samar nago.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Nekatuta samar nago.
 EU: Nekatuta samar nago.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Ez dut batere gogorik.
 [PAUSA 9]
 EU: Batere ez zait gustatzen.
@@ -53,7 +53,7 @@ EU: Nahiko ondo nago.
 EU: Nahiko ondo nago.
 [PAUSA 7]
 
-ES: Esta frase significa: Es bastante bonito.
+ES: Escucha cómo se dice: Es bastante bonito.
 EU: Polit samarra da.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Polit samarra da.
 
 ES: Muchísimo se dice izugarri.
 ES: Escucha la frase.
-ES: Esta frase significa: Me gusta muchísimo.
+ES: Ahora, para decir: Me gusta muchísimo.
 EU: Izugarri gustatzen zait.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Izugarri gustatzen zait.
 EU: Izugarri gustatzen zait.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Nahiko ondo nago.
 [PAUSA 7]
 EU: Polit samarra da.
@@ -81,7 +81,7 @@ EU: Polit samarra da.
 EU: Izugarri gustatzen zait.
 [PAUSA 7]
 
-ES: Esta frase significa: Hace un frío tremendo.
+ES: Y esta otra significa: Hace un frío tremendo.
 EU: Ikaragarri hotz egiten du.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Ikaragarri hotz egiten du.
 EU: Erdi lo nago.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Zer moduz zaude?
 [PAUSA 2]
 EU: Nekatuta samar nago.
@@ -303,6 +303,8 @@ EU: bosten
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Di cuánto te gusta algo, desde nada hasta muchísimo.
+[PAUSA 3]
 ES: En el próximo episodio veremos yo mismo, y por quién hacemos las cosas. Hasta pronto.
 EU: Agur!

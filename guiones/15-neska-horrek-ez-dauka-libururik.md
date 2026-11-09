@@ -1,13 +1,13 @@
 # Episodio 15 - Esa chica no tiene libros (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio quince de Euskera paseando.
-ES: Hoy hablamos de esto: esa chica no tiene libros.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Y en la otra cara de la moneda está el que no tiene ni coche, ni dinero, ni ganas. Hoy toca decir lo que no se tiene.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Para decir que no se tiene algo, se pone ez delante del verbo, y el nombre termina en rik.
 ES: Escucha la frase.
-ES: Esta frase significa: Esa chica no tiene libros.
+ES: Y esta otra significa: Esa chica no tiene libros.
 EU: Neska horrek ez dauka libururik.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Mutil horrek ez dauka autorik.
 EU: Mutil horrek ez dauka autorik.
 [PAUSA 11]
 
-ES: Esta frase significa: Yo no tengo libros.
+ES: Escucha cómo se dice: Yo no tengo libros.
 EU: Nik ez daukat libururik.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Nik ez daukat libururik.
 EU: Nik ez daukat libururik.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Neska horrek ez dauka libururik.
 [PAUSA 11]
 EU: Mutil horrek ez dauka autorik.
@@ -42,7 +42,7 @@ EU: Mutil horrek ez dauka autorik.
 EU: Nik ez daukat libururik.
 [PAUSA 9]
 
-ES: Esta frase significa: Tú no tienes coche.
+ES: Ahora, para decir: Tú no tienes coche.
 EU: Zuk ez daukazu autorik.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Zuk ez daukazu autorik.
 EU: Zuk ez daukazu autorik.
 [PAUSA 9]
 
-ES: Esta frase significa: Amaia no tiene gato.
+ES: Y esta otra significa: Amaia no tiene gato.
 EU: Amaiak ez dauka gaturik.
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Amaiak ez dauka gaturik.
 EU: Zuk liburu bat daukazu?
 [PAUSA 9]
 
-ES: Esta frase significa: Sí, tengo un libro.
+ES: Escucha cómo se dice: Sí, tengo un libro.
 EU: Bai, liburu bat daukat.
 [PAUSA 3]
 ES: Repite.
@@ -102,7 +102,7 @@ EU: Zuk liburu bat daukazu?
 EU: Bai, liburu bat daukat.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Zuk liburu bat daukazu?
 [PAUSA 2]
 EU: Ez, nik ez daukat libururik.
@@ -218,6 +218,8 @@ EU: berdin
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Piensa en tres cosas que no tienes y dilas en voz alta. Un yate, por ejemplo.
+[PAUSA 3]
 ES: En el próximo episodio veremos a dónde va Amaia. Hasta pronto.
 EU: Agur!

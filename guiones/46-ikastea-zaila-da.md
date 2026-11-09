@@ -1,13 +1,13 @@
 # Episodio 46 - Leer es bueno: hablar de acciones (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y seis de Euskera paseando.
-ES: Hoy hablamos de esto: leer es bueno: hablar de acciones.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Pasear es bueno, fumar es malo, y madrugar es un castigo. Hoy hablamos de las acciones como si fueran cosas.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Para hablar de una acción como si fuera una cosa, el verbo termina en tzea o tea.
 ES: Escucha la frase.
-ES: Esta frase significa: Me gusta pasear.
+ES: Ahora, para decir: Me gusta pasear.
 EU: Paseatzea gustatzen zait.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Paseatzea gustatzen zait.
 EU: Paseatzea gustatzen zait.
 [PAUSA 7]
 
-ES: Esta frase significa: Leer es bueno.
+ES: Y esta otra significa: Leer es bueno.
 EU: Irakurtzea ona da.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Irakurtzea ona da.
 EU: Euskara ikastea zaila da.
 [PAUSA 9]
 
-ES: Esta frase significa: No me gusta levantarme temprano.
+ES: Escucha cómo se dice: No me gusta levantarme temprano.
 EU: Goiz jaikitzea ez zait gustatzen.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Goiz jaikitzea ez zait gustatzen.
 EU: Goiz jaikitzea ez zait gustatzen.
 [PAUSA 11]
 
-ES: Esta frase significa: Fumar es malo para la salud.
+ES: Ahora, para decir: Fumar es malo para la salud.
 EU: Erretzea txarra da osasunerako.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Erretzea txarra da osasunerako.
 EU: Erretzea txarra da osasunerako.
 [PAUSA 9]
 
-ES: Esta frase significa: Hacer esto es fácil.
+ES: Y esta otra significa: Hacer esto es fácil.
 EU: Hau egitea erraza da.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Hau egitea erraza da.
 EU: Hau egitea erraza da.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Goiz jaikitzea ez zait gustatzen.
 [PAUSA 11]
 EU: Erretzea txarra da osasunerako.
@@ -86,7 +86,7 @@ EU: Ikasteko gogoa daukat.
 EU: Ikasteko gogoa daukat.
 [PAUSA 7]
 
-ES: Esta frase significa: A la abuela le gusta cantar.
+ES: Escucha cómo se dice: A la abuela le gusta cantar.
 EU: Amonari kantatzea gustatzen zaio.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Ikasteko gogoa daukat.
 EU: Amonari kantatzea gustatzen zaio.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Zer gustatzen zaizu?
 [PAUSA 2]
 EU: Paseatzea eta irakurtzea.
@@ -173,6 +173,8 @@ ES: A la abuela le gusta cantar.
 EU: Amonari kantatzea gustatzen zaio.
 [PAUSA 2]
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Di qué te gusta hacer, y qué es lo que no soportas.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir nosotros los vascos. Hasta pronto.
 EU: Agur!

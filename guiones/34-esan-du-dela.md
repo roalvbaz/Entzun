@@ -1,13 +1,13 @@
 # Episodio 34 - Decir y pensar que (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y cuatro de Euskera paseando.
-ES: Hoy hablamos de esto: decir y pensar que.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Lo mejor de toda conversación: contar lo que ha dicho otro. Hoy aprendemos a decir que alguien ha dicho algo, y qué creemos nosotros.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: El que del español se pega al final del verbo, como la.
 ES: Escucha la frase.
-ES: Esta frase significa: El abuelo ha dicho que está bien.
+ES: Ahora, para decir: El abuelo ha dicho que está bien.
 EU: Aitonak ondo dagoela esan du.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Aitonak ondo dagoela esan du.
 EU: Aitonak ondo dagoela esan du.
 [PAUSA 11]
 
-ES: Esta frase significa: Creo que está lloviendo.
+ES: Y esta otra significa: Creo que está lloviendo.
 EU: Euria ari duela uste dut.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Euria ari duela uste dut.
 EU: Bihar etorriko dela esan du.
 [PAUSA 11]
 
-ES: Esta frase significa: Mikel dice que es caro.
+ES: Escucha cómo se dice: Mikel dice que es caro.
 EU: Mikelek garestia dela dio.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Mikelek garestia dela dio.
 EU: Mikelek garestia dela dio.
 [PAUSA 9]
 
-ES: Esta frase significa: Sé que estás en casa.
+ES: Ahora, para decir: Sé que estás en casa.
 EU: Badakit zu etxean zaudela.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Badakit zu etxean zaudela.
 EU: Badakit zu etxean zaudela.
 [PAUSA 9]
 
-ES: Esta frase significa: He dicho que estoy contento.
+ES: Y esta otra significa: He dicho que estoy contento.
 EU: Pozik nagoela esan dut.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Pozik nagoela esan dut.
 EU: Pozik nagoela esan dut.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Mikelek garestia dela dio.
 [PAUSA 9]
 EU: Badakit zu etxean zaudela.
@@ -88,7 +88,7 @@ EU: Ez dut uste etorriko denik.
 EU: Ez dut uste etorriko denik.
 [PAUSA 11]
 
-ES: Esta frase significa: ¿Qué ha dicho?
+ES: Escucha cómo se dice: ¿Qué ha dicho?
 EU: Zer esan du?
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Ez dut uste etorriko denik.
 EU: Zer esan du?
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Zer esan du Mikelek?
 [PAUSA 2]
 EU: Bihar etorriko dela esan du.
@@ -217,6 +217,8 @@ EU: lotsa izan
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Cuenta lo último que te han dicho hoy, empezando por quién lo dijo.
+[PAUSA 3]
 ES: En el próximo episodio veremos lo que nos gusta y lo que nos pasa. Hasta pronto.
 EU: Agur!

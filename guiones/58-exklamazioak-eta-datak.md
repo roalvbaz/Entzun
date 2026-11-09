@@ -1,13 +1,13 @@
 # Episodio 58 - Exclamar y decir la fecha (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y ocho de Euskera paseando.
-ES: Hoy hablamos de esto: exclamar y decir la fecha.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Qué bonito, qué frío, vaya día. Y, ya puestos, la fecha en que naciste.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Para exclamar se puede empezar con zeinen.
 ES: Escucha la frase.
-ES: Esta frase significa: ¡Qué bonito!
+ES: Ahora, para decir: ¡Qué bonito!
 EU: Zeinen polita!
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zeinen polita!
 EU: Zeinen polita!
 [PAUSA 6]
 
-ES: Esta frase significa: ¡Vaya día!
+ES: Y esta otra significa: ¡Vaya día!
 EU: A zer eguna!
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: A zer eguna!
 EU: Hau da hotza!
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Qué día es hoy?
+ES: Escucha cómo se dice: ¿Qué día es hoy?
 EU: Zein egun da gaur?
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Zein egun da gaur?
 
 ES: En la fecha se dice primero el mes y luego el día.
 ES: Escucha la frase.
-ES: Esta frase significa: Hoy es nueve de noviembre.
+ES: Ahora, para decir: Hoy es nueve de noviembre.
 EU: Gaur azaroaren bederatzia da.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Gaur azaroaren bederatzia da.
 EU: Gaur azaroaren bederatzia da.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Cuándo es tu cumpleaños?
+ES: Y esta otra significa: ¿Cuándo es tu cumpleaños?
 EU: Noiz da zure urtebetetzea?
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Noiz da zure urtebetetzea?
 EU: Noiz da zure urtebetetzea?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zein egun da gaur?
 [PAUSA 9]
 EU: Gaur azaroaren bederatzia da.
@@ -88,7 +88,7 @@ EU: Maiatzaren hamarrean jaio nintzen.
 EU: Maiatzaren hamarrean jaio nintzen.
 [PAUSA 9]
 
-ES: Esta frase significa: Nací en mil novecientos cincuenta.
+ES: Escucha cómo se dice: Nací en mil novecientos cincuenta.
 EU: Mila bederatziehun eta berrogeita hamarrean jaio nintzen.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Maiatzaren hamarrean jaio nintzen.
 EU: Mila bederatziehun eta berrogeita hamarrean jaio nintzen.
 [PAUSA 12]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Noiz jaio zinen, aitona?
 [PAUSA 2]
 EU: Maiatzaren hamarrean jaio nintzen.
@@ -265,6 +265,8 @@ EU: adostasun
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Di tu fecha de nacimiento, y exclama algo sobre el tiempo de hoy.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo unir ideas. Hasta pronto.
 EU: Agur!

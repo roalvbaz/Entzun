@@ -1,6 +1,6 @@
 # Episodio 44 - Repaso (guion propio; repaso de los episodios [41, 42, 43])
 
-ES: Kaixo, aitona. Bienvenido al episodio cuarenta y cuatro. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio cuarenta y cuatro. Hoy hacemos limpieza general de lo aprendido.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

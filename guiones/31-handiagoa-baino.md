@@ -1,13 +1,13 @@
 # Episodio 31 - Comparar: más grande que (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y uno de Euskera paseando.
-ES: Hoy hablamos de esto: comparar: más grande que.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: En cuanto se juntan dos abuelos empieza la competición: mi nieto es más alto que el tuyo. Hoy aprendemos a comparar.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Para decir más, el adjetivo termina en ago. Y que se dice baino.
 ES: Escucha la frase.
-ES: Esta frase significa: Mi casa es más grande que tu casa.
+ES: Y esta otra significa: Mi casa es más grande que tu casa.
 EU: Nire etxea zure etxea baino handiagoa da.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Bilbo Donostia baino handiagoa da.
 EU: Bilbo Donostia baino handiagoa da.
 [PAUSA 11]
 
-ES: Esta frase significa: Yo soy mayor que tú.
+ES: Escucha cómo se dice: Yo soy mayor que tú.
 EU: Ni zu baino zaharragoa naiz.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Ni zu baino zaharragoa naiz.
 EU: Ni zu baino zaharragoa naiz.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Nire etxea zure etxea baino handiagoa da.
 [PAUSA 12]
 EU: Bilbo Donostia baino handiagoa da.
@@ -42,7 +42,7 @@ EU: Bilbo Donostia baino handiagoa da.
 EU: Ni zu baino zaharragoa naiz.
 [PAUSA 11]
 
-ES: Esta frase significa: Esto es más barato que eso.
+ES: Ahora, para decir: Esto es más barato que eso.
 EU: Hau hori baino merkeagoa da.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Hau hori baino merkeagoa da.
 EU: Hau hori baino merkeagoa da.
 [PAUSA 11]
 
-ES: Esta frase significa: El monte es más bonito que la playa.
+ES: Y esta otra significa: El monte es más bonito que la playa.
 EU: Mendia hondartza baino politagoa da.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Mendia hondartza baino politagoa da.
 EU: Zein da garestiena?
 [PAUSA 7]
 
-ES: Esta frase significa: Este es el mejor.
+ES: Escucha cómo se dice: Este es el mejor.
 EU: Hau da onena.
 [PAUSA 3]
 ES: Repite.
@@ -88,7 +88,7 @@ EU: Hau da onena.
 EU: Hau da onena.
 [PAUSA 7]
 
-ES: Esta frase significa: Soy tan alto como tú.
+ES: Ahora, para decir: Soy tan alto como tú.
 EU: Zu bezain altua naiz.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Hau da onena.
 EU: Zu bezain altua naiz.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Zein da garestiena?
 [PAUSA 2]
 EU: Hau hori baino garestiagoa da.
@@ -289,6 +289,8 @@ EU: zentzuduna
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Compara dos cosas que veas por el camino. Este árbol es más alto que aquel, y así.
+[PAUSA 3]
 ES: En el próximo episodio veremos los verbos andar y saber. Hasta pronto.
 EU: Agur!

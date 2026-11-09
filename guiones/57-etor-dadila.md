@@ -1,13 +1,13 @@
 # Episodio 57 - Mandar con cuidado: que venga (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y siete de Euskera paseando.
-ES: Hoy hablamos de esto: mandar con cuidado: que venga.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Que venga, que se vaya, que lo haga otro. Hoy toca mandar sin estar delante.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para decir que venga alguien, se usa dadila.
 ES: Escucha la frase.
-ES: Esta frase significa: Que venga.
+ES: Escucha cómo se dice: Que venga.
 EU: Etor dadila.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Etor dadila.
 EU: Etor dadila.
 [PAUSA 6]
 
-ES: Esta frase significa: Que se vayan.
+ES: Ahora, para decir: Que se vayan.
 EU: Joan daitezela.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Joan daitezela.
 EU: Joan daitezela.
 [PAUSA 6]
 
-ES: Esta frase significa: Que lo coja.
+ES: Y esta otra significa: Que lo coja.
 EU: Har dezala.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Har dezala.
 EU: Har dezala.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Etor dadila.
 [PAUSA 6]
 EU: Joan daitezela.
@@ -53,7 +53,7 @@ EU: Goazen!
 EU: Goazen!
 [PAUSA 5]
 
-ES: Esta frase significa: Hagámoslo.
+ES: Escucha cómo se dice: Hagámoslo.
 EU: Egin dezagun.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Egin dezagun.
 EU: Egin dezagun.
 [PAUSA 6]
 
-ES: Esta frase significa: Dime la verdad.
+ES: Ahora, para decir: Dime la verdad.
 EU: Esadazu egia.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Esadazu egia.
 EU: Esadazu egia.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Goazen!
 [PAUSA 5]
 EU: Egin dezagun.
@@ -79,7 +79,7 @@ EU: Egin dezagun.
 EU: Esadazu egia.
 [PAUSA 6]
 
-ES: Esta frase significa: Dale el pan al abuelo.
+ES: Y esta otra significa: Dale el pan al abuelo.
 EU: Emaiozu ogia aitonari.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Emaiozu ogia aitonari.
 EU: Ez ezazu hori esan.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Non dago Mikel?
 [PAUSA 2]
 EU: Etor dadila hona.
@@ -331,6 +331,8 @@ EU: algara
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Di qué te gustaría que hiciera alguien. Que venga tu nieto a verte, por ejemplo.
+[PAUSA 3]
 ES: En el próximo episodio veremos exclamaciones y fechas. Hasta pronto.
 EU: Agur!

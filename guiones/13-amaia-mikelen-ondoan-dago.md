@@ -1,11 +1,11 @@
 # Episodio 13 - Amaia está al lado de Mikel (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio trece de Euskera paseando.
-ES: Hoy hablamos de esto: amaia está al lado de Mikel.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Has perdido las llaves otra vez. Siempre están encima, debajo o detrás de algo, así que hoy aprendemos justo eso.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
-ES: Esta frase significa: Amaia está al lado de Mikel.
+ES: Escucha cómo se dice: Amaia está al lado de Mikel.
 EU: Amaia Mikelen ondoan dago.
 [PAUSA 3]
 ES: Repite.
@@ -14,7 +14,7 @@ EU: Amaia Mikelen ondoan dago.
 EU: Amaia Mikelen ondoan dago.
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel está al lado de Amaia.
+ES: Ahora, para decir: Mikel está al lado de Amaia.
 EU: Mikel Amaiaren ondoan dago.
 [PAUSA 3]
 ES: Repite.
@@ -23,7 +23,7 @@ EU: Mikel Amaiaren ondoan dago.
 EU: Mikel Amaiaren ondoan dago.
 [PAUSA 9]
 
-ES: Esta frase significa: El coche está delante de la casa.
+ES: Y esta otra significa: El coche está delante de la casa.
 EU: Autoa etxearen aurrean dago.
 [PAUSA 3]
 ES: Repite.
@@ -32,7 +32,7 @@ EU: Autoa etxearen aurrean dago.
 EU: Autoa etxearen aurrean dago.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Amaia Mikelen ondoan dago.
 [PAUSA 9]
 EU: Mikel Amaiaren ondoan dago.
@@ -49,7 +49,7 @@ EU: Liburua mahaiaren gainean dago.
 EU: Liburua mahaiaren gainean dago.
 [PAUSA 9]
 
-ES: Esta frase significa: El gato está debajo de la mesa.
+ES: Escucha cómo se dice: El gato está debajo de la mesa.
 EU: Gatua mahaiaren azpian dago.
 [PAUSA 3]
 ES: Repite.
@@ -58,7 +58,7 @@ EU: Gatua mahaiaren azpian dago.
 EU: Gatua mahaiaren azpian dago.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Dónde está el libro?
+ES: Ahora, para decir: ¿Dónde está el libro?
 EU: Non dago liburua?
 [PAUSA 3]
 ES: Repite.
@@ -67,7 +67,7 @@ EU: Non dago liburua?
 EU: Non dago liburua?
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Liburua mahaiaren gainean dago.
 [PAUSA 9]
 EU: Gatua mahaiaren azpian dago.
@@ -75,7 +75,7 @@ EU: Gatua mahaiaren azpian dago.
 EU: Non dago liburua?
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Dónde está el gato?
+ES: Y esta otra significa: ¿Dónde está el gato?
 EU: Non dago gatua?
 [PAUSA 3]
 ES: Repite.
@@ -93,7 +93,7 @@ EU: Giltzak poltsaren barruan daude.
 EU: Giltzak poltsaren barruan daude.
 [PAUSA 9]
 
-ES: Esta frase significa: El coche está detrás de la casa.
+ES: Escucha cómo se dice: El coche está detrás de la casa.
 EU: Autoa etxearen atzean dago.
 [PAUSA 3]
 ES: Repite.
@@ -102,7 +102,7 @@ EU: Autoa etxearen atzean dago.
 EU: Autoa etxearen atzean dago.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Non dago gatua?
 [PAUSA 7]
 EU: Giltzak poltsaren barruan daude.
@@ -110,7 +110,7 @@ EU: Giltzak poltsaren barruan daude.
 EU: Autoa etxearen atzean dago.
 [PAUSA 9]
 
-ES: Esta frase significa: La iglesia está entre el ayuntamiento y el banco.
+ES: Ahora, para decir: La iglesia está entre el ayuntamiento y el banco.
 EU: Eliza udaletxearen eta banketxearen artean dago.
 [PAUSA 3]
 ES: Repite.
@@ -141,7 +141,7 @@ EU: Autoa etxearen atzean dago.
 EU: Eliza udaletxearen eta banketxearen artean dago.
 [PAUSA 12]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Non dago liburua?
 [PAUSA 2]
 EU: Mahaiaren gainean dago.
@@ -281,6 +281,8 @@ EU: tren-geltolki
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Cuando pierdas algo, búscalo en euskera: encima de la mesa, debajo de la silla, dentro de la bolsa.
+[PAUSA 3]
 ES: En el próximo episodio veremos qué tiene Amaia. Hasta pronto.
 EU: Agur!

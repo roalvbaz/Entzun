@@ -1,6 +1,6 @@
 # Episodio 12 - Repaso tres (guion propio; repaso de los episodios [9, 10, 11])
 
-ES: Kaixo, aitona. Bienvenido al episodio doce. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio doce. Hoy toca repasar, que lo aprendido se va si no se usa.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

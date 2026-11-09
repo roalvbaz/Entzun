@@ -1,13 +1,13 @@
 # Episodio 26 - Lo que hiciste ayer (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio veintiséis de Euskera paseando.
-ES: Hoy hablamos de esto: lo que hiciste ayer.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: El lunes por la mañana siempre te preguntan qué hiciste el fin de semana. Hoy preparamos la respuesta, aunque solo vieras la tele.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Para hablar de un pasado ya terminado, naiz se convierte en nintzen.
 ES: Escucha la frase.
-ES: Esta frase significa: El sábado fui al monte.
+ES: Ahora, para decir: El sábado fui al monte.
 EU: Larunbatean mendira joan nintzen.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Larunbatean mendira joan nintzen.
 EU: Larunbatean mendira joan nintzen.
 [PAUSA 9]
 
-ES: Esta frase significa: Ayer estuve en casa.
+ES: Y esta otra significa: Ayer estuve en casa.
 EU: Atzo etxean egon nintzen.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Atzo etxean egon nintzen.
 EU: Igandean Bilbora joan ginen.
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel vino ayer.
+ES: Escucha cómo se dice: Mikel vino ayer.
 EU: Mikel atzo etorri zen.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Mikel atzo etorri zen.
 
 ES: Y dut se convierte en nuen.
 ES: Escucha la frase.
-ES: Esta frase significa: Ayer compré un libro.
+ES: Ahora, para decir: Ayer compré un libro.
 EU: Atzo liburu bat erosi nuen.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Atzo liburu bat erosi nuen.
 EU: Atzo liburu bat erosi nuen.
 [PAUSA 11]
 
-ES: Esta frase significa: Amaia compró el pan.
+ES: Y esta otra significa: Amaia compró el pan.
 EU: Amaiak ogia erosi zuen.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Amaiak ogia erosi zuen.
 EU: Amaiak ogia erosi zuen.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Mikel atzo etorri zen.
 [PAUSA 9]
 EU: Atzo liburu bat erosi nuen.
@@ -88,7 +88,7 @@ EU: Zuk zer egin zenuen atzo?
 EU: Zuk zer egin zenuen atzo?
 [PAUSA 11]
 
-ES: Esta frase significa: El año pasado viví en San Sebastián.
+ES: Escucha cómo se dice: El año pasado viví en San Sebastián.
 EU: Iaz Donostian bizi izan nintzen.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Zuk zer egin zenuen atzo?
 EU: Iaz Donostian bizi izan nintzen.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zer egin zenuen larunbatean?
 [PAUSA 2]
 EU: Mendira joan nintzen.
@@ -282,6 +282,8 @@ EU: neguan
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Cuenta en voz alta tres cosas que hiciste ayer.
+[PAUSA 3]
 ES: En el próximo episodio veremos el futuro y con quién hacemos las cosas. Hasta pronto.
 EU: Agur!

@@ -1,6 +1,6 @@
 # Episodio 52 - Repaso (guion propio; repaso de los episodios [48, 49, 50, 51])
 
-ES: Kaixo, aitona. Bienvenido al episodio cincuenta y dos. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio cincuenta y dos. Hoy no hay nada nuevo. Hoy vamos a comprobar lo que ya sabes, que es bastante.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

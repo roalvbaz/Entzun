@@ -1,6 +1,6 @@
 # Episodio 56 - Repaso (guion propio; repaso de los episodios [53, 54, 55])
 
-ES: Kaixo, aitona. Bienvenido al episodio cincuenta y seis. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio cincuenta y seis. Hoy hacemos limpieza general de lo aprendido.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

@@ -1,6 +1,6 @@
 # Episodio 28 - Repaso (guion propio; repaso de los episodios [25, 26, 27])
 
-ES: Kaixo, aitona. Bienvenido al episodio veintiocho. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio veintiocho. Hoy no hay nada nuevo. Hoy vamos a comprobar lo que ya sabes, que es bastante.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

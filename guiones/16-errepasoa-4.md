@@ -1,6 +1,6 @@
 # Episodio 16 - Repaso cuatro (guion propio; repaso de los episodios [13, 14, 15])
 
-ES: Kaixo, aitona. Bienvenido al episodio dieciséis. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio dieciséis. Hoy no hay nada nuevo. Hoy vamos a comprobar lo que ya sabes, que es bastante.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

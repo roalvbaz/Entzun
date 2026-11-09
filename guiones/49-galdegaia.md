@@ -1,13 +1,13 @@
 # Episodio 49 - Lo importante va delante del verbo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y nueve de Euskera paseando.
-ES: Hoy hablamos de esto: lo importante va delante del verbo.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Aquí llega uno de los secretos del euskera: lo importante se pone justo delante del verbo. Cambias el orden y cambias lo que dices.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: En euskera, lo más importante de la frase va justo delante del verbo.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Quién ha venido?
+ES: Escucha cómo se dice: ¿Quién ha venido?
 EU: Nor etorri da?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Nor etorri da?
 EU: Nor etorri da?
 [PAUSA 7]
 
-ES: Esta frase significa: Ha venido Mikel.
+ES: Ahora, para decir: Ha venido Mikel.
 EU: Mikel etorri da.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Mikel etorri da.
 EU: Mikel etorri da.
 [PAUSA 7]
 
-ES: Esta frase significa: ¿Cuándo fuiste a Bilbao?
+ES: Y esta otra significa: ¿Cuándo fuiste a Bilbao?
 EU: Noiz joan zinen Bilbora?
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Noiz joan zinen Bilbora?
 EU: Noiz joan zinen Bilbora?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Nor etorri da?
 [PAUSA 7]
 EU: Mikel etorri da.
@@ -51,7 +51,7 @@ EU: Atzo joan nintzen Bilbora.
 EU: Atzo joan nintzen Bilbora.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿A dónde fuiste ayer?
+ES: Escucha cómo se dice: ¿A dónde fuiste ayer?
 EU: Nora joan zinen atzo?
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Nora joan zinen atzo?
 EU: Nora joan zinen atzo?
 [PAUSA 9]
 
-ES: Esta frase significa: Ayer fui a Bilbao.
+ES: Ahora, para decir: Ayer fui a Bilbao.
 EU: Bilbora joan nintzen atzo.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Bilbora joan nintzen atzo.
 EU: Bilbora joan nintzen atzo.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Atzo joan nintzen Bilbora.
 [PAUSA 9]
 EU: Nora joan zinen atzo?
@@ -77,7 +77,7 @@ EU: Nora joan zinen atzo?
 EU: Bilbora joan nintzen atzo.
 [PAUSA 9]
 
-ES: Esta frase significa: Lo he hecho yo.
+ES: Y esta otra significa: Lo he hecho yo.
 EU: Nik egin dut.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Nik egin dut.
 EU: Etorri egin da.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Nork egin du hau?
 [PAUSA 2]
 EU: Nik egin dut.
@@ -313,6 +313,8 @@ EU: mailegatu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Responde hoy a una pregunta poniendo lo importante justo antes del verbo.
+[PAUSA 3]
 ES: En el próximo episodio veremos las palabras que ya terminan en a. Hasta pronto.
 EU: Agur!

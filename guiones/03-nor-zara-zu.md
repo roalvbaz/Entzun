@@ -1,11 +1,11 @@
 # Episodio 3 - ¿Quién eres tú? Yo soy Xabi, de Zarautz (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio tres de Euskera paseando.
-ES: Hoy hablamos de esto: ¿Quién eres tú? Yo soy Xabi, de Zarautz.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Llegas al bar del pueblo y hay una cara nueva. Toca preguntar quién es, de dónde viene y a qué se dedica, sin parecer un policía.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
-ES: Esta frase significa: ¿Quién eres tú?
+ES: Y esta otra significa: ¿Quién eres tú?
 EU: Nor zara zu?
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Ni Xabi naiz.
 
 ES: Para decir de dónde eres se añade al nombre del lugar el final koa.
 ES: Escucha la frase.
-ES: Esta frase significa: Soy de Zarautz.
+ES: Escucha cómo se dice: Soy de Zarautz.
 EU: Zarauzkoa naiz.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Zarauzkoa naiz.
 EU: Zarauzkoa naiz.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Nor zara zu?
 [PAUSA 7]
 EU: Ni Xabi naiz.
@@ -44,7 +44,7 @@ EU: Ni Xabi naiz.
 EU: Zarauzkoa naiz.
 [PAUSA 6]
 
-ES: Esta frase significa: Soy de San Sebastián.
+ES: Ahora, para decir: Soy de San Sebastián.
 EU: Donostiakoa naiz.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Donostiakoa naiz.
 EU: Donostiakoa naiz.
 [PAUSA 6]
 
-ES: Esta frase significa: Soy de Bilbao.
+ES: Y esta otra significa: Soy de Bilbao.
 EU: Bilbokoa naiz.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Bilbokoa naiz.
 EU: Nongoa zara?
 [PAUSA 6]
 
-ES: Esta frase significa: ¿Y tú?
+ES: Escucha cómo se dice: ¿Y tú?
 EU: Eta zu?
 [PAUSA 3]
 ES: Repite.
@@ -90,7 +90,7 @@ EU: Eta zu?
 
 ES: Para preguntar la profesión se usa zer, que significa qué.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Qué eres tú?
+ES: Ahora, para decir: ¿Qué eres tú?
 EU: Zer zara zu?
 [PAUSA 3]
 ES: Repite.
@@ -99,7 +99,7 @@ EU: Zer zara zu?
 EU: Zer zara zu?
 [PAUSA 7]
 
-ES: Esta frase significa: Soy profesor.
+ES: Y esta otra significa: Soy profesor.
 EU: Irakaslea naiz.
 [PAUSA 3]
 ES: Repite.
@@ -108,7 +108,7 @@ EU: Irakaslea naiz.
 EU: Irakaslea naiz.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Eta zu?
 [PAUSA 6]
 EU: Zer zara zu?
@@ -125,7 +125,7 @@ EU: Arrantzalea naiz.
 EU: Arrantzalea naiz.
 [PAUSA 6]
 
-ES: Esta frase significa: ¡Cuánto tiempo sin verte!
+ES: Escucha cómo se dice: ¡Cuánto tiempo sin verte!
 EU: Aspaldiko!
 [PAUSA 3]
 ES: Repite.
@@ -134,7 +134,7 @@ EU: Aspaldiko!
 EU: Aspaldiko!
 [PAUSA 5]
 
-ES: Esta frase significa: ¡Hasta luego!
+ES: Ahora, para decir: ¡Hasta luego!
 EU: Gero arte!
 [PAUSA 3]
 ES: Repite.
@@ -143,7 +143,7 @@ EU: Gero arte!
 EU: Gero arte!
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Arrantzalea naiz.
 [PAUSA 6]
 EU: Aspaldiko!
@@ -151,7 +151,7 @@ EU: Aspaldiko!
 EU: Gero arte!
 [PAUSA 6]
 
-ES: Esta frase significa: ¡Hasta mañana!
+ES: Y esta otra significa: ¡Hasta mañana!
 EU: Bihar arte!
 [PAUSA 3]
 ES: Repite.
@@ -188,7 +188,7 @@ EU: Gero arte!
 EU: Bihar arte!
 [PAUSA 6]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Kaixo! Nor zara zu?
 [PAUSA 2]
 EU: Ni Xabi naiz. Zarauzkoa naiz. Eta zu?
@@ -412,6 +412,8 @@ EU: sendagile
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. La próxima vez que veas a un conocido, salúdale en euskera. Lo peor que puede pasar es que te invite a un café.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo es el coche. Hasta pronto.
 EU: Agur!

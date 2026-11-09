@@ -1,13 +1,13 @@
 # Episodio 22 - Amaia lleva una manzana en la bolsa (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio veintidós de Euskera paseando.
-ES: Hoy hablamos de esto: amaia lleva una manzana en la bolsa.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Traer y llevar parecen lo mismo hasta que te equivocas. Y después, vamos a contar lo que ya hemos hecho hoy.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Hay dos verbos parecidos. Traer, que es llegar con algo, y llevar, que es ir con algo. Poltsa significa bolsa, y con n final, en la bolsa.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia lleva una manzana en la bolsa.
+ES: Ahora, para decir: Amaia lleva una manzana en la bolsa.
 EU: Amaiak sagar bat darama poltsan.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Amaiak sagar bat darama poltsan.
 EU: Amaiak sagar bat darama poltsan.
 [PAUSA 11]
 
-ES: Esta frase significa: Yo llevo un libro en la bolsa.
+ES: Y esta otra significa: Yo llevo un libro en la bolsa.
 EU: Nik liburu bat daramat poltsan.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Nik liburu bat daramat poltsan.
 EU: Zuk zer daramazu poltsan?
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel lleva el pan en la bolsa.
+ES: Escucha cómo se dice: Mikel lleva el pan en la bolsa.
 EU: Mikelek ogia darama poltsan.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Mikelek ogia darama poltsan.
 EU: Mikelek ogia darama poltsan.
 [PAUSA 9]
 
-ES: Esta frase significa: La bolsa es grande.
+ES: Ahora, para decir: La bolsa es grande.
 EU: Poltsa handia da.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Poltsa handia da.
 EU: Poltsa handia da.
 [PAUSA 7]
 
-ES: Esta frase significa: La bolsa es pequeña.
+ES: Y esta otra significa: La bolsa es pequeña.
 EU: Poltsa txikia da.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Poltsa txikia da.
 EU: Poltsa txikia da.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Mikelek ogia darama poltsan.
 [PAUSA 9]
 EU: Poltsa handia da.
@@ -88,7 +88,7 @@ EU: Amaiak sagarra jan du.
 EU: Amaiak sagarra jan du.
 [PAUSA 9]
 
-ES: Esta frase significa: Yo he comprado el pan.
+ES: Escucha cómo se dice: Yo he comprado el pan.
 EU: Nik ogia erosi dut.
 [PAUSA 3]
 ES: Repite.
@@ -97,7 +97,7 @@ EU: Nik ogia erosi dut.
 EU: Nik ogia erosi dut.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Tú qué has hecho?
+ES: Ahora, para decir: ¿Tú qué has hecho?
 EU: Zuk zer egin duzu?
 [PAUSA 3]
 ES: Repite.
@@ -106,7 +106,7 @@ EU: Zuk zer egin duzu?
 EU: Zuk zer egin duzu?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Amaiak sagarra jan du.
 [PAUSA 9]
 EU: Nik ogia erosi dut.
@@ -116,7 +116,7 @@ EU: Zuk zer egin duzu?
 
 ES: Con verbos como ir, en vez de du se dice da.
 ES: Escucha la frase.
-ES: Esta frase significa: Mikel se ha ido a casa.
+ES: Y esta otra significa: Mikel se ha ido a casa.
 EU: Mikel etxera joan da.
 [PAUSA 3]
 ES: Repite.
@@ -147,7 +147,7 @@ EU: Zuk zer egin duzu?
 EU: Mikel etxera joan da.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Zer daramazu poltsan?
 [PAUSA 2]
 EU: Sagar bat daramat. Eta zuk?
@@ -215,6 +215,8 @@ ES: Mikel se ha ido a casa.
 EU: Mikel etxera joan da.
 [PAUSA 2]
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Antes de cenar, cuenta tres cosas que ya has hecho hoy.
+[PAUSA 3]
 ES: En el próximo episodio veremos cuánto vale algo y qué quieres. Hasta pronto.
 EU: Agur!

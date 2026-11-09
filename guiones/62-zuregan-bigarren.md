@@ -1,13 +1,13 @@
 # Episodio 62 - Pensar en ti, y el segundo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y dos de Euskera paseando.
-ES: Hoy hablamos de esto: pensar en ti, y el segundo.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hoy pensamos en alguien, y contamos en orden: primero, segundo, tercero.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: En una persona se dice con gan. En mí, niregan, y en ti, zuregan.
 ES: Escucha la frase.
-ES: Esta frase significa: Pienso en ti.
+ES: Ahora, para decir: Pienso en ti.
 EU: Zuregan pentsatzen dut.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zuregan pentsatzen dut.
 EU: Zuregan pentsatzen dut.
 [PAUSA 7]
 
-ES: Esta frase significa: Pienso en mi padre.
+ES: Y esta otra significa: Pienso en mi padre.
 EU: Aitarengan pentsatzen dut.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Aitarengan pentsatzen dut.
 EU: Zuregan sinesten dut.
 [PAUSA 7]
 
-ES: Esta frase significa: Tengo confianza en los amigos.
+ES: Escucha cómo se dice: Tengo confianza en los amigos.
 EU: Lagunengan konfiantza daukat.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Lagunengan konfiantza daukat.
 
 ES: El orden se dice añadiendo garren.
 ES: Escucha la frase.
-ES: Esta frase significa: La primera casa es esta.
+ES: Ahora, para decir: La primera casa es esta.
 EU: Lehenengo etxea hau da.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Lehenengo etxea hau da.
 EU: Lehenengo etxea hau da.
 [PAUSA 9]
 
-ES: Esta frase significa: La segunda casa es tuya.
+ES: Y esta otra significa: La segunda casa es tuya.
 EU: Bigarren etxea zurea da.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Bigarren etxea zurea da.
 EU: Bigarren etxea zurea da.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Lagunengan konfiantza daukat.
 [PAUSA 7]
 EU: Lehenengo etxea hau da.
@@ -88,7 +88,7 @@ EU: Hirugarren solairuan bizi naiz.
 EU: Hirugarren solairuan bizi naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Es la cuarta vez.
+ES: Escucha cómo se dice: Es la cuarta vez.
 EU: Laugarren aldia da.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Hirugarren solairuan bizi naiz.
 EU: Laugarren aldia da.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zertan pentsatzen ari zara?
 [PAUSA 2]
 EU: Zuregan pentsatzen ari naiz.
@@ -253,6 +253,8 @@ EU: agortu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Di en quién has pensado hoy, y en qué piso vive.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir si. Hasta pronto.
 EU: Agur!

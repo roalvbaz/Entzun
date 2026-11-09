@@ -1,13 +1,13 @@
 # Episodio 51 - Poder hacer algo: etor naiteke (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y uno de Euskera paseando.
-ES: Hoy hablamos de esto: poder hacer algo: etor naiteke.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hoy subimos un escalón. Vamos a aprender la forma más cuidada de decir que se puede hacer algo, la que queda bien delante del cura.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Hay una forma más cuidada de decir puedo, con verbos especiales como naiteke.
 ES: Escucha la frase.
-ES: Esta frase significa: Puedo venir.
+ES: Y esta otra significa: Puedo venir.
 EU: Etor naiteke.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Etor zaitezke?
 EU: Etor zaitezke?
 [PAUSA 6]
 
-ES: Esta frase significa: Puede ir.
+ES: Escucha cómo se dice: Puede ir.
 EU: Joan daiteke.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Joan daiteke.
 EU: Joan daiteke.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Etor naiteke.
 [PAUSA 6]
 EU: Etor zaitezke?
@@ -42,7 +42,7 @@ EU: Etor zaitezke?
 EU: Joan daiteke.
 [PAUSA 6]
 
-ES: Esta frase significa: Puedes sentarte aquí.
+ES: Ahora, para decir: Puedes sentarte aquí.
 EU: Hemen eser zaitezke.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Hemen eser zaitezke.
 EU: Hemen eser zaitezke.
 [PAUSA 7]
 
-ES: Esta frase significa: No puedo ir.
+ES: Y esta otra significa: No puedo ir.
 EU: Ezin naiz joan.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Ezin naiz joan.
 EU: Ikus dezaket.
 [PAUSA 6]
 
-ES: Esta frase significa: ¿Puedes hacerlo?
+ES: Escucha cómo se dice: ¿Puedes hacerlo?
 EU: Egin dezakezu?
 [PAUSA 3]
 ES: Repite.
@@ -90,7 +90,7 @@ EU: Egin dezakezu?
 
 ES: Y si hay alguien que recibe, diezazuket.
 ES: Escucha la frase.
-ES: Esta frase significa: Te lo puedo decir.
+ES: Ahora, para decir: Te lo puedo decir.
 EU: Esan diezazuket.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Egin dezakezu?
 EU: Esan diezazuket.
 [PAUSA 6]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Etor zaitezke bihar?
 [PAUSA 2]
 EU: Ez, ezin naiz joan.
@@ -213,6 +213,8 @@ EU: ospatu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Di tres cosas que puedes hacer hoy, con la forma que acabamos de ver.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir antes y después. Hasta pronto.
 EU: Agur!

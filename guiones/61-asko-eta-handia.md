@@ -1,13 +1,13 @@
 # Episodio 61 - Mucho y grande: asko y handia (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y uno de Euskera paseando.
-ES: Hoy hablamos de esto: mucho y grande: asko y handia.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: No es lo mismo mucha gente que mucho calor. Se dice distinto, y hoy vas a saber cómo.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Mucho se dice asko, cuando se cuenta.
 ES: Escucha la frase.
-ES: Esta frase significa: Hay mucha gente.
+ES: Escucha cómo se dice: Hay mucha gente.
 EU: Jende asko dago.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Jende asko dago.
 EU: Jende asko dago.
 [PAUSA 7]
 
-ES: Esta frase significa: Tengo mucho dinero.
+ES: Ahora, para decir: Tengo mucho dinero.
 EU: Diru asko daukat.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Diru asko daukat.
 
 ES: Pero con calor, frío o miedo se usa handia.
 ES: Escucha la frase.
-ES: Esta frase significa: Hace mucho calor.
+ES: Y esta otra significa: Hace mucho calor.
 EU: Bero handia egiten du.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Bero handia egiten du.
 EU: Bero handia egiten du.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Jende asko dago.
 [PAUSA 7]
 EU: Diru asko daukat.
@@ -53,7 +53,7 @@ EU: Hotz handia egiten du.
 EU: Hotz handia egiten du.
 [PAUSA 9]
 
-ES: Esta frase significa: He tenido mucho miedo.
+ES: Escucha cómo se dice: He tenido mucho miedo.
 EU: Beldur handia izan dut.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Beldur handia izan dut.
 EU: Beldur handia izan dut.
 [PAUSA 9]
 
-ES: Esta frase significa: He venido porque quiero verte.
+ES: Ahora, para decir: He venido porque quiero verte.
 EU: Etorri naiz zu ikusi nahi zaitudalako.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Etorri naiz zu ikusi nahi zaitudalako.
 EU: Etorri naiz zu ikusi nahi zaitudalako.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Hotz handia egiten du.
 [PAUSA 9]
 EU: Beldur handia izan dut.
@@ -79,7 +79,7 @@ EU: Beldur handia izan dut.
 EU: Etorri naiz zu ikusi nahi zaitudalako.
 [PAUSA 12]
 
-ES: Esta frase significa: No lo he comprado porque es demasiado caro.
+ES: Y esta otra significa: No lo he comprado porque es demasiado caro.
 EU: Ez dut erosi garestiegia delako.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Ez dut erosi garestiegia delako.
 EU: Pozik nago, oporretan nagoelako.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Bero handia egiten du.
 [PAUSA 2]
 EU: Bai, eta jende asko dago.
@@ -253,6 +253,8 @@ EU: alboko sakea
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Di qué tiempo hace hoy, y si hay mucha gente por la calle.
+[PAUSA 3]
 ES: En el próximo episodio veremos pensar en alguien, y contar en orden. Hasta pronto.
 EU: Agur!

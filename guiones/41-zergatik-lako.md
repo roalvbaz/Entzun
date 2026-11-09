@@ -1,13 +1,13 @@
 # Episodio 41 - Por qué: porque (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y uno de Euskera paseando.
-ES: Hoy hablamos de esto: por qué: porque.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Siempre hay un motivo, y si no, se inventa. Hoy aprendemos a preguntar por qué y a dar explicaciones.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Por qué se dice zergatik. Y porque se pega al verbo, como lako.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Por qué estás enfadado?
+ES: Escucha cómo se dice: ¿Por qué estás enfadado?
 EU: Zergatik zaude haserre?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zergatik zaude haserre?
 EU: Zergatik zaude haserre?
 [PAUSA 7]
 
-ES: Esta frase significa: Porque estoy cansado.
+ES: Ahora, para decir: Porque estoy cansado.
 EU: Nekatuta nagoelako.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Nekatuta nagoelako.
 EU: Nekatuta nagoelako.
 [PAUSA 6]
 
-ES: Esta frase significa: No he ido porque está lloviendo.
+ES: Y esta otra significa: No he ido porque está lloviendo.
 EU: Ez naiz joan euria ari duelako.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Ez naiz joan euria ari duelako.
 EU: Ez naiz joan euria ari duelako.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zergatik zaude haserre?
 [PAUSA 7]
 EU: Nekatuta nagoelako.
@@ -51,7 +51,7 @@ EU: Berandu nator autobusa galdu dudalako.
 EU: Berandu nator autobusa galdu dudalako.
 [PAUSA 11]
 
-ES: Esta frase significa: Estoy contento porque has venido.
+ES: Escucha cómo se dice: Estoy contento porque has venido.
 EU: Pozik nago zu etorri zarelako.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Pozik nago zu etorri zarelako.
 EU: Pozik nago zu etorri zarelako.
 [PAUSA 11]
 
-ES: Esta frase significa: ¿Por qué no has comido?
+ES: Ahora, para decir: ¿Por qué no has comido?
 EU: Zergatik ez duzu jan?
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Zergatik ez duzu jan?
 EU: Zergatik ez duzu jan?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Berandu nator autobusa galdu dudalako.
 [PAUSA 11]
 EU: Pozik nago zu etorri zarelako.
@@ -77,7 +77,7 @@ EU: Pozik nago zu etorri zarelako.
 EU: Zergatik ez duzu jan?
 [PAUSA 9]
 
-ES: Esta frase significa: Porque no tengo hambre.
+ES: Y esta otra significa: Porque no tengo hambre.
 EU: Goserik ez daukadalako.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Goserik ez daukadalako.
 EU: Amona triste dago Mikel joan delako.
 [PAUSA 12]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zergatik zatoz berandu?
 [PAUSA 2]
 EU: Autobusa galdu dudalako.
@@ -209,6 +209,8 @@ EU: zuzendaria
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Piensa una buena excusa para llegar tarde. La vas a necesitar.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir aunque. Hasta pronto.
 EU: Agur!

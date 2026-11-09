@@ -1,13 +1,13 @@
 # Episodio 70 - Yo mismo, y por ti (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta de Euskera paseando.
-ES: Hoy hablamos de esto: yo mismo, y por ti.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Lo he hecho yo mismo, y lo he hecho por ti. Hoy toca presumir un poco.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Para reforzar, ni se convierte en neu. Y zu, en zeu.
 ES: Escucha la frase.
-ES: Esta frase significa: Iré yo mismo.
+ES: Ahora, para decir: Iré yo mismo.
 EU: Neu joango naiz.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Neu joango naiz.
 EU: Neu joango naiz.
 [PAUSA 7]
 
-ES: Esta frase significa: Lo has hecho tú mismo.
+ES: Y esta otra significa: Lo has hecho tú mismo.
 EU: Zeuk egin duzu.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Zeuk egin duzu.
 EU: Geuk ordainduko dugu.
 [PAUSA 7]
 
-ES: Esta frase significa: Me lo ha dicho él.
+ES: Escucha cómo se dice: Me lo ha dicho él.
 EU: Berak esan dit.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Berak esan dit.
 
 ES: Por alguien se dice gatik.
 ES: Escucha la frase.
-ES: Esta frase significa: He venido por ti.
+ES: Ahora, para decir: He venido por ti.
 EU: Zuregatik etorri naiz.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Zuregatik etorri naiz.
 EU: Zuregatik etorri naiz.
 [PAUSA 7]
 
-ES: Esta frase significa: Lo he hecho por mi padre.
+ES: Y esta otra significa: Lo he hecho por mi padre.
 EU: Aitarengatik egin dut.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Aitarengatik egin dut.
 EU: Aitarengatik egin dut.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Berak esan dit.
 [PAUSA 7]
 EU: Zuregatik etorri naiz.
@@ -88,7 +88,7 @@ EU: Haurrengatik lan egiten dut.
 EU: Haurrengatik lan egiten dut.
 [PAUSA 9]
 
-ES: Esta frase significa: No es por el dinero.
+ES: Escucha cómo se dice: No es por el dinero.
 EU: Ez da diruagatik.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Haurrengatik lan egiten dut.
 EU: Ez da diruagatik.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Nork egin du?
 [PAUSA 2]
 EU: Neuk egin dut.
@@ -403,6 +403,8 @@ EU: ase
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Di algo que hayas hecho tú mismo, y por quién.
+[PAUSA 3]
 ES: En el próximo episodio veremos hacia dónde y hacer hacer. Hasta pronto.
 EU: Agur!

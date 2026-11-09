@@ -1,13 +1,13 @@
 # Episodio 5 - ¿Cómo es el coche? (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cinco de Euskera paseando.
-ES: Hoy hablamos de esto: ¿Cómo es el coche?
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Tu nieto te enseña fotos de coches, y tú quieres saber cómo es de verdad y de qué color, que en la foto salen todos iguales.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Hoy hablamos de cómo son las cosas. Cuando decimos el coche, sin la palabra este, el nombre termina en a.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Cómo es el coche?
+ES: Escucha cómo se dice: ¿Cómo es el coche?
 EU: Nolakoa da autoa?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Nolakoa da autoa?
 EU: Nolakoa da autoa?
 [PAUSA 7]
 
-ES: Esta frase significa: El coche es grande.
+ES: Ahora, para decir: El coche es grande.
 EU: Autoa handia da.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Autoa handia da.
 EU: Autoa handia da.
 [PAUSA 7]
 
-ES: Esta frase significa: El coche es pequeño.
+ES: Y esta otra significa: El coche es pequeño.
 EU: Autoa txikia da.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Autoa txikia da.
 EU: Autoa txikia da.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Nolakoa da autoa?
 [PAUSA 7]
 EU: Autoa handia da.
@@ -51,7 +51,7 @@ EU: Autoa garestia da.
 EU: Autoa garestia da.
 [PAUSA 7]
 
-ES: Esta frase significa: El coche es barato.
+ES: Escucha cómo se dice: El coche es barato.
 EU: Autoa merkea da.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Autoa merkea da.
 EU: Autoa merkea da.
 [PAUSA 7]
 
-ES: Esta frase significa: El coche es rápido.
+ES: Ahora, para decir: El coche es rápido.
 EU: Autoa azkarra da.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Autoa azkarra da.
 EU: Autoa azkarra da.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Autoa garestia da.
 [PAUSA 7]
 EU: Autoa merkea da.
@@ -77,7 +77,7 @@ EU: Autoa merkea da.
 EU: Autoa azkarra da.
 [PAUSA 7]
 
-ES: Esta frase significa: La casa es bonita.
+ES: Y esta otra significa: La casa es bonita.
 EU: Etxea polita da.
 [PAUSA 3]
 ES: Repite.
@@ -97,7 +97,7 @@ EU: Zein koloretakoa da autoa?
 EU: Zein koloretakoa da autoa?
 [PAUSA 9]
 
-ES: Esta frase significa: El coche es rojo.
+ES: Escucha cómo se dice: El coche es rojo.
 EU: Autoa gorria da.
 [PAUSA 3]
 ES: Repite.
@@ -106,7 +106,7 @@ EU: Autoa gorria da.
 EU: Autoa gorria da.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Etxea polita da.
 [PAUSA 7]
 EU: Zein koloretakoa da autoa?
@@ -114,7 +114,7 @@ EU: Zein koloretakoa da autoa?
 EU: Autoa gorria da.
 [PAUSA 7]
 
-ES: Esta frase significa: La casa es blanca.
+ES: Ahora, para decir: La casa es blanca.
 EU: Etxea zuria da.
 [PAUSA 3]
 ES: Repite.
@@ -123,7 +123,7 @@ EU: Etxea zuria da.
 EU: Etxea zuria da.
 [PAUSA 7]
 
-ES: Esta frase significa: El mar es azul.
+ES: Y esta otra significa: El mar es azul.
 EU: Itsasoa urdina da.
 [PAUSA 3]
 ES: Repite.
@@ -156,7 +156,7 @@ EU: Etxea zuria da.
 EU: Itsasoa urdina da.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Nolakoa da autoa?
 [PAUSA 2]
 EU: Berria da, eta handia.
@@ -294,6 +294,8 @@ EU: zuri
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Por el camino, mira los coches aparcados y ve diciendo de qué color son. Eso sí, por lo bajo, que te van a mirar raro.
+[PAUSA 3]
 ES: En el próximo episodio veremos dónde vive Amaia. Hasta pronto.
 EU: Agur!

@@ -1,13 +1,13 @@
 # Episodio 55 - No sé dónde está (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y cinco de Euskera paseando.
-ES: Hoy hablamos de esto: no sé dónde está.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: No lo sé, quizá, seguramente. Lo que decimos todos cuando no queremos comprometernos. Hoy aprendemos a decirlo bien.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Cuando una pregunta va dentro de otra frase, el verbo termina en n.
 ES: Escucha la frase.
-ES: Esta frase significa: No sé dónde está.
+ES: Y esta otra significa: No sé dónde está.
 EU: Ez dakit non dagoen.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Galdetu dit nor zaren.
 EU: Galdetu dit nor zaren.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Sabes cuándo vendrá?
+ES: Escucha cómo se dice: ¿Sabes cuándo vendrá?
 EU: Badakizu noiz etorriko den?
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Badakizu noiz etorriko den?
 EU: Badakizu noiz etorriko den?
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Ez dakit non dagoen.
 [PAUSA 9]
 EU: Galdetu dit nor zaren.
@@ -42,7 +42,7 @@ EU: Galdetu dit nor zaren.
 EU: Badakizu noiz etorriko den?
 [PAUSA 9]
 
-ES: Esta frase significa: Dime qué has hecho.
+ES: Ahora, para decir: Dime qué has hecho.
 EU: Esan iezadazu zer egin duzun.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Esan iezadazu zer egin duzun.
 EU: Esan iezadazu zer egin duzun.
 [PAUSA 11]
 
-ES: Esta frase significa: Quizá venga.
+ES: Y esta otra significa: Quizá venga.
 EU: Agian etorriko da.
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Agian etorriko da.
 EU: Beharbada bihar joango gara.
 [PAUSA 9]
 
-ES: Esta frase significa: Seguramente lloverá.
+ES: Escucha cómo se dice: Seguramente lloverá.
 EU: Seguru asko euria egingo du.
 [PAUSA 3]
 ES: Repite.
@@ -86,7 +86,7 @@ EU: Seguru asko euria egingo du.
 EU: Seguru asko euria egingo du.
 [PAUSA 11]
 
-ES: Esta frase significa: Claro, te ayudaré.
+ES: Ahora, para decir: Claro, te ayudaré.
 EU: Noski, lagunduko dizut.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Seguru asko euria egingo du.
 EU: Noski, lagunduko dizut.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Badakizu non dagoen aitona?
 [PAUSA 2]
 EU: Ez dakit non dagoen.
@@ -257,6 +257,8 @@ EU: ekaitza
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Responde hoy a algo con un quizá, y quédate tan ancho.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir que venga. Hasta pronto.
 EU: Agur!

@@ -1,13 +1,13 @@
 # Episodio 78 - Cada vez mejor (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y ocho de Euskera paseando.
-ES: Hoy hablamos de esto: cada vez mejor.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Cada vez mejor, cuanto antes mejor. Y cuanto más se escucha, más se sabe.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Lo más posible se dice ahalik eta, y el adjetivo termina en en.
 ES: Escucha la frase.
-ES: Esta frase significa: Ven lo más rápido posible.
+ES: Ahora, para decir: Ven lo más rápido posible.
 EU: Ahalik eta azkarren etorri.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Ahalik eta azkarren etorri.
 EU: Ahalik eta azkarren etorri.
 [PAUSA 9]
 
-ES: Esta frase significa: Lo haré lo mejor posible.
+ES: Y esta otra significa: Lo haré lo mejor posible.
 EU: Ahalik eta ondoen egingo dut.
 [PAUSA 3]
 ES: Repite.
@@ -44,7 +44,7 @@ EU: Ahalik eta ondoen egingo dut.
 EU: Gero eta hobeto nago.
 [PAUSA 9]
 
-ES: Esta frase significa: Cada vez soy más mayor.
+ES: Escucha cómo se dice: Cada vez soy más mayor.
 EU: Gero eta zaharragoa naiz.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Gero eta zaharragoa naiz.
 EU: Gero eta zaharragoa naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Cada vez sé más euskera.
+ES: Ahora, para decir: Cada vez sé más euskera.
 EU: Gero eta euskara gehiago dakit.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Gero eta euskara gehiago dakit.
 
 ES: Cuanto más, más, se dice zenbat eta, orduan eta.
 ES: Escucha la frase.
-ES: Esta frase significa: Cuanto más se estudia, más se sabe.
+ES: Y esta otra significa: Cuanto más se estudia, más se sabe.
 EU: Zenbat eta gehiago ikasi, orduan eta gehiago jakin.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Zenbat eta gehiago ikasi, orduan eta gehiago jakin.
 EU: Zenbat eta gehiago ikasi, orduan eta gehiago jakin.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Gero eta zaharragoa naiz.
 [PAUSA 9]
 EU: Gero eta euskara gehiago dakit.
@@ -90,7 +90,7 @@ EU: Zenbat eta lehenago, orduan eta hobe.
 EU: Zenbat eta lehenago, orduan eta hobe.
 [PAUSA 12]
 
-ES: Esta frase significa: Hace cada vez más frío.
+ES: Escucha cómo se dice: Hace cada vez más frío.
 EU: Gero eta hotzago dago.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Zenbat eta lehenago, orduan eta hobe.
 EU: Gero eta hotzago dago.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Zer moduz euskara, aitona?
 [PAUSA 2]
 EU: Gero eta hobeto.
@@ -255,6 +255,8 @@ EU: danborra
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Di algo que cada vez te sale mejor.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo se pronuncia bien. Hasta pronto.
 EU: Agur!

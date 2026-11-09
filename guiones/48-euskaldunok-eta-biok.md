@@ -1,7 +1,7 @@
 # Episodio 48 - Nosotros los vascos, y tú y yo (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cuarenta y ocho de Euskera paseando.
-ES: Hoy hablamos de esto: nosotros los vascos, y tú y yo.
+ES: Nosotros los vascos, nosotros los abuelos, tú y yo. Hoy aprendemos a meternos en el grupo.
 ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
 [PAUSA 2]
 
@@ -16,7 +16,7 @@ EU: Euskaldunok pilota maite dugu.
 EU: Euskaldunok pilota maite dugu.
 [PAUSA 9]
 
-ES: Esta frase significa: Los abuelos sabemos mucho.
+ES: Escucha cómo se dice: Los abuelos sabemos mucho.
 EU: Aitonok asko dakigu.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Aitonok asko dakigu.
 EU: Aitonok asko dakigu.
 [PAUSA 7]
 
-ES: Esta frase significa: Las mujeres estamos trabajando.
+ES: Ahora, para decir: Las mujeres estamos trabajando.
 EU: Emakumeok lanean ari gara.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Emakumeok lanean ari gara.
 EU: Emakumeok lanean ari gara.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Euskaldunok pilota maite dugu.
 [PAUSA 9]
 EU: Aitonok asko dakigu.
@@ -44,7 +44,7 @@ EU: Emakumeok lanean ari gara.
 
 ES: Tú y yo juntos se dice zu eta biok.
 ES: Escucha la frase.
-ES: Esta frase significa: Iremos tú y yo.
+ES: Y esta otra significa: Iremos tú y yo.
 EU: Zu eta biok joango gara.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Aita eta biok etxean geratu gara.
 
 ES: Fíjate en la diferencia. Con verbos como venir, el nombre termina en ak.
 ES: Escucha la frase.
-ES: Esta frase significa: Los niños han venido.
+ES: Escucha cómo se dice: Los niños han venido.
 EU: Haurrak etorri dira.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Haurrak etorri dira.
 EU: Haurrak etorri dira.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Zu eta biok joango gara.
 [PAUSA 11]
 EU: Aita eta biok etxean geratu gara.
@@ -83,7 +83,7 @@ EU: Haurrak etorri dira.
 
 ES: Y con verbos como comer, el nombre termina en ek.
 ES: Escucha la frase.
-ES: Esta frase significa: Los niños han comido pan.
+ES: Ahora, para decir: Los niños han comido pan.
 EU: Haurrek ogia jan dute.
 [PAUSA 3]
 ES: Repite.
@@ -92,7 +92,7 @@ EU: Haurrek ogia jan dute.
 EU: Haurrek ogia jan dute.
 [PAUSA 9]
 
-ES: Esta frase significa: Los hombres han trabajado.
+ES: Y esta otra significa: Los hombres han trabajado.
 EU: Gizonek lan egin dute.
 [PAUSA 3]
 ES: Repite.
@@ -119,7 +119,7 @@ EU: Haurrek ogia jan dute.
 EU: Gizonek lan egin dute.
 [PAUSA 9]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Norekin joango zara?
 [PAUSA 2]
 EU: Zu eta biok joango gara.
@@ -179,6 +179,8 @@ ES: Los hombres han trabajado.
 EU: Gizonek lan egin dute.
 [PAUSA 2]
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Otro episodio al bolsillo.
+ES: Un encargo para el paseo. Habla de tu cuadrilla usando nosotros.
+[PAUSA 3]
 ES: En el próximo episodio veremos el orden de la frase. Hasta pronto.
 EU: Agur!

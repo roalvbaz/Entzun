@@ -1,13 +1,13 @@
 # Episodio 59 - Tanto uno como otro (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio cincuenta y nueve de Euskera paseando.
-ES: Hoy hablamos de esto: tanto uno como otro.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Ni café ni té, tanto uno como otro, llueva o haga sol. Hoy aprendemos a unir ideas como los que ya saben.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Ni se dice ezta, y detrás va ere.
 ES: Escucha la frase.
-ES: Esta frase significa: No quiero café, ni té tampoco.
+ES: Y esta otra significa: No quiero café, ni té tampoco.
 EU: Ez dut kafea nahi, ezta tea ere.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Bai Mikel, bai Amaia etorri dira.
 EU: Bai Mikel, bai Amaia etorri dira.
 [PAUSA 12]
 
-ES: Esta frase significa: Tanto el padre como la madre están contentos.
+ES: Escucha cómo se dice: Tanto el padre como la madre están contentos.
 EU: Hala aita, nola ama, pozik daude.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Hala aita, nola ama, pozik daude.
 EU: Hala aita, nola ama, pozik daude.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Ez dut kafea nahi, ezta tea ere.
 [PAUSA 12]
 EU: Bai Mikel, bai Amaia etorri dira.
@@ -46,7 +46,7 @@ EU: Hala aita, nola ama, pozik daude.
 
 ES: Sea esto o aquello se dice dela, dela.
 ES: Escucha la frase.
-ES: Esta frase significa: Llueva o haga sol, salgo.
+ES: Ahora, para decir: Llueva o haga sol, salgo.
 EU: Euria dela, eguzkia dela, ateratzen naiz.
 [PAUSA 3]
 ES: Repite.
@@ -57,7 +57,7 @@ EU: Euria dela, eguzkia dela, ateratzen naiz.
 
 ES: No solo se dice ez ezik.
 ES: Escucha la frase.
-ES: Esta frase significa: No solo los jóvenes, también han venido los mayores.
+ES: Y esta otra significa: No solo los jóvenes, también han venido los mayores.
 EU: Gazteak ez ezik, zaharrak ere etorri dira.
 [PAUSA 3]
 ES: Repite.
@@ -83,7 +83,7 @@ EU: Gazteak ez ezik, zaharrak ere etorri dira.
 EU: Zein kafea, zein tea, biak gustatzen zaizkit.
 [PAUSA 12]
 
-ES: Esta frase significa: No he ido, ni tú tampoco.
+ES: Escucha cómo se dice: No he ido, ni tú tampoco.
 EU: Ez naiz joan, ezta zu ere.
 [PAUSA 3]
 ES: Repite.
@@ -92,7 +92,7 @@ EU: Ez naiz joan, ezta zu ere.
 EU: Ez naiz joan, ezta zu ere.
 [PAUSA 12]
 
-ES: Esta frase significa: No solo esto, también quiero eso.
+ES: Ahora, para decir: No solo esto, también quiero eso.
 EU: Hau ez ezik, hori ere nahi dut.
 [PAUSA 3]
 ES: Repite.
@@ -119,7 +119,7 @@ EU: Ez naiz joan, ezta zu ere.
 EU: Hau ez ezik, hori ere nahi dut.
 [PAUSA 12]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Kafea edo tea?
 [PAUSA 2]
 EU: Bai bata, bai bestea.
@@ -263,6 +263,8 @@ EU: dantzaleku
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Di algo que haces llueva o haga sol.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir mucho. Hasta pronto.
 EU: Agur!

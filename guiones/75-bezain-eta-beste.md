@@ -1,13 +1,13 @@
 # Episodio 75 - Tan como y tanto como (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y cinco de Euskera paseando.
-ES: Hoy hablamos de esto: tan como y tanto como.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Tan alto como tu hermano, y come tanto como quieras. Comparaciones de igual a igual.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Tan como se dice bezain.
 ES: Escucha la frase.
-ES: Esta frase significa: Soy tan alto como tú.
+ES: Y esta otra significa: Soy tan alto como tú.
 EU: Zu bezain altua naiz.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Aita bezain gizon ona da.
 EU: Aita bezain gizon ona da.
 [PAUSA 11]
 
-ES: Esta frase significa: Esto es tan caro como eso.
+ES: Escucha cómo se dice: Esto es tan caro como eso.
 EU: Hau hori bezain garestia da.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Hau hori bezain garestia da.
 EU: Hau hori bezain garestia da.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Zu bezain altua naiz.
 [PAUSA 9]
 EU: Aita bezain gizon ona da.
@@ -44,7 +44,7 @@ EU: Hau hori bezain garestia da.
 
 ES: Tanto como se dice beste.
 ES: Escucha la frase.
-ES: Esta frase significa: Come tanto como quieras.
+ES: Ahora, para decir: Come tanto como quieras.
 EU: Nahi duzun beste jan.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Nahi duzun beste jan.
 EU: Nahi duzun beste jan.
 [PAUSA 9]
 
-ES: Esta frase significa: Ayuda tanto como puedas.
+ES: Y esta otra significa: Ayuda tanto como puedas.
 EU: Ahal duzun beste lagundu.
 [PAUSA 3]
 ES: Repite.
@@ -81,7 +81,7 @@ EU: Nik beste daki.
 
 ES: Con una cosa se dice con z, y con una persona, con rekin.
 ES: Escucha la frase.
-ES: Esta frase significa: Lo he cortado con un cuchillo.
+ES: Escucha cómo se dice: Lo he cortado con un cuchillo.
 EU: Labanaz moztu dut.
 [PAUSA 3]
 ES: Repite.
@@ -90,7 +90,7 @@ EU: Labanaz moztu dut.
 EU: Labanaz moztu dut.
 [PAUSA 7]
 
-ES: Esta frase significa: Lo he cortado con mi padre.
+ES: Ahora, para decir: Lo he cortado con mi padre.
 EU: Aitarekin moztu dut.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Labanaz moztu dut.
 EU: Aitarekin moztu dut.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Nor da altuena?
 [PAUSA 2]
 EU: Zu bezain altua naiz.
@@ -249,6 +249,8 @@ EU: egarria
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Compárate con alguien, y que gane el mejor.
+[PAUSA 3]
 ES: En el próximo episodio veremos dar una opinión. Hasta pronto.
 EU: Agur!

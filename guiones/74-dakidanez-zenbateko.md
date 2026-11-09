@@ -1,13 +1,13 @@
 # Episodio 74 - Según sé, y de qué tamaño (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y cuatro de Euskera paseando.
-ES: Hoy hablamos de esto: según sé, y de qué tamaño.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Según dicen, según parece. Hoy aprendemos a contar las cosas sin hacernos responsables.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Según se dice añadiendo nez al verbo.
 ES: Escucha la frase.
-ES: Esta frase significa: Según sé, no ha venido.
+ES: Ahora, para decir: Según sé, no ha venido.
 EU: Dakidanez, ez da etorri.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Dakidanez, ez da etorri.
 EU: Dakidanez, ez da etorri.
 [PAUSA 9]
 
-ES: Esta frase significa: Según han dicho, lloverá.
+ES: Y esta otra significa: Según han dicho, lloverá.
 EU: Esan dutenez, euria egingo du.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Esan dutenez, euria egingo du.
 EU: Entzun dudanez, oso ona da.
 [PAUSA 11]
 
-ES: Esta frase significa: Según veo, estás bien.
+ES: Escucha cómo se dice: Según veo, estás bien.
 EU: Ikusten dudanez, ondo zaude.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Ikusten dudanez, ondo zaude.
 EU: Ikusten dudanez, ondo zaude.
 [PAUSA 9]
 
-ES: Esta frase significa: He venido para verte.
+ES: Ahora, para decir: He venido para verte.
 EU: Zu ikusteko etorri naiz.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Zu ikusteko etorri naiz.
 EU: Zu ikusteko etorri naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Para aprender bien, escucha todos los días.
+ES: Y esta otra significa: Para aprender bien, escucha todos los días.
 EU: Ondo ikasteko, egunero entzun.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Ondo ikasteko, egunero entzun.
 EU: Ondo ikasteko, egunero entzun.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Ikusten dudanez, ondo zaude.
 [PAUSA 9]
 EU: Zu ikusteko etorri naiz.
@@ -88,7 +88,7 @@ EU: Zenbateko etxea da?
 EU: Zenbateko etxea da?
 [PAUSA 7]
 
-ES: Esta frase significa: ¡Qué hombretón!
+ES: Escucha cómo se dice: ¡Qué hombretón!
 EU: Zenbateko gizona!
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Zenbateko etxea da?
 EU: Zenbateko gizona!
 [PAUSA 6]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Etorri da Mikel?
 [PAUSA 2]
 EU: Dakidanez, ez da etorri.
@@ -271,6 +271,8 @@ EU: zoriontasuna
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Cuenta una noticia empezando por según he oído.
+[PAUSA 3]
 ES: En el próximo episodio veremos tan alto como tú. Hasta pronto.
 EU: Agur!

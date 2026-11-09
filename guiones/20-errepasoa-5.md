@@ -1,6 +1,6 @@
 # Episodio 20 - Repaso cinco (guion propio; repaso de los episodios [17, 18, 19])
 
-ES: Kaixo, aitona. Bienvenido al episodio veinte. Hoy toca repasar lo que ya sabes.
+ES: Kaixo, aitona. Bienvenido al episodio veinte. Hoy hacemos limpieza general de lo aprendido.
 ES: Primero hacemos el juego de traducir. Y al final, las conversaciones.
 [PAUSA 2]
 

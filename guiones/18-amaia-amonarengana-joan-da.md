@@ -1,13 +1,13 @@
 # Episodio 18 - Amaia ha ido a casa de su abuela (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio dieciocho de Euskera paseando.
-ES: Hoy hablamos de esto: amaia ha ido a casa de su abuela.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: A veces no vas a un sitio sino a ver a alguien: al médico, a la abuela, al amigo de siempre. Y eso se dice de otra manera.
+ES: Repite en voz alta sin miedo. Aquí nadie va a corregirte, y menos los pájaros.
 [PAUSA 2]
 
 ES: Cuando vamos hacia una persona, no hacia un lugar, se añade arengana, o engana con nombres propios que acaban en consonante. Abuela se dice amona.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia ha ido a ver a su abuela.
+ES: Ahora, para decir: Amaia ha ido a ver a su abuela.
 EU: Amaia amonarengana joan da.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Amaia amonarengana joan da.
 EU: Amaia amonarengana joan da.
 [PAUSA 9]
 
-ES: Esta frase significa: Mikel ha ido a ver a su abuelo.
+ES: Y esta otra significa: Mikel ha ido a ver a su abuelo.
 EU: Mikel aitonarengana joan da.
 [PAUSA 3]
 ES: Repite.
@@ -42,7 +42,7 @@ EU: Mikel aitonarengana joan da.
 EU: Ni amonarengana joan naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: Tú has ido a ver a Amaia.
+ES: Escucha cómo se dice: Tú has ido a ver a Amaia.
 EU: Zu Amaiarengana joan zara.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Zu Amaiarengana joan zara.
 EU: Zu Amaiarengana joan zara.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿A dónde ha ido Amaia?
+ES: Ahora, para decir: ¿A dónde ha ido Amaia?
 EU: Nora joan da Amaia?
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Nora joan da Amaia?
 EU: Nora joan da Amaia?
 [PAUSA 9]
 
-ES: Esta frase significa: Ha ido a ver a la abuela.
+ES: Y esta otra significa: Ha ido a ver a la abuela.
 EU: Amonarengana joan da.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Amonarengana joan da.
 EU: Amonarengana joan da.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zu Amaiarengana joan zara.
 [PAUSA 9]
 EU: Nora joan da Amaia?
@@ -88,7 +88,7 @@ EU: Niregana zatoz.
 EU: Niregana zatoz.
 [PAUSA 6]
 
-ES: Esta frase significa: Voy al médico.
+ES: Escucha cómo se dice: Voy al médico.
 EU: Medikuarengana noa.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Niregana zatoz.
 EU: Medikuarengana noa.
 [PAUSA 6]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Non dago Amaia?
 [PAUSA 2]
 EU: Amonarengana joan da.
@@ -295,6 +295,8 @@ EU: gau honetan
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Muy bien, aitona. Poco a poco, y sin que nadie te lo haya pedido.
+ES: Un encargo para el paseo. Piensa a quién vas a ver esta semana y dilo en euskera.
+[PAUSA 3]
 ES: En el próximo episodio veremos de dónde viene Amaia. Hasta pronto.
 EU: Agur!

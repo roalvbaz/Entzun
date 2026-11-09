@@ -1,13 +1,13 @@
 # Episodio 33 - Andar y saber (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio treinta y tres de Euskera paseando.
-ES: Hoy hablamos de esto: andar y saber.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Cuando te encuentras a alguien, la pregunta de siempre es en qué andas. Y luego, si sabes algo del tema.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: El verbo ibili significa andar, y también se usa para decir en qué estás metido.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿En qué andas?
+ES: Escucha cómo se dice: ¿En qué andas?
 EU: Zertan zabiltza?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zertan zabiltza?
 EU: Zertan zabiltza?
 [PAUSA 6]
 
-ES: Esta frase significa: Ando trabajando.
+ES: Ahora, para decir: Ando trabajando.
 EU: Lanean nabil.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Lanean nabil.
 EU: Lanean nabil.
 [PAUSA 6]
 
-ES: Esta frase significa: Mikel anda por la calle.
+ES: Y esta otra significa: Mikel anda por la calle.
 EU: Mikel kalean dabil.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Mikel kalean dabil.
 EU: Mikel kalean dabil.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zertan zabiltza?
 [PAUSA 6]
 EU: Lanean nabil.
@@ -53,7 +53,7 @@ EU: Oinez gabiltza.
 
 ES: Saber se dice jakin. Cuando afirmamos, se añade ba delante.
 ES: Escucha la frase.
-ES: Esta frase significa: Lo sé.
+ES: Escucha cómo se dice: Lo sé.
 EU: Badakit.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Badakit.
 EU: Badakit.
 [PAUSA 5]
 
-ES: Esta frase significa: No lo sé.
+ES: Ahora, para decir: No lo sé.
 EU: Ez dakit.
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Ez dakit.
 EU: Ez dakit.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Oinez gabiltza.
 [PAUSA 6]
 EU: Badakit.
@@ -79,7 +79,7 @@ EU: Badakit.
 EU: Ez dakit.
 [PAUSA 6]
 
-ES: Esta frase significa: ¿Sabes euskera?
+ES: Y esta otra significa: ¿Sabes euskera?
 EU: Badakizu euskaraz?
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Badakizu euskaraz?
 EU: Aitonak asko daki.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Zertan zabiltza, aitona?
 [PAUSA 2]
 EU: Euskara ikasten nabil.
@@ -217,6 +217,8 @@ EU: txistu
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Piensa en algo que sabes hacer muy bien, y en algo que no sabes ni por asomo.
+[PAUSA 3]
 ES: En el próximo episodio veremos cómo decir que alguien ha dicho algo. Hasta pronto.
 EU: Agur!

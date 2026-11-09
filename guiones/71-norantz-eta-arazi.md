@@ -1,13 +1,13 @@
 # Episodio 71 - Hacia dónde, y hacer que alguien haga (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y uno de Euskera paseando.
-ES: Hoy hablamos de esto: hacia dónde, y hacer que alguien haga.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Hacia dónde vas, y cómo hacer que otro haga las cosas. Muy útil con los nietos.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Hacia un lugar se dice rantz.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Hacia dónde vas?
+ES: Y esta otra significa: ¿Hacia dónde vas?
 EU: Norantz zoaz?
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Etxerantz noa.
 EU: Etxerantz noa.
 [PAUSA 6]
 
-ES: Esta frase significa: He mirado hacia el mar.
+ES: Escucha cómo se dice: He mirado hacia el mar.
 EU: Itsasorantz begiratu dut.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Itsasorantz begiratu dut.
 EU: Itsasorantz begiratu dut.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Norantz zoaz?
 [PAUSA 6]
 EU: Etxerantz noa.
@@ -42,7 +42,7 @@ EU: Etxerantz noa.
 EU: Itsasorantz begiratu dut.
 [PAUSA 7]
 
-ES: Esta frase significa: Hemos ido hacia el monte.
+ES: Ahora, para decir: Hemos ido hacia el monte.
 EU: Mendirantz joan gara.
 [PAUSA 3]
 ES: Repite.
@@ -53,7 +53,7 @@ EU: Mendirantz joan gara.
 
 ES: Hacer que alguien haga algo se dice arazi.
 ES: Escucha la frase.
-ES: Esta frase significa: La madre me ha hecho comer.
+ES: Y esta otra significa: La madre me ha hecho comer.
 EU: Amak janarazi dit.
 [PAUSA 3]
 ES: Repite.
@@ -79,7 +79,7 @@ EU: Amak janarazi dit.
 EU: Medikuak ibilarazi nau.
 [PAUSA 7]
 
-ES: Esta frase significa: El profesor nos ha hecho escribir.
+ES: Escucha cómo se dice: El profesor nos ha hecho escribir.
 EU: Irakasleak idatzarazi digu.
 [PAUSA 3]
 ES: Repite.
@@ -88,7 +88,7 @@ EU: Irakasleak idatzarazi digu.
 EU: Irakasleak idatzarazi digu.
 [PAUSA 7]
 
-ES: Esta frase significa: He mandado arreglar la casa.
+ES: Ahora, para decir: He mandado arreglar la casa.
 EU: Etxea konponarazi dut.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Irakasleak idatzarazi digu.
 EU: Etxea konponarazi dut.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Norantz zoaz?
 [PAUSA 2]
 EU: Mendirantz noa.
@@ -247,6 +247,8 @@ EU: giroa
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Piensa qué le has hecho hacer hoy a alguien.
+[PAUSA 3]
 ES: En el próximo episodio veremos para qué hacemos las cosas. Hasta pronto.
 EU: Agur!

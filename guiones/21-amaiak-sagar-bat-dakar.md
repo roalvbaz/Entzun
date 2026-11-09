@@ -1,13 +1,13 @@
 # Episodio 21 - Amaia trae una manzana para su abuela (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio veintiuno de Euskera paseando.
-ES: Hoy hablamos de esto: amaia trae una manzana para su abuela.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Nunca se va a casa de alguien con las manos vacías. Hoy aprendemos a decir qué traemos y para quién.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Sagar significa manzana. Y el verbo traer cambia según quién traiga.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia trae una manzana.
+ES: Escucha cómo se dice: Amaia trae una manzana.
 EU: Amaiak sagar bat dakar.
 [PAUSA 3]
 ES: Repite.
@@ -18,7 +18,7 @@ EU: Amaiak sagar bat dakar.
 
 ES: Para decir para alguien se añade arentzat. Bere significa su.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia trae una manzana para su abuela.
+ES: Ahora, para decir: Amaia trae una manzana para su abuela.
 EU: Amaiak sagar bat dakar bere amonarentzat.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Amaiak sagar bat dakar bere amonarentzat.
 EU: Amaiak sagar bat dakar bere amonarentzat.
 [PAUSA 12]
 
-ES: Esta frase significa: Yo traigo un libro para ti.
+ES: Y esta otra significa: Yo traigo un libro para ti.
 EU: Nik liburu bat dakart zuretzat.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Nik liburu bat dakart zuretzat.
 EU: Nik liburu bat dakart zuretzat.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Amaiak sagar bat dakar.
 [PAUSA 9]
 EU: Amaiak sagar bat dakar bere amonarentzat.
@@ -53,7 +53,7 @@ EU: Zuk sagar bat dakarzu niretzat.
 EU: Zuk sagar bat dakarzu niretzat.
 [PAUSA 11]
 
-ES: Esta frase significa: Mikel trae el pan para Amaia.
+ES: Escucha cómo se dice: Mikel trae el pan para Amaia.
 EU: Mikelek ogia dakar Amaiarentzat.
 [PAUSA 3]
 ES: Repite.
@@ -62,7 +62,7 @@ EU: Mikelek ogia dakar Amaiarentzat.
 EU: Mikelek ogia dakar Amaiarentzat.
 [PAUSA 9]
 
-ES: Esta frase significa: ¿Qué traes?
+ES: Ahora, para decir: ¿Qué traes?
 EU: Zer dakarzu?
 [PAUSA 3]
 ES: Repite.
@@ -71,7 +71,7 @@ EU: Zer dakarzu?
 EU: Zer dakarzu?
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Zuk sagar bat dakarzu niretzat.
 [PAUSA 11]
 EU: Mikelek ogia dakar Amaiarentzat.
@@ -81,7 +81,7 @@ EU: Zer dakarzu?
 
 ES: Para varias personas se dice entzat.
 ES: Escucha la frase.
-ES: Esta frase significa: Es para los niños.
+ES: Y esta otra significa: Es para los niños.
 EU: Haurrentzat da.
 [PAUSA 3]
 ES: Repite.
@@ -117,7 +117,7 @@ EU: Haurrentzat da.
 EU: Hau zuretzat da.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Kaixo, amona! Sagar bat dakart zuretzat.
 [PAUSA 2]
 EU: Eskerrik asko, Amaia!
@@ -237,6 +237,8 @@ EU: udare
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. La próxima vez que le lleves algo a alguien, dile en euskera para quién es.
+[PAUSA 3]
 ES: En el próximo episodio veremos llevar algo en la bolsa. Hasta pronto.
 EU: Agur!

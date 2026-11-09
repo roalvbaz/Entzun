@@ -1,13 +1,13 @@
 # Episodio 73 - Para qué, y cualquier cosa (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio setenta y tres de Euskera paseando.
-ES: Hoy hablamos de esto: para qué, y cualquier cosa.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Para qué has venido, y cualquier cosa vale. Hoy hablamos de para qué sirven las cosas.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para qué se dice zertarako.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Para qué has venido?
+ES: Escucha cómo se dice: ¿Para qué has venido?
 EU: Zertarako etorri zara?
 [PAUSA 3]
 ES: Repite.
@@ -18,7 +18,7 @@ EU: Zertarako etorri zara?
 
 ES: Para hacer algo, el verbo termina en teko o tzeko.
 ES: Escucha la frase.
-ES: Esta frase significa: He venido para aprender.
+ES: Ahora, para decir: He venido para aprender.
 EU: Ikasteko etorri naiz.
 [PAUSA 3]
 ES: Repite.
@@ -27,7 +27,7 @@ EU: Ikasteko etorri naiz.
 EU: Ikasteko etorri naiz.
 [PAUSA 7]
 
-ES: Esta frase significa: Necesito dinero para comprar pan.
+ES: Y esta otra significa: Necesito dinero para comprar pan.
 EU: Ogia erosteko dirua behar dut.
 [PAUSA 3]
 ES: Repite.
@@ -36,7 +36,7 @@ EU: Ogia erosteko dirua behar dut.
 EU: Ogia erosteko dirua behar dut.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zertarako etorri zara?
 [PAUSA 7]
 EU: Ikasteko etorri naiz.
@@ -55,7 +55,7 @@ EU: Edonor etor daiteke.
 EU: Edonor etor daiteke.
 [PAUSA 7]
 
-ES: Esta frase significa: Comeré cualquier cosa.
+ES: Escucha cómo se dice: Comeré cualquier cosa.
 EU: Edozer jango dut.
 [PAUSA 3]
 ES: Repite.
@@ -64,7 +64,7 @@ EU: Edozer jango dut.
 EU: Edozer jango dut.
 [PAUSA 7]
 
-ES: Esta frase significa: Duermo en cualquier sitio.
+ES: Ahora, para decir: Duermo en cualquier sitio.
 EU: Edonon lo egiten dut.
 [PAUSA 3]
 ES: Repite.
@@ -73,7 +73,7 @@ EU: Edonon lo egiten dut.
 EU: Edonon lo egiten dut.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Edonor etor daiteke.
 [PAUSA 7]
 EU: Edozer jango dut.
@@ -83,7 +83,7 @@ EU: Edonon lo egiten dut.
 
 ES: Hacia un destino se dice rako.
 ES: Escucha la frase.
-ES: Esta frase significa: Es el tren para Bilbao.
+ES: Y esta otra significa: Es el tren para Bilbao.
 EU: Bilborako trena da.
 [PAUSA 3]
 ES: Repite.
@@ -119,7 +119,7 @@ EU: Bilborako trena da.
 EU: Bihar goizerako prest egongo da.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Zertarako behar duzu dirua?
 [PAUSA 2]
 EU: Ogia erosteko.
@@ -311,6 +311,8 @@ EU: erromeria
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Di para qué sales a pasear.
+[PAUSA 3]
 ES: En el próximo episodio veremos según lo que sé. Hasta pronto.
 EU: Agur!

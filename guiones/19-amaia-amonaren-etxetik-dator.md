@@ -1,13 +1,13 @@
 # Episodio 19 - Amaia viene de casa de la abuela (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio diecinueve de Euskera paseando.
-ES: Hoy hablamos de esto: amaia viene de casa de la abuela.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Llegas a casa y te preguntan de dónde vienes, con esa mirada de quien ya sabe la respuesta.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Para decir desde un lugar, se añade tik al final.
 ES: Escucha la frase.
-ES: Esta frase significa: Amaia viene de casa de la abuela.
+ES: Y esta otra significa: Amaia viene de casa de la abuela.
 EU: Amaia amonaren etxetik dator.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Nondik zatoz?
 EU: Nondik zatoz?
 [PAUSA 6]
 
-ES: Esta frase significa: Vengo de la tienda.
+ES: Escucha cómo se dice: Vengo de la tienda.
 EU: Dendatik nator.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Dendatik nator.
 EU: Dendatik nator.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Amaia amonaren etxetik dator.
 [PAUSA 9]
 EU: Nondik zatoz?
@@ -42,7 +42,7 @@ EU: Nondik zatoz?
 EU: Dendatik nator.
 [PAUSA 6]
 
-ES: Esta frase significa: Mikel viene del parque.
+ES: Ahora, para decir: Mikel viene del parque.
 EU: Mikel parketik dator.
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Mikel parketik dator.
 EU: Mikel parketik dator.
 [PAUSA 7]
 
-ES: Esta frase significa: Tú vienes de la calle.
+ES: Y esta otra significa: Tú vienes de la calle.
 EU: Zu kaletik zatoz.
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Zu kaletik zatoz.
 EU: Ni etxetik nator.
 [PAUSA 7]
 
-ES: Esta frase significa: Nosotros venimos de Bilbao.
+ES: Escucha cómo se dice: Nosotros venimos de Bilbao.
 EU: Gu Bilbotik gatoz.
 [PAUSA 3]
 ES: Repite.
@@ -86,7 +86,7 @@ EU: Gu Bilbotik gatoz.
 EU: Gu Bilbotik gatoz.
 [PAUSA 7]
 
-ES: Esta frase significa: Vienen de la playa.
+ES: Ahora, para decir: Vienen de la playa.
 EU: Hondartzatik datoz.
 [PAUSA 3]
 ES: Repite.
@@ -113,7 +113,7 @@ EU: Gu Bilbotik gatoz.
 EU: Hondartzatik datoz.
 [PAUSA 6]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Kaixo, Mikel! Nondik zatoz?
 [PAUSA 2]
 EU: Dendatik nator. Eta zu, nora zoaz?
@@ -245,6 +245,8 @@ EU: tabako-denda
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. Cuando vuelvas del paseo, di de dónde vienes antes de quitarte los zapatos.
+[PAUSA 3]
 ES: En el próximo episodio veremos traer una manzana. Hasta pronto.
 EU: Agur!

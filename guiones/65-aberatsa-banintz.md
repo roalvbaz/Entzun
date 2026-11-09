@@ -1,13 +1,13 @@
 # Episodio 65 - Si fuera rico: lo imaginario (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio sesenta y cinco de Euskera paseando.
-ES: Hoy hablamos de esto: si fuera rico: lo imaginario.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Si te tocara la lotería. Todos hemos hecho planes con ese dinero. Hoy aprendemos a contarlos.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para lo que solo imaginamos, soy se convierte en banintz, y al final se dice nuke.
 ES: Escucha la frase.
-ES: Esta frase significa: Si fuera rico, compraría una casa.
+ES: Escucha cómo se dice: Si fuera rico, compraría una casa.
 EU: Aberatsa banintz, etxe bat erosiko nuke.
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Aberatsa banintz, etxe bat erosiko nuke.
 EU: Aberatsa banintz, etxe bat erosiko nuke.
 [PAUSA 12]
 
-ES: Esta frase significa: Si fuera más joven, iría al monte.
+ES: Ahora, para decir: Si fuera más joven, iría al monte.
 EU: Gazteago banintz, mendira joango nintzateke.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Gazteago banintz, mendira joango nintzateke.
 EU: Gazteago banintz, mendira joango nintzateke.
 [PAUSA 11]
 
-ES: Esta frase significa: Si viniera, estaría contento.
+ES: Y esta otra significa: Si viniera, estaría contento.
 EU: Etorriko balitz, pozik egongo nintzateke.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Etorriko balitz, pozik egongo nintzateke.
 EU: Etorriko balitz, pozik egongo nintzateke.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Aberatsa banintz, etxe bat erosiko nuke.
 [PAUSA 12]
 EU: Gazteago banintz, mendira joango nintzateke.
@@ -51,7 +51,7 @@ EU: Hemen bazina, lagunduko zenidake.
 EU: Hemen bazina, lagunduko zenidake.
 [PAUSA 9]
 
-ES: Esta frase significa: Si fuera, te avisaría.
+ES: Escucha cómo se dice: Si fuera, te avisaría.
 EU: Joango banintz, abisatuko nizuke.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Joango banintz, abisatuko nizuke.
 EU: Joango banintz, abisatuko nizuke.
 [PAUSA 9]
 
-ES: Esta frase significa: Si hubieras venido ayer, me habrías visto.
+ES: Ahora, para decir: Si hubieras venido ayer, me habrías visto.
 EU: Atzo etorri izan bazina, ikusiko ninduzun.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Atzo etorri izan bazina, ikusiko ninduzun.
 EU: Atzo etorri izan bazina, ikusiko ninduzun.
 [PAUSA 12]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Hemen bazina, lagunduko zenidake.
 [PAUSA 9]
 EU: Joango banintz, abisatuko nizuke.
@@ -79,7 +79,7 @@ EU: Atzo etorri izan bazina, ikusiko ninduzun.
 
 ES: Excepto se dice izan ezik.
 ES: Escucha la frase.
-ES: Esta frase significa: Excepto Mikel, han venido todos.
+ES: Y esta otra significa: Excepto Mikel, han venido todos.
 EU: Mikel izan ezik, denak etorri dira.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Mikel izan ezik, denak etorri dira.
 EU: Bera ez ezik, ni ere banoa.
 [PAUSA 12]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Zer egingo zenuke aberatsa bazina?
 [PAUSA 2]
 EU: Etxe bat erosiko nuke.
@@ -283,6 +283,8 @@ EU: erroia
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Cuenta qué harías si fueras rico. Aquí no te oye el banco.
+[PAUSA 3]
 ES: En el próximo episodio veremos más sobre lo imaginario. Hasta pronto.
 EU: Agur!

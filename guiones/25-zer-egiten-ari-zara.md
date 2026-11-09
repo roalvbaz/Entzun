@@ -1,13 +1,13 @@
 # Episodio 25 - Qué estás haciendo ahora (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio veinticinco de Euskera paseando.
-ES: Hoy hablamos de esto: qué estás haciendo ahora.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Te llaman a mala hora, justo cuando estás con las manos en la masa. Hoy aprendemos a decir qué estás haciendo ahora mismo.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Para decir que algo está pasando justo ahora, el verbo termina en ten o tzen, y detrás se pone la palabra ari.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Qué estás haciendo?
+ES: Escucha cómo se dice: ¿Qué estás haciendo?
 EU: Zer egiten ari zara?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zer egiten ari zara?
 EU: Zer egiten ari zara?
 [PAUSA 9]
 
-ES: Esta frase significa: Estoy haciendo pan.
+ES: Ahora, para decir: Estoy haciendo pan.
 EU: Ogia egiten ari naiz.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Ogia egiten ari naiz.
 EU: Ogia egiten ari naiz.
 [PAUSA 9]
 
-ES: Esta frase significa: El abuelo está leyendo el periódico.
+ES: Y esta otra significa: El abuelo está leyendo el periódico.
 EU: Aitona egunkaria irakurtzen ari da.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Aitona egunkaria irakurtzen ari da.
 EU: Aitona egunkaria irakurtzen ari da.
 [PAUSA 11]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zer egiten ari zara?
 [PAUSA 9]
 EU: Ogia egiten ari naiz.
@@ -51,7 +51,7 @@ EU: Mikel lanean ari da.
 EU: Mikel lanean ari da.
 [PAUSA 9]
 
-ES: Esta frase significa: Los niños están jugando.
+ES: Escucha cómo se dice: Los niños están jugando.
 EU: Haurrak jolasten ari dira.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Haurrak jolasten ari dira.
 EU: Haurrak jolasten ari dira.
 [PAUSA 9]
 
-ES: Esta frase significa: Estamos aprendiendo euskera.
+ES: Ahora, para decir: Estamos aprendiendo euskera.
 EU: Euskara ikasten ari gara.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Euskara ikasten ari gara.
 EU: Euskara ikasten ari gara.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Mikel lanean ari da.
 [PAUSA 9]
 EU: Haurrak jolasten ari dira.
@@ -79,7 +79,7 @@ EU: Euskara ikasten ari gara.
 
 ES: Para el tiempo se dice así, y es muy útil al salir a pasear.
 ES: Escucha la frase.
-ES: Esta frase significa: Está lloviendo.
+ES: Y esta otra significa: Está lloviendo.
 EU: Euria ari du.
 [PAUSA 3]
 ES: Repite.
@@ -115,7 +115,7 @@ EU: Euria ari du.
 EU: Elurra ari du.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Vamos a ver a dos personas usando esto en la calle. Primero entera.
 EU: Kaixo, aitona! Zer egiten ari zara?
 [PAUSA 2]
 EU: Egunkaria irakurtzen ari naiz. Eta zu?
@@ -253,6 +253,8 @@ EU: sargori egin
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Durante el paseo, ve contando lo que estás haciendo y qué tiempo hace. Que llueve, pues que llueve.
+[PAUSA 3]
 ES: En el próximo episodio veremos lo que hiciste ayer. Hasta pronto.
 EU: Agur!

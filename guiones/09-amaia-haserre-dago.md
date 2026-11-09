@@ -1,13 +1,13 @@
 # Episodio 9 - Amaia está enfadada (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio nueve de Euskera paseando.
-ES: Hoy hablamos de esto: amaia está enfadada.
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Entras en casa, ves una cara seria y hay que averiguar cómo está el ambiente antes de abrir la boca.
+ES: Tú a tu ritmo. Y si alguien te mira raro por hablar solo, dile que estás estudiando.
 [PAUSA 2]
 
 ES: Con el verbo estar también decimos cómo nos sentimos. Escucha cómo se pregunta.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Cómo estás?
+ES: Escucha cómo se dice: ¿Cómo estás?
 EU: Zer moduz zaude?
 [PAUSA 3]
 ES: Repite.
@@ -16,7 +16,7 @@ EU: Zer moduz zaude?
 EU: Zer moduz zaude?
 [PAUSA 7]
 
-ES: Esta frase significa: Estoy bien.
+ES: Ahora, para decir: Estoy bien.
 EU: Ondo nago.
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Ondo nago.
 EU: Ondo nago.
 [PAUSA 6]
 
-ES: Esta frase significa: Amaia está enfadada.
+ES: Y esta otra significa: Amaia está enfadada.
 EU: Amaia haserre dago.
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Amaia haserre dago.
 EU: Amaia haserre dago.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Zer moduz zaude?
 [PAUSA 7]
 EU: Ondo nago.
@@ -51,7 +51,7 @@ EU: Ni pozik nago.
 EU: Ni pozik nago.
 [PAUSA 7]
 
-ES: Esta frase significa: Tú estás cansado.
+ES: Escucha cómo se dice: Tú estás cansado.
 EU: Zu nekatuta zaude.
 [PAUSA 3]
 ES: Repite.
@@ -60,7 +60,7 @@ EU: Zu nekatuta zaude.
 EU: Zu nekatuta zaude.
 [PAUSA 7]
 
-ES: Esta frase significa: Mikel está triste.
+ES: Ahora, para decir: Mikel está triste.
 EU: Mikel triste dago.
 [PAUSA 3]
 ES: Repite.
@@ -69,7 +69,7 @@ EU: Mikel triste dago.
 EU: Mikel triste dago.
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: Las tres últimas, una vez más.
 EU: Ni pozik nago.
 [PAUSA 7]
 EU: Zu nekatuta zaude.
@@ -79,7 +79,7 @@ EU: Mikel triste dago.
 
 ES: Para decir que no, se pone delante del verbo la palabra ez.
 ES: Escucha la frase.
-ES: Esta frase significa: No estoy bien.
+ES: Y esta otra significa: No estoy bien.
 EU: Ez nago ondo.
 [PAUSA 3]
 ES: Repite.
@@ -99,7 +99,7 @@ EU: Nola dago aitona?
 EU: Nola dago aitona?
 [PAUSA 7]
 
-ES: Esta frase significa: Estoy sentado.
+ES: Escucha cómo se dice: Estoy sentado.
 EU: Eserita nago.
 [PAUSA 3]
 ES: Repite.
@@ -108,7 +108,7 @@ EU: Eserita nago.
 EU: Eserita nago.
 [PAUSA 6]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Ez nago ondo.
 [PAUSA 7]
 EU: Nola dago aitona?
@@ -116,7 +116,7 @@ EU: Nola dago aitona?
 EU: Eserita nago.
 [PAUSA 6]
 
-ES: Esta frase significa: La puerta está cerrada.
+ES: Ahora, para decir: La puerta está cerrada.
 EU: Atea itxita dago.
 [PAUSA 3]
 ES: Repite.
@@ -125,7 +125,7 @@ EU: Atea itxita dago.
 EU: Atea itxita dago.
 [PAUSA 7]
 
-ES: Esta frase significa: La habitación está limpia.
+ES: Y esta otra significa: La habitación está limpia.
 EU: Gela garbi dago.
 [PAUSA 3]
 ES: Repite.
@@ -158,7 +158,7 @@ EU: Atea itxita dago.
 EU: Gela garbi dago.
 [PAUSA 7]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Ahora escucha cómo sonaría esto en una conversación de verdad. Primero entera.
 EU: Zer moduz zaude, Amaia?
 [PAUSA 2]
 EU: Ez nago ondo. Nekatuta nago.
@@ -326,6 +326,8 @@ EU: zutik
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Se acabó por hoy, aitona. Y sin despeinarte.
+ES: Un encargo para el paseo. Esta noche, antes de dormir, di cómo estás. Contento, cansado, o las dos cosas.
+[PAUSA 3]
 ES: En el próximo episodio veremos de quién es el coche. Hasta pronto.
 EU: Agur!

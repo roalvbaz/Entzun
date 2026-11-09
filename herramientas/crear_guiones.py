@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from temas_hiru import ampliar  # noqa: E402
+from estilo import ANIMO, CIERRE, CONVERSA, ESCENAS, PRESENTA, REPASITO, REPASO_INICIO, rota  # noqa: E402
 
 VOCABULARIO = json.loads(Path(__file__).with_name("vocabulario.json").read_text(encoding="utf-8"))
 MARCA_VOC, FIN_VOC = "# Vocabulario", "# Fin del vocabulario"
@@ -282,8 +283,8 @@ def p(s):
     return f"[PAUSA {s}]"
 
 
-def bloque_dialogo(dialogo, L):
-    L += ["", es("Ahora escucha una conversación sencilla. Primero entera.")]
+def bloque_dialogo(dialogo, L, n):
+    L += ["", es(rota(CONVERSA, n))]
     for e, _ in dialogo:
         L += [eu(e), p(2)]
     L += ["", es("En español sería así.")]
@@ -307,30 +308,30 @@ def bloque_vocabulario(n):
 
 def episodio_nuevo(n, d):
     L = [f"# Episodio {n} - {d['titulo']} (guion propio; del curso de Hiru solo se toma el tema)", ""]
-    L += [es(f"Kaixo, aitona. Bienvenido al episodio {NUM[n]} de Euskera paseando."),
-          es("Hoy hablamos de esto: " + d["titulo"][0].lower() + d["titulo"][1:] + ("" if d["titulo"][-1] in ".?!" else ".")),
-          es("Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada."), p(2), ""]
+    escena, encargo = ESCENAS[n]
+    L += [es(f"Kaixo, aitona. Bienvenido al episodio {NUM[n]} de Euskera paseando."), es(escena),
+          es(rota(ANIMO, n)), p(2), ""]
     items = d["items"]
     for i, (e, s, nota) in enumerate(items):
         if nota:
             for lang, t in nota:
                 L.append(f"{lang}: {t}")
             L.append(es("Escucha la frase."))
-        L += [es(f"Esta frase significa: {s}"), eu(e), p(3), es("Repite."), eu(e), p(pausa(e)), eu(e), p(pausa(e)), ""]
+        L += [es(f"{rota(PRESENTA, n + i)}: {s}"), eu(e), p(3), es("Repite."), eu(e), p(pausa(e)), eu(e), p(pausa(e)), ""]
         if (i + 1) % 3 == 0 and i + 1 < len(items):
-            L += [es("Repasamos las últimas.")]
+            L += [es(rota(REPASITO, n + i))]
             for e2, _, _ in items[i - 2:i + 1]:
                 L += [eu(e2), p(pausa(e2))]
             L.append("")
     L += [es("Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.")]
     for e, _, _ in items:
         L += [eu(e), p(pausa(e))]
-    bloque_dialogo(d["dialogo"], L)
+    bloque_dialogo(d["dialogo"], L, n)
     L += ["", es("Y ahora el repaso final. Yo te digo la frase en español, tú la dices en euskera, y después oyes la respuesta correcta.")]
     for e, s, _ in items:
         L += [es(s), p(pausa(e) + 3), eu(e), p(2)]
     L += [""] + bloque_vocabulario(n)
-    L += [es("Muy bien, aitona. Has terminado el episodio de hoy.")]
+    L += [es(rota(CIERRE, n)), es("Un encargo para el paseo. " + encargo), p(3)]
     if d.get("siguiente"):
         L.append(es(f"En el próximo episodio veremos {d['siguiente']}. Hasta pronto."))
     L.append(eu("Agur!"))
@@ -341,7 +342,7 @@ def episodio_repaso(n, d):
     fuentes = [EPISODIOS[k] for k in d["de"]]
     items = [it for f in fuentes for it in f["items"]]
     L = [f"# Episodio {n} - {d['titulo']} (guion propio; repaso de los episodios {d['de']})", ""]
-    L += [es(f"Kaixo, aitona. Bienvenido al episodio {NUM[n]}. Hoy toca repasar lo que ya sabes."),
+    L += [es(f"Kaixo, aitona. Bienvenido al episodio {NUM[n]}. {rota(REPASO_INICIO, n)}"),
           es("Primero hacemos el juego de traducir. Y al final, las conversaciones."), p(2), ""]
     L += ["", es("Primera parte. Yo digo la frase en español, tú la dices en euskera, y luego oyes la respuesta.")]
     for e, s, _ in items:

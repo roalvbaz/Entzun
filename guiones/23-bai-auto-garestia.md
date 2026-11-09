@@ -1,13 +1,13 @@
 # Episodio 23 - ¡Qué coche tan caro! (guion propio; del curso de Hiru solo se toma el tema)
 
 ES: Kaixo, aitona. Bienvenido al episodio veintitrés de Euskera paseando.
-ES: Hoy hablamos de esto: ¡Qué coche tan caro!
-ES: Camina tranquilo y repite en voz alta cuando te toque. Si te equivocas, no pasa nada.
+ES: Estás en el mercado, te dicen el precio y se te escapa una exclamación. Hoy aprendemos a exclamar, a preguntar cuánto vale y a decir lo que quieres.
+ES: Sin prisas. Lo importante es que te suene y que te atrevas a decirlo.
 [PAUSA 2]
 
 ES: Para exclamar, qué coche tan caro, la frase empieza con una palabra especial.
 ES: Escucha la frase.
-ES: Esta frase significa: ¡Qué coche tan caro!
+ES: Y esta otra significa: ¡Qué coche tan caro!
 EU: Bai auto garestia!
 [PAUSA 3]
 ES: Repite.
@@ -25,7 +25,7 @@ EU: Bai etxe handia!
 EU: Bai etxe handia!
 [PAUSA 7]
 
-ES: Esta frase significa: ¡Qué chica tan bonita!
+ES: Escucha cómo se dice: ¡Qué chica tan bonita!
 EU: Bai neska polita!
 [PAUSA 3]
 ES: Repite.
@@ -34,7 +34,7 @@ EU: Bai neska polita!
 EU: Bai neska polita!
 [PAUSA 7]
 
-ES: Repasamos las últimas.
+ES: A ver si siguen ahí las últimas.
 EU: Bai auto garestia!
 [PAUSA 7]
 EU: Bai etxe handia!
@@ -42,7 +42,7 @@ EU: Bai etxe handia!
 EU: Bai neska polita!
 [PAUSA 7]
 
-ES: Esta frase significa: ¡Qué gato tan pequeño!
+ES: Ahora, para decir: ¡Qué gato tan pequeño!
 EU: Bai gatu txikia!
 [PAUSA 3]
 ES: Repite.
@@ -51,7 +51,7 @@ EU: Bai gatu txikia!
 EU: Bai gatu txikia!
 [PAUSA 7]
 
-ES: Esta frase significa: ¡Qué libro tan viejo!
+ES: Y esta otra significa: ¡Qué libro tan viejo!
 EU: Bai liburu zaharra!
 [PAUSA 3]
 ES: Repite.
@@ -77,7 +77,7 @@ EU: Bai liburu zaharra!
 EU: Begira!
 [PAUSA 5]
 
-ES: Esta frase significa: Pero es caro.
+ES: Escucha cómo se dice: Pero es caro.
 EU: Baina garestia da.
 [PAUSA 3]
 ES: Repite.
@@ -88,7 +88,7 @@ EU: Baina garestia da.
 
 ES: Para preguntar el precio se usa el verbo balio.
 ES: Escucha la frase.
-ES: Esta frase significa: ¿Cuánto vale?
+ES: Ahora, para decir: ¿Cuánto vale?
 EU: Zenbat balio du?
 [PAUSA 3]
 ES: Repite.
@@ -97,7 +97,7 @@ EU: Zenbat balio du?
 EU: Zenbat balio du?
 [PAUSA 7]
 
-ES: Esta frase significa: Vale diez euros.
+ES: Y esta otra significa: Vale diez euros.
 EU: Hamar euro balio du.
 [PAUSA 3]
 ES: Repite.
@@ -106,7 +106,7 @@ EU: Hamar euro balio du.
 EU: Hamar euro balio du.
 [PAUSA 9]
 
-ES: Repasamos las últimas.
+ES: Antes de seguir, las últimas.
 EU: Baina garestia da.
 [PAUSA 7]
 EU: Zenbat balio du?
@@ -125,7 +125,7 @@ EU: Zer nahi duzu?
 EU: Zer nahi duzu?
 [PAUSA 7]
 
-ES: Esta frase significa: Quiero un café.
+ES: Escucha cómo se dice: Quiero un café.
 EU: Kafe bat nahi dut.
 [PAUSA 3]
 ES: Repite.
@@ -134,7 +134,7 @@ EU: Kafe bat nahi dut.
 EU: Kafe bat nahi dut.
 [PAUSA 9]
 
-ES: Esta frase significa: Quiero un coche nuevo.
+ES: Ahora, para decir: Quiero un coche nuevo.
 EU: Auto berri bat nahi dut.
 [PAUSA 3]
 ES: Repite.
@@ -169,7 +169,7 @@ EU: Kafe bat nahi dut.
 EU: Auto berri bat nahi dut.
 [PAUSA 11]
 
-ES: Ahora escucha una conversación sencilla. Primero entera.
+ES: Esto en la vida real suena así. Escucha la conversación entera.
 EU: Begira, Amaia! Bai auto berria!
 [PAUSA 2]
 EU: Bai, baina garestia da.
@@ -347,6 +347,8 @@ EU: Mikel
 
 # Fin del vocabulario
 
-ES: Muy bien, aitona. Has terminado el episodio de hoy.
+ES: Hasta aquí, aitona. Ya sabes un poco más que esta mañana.
+ES: Un encargo para el paseo. En la próxima compra, piensa cómo preguntarías el precio. Y cómo pondrías el grito en el cielo.
+[PAUSA 3]
 ES: En el próximo episodio veremos un repaso final. Hasta pronto.
 EU: Agur!
