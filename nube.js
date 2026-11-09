@@ -61,11 +61,20 @@ const Nube = {
     }
   },
 
+  // La primera cuenta que entra en este móvil hereda el perfil local, si solo hay uno (con varios no se sabe de quién es).
+  heredarPerfilLocal() {
+    if (lsGet("entzun-heredado") || lsGet(claveEstado(usuario))) return;
+    let locales = []; try { locales = JSON.parse(lsGet(U_KEY) || "[]"); } catch (e) {}
+    const viejo = locales.length === 1 && lsGet(claveEstado(locales[0]));
+    if (viejo) { lsSet(claveEstado(usuario), viejo); lsSet("entzun-heredado", "1"); }
+  },
+
   async activar(u, p) {
     usuario = { id: u.uid, nombre: p.nombre || u.displayName || (u.email || "").split("@")[0], color: this.colorDe(u.uid) };
     lsSet("entzun-ultimo", JSON.stringify({ uid: u.uid, nombre: usuario.nombre }));
+    this.heredarPerfilLocal();
     cargarEstado();
-    try {                                                    // se queda el progreso más reciente (nube o este móvil)
+    try {                                                  // se queda el progreso más reciente (nube o este móvil)
       const r = await this.api.leerProgreso(u.uid);
       if (r) { const re = JSON.parse(r.estado); if ((re.actualizado || 0) > (estado.actualizado || 0)) { estado = Object.assign(VACIO(), mig(re)); lsSet(claveEstado(usuario), JSON.stringify(estado)); } }
     } catch (e) {}

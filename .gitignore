@@ -13,3 +13,10 @@ __pycache__/
 *.md
 !guiones/*.md
 !herramientas/muestra.md
+
+# Configuracion local de la CLI de Firebase (lleva correos)
+firebase.json
+.firebaserc
+firestore.indexes.json
+.firebase/
+*-debug.log

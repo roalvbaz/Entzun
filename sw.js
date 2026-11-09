@@ -1,4 +1,4 @@
-const SHELL="shell-v7", AUDIO="audio-v1";
+const SHELL="shell-v8", AUDIO="audio-v1";
 const ARCHIVOS=["./","index.html","manifest.json","episodios.json","ejercicios.json","nube.js","fb.js","firebase-config.js","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 
 self.addEventListener("install",e=>{
