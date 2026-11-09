@@ -161,7 +161,7 @@ header .fila-sup h1{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:
 
 /* ---------- Ejercicios ---------- */
 .mixta{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:linear-gradient(135deg,#1e8a6a,#2d46b9);border-radius:14px;padding:16px;margin:16px 0 4px;min-height:88px}
-.mixta[disabled]{opacity:.5}
+.mixta[disabled],.tarjeta-nivel:disabled{opacity:.5}
 .mixta .tit{font-size:22px;font-weight:800}.mixta .sub{font-size:17px;opacity:.9}
 .mixta .play-verde{width:56px;height:56px;margin-left:auto;background:#fff}
 .ep .ir{color:var(--suave);width:44px;height:44px;display:grid;place-items:center;flex:none}
@@ -375,6 +375,8 @@ const disp=e=>e&&e.disponible;
 const idxBloque=e=>Math.max(0,["I","II","III","IV","V","VI"].indexOf(e.bloque));
 const portada=(el,e)=>{el.className=el.className.replace(/\bb\d\b/g,"").trim()+" b"+idxBloque(e);el.textContent=e.id};
 const nivelDe=id=>niveles.find(n=>n.id===id);
+// El primero siempre abierto; los demas, al terminar todo lo disponible del anterior.
+const nivelAbierto=n=>{const i=niveles.indexOf(n);if(i<=0)return true;const d=niveles[i-1].episodios.filter(disp);return d.length>0&&d.every(e=>estado.hecho[k(e)])};
 const saludo=()=>{const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"};
 
 async function init(){
@@ -410,6 +412,7 @@ function ruta(sinScroll){
   else{
     const m=/^#\/([A-Za-z0-9]+)(?:\/(ej)(?:\/([A-Za-z0-9]+))?)?$/.exec(h);
     n=m&&nivelDe(m[1]);
+    if(n&&!nivelAbierto(n)){location.hash="#/";return}
     if(n){vista="nivel";if(m[2]){tab="ej";if(m[3]){vista="ejercicio";ej=m[3]}}}
   }
   for(const v of VISTAS){const el=$("vista-"+v);if(el)el.classList.toggle("oculto",v!==vista)}
@@ -454,10 +457,11 @@ function pintarInicio(){
   const cont=$("niveles");cont.innerHTML="";
   for(const n of niveles){
     const total=n.episodios.length, hechos=n.episodios.filter(e=>estado.hecho[k(e)]).length;
-    const t=document.createElement("button");t.className="tarjeta-nivel";
+    const abierto=nivelAbierto(n), previo=niveles[niveles.indexOf(n)-1];
+    const t=document.createElement("button");t.className="tarjeta-nivel";t.disabled=!abierto;
     t.innerHTML=`<div class="portada" style="background:${n.color||"#1e8a6a"}">${n.id}</div><div class="txt"><div class="tit"></div><div class="sub"></div><div class="prog"><i style="width:${total?hechos/total*100:0}%"></i></div></div>`;
     t.querySelector(".tit").textContent=n.nombre;
-    t.querySelector(".sub").textContent=`${hechos} de ${total} episodios · ${n.descripcion||""}`;
+    t.querySelector(".sub").textContent=abierto?`${hechos} de ${total} episodios · ${n.descripcion||""}`:`🔒 Termina el ${previo.nombre} para abrirlo`;
     t.onclick=()=>{location.hash="#/"+n.id};
     cont.appendChild(t);
   }
