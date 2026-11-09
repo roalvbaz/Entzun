@@ -69,6 +69,62 @@ EU: Poltsa txikia da.
 EU: Poltsa txikia da.
 [PAUSA 7]
 
+ES: Repasamos las últimas.
+EU: Mikelek ogia darama poltsan.
+[PAUSA 9]
+EU: Poltsa handia da.
+[PAUSA 7]
+EU: Poltsa txikia da.
+[PAUSA 7]
+
+ES: Para hablar de lo que ya está hecho, el que lo hace lleva k, y se termina con du.
+ES: Escucha la frase.
+ES: Esta frase significa: Amaia se ha comido la manzana.
+EU: Amaiak sagarra jan du.
+[PAUSA 3]
+ES: Repite.
+EU: Amaiak sagarra jan du.
+[PAUSA 9]
+EU: Amaiak sagarra jan du.
+[PAUSA 9]
+
+ES: Esta frase significa: Yo he comprado el pan.
+EU: Nik ogia erosi dut.
+[PAUSA 3]
+ES: Repite.
+EU: Nik ogia erosi dut.
+[PAUSA 9]
+EU: Nik ogia erosi dut.
+[PAUSA 9]
+
+ES: Esta frase significa: ¿Tú qué has hecho?
+EU: Zuk zer egin duzu?
+[PAUSA 3]
+ES: Repite.
+EU: Zuk zer egin duzu?
+[PAUSA 9]
+EU: Zuk zer egin duzu?
+[PAUSA 9]
+
+ES: Repasamos las últimas.
+EU: Amaiak sagarra jan du.
+[PAUSA 9]
+EU: Nik ogia erosi dut.
+[PAUSA 9]
+EU: Zuk zer egin duzu?
+[PAUSA 9]
+
+ES: Con verbos como ir, en vez de du se dice da.
+ES: Escucha la frase.
+ES: Esta frase significa: Mikel se ha ido a casa.
+EU: Mikel etxera joan da.
+[PAUSA 3]
+ES: Repite.
+EU: Mikel etxera joan da.
+[PAUSA 9]
+EU: Mikel etxera joan da.
+[PAUSA 9]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Amaiak sagar bat darama poltsan.
 [PAUSA 11]
@@ -82,6 +138,14 @@ EU: Poltsa handia da.
 [PAUSA 7]
 EU: Poltsa txikia da.
 [PAUSA 7]
+EU: Amaiak sagarra jan du.
+[PAUSA 9]
+EU: Nik ogia erosi dut.
+[PAUSA 9]
+EU: Zuk zer egin duzu?
+[PAUSA 9]
+EU: Mikel etxera joan da.
+[PAUSA 9]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Zer daramazu poltsan?
@@ -134,7 +198,23 @@ ES: La bolsa es pequeña.
 [PAUSA 10]
 EU: Poltsa txikia da.
 [PAUSA 2]
+ES: Amaia se ha comido la manzana.
+[PAUSA 12]
+EU: Amaiak sagarra jan du.
+[PAUSA 2]
+ES: Yo he comprado el pan.
+[PAUSA 12]
+EU: Nik ogia erosi dut.
+[PAUSA 2]
+ES: ¿Tú qué has hecho?
+[PAUSA 12]
+EU: Zuk zer egin duzu?
+[PAUSA 2]
+ES: Mikel se ha ido a casa.
+[PAUSA 12]
+EU: Mikel etxera joan da.
+[PAUSA 2]
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
-ES: En el próximo episodio veremos una exclamación. Hasta pronto.
+ES: En el próximo episodio veremos cuánto vale algo y qué quieres. Hasta pronto.
 EU: Agur!

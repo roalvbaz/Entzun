@@ -88,6 +88,52 @@ EU: Ez nago ondo.
 EU: Ez nago ondo.
 [PAUSA 7]
 
+ES: Para preguntar cómo está alguien también se usa nola.
+ES: Escucha la frase.
+ES: Esta frase significa: ¿Cómo está el abuelo?
+EU: Nola dago aitona?
+[PAUSA 3]
+ES: Repite.
+EU: Nola dago aitona?
+[PAUSA 7]
+EU: Nola dago aitona?
+[PAUSA 7]
+
+ES: Esta frase significa: Estoy sentado.
+EU: Eserita nago.
+[PAUSA 3]
+ES: Repite.
+EU: Eserita nago.
+[PAUSA 6]
+EU: Eserita nago.
+[PAUSA 6]
+
+ES: Repasamos las últimas.
+EU: Ez nago ondo.
+[PAUSA 7]
+EU: Nola dago aitona?
+[PAUSA 7]
+EU: Eserita nago.
+[PAUSA 6]
+
+ES: Esta frase significa: La puerta está cerrada.
+EU: Atea itxita dago.
+[PAUSA 3]
+ES: Repite.
+EU: Atea itxita dago.
+[PAUSA 7]
+EU: Atea itxita dago.
+[PAUSA 7]
+
+ES: Esta frase significa: La habitación está limpia.
+EU: Gela garbi dago.
+[PAUSA 3]
+ES: Repite.
+EU: Gela garbi dago.
+[PAUSA 7]
+EU: Gela garbi dago.
+[PAUSA 7]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Zer moduz zaude?
 [PAUSA 7]
@@ -102,6 +148,14 @@ EU: Zu nekatuta zaude.
 EU: Mikel triste dago.
 [PAUSA 7]
 EU: Ez nago ondo.
+[PAUSA 7]
+EU: Nola dago aitona?
+[PAUSA 7]
+EU: Eserita nago.
+[PAUSA 6]
+EU: Atea itxita dago.
+[PAUSA 7]
+EU: Gela garbi dago.
 [PAUSA 7]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
@@ -159,6 +213,118 @@ ES: No estoy bien.
 [PAUSA 10]
 EU: Ez nago ondo.
 [PAUSA 2]
+ES: ¿Cómo está el abuelo?
+[PAUSA 10]
+EU: Nola dago aitona?
+[PAUSA 2]
+ES: Estoy sentado.
+[PAUSA 9]
+EU: Eserita nago.
+[PAUSA 2]
+ES: La puerta está cerrada.
+[PAUSA 10]
+EU: Atea itxita dago.
+[PAUSA 2]
+ES: La habitación está limpia.
+[PAUSA 10]
+EU: Gela garbi dago.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: asustado
+EU: beldurtuta
+[PAUSA 5]
+EU: beldurtuta
+[PAUSA 5]
+
+ES: mojado
+EU: bustita
+[PAUSA 5]
+EU: bustita
+[PAUSA 5]
+
+ES: sentado
+EU: eserita
+[PAUSA 5]
+EU: eserita
+[PAUSA 5]
+
+ES: tumbado
+EU: etzanda
+[PAUSA 5]
+EU: etzanda
+[PAUSA 5]
+
+ES: limpio
+EU: garbi
+[PAUSA 5]
+EU: garbi
+[PAUSA 5]
+
+ES: asombrado
+EU: harrituta
+[PAUSA 5]
+EU: harrituta
+[PAUSA 5]
+
+ES: enfadado
+EU: haserre
+[PAUSA 5]
+EU: haserre
+[PAUSA 5]
+
+ES: cerrado
+EU: itxita
+[PAUSA 5]
+EU: itxita
+[PAUSA 5]
+
+ES: enamorado
+EU: maiteminduta
+[PAUSA 5]
+EU: maiteminduta
+[PAUSA 5]
+
+ES: cansado
+EU: nekatuta
+[PAUSA 5]
+EU: nekatuta
+[PAUSA 5]
+
+ES: contento
+EU: pozik
+[PAUSA 5]
+EU: pozik
+[PAUSA 5]
+
+ES: roto
+EU: puskatuta
+[PAUSA 5]
+EU: puskatuta
+[PAUSA 5]
+
+ES: nervioso
+EU: urduri
+[PAUSA 5]
+EU: urduri
+[PAUSA 5]
+
+ES: sucio
+EU: zikin
+[PAUSA 5]
+EU: zikin
+[PAUSA 5]
+
+ES: de pie
+EU: zutik
+[PAUSA 5]
+EU: zutik
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos de quién es el coche. Hasta pronto.

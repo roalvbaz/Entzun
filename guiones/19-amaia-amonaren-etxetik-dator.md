@@ -69,6 +69,32 @@ EU: Ni etxetik nator.
 EU: Ni etxetik nator.
 [PAUSA 7]
 
+ES: Repasamos las últimas.
+EU: Mikel parketik dator.
+[PAUSA 7]
+EU: Zu kaletik zatoz.
+[PAUSA 7]
+EU: Ni etxetik nator.
+[PAUSA 7]
+
+ES: Esta frase significa: Nosotros venimos de Bilbao.
+EU: Gu Bilbotik gatoz.
+[PAUSA 3]
+ES: Repite.
+EU: Gu Bilbotik gatoz.
+[PAUSA 7]
+EU: Gu Bilbotik gatoz.
+[PAUSA 7]
+
+ES: Esta frase significa: Vienen de la playa.
+EU: Hondartzatik datoz.
+[PAUSA 3]
+ES: Repite.
+EU: Hondartzatik datoz.
+[PAUSA 6]
+EU: Hondartzatik datoz.
+[PAUSA 6]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Amaia amonaren etxetik dator.
 [PAUSA 9]
@@ -82,6 +108,10 @@ EU: Zu kaletik zatoz.
 [PAUSA 7]
 EU: Ni etxetik nator.
 [PAUSA 7]
+EU: Gu Bilbotik gatoz.
+[PAUSA 7]
+EU: Hondartzatik datoz.
+[PAUSA 6]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Kaixo, Mikel! Nondik zatoz?
@@ -134,6 +164,86 @@ ES: Yo vengo de casa.
 [PAUSA 10]
 EU: Ni etxetik nator.
 [PAUSA 2]
+ES: Nosotros venimos de Bilbao.
+[PAUSA 10]
+EU: Gu Bilbotik gatoz.
+[PAUSA 2]
+ES: Vienen de la playa.
+[PAUSA 9]
+EU: Hondartzatik datoz.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: pescadería
+EU: arrandegi
+[PAUSA 5]
+EU: arrandegi
+[PAUSA 5]
+
+ES: tienda de ropa
+EU: arropa-denda
+[PAUSA 5]
+EU: arropa-denda
+[PAUSA 5]
+
+ES: verdulería
+EU: barazki-denda
+[PAUSA 5]
+EU: barazki-denda
+[PAUSA 5]
+
+ES: agencia de viajes
+EU: bidaia-agentzia
+[PAUSA 5]
+EU: bidaia-agentzia
+[PAUSA 5]
+
+ES: carnicería
+EU: harategi
+[PAUSA 5]
+EU: harategi
+[PAUSA 5]
+
+ES: frutería
+EU: fruta-denda
+[PAUSA 5]
+EU: fruta-denda
+[PAUSA 5]
+
+ES: heladería
+EU: izozki-denda
+[PAUSA 5]
+EU: izozki-denda
+[PAUSA 5]
+
+ES: librería
+EU: liburu-denda
+[PAUSA 5]
+EU: liburu-denda
+[PAUSA 5]
+
+ES: panadería
+EU: okindegi
+[PAUSA 5]
+EU: okindegi
+[PAUSA 5]
+
+ES: supermercado
+EU: supermerkatu
+[PAUSA 5]
+EU: supermerkatu
+[PAUSA 5]
+
+ES: estanco
+EU: tabako-denda
+[PAUSA 5]
+EU: tabako-denda
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos traer una manzana. Hasta pronto.

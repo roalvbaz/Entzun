@@ -34,6 +34,22 @@ ES: La casa es bonita.
 [PAUSA 10]
 EU: Etxea polita da.
 [PAUSA 2]
+ES: ¿De qué color es el coche?
+[PAUSA 12]
+EU: Zein koloretakoa da autoa?
+[PAUSA 2]
+ES: El coche es rojo.
+[PAUSA 10]
+EU: Autoa gorria da.
+[PAUSA 2]
+ES: La casa es blanca.
+[PAUSA 10]
+EU: Etxea zuria da.
+[PAUSA 2]
+ES: El mar es azul.
+[PAUSA 10]
+EU: Itsasoa urdina da.
+[PAUSA 2]
 ES: ¿Dónde vives?
 [PAUSA 10]
 EU: Non bizi zara?
@@ -62,6 +78,18 @@ ES: ¿Y tú, dónde vives?
 [PAUSA 14]
 EU: Eta zu, non bizi zara?
 [PAUSA 2]
+ES: Vivo en un pueblo pequeño.
+[PAUSA 14]
+EU: Herri txiki batean bizi naiz.
+[PAUSA 2]
+ES: Vivimos en una ciudad grande.
+[PAUSA 14]
+EU: Hiri handi batean bizi gara.
+[PAUSA 2]
+ES: Vivo en este barrio.
+[PAUSA 12]
+EU: Auzo honetan bizi naiz.
+[PAUSA 2]
 ES: Amaia está en casa.
 [PAUSA 10]
 EU: Amaia etxean dago.
@@ -89,6 +117,18 @@ EU: Non dago Amaia?
 ES: ¿Dónde estás?
 [PAUSA 9]
 EU: Non zaude?
+[PAUSA 2]
+ES: La madre está en la cocina.
+[PAUSA 10]
+EU: Ama sukaldean dago.
+[PAUSA 2]
+ES: Los niños están en la escuela.
+[PAUSA 10]
+EU: Haurrak eskolan daude.
+[PAUSA 2]
+ES: Nosotros estamos en el bar.
+[PAUSA 10]
+EU: Gu tabernan gaude.
 [PAUSA 2]
 
 ES: Segunda parte. Las conversaciones de estos episodios.

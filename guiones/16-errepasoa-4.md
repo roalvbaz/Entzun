@@ -34,6 +34,18 @@ ES: ¿Dónde está el gato?
 [PAUSA 10]
 EU: Non dago gatua?
 [PAUSA 2]
+ES: Las llaves están dentro de la bolsa.
+[PAUSA 12]
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 2]
+ES: El coche está detrás de la casa.
+[PAUSA 12]
+EU: Autoa etxearen atzean dago.
+[PAUSA 2]
+ES: La iglesia está entre el ayuntamiento y el banco.
+[PAUSA 15]
+EU: Eliza udaletxearen eta banketxearen artean dago.
+[PAUSA 2]
 ES: Amaia tiene un libro.
 [PAUSA 12]
 EU: Amaiak liburu bat dauka.
@@ -61,6 +73,14 @@ EU: Zer daukazu?
 ES: ¿Y tú?
 [PAUSA 9]
 EU: Eta zuk?
+[PAUSA 2]
+ES: Nosotros tenemos una casa.
+[PAUSA 12]
+EU: Guk etxe bat daukagu.
+[PAUSA 2]
+ES: Ellos tienen tres hijos.
+[PAUSA 12]
+EU: Haiek hiru seme dauzkate.
 [PAUSA 2]
 ES: Esa chica no tiene libros.
 [PAUSA 14]

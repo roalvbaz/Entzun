@@ -1,16 +1,29 @@
 #!/usr/bin/env python3
-"""Genera guiones/NN-*.md (episodios 02-24) a partir de los datos de abajo.
+"""Genera guiones/NN-*.md (episodios 02-80) a partir de los datos de abajo.
 
-Los textos son propios; de Hiru solo se toma el titulo de cada unidad como tema.
+Los textos son propios; de Hiru solo se toma el programa de cada unidad (ver temas_hiru.py).
 Revisar con una persona que hable euskera antes de publicar.
 
     python herramientas/crear_guiones.py
 """
+import json
+import re
+import sys
 from pathlib import Path
 
-NUM = ["", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce",
-       "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte",
-       "veintiuno", "veintidós", "veintitrés", "veinticuatro"]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from temas_hiru import ampliar  # noqa: E402
+
+VOCABULARIO = json.loads(Path(__file__).with_name("vocabulario.json").read_text(encoding="utf-8"))
+MARCA_VOC, FIN_VOC = "# Vocabulario", "# Fin del vocabulario"
+
+UNIDADES = ["", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"]
+DECENAS = {30: "treinta", 40: "cuarenta", 50: "cincuenta", 60: "sesenta", 70: "setenta", 80: "ochenta"}
+NUM = (["", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce",
+        "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte",
+        "veintiuno", "veintidós", "veintitrés", "veinticuatro", "veinticinco", "veintiséis", "veintisiete",
+        "veintiocho", "veintinueve"]
+       + [DECENAS[n - n % 10] + (f" y {UNIDADES[n % 10]}" if n % 10 else "") for n in range(30, 81)])
 
 # item = (euskera, español, nota)   nota = None o lista de (idioma, texto)
 # dialogo = lista de (euskera, español)
@@ -183,7 +196,7 @@ EPISODIOS = {
 
     18: dict(slug="amaia-amonarengana-joan-da", titulo="Amaia ha ido a casa de su abuela", siguiente="de dónde viene Amaia",
         items=[
-        ("Amaia amonarengana joan da.", "Amaia ha ido a ver a su abuela.", [("ES", "Cuando vamos hacia una persona, no hacia un lugar, se añade rengana al nombre de la persona. Abuela se dice amona.")]),
+        ("Amaia amonarengana joan da.", "Amaia ha ido a ver a su abuela.", [("ES", "Cuando vamos hacia una persona, no hacia un lugar, se añade arengana, o engana con nombres propios que acaban en consonante. Abuela se dice amona.")]),
         ("Mikel aitonarengana joan da.", "Mikel ha ido a ver a su abuelo.", None),
         ("Ni amonarengana joan naiz.", "Yo he ido a ver a la abuela.", None),
         ("Zu Amaiarengana joan zara.", "Tú has ido a ver a Amaia.", None),
@@ -208,7 +221,7 @@ EPISODIOS = {
     21: dict(slug="amaiak-sagar-bat-dakar", titulo="Amaia trae una manzana para su abuela", siguiente="llevar algo en la bolsa",
         items=[
         ("Amaiak sagar bat dakar.", "Amaia trae una manzana.", [("ES", "Sagar significa manzana. Y el verbo traer cambia según quién traiga.")]),
-        ("Amaiak sagar bat dakar bere amonarentzat.", "Amaia trae una manzana para su abuela.", [("ES", "Para decir para alguien se añade rentzat. Bere significa su.")]),
+        ("Amaiak sagar bat dakar bere amonarentzat.", "Amaia trae una manzana para su abuela.", [("ES", "Para decir para alguien se añade arentzat. Bere significa su.")]),
         ("Nik liburu bat dakart zuretzat.", "Yo traigo un libro para ti.", None),
         ("Zuk sagar bat dakarzu niretzat.", "Tú traes una manzana para mí.", None),
         ("Mikelek ogia dakar Amaiarentzat.", "Mikel trae el pan para Amaia.", None),
@@ -249,8 +262,7 @@ EPISODIOS = {
     20: dict(slug="errepasoa-5", titulo="Repaso cinco", repaso=True, de=[17, 18, 19], siguiente="traer y llevar"),
     24: dict(slug="errepasoa-6", titulo="Repaso seis", repaso=True, de=[21, 22, 23], siguiente=None),
 }
-# El episodio 3 y el 2 van antes que el 5; los repasos usan sus frases:
-SIGUIENTE_TITULO = {n: None for n in range(1, 25)}
+ampliar(EPISODIOS)
 
 
 def pausa(eu):
@@ -282,6 +294,17 @@ def bloque_dialogo(dialogo, L):
         L += [eu(e), p(pausa(e) + 2)]
 
 
+def bloque_vocabulario(n):
+    """Lineas con las palabras de la leccion; las lineas # las ignora generar_podcast.py."""
+    palabras = VOCABULARIO.get(str(n), [])
+    if not palabras:
+        return []
+    L = [MARCA_VOC, es("Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites."), p(2), ""]
+    for e, s in palabras:
+        L += [es(s), eu(e), p(pausa(e)), eu(e), p(pausa(e)), ""]
+    return L + [FIN_VOC, ""]
+
+
 def episodio_nuevo(n, d):
     L = [f"# Episodio {n} - {d['titulo']} (guion propio; del curso de Hiru solo se toma el tema)", ""]
     L += [es(f"Kaixo, aitona. Bienvenido al episodio {NUM[n]} de Euskera paseando."),
@@ -306,7 +329,8 @@ def episodio_nuevo(n, d):
     L += ["", es("Y ahora el repaso final. Yo te digo la frase en español, tú la dices en euskera, y después oyes la respuesta correcta.")]
     for e, s, _ in items:
         L += [es(s), p(pausa(e) + 3), eu(e), p(2)]
-    L += ["", es("Muy bien, aitona. Has terminado el episodio de hoy.")]
+    L += [""] + bloque_vocabulario(n)
+    L += [es("Muy bien, aitona. Has terminado el episodio de hoy.")]
     if d.get("siguiente"):
         L.append(es(f"En el próximo episodio veremos {d['siguiente']}. Hasta pronto."))
     L.append(eu("Agur!"))
@@ -344,8 +368,13 @@ def main():
     out = Path(__file__).resolve().parent.parent / "guiones"
     out.mkdir(exist_ok=True)
     for n, d in sorted(EPISODIOS.items()):
-        if n == 1:
-            continue  # el 01 esta escrito a mano
+        if n == 1:  # el 01 esta escrito a mano: solo se le pone el vocabulario antes de la despedida
+            f = out / "01-ni-amaia-naiz.md"
+            patron = re.escape(MARCA_VOC) + r".*?" + re.escape(FIN_VOC) + r"\n+"
+            txt = re.sub(patron, "", f.read_text(encoding="utf-8"), flags=re.S)
+            despedida = "ES: Muy bien, aitona. Hoy has"
+            f.write_text(txt.replace(despedida, "\n".join(bloque_vocabulario(1)) + "\n" + despedida, 1), encoding="utf-8")
+            continue
         txt = episodio_repaso(n, d) if d.get("repaso") else episodio_nuevo(n, d)
         (out / f"{n:02d}-{d['slug']}.md").write_text(txt, encoding="utf-8")
         print(n, d["slug"])

@@ -86,6 +86,41 @@ EU: Non zaude?
 EU: Non zaude?
 [PAUSA 6]
 
+ES: Esta frase significa: La madre está en la cocina.
+EU: Ama sukaldean dago.
+[PAUSA 3]
+ES: Repite.
+EU: Ama sukaldean dago.
+[PAUSA 7]
+EU: Ama sukaldean dago.
+[PAUSA 7]
+
+ES: Esta frase significa: Los niños están en la escuela.
+EU: Haurrak eskolan daude.
+[PAUSA 3]
+ES: Repite.
+EU: Haurrak eskolan daude.
+[PAUSA 7]
+EU: Haurrak eskolan daude.
+[PAUSA 7]
+
+ES: Repasamos las últimas.
+EU: Non zaude?
+[PAUSA 6]
+EU: Ama sukaldean dago.
+[PAUSA 7]
+EU: Haurrak eskolan daude.
+[PAUSA 7]
+
+ES: Esta frase significa: Nosotros estamos en el bar.
+EU: Gu tabernan gaude.
+[PAUSA 3]
+ES: Repite.
+EU: Gu tabernan gaude.
+[PAUSA 7]
+EU: Gu tabernan gaude.
+[PAUSA 7]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Amaia etxean dago.
 [PAUSA 7]
@@ -101,6 +136,12 @@ EU: Non dago Amaia?
 [PAUSA 7]
 EU: Non zaude?
 [PAUSA 6]
+EU: Ama sukaldean dago.
+[PAUSA 7]
+EU: Haurrak eskolan daude.
+[PAUSA 7]
+EU: Gu tabernan gaude.
+[PAUSA 7]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Kaixo, Amaia! Non zaude?
@@ -157,6 +198,96 @@ ES: ¿Dónde estás?
 [PAUSA 9]
 EU: Non zaude?
 [PAUSA 2]
+ES: La madre está en la cocina.
+[PAUSA 10]
+EU: Ama sukaldean dago.
+[PAUSA 2]
+ES: Los niños están en la escuela.
+[PAUSA 10]
+EU: Haurrak eskolan daude.
+[PAUSA 2]
+ES: Nosotros estamos en el bar.
+[PAUSA 10]
+EU: Gu tabernan gaude.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: caserío
+EU: baserri
+[PAUSA 5]
+EU: baserri
+[PAUSA 5]
+
+ES: tienda
+EU: denda
+[PAUSA 5]
+EU: denda
+[PAUSA 5]
+
+ES: sala de estar
+EU: egongela
+[PAUSA 5]
+EU: egongela
+[PAUSA 5]
+
+ES: escuela
+EU: eskola
+[PAUSA 5]
+EU: eskola
+[PAUSA 5]
+
+ES: casa
+EU: etxe
+[PAUSA 5]
+EU: etxe
+[PAUSA 5]
+
+ES: calle
+EU: kale
+[PAUSA 5]
+EU: kale
+[PAUSA 5]
+
+ES: cuarto de baño
+EU: komun
+[PAUSA 5]
+EU: komun
+[PAUSA 5]
+
+ES: lugar de trabajo
+EU: lantoki
+[PAUSA 5]
+EU: lantoki
+[PAUSA 5]
+
+ES: dormitorio
+EU: logela
+[PAUSA 5]
+EU: logela
+[PAUSA 5]
+
+ES: cocina
+EU: sukalde
+[PAUSA 5]
+EU: sukalde
+[PAUSA 5]
+
+ES: bar
+EU: taberna
+[PAUSA 5]
+EU: taberna
+[PAUSA 5]
+
+ES: cine
+EU: zinema
+[PAUSA 5]
+EU: zinema
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos cómo se siente Amaia. Hasta pronto.

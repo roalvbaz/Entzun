@@ -30,6 +30,14 @@ ES: ¿Qué traes?
 [PAUSA 9]
 EU: Zer dakarzu?
 [PAUSA 2]
+ES: Es para los niños.
+[PAUSA 9]
+EU: Haurrentzat da.
+[PAUSA 2]
+ES: Esto es para ti.
+[PAUSA 10]
+EU: Hau zuretzat da.
+[PAUSA 2]
 ES: Amaia lleva una manzana en la bolsa.
 [PAUSA 14]
 EU: Amaiak sagar bat darama poltsan.
@@ -53,6 +61,22 @@ EU: Poltsa handia da.
 ES: La bolsa es pequeña.
 [PAUSA 10]
 EU: Poltsa txikia da.
+[PAUSA 2]
+ES: Amaia se ha comido la manzana.
+[PAUSA 12]
+EU: Amaiak sagarra jan du.
+[PAUSA 2]
+ES: Yo he comprado el pan.
+[PAUSA 12]
+EU: Nik ogia erosi dut.
+[PAUSA 2]
+ES: ¿Tú qué has hecho?
+[PAUSA 12]
+EU: Zuk zer egin duzu?
+[PAUSA 2]
+ES: Mikel se ha ido a casa.
+[PAUSA 12]
+EU: Mikel etxera joan da.
 [PAUSA 2]
 ES: ¡Qué coche tan caro!
 [PAUSA 10]
@@ -81,6 +105,26 @@ EU: Begira!
 ES: Pero es caro.
 [PAUSA 10]
 EU: Baina garestia da.
+[PAUSA 2]
+ES: ¿Cuánto vale?
+[PAUSA 10]
+EU: Zenbat balio du?
+[PAUSA 2]
+ES: Vale diez euros.
+[PAUSA 12]
+EU: Hamar euro balio du.
+[PAUSA 2]
+ES: ¿Qué quieres?
+[PAUSA 10]
+EU: Zer nahi duzu?
+[PAUSA 2]
+ES: Quiero un café.
+[PAUSA 12]
+EU: Kafe bat nahi dut.
+[PAUSA 2]
+ES: Quiero un coche nuevo.
+[PAUSA 14]
+EU: Auto berri bat nahi dut.
 [PAUSA 2]
 
 ES: Segunda parte. Las conversaciones de estos episodios.
@@ -142,5 +186,5 @@ EU: Eta handia da.
 [PAUSA 9]
 
 ES: Muy bien, aitona. Cada día sabes más.
-ES: Has llegado al final de esta serie. Zorionak, aitona. Eso quiere decir felicidades.
+ES: En el próximo episodio veremos lo que estás haciendo ahora. Hasta pronto.
 EU: Agur!

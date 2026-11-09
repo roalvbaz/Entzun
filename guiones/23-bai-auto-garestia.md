@@ -86,6 +86,63 @@ EU: Baina garestia da.
 EU: Baina garestia da.
 [PAUSA 7]
 
+ES: Para preguntar el precio se usa el verbo balio.
+ES: Escucha la frase.
+ES: Esta frase significa: ¿Cuánto vale?
+EU: Zenbat balio du?
+[PAUSA 3]
+ES: Repite.
+EU: Zenbat balio du?
+[PAUSA 7]
+EU: Zenbat balio du?
+[PAUSA 7]
+
+ES: Esta frase significa: Vale diez euros.
+EU: Hamar euro balio du.
+[PAUSA 3]
+ES: Repite.
+EU: Hamar euro balio du.
+[PAUSA 9]
+EU: Hamar euro balio du.
+[PAUSA 9]
+
+ES: Repasamos las últimas.
+EU: Baina garestia da.
+[PAUSA 7]
+EU: Zenbat balio du?
+[PAUSA 7]
+EU: Hamar euro balio du.
+[PAUSA 9]
+
+ES: Querer se dice nahi.
+ES: Escucha la frase.
+ES: Esta frase significa: ¿Qué quieres?
+EU: Zer nahi duzu?
+[PAUSA 3]
+ES: Repite.
+EU: Zer nahi duzu?
+[PAUSA 7]
+EU: Zer nahi duzu?
+[PAUSA 7]
+
+ES: Esta frase significa: Quiero un café.
+EU: Kafe bat nahi dut.
+[PAUSA 3]
+ES: Repite.
+EU: Kafe bat nahi dut.
+[PAUSA 9]
+EU: Kafe bat nahi dut.
+[PAUSA 9]
+
+ES: Esta frase significa: Quiero un coche nuevo.
+EU: Auto berri bat nahi dut.
+[PAUSA 3]
+ES: Repite.
+EU: Auto berri bat nahi dut.
+[PAUSA 11]
+EU: Auto berri bat nahi dut.
+[PAUSA 11]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Bai auto garestia!
 [PAUSA 7]
@@ -101,6 +158,16 @@ EU: Begira!
 [PAUSA 5]
 EU: Baina garestia da.
 [PAUSA 7]
+EU: Zenbat balio du?
+[PAUSA 7]
+EU: Hamar euro balio du.
+[PAUSA 9]
+EU: Zer nahi duzu?
+[PAUSA 7]
+EU: Kafe bat nahi dut.
+[PAUSA 9]
+EU: Auto berri bat nahi dut.
+[PAUSA 11]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Begira, Amaia! Bai auto berria!
@@ -157,6 +224,128 @@ ES: Pero es caro.
 [PAUSA 10]
 EU: Baina garestia da.
 [PAUSA 2]
+ES: ¿Cuánto vale?
+[PAUSA 10]
+EU: Zenbat balio du?
+[PAUSA 2]
+ES: Vale diez euros.
+[PAUSA 12]
+EU: Hamar euro balio du.
+[PAUSA 2]
+ES: ¿Qué quieres?
+[PAUSA 10]
+EU: Zer nahi duzu?
+[PAUSA 2]
+ES: Quiero un café.
+[PAUSA 12]
+EU: Kafe bat nahi dut.
+[PAUSA 2]
+ES: Quiero un coche nuevo.
+[PAUSA 14]
+EU: Auto berri bat nahi dut.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: vino
+EU: ardo
+[PAUSA 5]
+EU: ardo
+[PAUSA 5]
+
+ES: pescado
+EU: arrain
+[PAUSA 5]
+EU: arrain
+[PAUSA 5]
+
+ES: huevo
+EU: arrautza
+[PAUSA 5]
+EU: arrautza
+[PAUSA 5]
+
+ES: azúcar
+EU: azukre
+[PAUSA 5]
+EU: azukre
+[PAUSA 5]
+
+ES: leche
+EU: esne
+[PAUSA 5]
+EU: esne
+[PAUSA 5]
+
+ES: queso
+EU: gazta
+[PAUSA 5]
+EU: gazta
+[PAUSA 5]
+
+ES: carne
+EU: haragi
+[PAUSA 5]
+EU: haragi
+[PAUSA 5]
+
+ES: pan
+EU: ogi
+[PAUSA 5]
+EU: ogi
+[PAUSA 5]
+
+ES: aceite
+EU: olio
+[PAUSA 5]
+EU: olio
+[PAUSA 5]
+
+ES: chorizo
+EU: txorizo
+[PAUSA 5]
+EU: txorizo
+[PAUSA 5]
+
+ES: agua
+EU: ur
+[PAUSA 5]
+EU: ur
+[PAUSA 5]
+
+ES: lechuga
+EU: uraza
+[PAUSA 5]
+EU: uraza
+[PAUSA 5]
+
+ES: jamón
+EU: urdaiazpiko
+[PAUSA 5]
+EU: urdaiazpiko
+[PAUSA 5]
+
+ES: zumo
+EU: zuku
+[PAUSA 5]
+EU: zuku
+[PAUSA 5]
+
+ES: Kaixo, Mikel! Etxean naiz
+EU: Amaia
+[PAUSA 5]
+EU: Amaia
+[PAUSA 5]
+
+ES: Kaixo, Amaia. Zer moduz
+EU: Mikel
+[PAUSA 5]
+EU: Mikel
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos un repaso final. Hasta pronto.

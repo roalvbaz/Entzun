@@ -86,6 +86,41 @@ EU: Eta zu, non bizi zara?
 EU: Eta zu, non bizi zara?
 [PAUSA 11]
 
+ES: Esta frase significa: Vivo en un pueblo pequeño.
+EU: Herri txiki batean bizi naiz.
+[PAUSA 3]
+ES: Repite.
+EU: Herri txiki batean bizi naiz.
+[PAUSA 11]
+EU: Herri txiki batean bizi naiz.
+[PAUSA 11]
+
+ES: Esta frase significa: Vivimos en una ciudad grande.
+EU: Hiri handi batean bizi gara.
+[PAUSA 3]
+ES: Repite.
+EU: Hiri handi batean bizi gara.
+[PAUSA 11]
+EU: Hiri handi batean bizi gara.
+[PAUSA 11]
+
+ES: Repasamos las últimas.
+EU: Eta zu, non bizi zara?
+[PAUSA 11]
+EU: Herri txiki batean bizi naiz.
+[PAUSA 11]
+EU: Hiri handi batean bizi gara.
+[PAUSA 11]
+
+ES: Esta frase significa: Vivo en este barrio.
+EU: Auzo honetan bizi naiz.
+[PAUSA 3]
+ES: Repite.
+EU: Auzo honetan bizi naiz.
+[PAUSA 9]
+EU: Auzo honetan bizi naiz.
+[PAUSA 9]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Non bizi zara?
 [PAUSA 7]
@@ -101,6 +136,12 @@ EU: Non bizi da Amaia?
 [PAUSA 9]
 EU: Eta zu, non bizi zara?
 [PAUSA 11]
+EU: Herri txiki batean bizi naiz.
+[PAUSA 11]
+EU: Hiri handi batean bizi gara.
+[PAUSA 11]
+EU: Auzo honetan bizi naiz.
+[PAUSA 9]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Non bizi zara?
@@ -157,6 +198,60 @@ ES: ¿Y tú, dónde vives?
 [PAUSA 14]
 EU: Eta zu, non bizi zara?
 [PAUSA 2]
+ES: Vivo en un pueblo pequeño.
+[PAUSA 14]
+EU: Herri txiki batean bizi naiz.
+[PAUSA 2]
+ES: Vivimos en una ciudad grande.
+[PAUSA 14]
+EU: Hiri handi batean bizi gara.
+[PAUSA 2]
+ES: Vivo en este barrio.
+[PAUSA 12]
+EU: Auzo honetan bizi naiz.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: barrio
+EU: auzo
+[PAUSA 5]
+EU: auzo
+[PAUSA 5]
+
+ES: aldea, pueblo pequeño
+EU: herrixka
+[PAUSA 5]
+EU: herrixka
+[PAUSA 5]
+
+ES: pueblo
+EU: herri
+[PAUSA 5]
+EU: herri
+[PAUSA 5]
+
+ES: ciudad
+EU: hiri
+[PAUSA 5]
+EU: hiri
+[PAUSA 5]
+
+ES: región
+EU: eskualde
+[PAUSA 5]
+EU: eskualde
+[PAUSA 5]
+
+ES: provincia
+EU: probintzia
+[PAUSA 5]
+EU: probintzia
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos dónde está Amaia. Hasta pronto.

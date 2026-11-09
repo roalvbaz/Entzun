@@ -34,6 +34,18 @@ ES: Y tú, ¿a dónde vas?
 [PAUSA 12]
 EU: Eta zu, nora zoaz?
 [PAUSA 2]
+ES: Vamos a Bilbao.
+[PAUSA 9]
+EU: Bilbora goaz.
+[PAUSA 2]
+ES: Voy a las tiendas.
+[PAUSA 9]
+EU: Dendetara noa.
+[PAUSA 2]
+ES: Vamos a la playa.
+[PAUSA 9]
+EU: Hondartzara goaz.
+[PAUSA 2]
 ES: Amaia ha ido a ver a su abuela.
 [PAUSA 12]
 EU: Amaia amonarengana joan da.
@@ -58,6 +70,14 @@ ES: Ha ido a ver a la abuela.
 [PAUSA 10]
 EU: Amonarengana joan da.
 [PAUSA 2]
+ES: Vienes hacia mí.
+[PAUSA 9]
+EU: Niregana zatoz.
+[PAUSA 2]
+ES: Voy al médico.
+[PAUSA 9]
+EU: Medikuarengana noa.
+[PAUSA 2]
 ES: Amaia viene de casa de la abuela.
 [PAUSA 12]
 EU: Amaia amonaren etxetik dator.
@@ -81,6 +101,14 @@ EU: Zu kaletik zatoz.
 ES: Yo vengo de casa.
 [PAUSA 10]
 EU: Ni etxetik nator.
+[PAUSA 2]
+ES: Nosotros venimos de Bilbao.
+[PAUSA 10]
+EU: Gu Bilbotik gatoz.
+[PAUSA 2]
+ES: Vienen de la playa.
+[PAUSA 9]
+EU: Hondartzatik datoz.
 [PAUSA 2]
 
 ES: Segunda parte. Las conversaciones de estos episodios.

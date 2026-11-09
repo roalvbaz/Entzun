@@ -86,6 +86,41 @@ EU: Ez, ez da nirea.
 EU: Ez, ez da nirea.
 [PAUSA 9]
 
+ES: Esta frase significa: ¿De quién es esta carta?
+EU: Norena da gutun hau?
+[PAUSA 3]
+ES: Repite.
+EU: Norena da gutun hau?
+[PAUSA 9]
+EU: Norena da gutun hau?
+[PAUSA 9]
+
+ES: Esta frase significa: Esta corbata es del padre.
+EU: Gorbata hau aitarena da.
+[PAUSA 3]
+ES: Repite.
+EU: Gorbata hau aitarena da.
+[PAUSA 9]
+EU: Gorbata hau aitarena da.
+[PAUSA 9]
+
+ES: Repasamos las últimas.
+EU: Ez, ez da nirea.
+[PAUSA 9]
+EU: Norena da gutun hau?
+[PAUSA 9]
+EU: Gorbata hau aitarena da.
+[PAUSA 9]
+
+ES: Esta frase significa: Este balón es del chico.
+EU: Baloi hau mutilarena da.
+[PAUSA 3]
+ES: Repite.
+EU: Baloi hau mutilarena da.
+[PAUSA 9]
+EU: Baloi hau mutilarena da.
+[PAUSA 9]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Norena da auto hau?
 [PAUSA 9]
@@ -100,6 +135,12 @@ EU: Nirea da.
 EU: Zurea da?
 [PAUSA 6]
 EU: Ez, ez da nirea.
+[PAUSA 9]
+EU: Norena da gutun hau?
+[PAUSA 9]
+EU: Gorbata hau aitarena da.
+[PAUSA 9]
+EU: Baloi hau mutilarena da.
 [PAUSA 9]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
@@ -157,6 +198,84 @@ ES: No, no es mío.
 [PAUSA 12]
 EU: Ez, ez da nirea.
 [PAUSA 2]
+ES: ¿De quién es esta carta?
+[PAUSA 12]
+EU: Norena da gutun hau?
+[PAUSA 2]
+ES: Esta corbata es del padre.
+[PAUSA 12]
+EU: Gorbata hau aitarena da.
+[PAUSA 2]
+ES: Este balón es del chico.
+[PAUSA 12]
+EU: Baloi hau mutilarena da.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: red
+EU: sare
+[PAUSA 5]
+EU: sare
+[PAUSA 5]
+
+ES: tiza
+EU: klera
+[PAUSA 5]
+EU: klera
+[PAUSA 5]
+
+ES: balón
+EU: baloi
+[PAUSA 5]
+EU: baloi
+[PAUSA 5]
+
+ES: sierra
+EU: zerra
+[PAUSA 5]
+EU: zerra
+[PAUSA 5]
+
+ES: desatascador
+EU: libragailu
+[PAUSA 5]
+EU: libragailu
+[PAUSA 5]
+
+ES: aspirador
+EU: xurgagailu
+[PAUSA 5]
+EU: xurgagailu
+[PAUSA 5]
+
+ES: carta
+EU: gutun
+[PAUSA 5]
+EU: gutun
+[PAUSA 5]
+
+ES: corbata
+EU: gorbata
+[PAUSA 5]
+EU: gorbata
+[PAUSA 5]
+
+ES: jeringuilla
+EU: xiringa
+[PAUSA 5]
+EU: xiringa
+[PAUSA 5]
+
+ES: maletín
+EU: maleta
+[PAUSA 5]
+EU: maleta
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos dónde está cada cosa. Hasta pronto.

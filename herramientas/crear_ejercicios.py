@@ -2,7 +2,7 @@
 """Genera ejercicios.json (tests y rellenar huecos) a partir de las frases de crear_guiones.py.
 
     python herramientas/crear_ejercicios.py
-Formato: {"A1": {"<episodio>": [pregunta, ...]}}
+Formato: {"<nivel>": {"<episodio>": [pregunta, ...]}}
   pregunta = {"t": "test"|"hueco", "p": enunciado, "s": pista (opcional), "o": [opciones], "c": indice correcto}
 """
 import json, random, re, sys
@@ -10,6 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from crear_guiones import EPISODIOS  # noqa: E402
+from temas_hiru import nivel_de  # noqa: E402
 
 PALABRA = re.compile(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+")
 
@@ -76,9 +77,9 @@ def main():
                     preg.append(tests[ti]); ti += 1
             if hi < len(huecos):
                 preg.append(huecos[hi]); hi += 1
-        out[str(n)] = preg
-    Path("ejercicios.json").write_text(json.dumps({"A1": out}, ensure_ascii=False, indent=1), encoding="utf-8")
-    print({k: len(v) for k, v in out.items()})
+        out.setdefault(nivel_de(n), {})[str(n)] = preg
+    Path("ejercicios.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    print({k: len(v) for k, v in out.items()})  # episodios por nivel
 
 
 if __name__ == "__main__":

@@ -34,6 +34,22 @@ ES: No estoy bien.
 [PAUSA 10]
 EU: Ez nago ondo.
 [PAUSA 2]
+ES: ¿Cómo está el abuelo?
+[PAUSA 10]
+EU: Nola dago aitona?
+[PAUSA 2]
+ES: Estoy sentado.
+[PAUSA 9]
+EU: Eserita nago.
+[PAUSA 2]
+ES: La puerta está cerrada.
+[PAUSA 10]
+EU: Atea itxita dago.
+[PAUSA 2]
+ES: La habitación está limpia.
+[PAUSA 10]
+EU: Gela garbi dago.
+[PAUSA 2]
 ES: ¿De quién es este coche?
 [PAUSA 12]
 EU: Noren autoa da hau?
@@ -62,6 +78,18 @@ ES: Esta es la casa de Amaia.
 [PAUSA 12]
 EU: Hau Amaiaren etxea da.
 [PAUSA 2]
+ES: Esta es la casa de mi madre.
+[PAUSA 14]
+EU: Hau nire amaren etxea da.
+[PAUSA 2]
+ES: Ese es el coche de mi padre.
+[PAUSA 14]
+EU: Hori nire aitaren autoa da.
+[PAUSA 2]
+ES: Aquel es el hijo de mi hermano.
+[PAUSA 14]
+EU: Hura nire anaiaren semea da.
+[PAUSA 2]
 ES: ¿De quién es este coche?
 [PAUSA 12]
 EU: Norena da auto hau?
@@ -89,6 +117,18 @@ EU: Zurea da?
 ES: No, no es mío.
 [PAUSA 12]
 EU: Ez, ez da nirea.
+[PAUSA 2]
+ES: ¿De quién es esta carta?
+[PAUSA 12]
+EU: Norena da gutun hau?
+[PAUSA 2]
+ES: Esta corbata es del padre.
+[PAUSA 12]
+EU: Gorbata hau aitarena da.
+[PAUSA 2]
+ES: Este balón es del chico.
+[PAUSA 12]
+EU: Baloi hau mutilarena da.
 [PAUSA 2]
 
 ES: Segunda parte. Las conversaciones de estos episodios.

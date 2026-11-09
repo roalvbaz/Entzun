@@ -86,6 +86,45 @@ EU: Eta zu, nora zoaz?
 EU: Eta zu, nora zoaz?
 [PAUSA 9]
 
+ES: Con nombres de lugares también se usa ra.
+ES: Escucha la frase.
+ES: Esta frase significa: Vamos a Bilbao.
+EU: Bilbora goaz.
+[PAUSA 3]
+ES: Repite.
+EU: Bilbora goaz.
+[PAUSA 6]
+EU: Bilbora goaz.
+[PAUSA 6]
+
+ES: En plural se dice etara.
+ES: Escucha la frase.
+ES: Esta frase significa: Voy a las tiendas.
+EU: Dendetara noa.
+[PAUSA 3]
+ES: Repite.
+EU: Dendetara noa.
+[PAUSA 6]
+EU: Dendetara noa.
+[PAUSA 6]
+
+ES: Repasamos las últimas.
+EU: Eta zu, nora zoaz?
+[PAUSA 9]
+EU: Bilbora goaz.
+[PAUSA 6]
+EU: Dendetara noa.
+[PAUSA 6]
+
+ES: Esta frase significa: Vamos a la playa.
+EU: Hondartzara goaz.
+[PAUSA 3]
+ES: Repite.
+EU: Hondartzara goaz.
+[PAUSA 6]
+EU: Hondartzara goaz.
+[PAUSA 6]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Nora zoaz?
 [PAUSA 6]
@@ -101,6 +140,12 @@ EU: Zu kalera zoaz.
 [PAUSA 7]
 EU: Eta zu, nora zoaz?
 [PAUSA 9]
+EU: Bilbora goaz.
+[PAUSA 6]
+EU: Dendetara noa.
+[PAUSA 6]
+EU: Hondartzara goaz.
+[PAUSA 6]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Kaixo! Nora zoaz?
@@ -157,6 +202,30 @@ ES: Y tú, ¿a dónde vas?
 [PAUSA 12]
 EU: Eta zu, nora zoaz?
 [PAUSA 2]
+ES: Vamos a Bilbao.
+[PAUSA 9]
+EU: Bilbora goaz.
+[PAUSA 2]
+ES: Voy a las tiendas.
+[PAUSA 9]
+EU: Dendetara noa.
+[PAUSA 2]
+ES: Vamos a la playa.
+[PAUSA 9]
+EU: Hondartzara goaz.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: oficina
+EU: bulego
+[PAUSA 5]
+EU: bulego
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos ir a casa de la abuela. Hasta pronto.

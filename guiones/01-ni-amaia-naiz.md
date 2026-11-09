@@ -226,6 +226,192 @@ ES: Adiós.
 EU: Agur.
 [PAUSA 2]
 
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: leer
+EU: irakurri
+[PAUSA 5]
+EU: irakurri
+[PAUSA 5]
+
+ES: escuchar
+EU: entzun
+[PAUSA 5]
+EU: entzun
+[PAUSA 5]
+
+ES: escribir
+EU: idatzi
+[PAUSA 5]
+EU: idatzi
+[PAUSA 5]
+
+ES: mirar
+EU: begiratu
+[PAUSA 5]
+EU: begiratu
+[PAUSA 5]
+
+ES: rellenar huecos
+EU: hutsuneak bete
+[PAUSA 6]
+EU: hutsuneak bete
+[PAUSA 6]
+
+ES: unir
+EU: lotu
+[PAUSA 5]
+EU: lotu
+[PAUSA 5]
+
+ES: ordenar
+EU: ordenatu
+[PAUSA 5]
+EU: ordenatu
+[PAUSA 5]
+
+ES: completar
+EU: osatu
+[PAUSA 5]
+EU: osatu
+[PAUSA 5]
+
+ES: preguntar
+EU: galdetu
+[PAUSA 5]
+EU: galdetu
+[PAUSA 5]
+
+ES: responder
+EU: erantzun
+[PAUSA 5]
+EU: erantzun
+[PAUSA 5]
+
+ES: corregir
+EU: zuzendu
+[PAUSA 5]
+EU: zuzendu
+[PAUSA 5]
+
+ES: curso
+EU: ikastaro
+[PAUSA 5]
+EU: ikastaro
+[PAUSA 5]
+
+ES: unidad
+EU: unitate
+[PAUSA 5]
+EU: unitate
+[PAUSA 5]
+
+ES: lección
+EU: ikasgai
+[PAUSA 5]
+EU: ikasgai
+[PAUSA 5]
+
+ES: ejercicio
+EU: ariketa
+[PAUSA 5]
+EU: ariketa
+[PAUSA 5]
+
+ES: diccionario, vocabulario
+EU: hiztegi
+[PAUSA 5]
+EU: hiztegi
+[PAUSA 5]
+
+ES: ayuda
+EU: laguntza
+[PAUSA 5]
+EU: laguntza
+[PAUSA 5]
+
+ES: anterior
+EU: aurreko
+[PAUSA 5]
+EU: aurreko
+[PAUSA 5]
+
+ES: siguiente
+EU: hurrengo
+[PAUSA 5]
+EU: hurrengo
+[PAUSA 5]
+
+ES: la mujer
+EU: emakumea
+[PAUSA 5]
+EU: emakumea
+[PAUSA 5]
+
+ES: el hombre
+EU: gizona
+[PAUSA 5]
+EU: gizona
+[PAUSA 5]
+
+ES: la chica
+EU: neska
+[PAUSA 5]
+EU: neska
+[PAUSA 5]
+
+ES: el chico
+EU: mutila
+[PAUSA 5]
+EU: mutila
+[PAUSA 5]
+
+ES: el amigo
+EU: laguna
+[PAUSA 5]
+EU: laguna
+[PAUSA 5]
+
+ES: el vecino
+EU: bizilaguna
+[PAUSA 5]
+EU: bizilaguna
+[PAUSA 5]
+
+ES: muy bonito
+EU: oso polita
+[PAUSA 6]
+EU: oso polita
+[PAUSA 6]
+
+ES: el listo
+EU: argia
+[PAUSA 5]
+EU: argia
+[PAUSA 5]
+
+ES: el carpintero
+EU: arotza
+[PAUSA 5]
+EU: arotza
+[PAUSA 5]
+
+ES: el ama de casa
+EU: etxekoandrea
+[PAUSA 5]
+EU: etxekoandrea
+[PAUSA 5]
+
+ES: el amo de casa
+EU: etxegizona
+[PAUSA 5]
+EU: etxegizona
+[PAUSA 5]
+
+# Fin del vocabulario
+
 ES: Muy bien, aitona. Hoy has aprendido a saludar y a presentarte. Eso es mucho.
 ES: En el próximo episodio hablaremos de un coche nuevo, y aprenderemos a decir cómo son las cosas. Hasta pronto.
 EU: Agur!

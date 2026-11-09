@@ -84,6 +84,41 @@ EU: Non dago gatua?
 EU: Non dago gatua?
 [PAUSA 7]
 
+ES: Esta frase significa: Las llaves están dentro de la bolsa.
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 3]
+ES: Repite.
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 9]
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 9]
+
+ES: Esta frase significa: El coche está detrás de la casa.
+EU: Autoa etxearen atzean dago.
+[PAUSA 3]
+ES: Repite.
+EU: Autoa etxearen atzean dago.
+[PAUSA 9]
+EU: Autoa etxearen atzean dago.
+[PAUSA 9]
+
+ES: Repasamos las últimas.
+EU: Non dago gatua?
+[PAUSA 7]
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 9]
+EU: Autoa etxearen atzean dago.
+[PAUSA 9]
+
+ES: Esta frase significa: La iglesia está entre el ayuntamiento y el banco.
+EU: Eliza udaletxearen eta banketxearen artean dago.
+[PAUSA 3]
+ES: Repite.
+EU: Eliza udaletxearen eta banketxearen artean dago.
+[PAUSA 12]
+EU: Eliza udaletxearen eta banketxearen artean dago.
+[PAUSA 12]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Amaia Mikelen ondoan dago.
 [PAUSA 9]
@@ -99,6 +134,12 @@ EU: Non dago liburua?
 [PAUSA 7]
 EU: Non dago gatua?
 [PAUSA 7]
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 9]
+EU: Autoa etxearen atzean dago.
+[PAUSA 9]
+EU: Eliza udaletxearen eta banketxearen artean dago.
+[PAUSA 12]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
 EU: Non dago liburua?
@@ -155,6 +196,90 @@ ES: ¿Dónde está el gato?
 [PAUSA 10]
 EU: Non dago gatua?
 [PAUSA 2]
+ES: Las llaves están dentro de la bolsa.
+[PAUSA 12]
+EU: Giltzak poltsaren barruan daude.
+[PAUSA 2]
+ES: El coche está detrás de la casa.
+[PAUSA 12]
+EU: Autoa etxearen atzean dago.
+[PAUSA 2]
+ES: La iglesia está entre el ayuntamiento y el banco.
+[PAUSA 15]
+EU: Eliza udaletxearen eta banketxearen artean dago.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: estación de autobuses
+EU: autobus-geltoki
+[PAUSA 5]
+EU: autobus-geltoki
+[PAUSA 5]
+
+ES: banco
+EU: banketxe
+[PAUSA 5]
+EU: banketxe
+[PAUSA 5]
+
+ES: iglesia
+EU: eliza
+[PAUSA 5]
+EU: eliza
+[PAUSA 5]
+
+ES: área de servicio
+EU: zerbitzugune
+[PAUSA 5]
+EU: zerbitzugune
+[PAUSA 5]
+
+ES: playa
+EU: hondartza
+[PAUSA 5]
+EU: hondartza
+[PAUSA 5]
+
+ES: hospital
+EU: ospitale
+[PAUSA 5]
+EU: ospitale
+[PAUSA 5]
+
+ES: puerto
+EU: portu
+[PAUSA 5]
+EU: portu
+[PAUSA 5]
+
+ES: oficina de correos
+EU: postetxe
+[PAUSA 5]
+EU: postetxe
+[PAUSA 5]
+
+ES: estación de trenes
+EU: tren-geltoki
+[PAUSA 5]
+EU: tren-geltoki
+[PAUSA 5]
+
+ES: ayuntamiento
+EU: udaletxe
+[PAUSA 5]
+EU: udaletxe
+[PAUSA 5]
+
+ES: estación de trenes
+EU: tren-geltolki
+[PAUSA 5]
+EU: tren-geltolki
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos qué tiene Amaia. Hasta pronto.

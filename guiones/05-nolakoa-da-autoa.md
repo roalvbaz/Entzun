@@ -86,6 +86,52 @@ EU: Etxea polita da.
 EU: Etxea polita da.
 [PAUSA 7]
 
+ES: Para preguntar el color se dice zein koloretakoa.
+ES: Escucha la frase.
+ES: Esta frase significa: ¿De qué color es el coche?
+EU: Zein koloretakoa da autoa?
+[PAUSA 3]
+ES: Repite.
+EU: Zein koloretakoa da autoa?
+[PAUSA 9]
+EU: Zein koloretakoa da autoa?
+[PAUSA 9]
+
+ES: Esta frase significa: El coche es rojo.
+EU: Autoa gorria da.
+[PAUSA 3]
+ES: Repite.
+EU: Autoa gorria da.
+[PAUSA 7]
+EU: Autoa gorria da.
+[PAUSA 7]
+
+ES: Repasamos las últimas.
+EU: Etxea polita da.
+[PAUSA 7]
+EU: Zein koloretakoa da autoa?
+[PAUSA 9]
+EU: Autoa gorria da.
+[PAUSA 7]
+
+ES: Esta frase significa: La casa es blanca.
+EU: Etxea zuria da.
+[PAUSA 3]
+ES: Repite.
+EU: Etxea zuria da.
+[PAUSA 7]
+EU: Etxea zuria da.
+[PAUSA 7]
+
+ES: Esta frase significa: El mar es azul.
+EU: Itsasoa urdina da.
+[PAUSA 3]
+ES: Repite.
+EU: Itsasoa urdina da.
+[PAUSA 7]
+EU: Itsasoa urdina da.
+[PAUSA 7]
+
 ES: Vamos a repasar todo lo de hoy una vez más, solo en euskera. Repite cada frase.
 EU: Nolakoa da autoa?
 [PAUSA 7]
@@ -100,6 +146,14 @@ EU: Autoa merkea da.
 EU: Autoa azkarra da.
 [PAUSA 7]
 EU: Etxea polita da.
+[PAUSA 7]
+EU: Zein koloretakoa da autoa?
+[PAUSA 9]
+EU: Autoa gorria da.
+[PAUSA 7]
+EU: Etxea zuria da.
+[PAUSA 7]
+EU: Itsasoa urdina da.
 [PAUSA 7]
 
 ES: Ahora escucha una conversación sencilla. Primero entera.
@@ -157,6 +211,88 @@ ES: La casa es bonita.
 [PAUSA 10]
 EU: Etxea polita da.
 [PAUSA 2]
+ES: ¿De qué color es el coche?
+[PAUSA 12]
+EU: Zein koloretakoa da autoa?
+[PAUSA 2]
+ES: El coche es rojo.
+[PAUSA 10]
+EU: Autoa gorria da.
+[PAUSA 2]
+ES: La casa es blanca.
+[PAUSA 10]
+EU: Etxea zuria da.
+[PAUSA 2]
+ES: El mar es azul.
+[PAUSA 10]
+EU: Itsasoa urdina da.
+[PAUSA 2]
+
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: rosa
+EU: arrosa
+[PAUSA 5]
+EU: arrosa
+[PAUSA 5]
+
+ES: negro
+EU: beltz
+[PAUSA 5]
+EU: beltz
+[PAUSA 5]
+
+ES: verde
+EU: berde
+[PAUSA 5]
+EU: berde
+[PAUSA 5]
+
+ES: rojo
+EU: gorri
+[PAUSA 5]
+EU: gorri
+[PAUSA 5]
+
+ES: amarillo
+EU: hori
+[PAUSA 5]
+EU: hori
+[PAUSA 5]
+
+ES: naranja
+EU: laranja
+[PAUSA 5]
+EU: laranja
+[PAUSA 5]
+
+ES: marrón
+EU: marroi
+[PAUSA 5]
+EU: marroi
+[PAUSA 5]
+
+ES: morado
+EU: more
+[PAUSA 5]
+EU: more
+[PAUSA 5]
+
+ES: azul
+EU: urdin
+[PAUSA 5]
+EU: urdin
+[PAUSA 5]
+
+ES: blanco
+EU: zuri
+[PAUSA 5]
+EU: zuri
+[PAUSA 5]
+
+# Fin del vocabulario
 
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos dónde vive Amaia. Hasta pronto.

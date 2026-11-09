@@ -62,6 +62,18 @@ ES: ¿Este coche es nuevo?
 [PAUSA 12]
 EU: Auto hau berria da?
 [PAUSA 2]
+ES: Los coches son nuevos.
+[PAUSA 10]
+EU: Autoak berriak dira.
+[PAUSA 2]
+ES: Tengo un libro.
+[PAUSA 10]
+EU: Liburu bat daukat.
+[PAUSA 2]
+ES: Han venido unos amigos.
+[PAUSA 12]
+EU: Lagun batzuk etorri dira.
+[PAUSA 2]
 ES: ¿Quién eres tú?
 [PAUSA 10]
 EU: Nor zara zu?
@@ -89,6 +101,30 @@ EU: Nongoa zara?
 ES: ¿Y tú?
 [PAUSA 9]
 EU: Eta zu?
+[PAUSA 2]
+ES: ¿Qué eres tú?
+[PAUSA 10]
+EU: Zer zara zu?
+[PAUSA 2]
+ES: Soy profesor.
+[PAUSA 9]
+EU: Irakaslea naiz.
+[PAUSA 2]
+ES: Soy pescador.
+[PAUSA 9]
+EU: Arrantzalea naiz.
+[PAUSA 2]
+ES: ¡Cuánto tiempo sin verte!
+[PAUSA 8]
+EU: Aspaldiko!
+[PAUSA 2]
+ES: ¡Hasta luego!
+[PAUSA 9]
+EU: Gero arte!
+[PAUSA 2]
+ES: ¡Hasta mañana!
+[PAUSA 9]
+EU: Bihar arte!
 [PAUSA 2]
 
 ES: Segunda parte. Las conversaciones de estos episodios.

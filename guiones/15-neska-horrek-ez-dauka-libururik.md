@@ -158,6 +158,66 @@ ES: Sí, tengo un libro.
 EU: Bai, liburu bat daukat.
 [PAUSA 2]
 
+# Vocabulario
+ES: Antes de terminar, vamos con el vocabulario de esta lección. Yo digo la palabra en español, la oyes en euskera, y tú la repites.
+[PAUSA 2]
+
+ES: suma
+EU: batuketa
+[PAUSA 5]
+EU: batuketa
+[PAUSA 5]
+
+ES: resta
+EU: kenketa
+[PAUSA 5]
+EU: kenketa
+[PAUSA 5]
+
+ES: división
+EU: zatiketa
+[PAUSA 5]
+EU: zatiketa
+[PAUSA 5]
+
+ES: multiplicación
+EU: biderketa
+[PAUSA 5]
+EU: biderketa
+[PAUSA 5]
+
+ES: por
+EU: bider
+[PAUSA 5]
+EU: bider
+[PAUSA 5]
+
+ES: más
+EU: gehi
+[PAUSA 5]
+EU: gehi
+[PAUSA 5]
+
+ES: menos
+EU: ken
+[PAUSA 5]
+EU: ken
+[PAUSA 5]
+
+ES: entre
+EU: zati
+[PAUSA 5]
+EU: zati
+[PAUSA 5]
+
+ES: igual a
+EU: berdin
+[PAUSA 5]
+EU: berdin
+[PAUSA 5]
+
+# Fin del vocabulario
+
 ES: Muy bien, aitona. Has terminado el episodio de hoy.
 ES: En el próximo episodio veremos a dónde va Amaia. Hasta pronto.
 EU: Agur!
