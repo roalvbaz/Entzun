@@ -424,7 +424,9 @@ const idxBloque=e=>Math.max(0,["I","II","III","IV","V","VI"].indexOf(e.bloque));
 const portada=(el,e)=>{el.className=el.className.replace(/\bb\d\b/g,"").trim()+" b"+idxBloque(e);el.textContent=e.id};
 const nivelDe=id=>niveles.find(n=>n.id===id);
 // El primero siempre abierto; los demas, al terminar todo lo disponible del anterior.
-const nivelAbierto=n=>{const i=niveles.indexOf(n);if(i<=0)return true;const d=niveles[i-1].episodios.filter(disp);return d.length>0&&d.every(e=>estado.hecho[k(e)])};
+// Los administradores (tu cuenta) lo tienen todo desbloqueado.
+const todoAbierto=()=>!!(typeof Nube!=="undefined"&&Nube.admin);
+const nivelAbierto=n=>{if(todoAbierto())return true;const i=niveles.indexOf(n);if(i<=0)return true;const d=niveles[i-1].episodios.filter(disp);return d.length>0&&d.every(e=>estado.hecho[k(e)])};
 const saludo=()=>{const h=new Date().getHours();return h<13?"Egun on":h<20?"Arratsalde on":"Gabon"};
 
 async function init(){
@@ -585,7 +587,7 @@ async function datosEj(){
 }
 const claveEj=(n,c)=>n.id+"-"+c;
 // Se abre al terminar el episodio; lo ya practicado sigue abierto.
-const abiertoEj=(n,e)=>!!(estado.hecho[k(e)]||estado.ej[claveEj(n,e.id)]);
+const abiertoEj=(n,e)=>todoAbierto()||!!(estado.hecho[k(e)]||estado.ej[claveEj(n,e.id)]);
 const pregAbiertas=(n,dn)=>n.episodios.filter(e=>abiertoEj(n,e)).flatMap(e=>dn[e.id]||[]);
 async function pintarListaEj(n){
   const l=$("lista-ej");l.innerHTML=`<p class="ayuda carga-lista" style="margin-top:18px">${ONDAS}Cargando…</p>`;
