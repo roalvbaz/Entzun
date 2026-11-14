@@ -1,0 +1,140 @@
+name: Generar audio A2-B1-B2
+
+# Genera los episodios 25-80 (A2, B1, B2) en paralelo: cada trabajo hace un bloque
+# y al final un unico trabajo sube todos los MP3 juntos.
+# Se lanza solo al subir este archivo, o a mano desde Actions.
+on:
+  push:
+    paths:
+      - ".github/workflows/audio-niveles.yml"
+  workflow_dispatch:
+    inputs:
+      desde:
+        description: "Primer episodio"
+        default: "25"
+      hasta:
+        description: "Ultimo episodio"
+        default: "80"
+
+permissions:
+  contents: write
+
+jobs:
+  bloques:
+    runs-on: ubuntu-latest
+    outputs:
+      lista: ${{ steps.b.outputs.lista }}
+    steps:
+      - id: b
+        run: |
+          D=${{ inputs.desde || '25' }}; H=${{ inputs.hasta || '80' }}
+          python3 - "$D" "$H" >> "$GITHUB_OUTPUT" <<'PY'
+          import json, sys
+          d, h = int(sys.argv[1]), int(sys.argv[2])
+          nums = list(range(d, h + 1))
+          bloques = [" ".join(str(n) for n in nums[i:i + 4]) for i in range(0, len(nums), 4)]
+          print("lista=" + json.dumps(bloques))
+          PY
+
+  audio:
+    needs: bloques
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        bloque: ${{ fromJson(needs.bloques.outputs.lista) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng
+          pip install -q piper-tts phoonnx edge-tts
+
+      - name: Preparar StyleTTS2-eu
+        run: |
+          git clone --depth 1 https://github.com/AArriandiaga/StyleTTS2_basque StyleTTS2_basque
+          cd StyleTTS2_basque
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          grep -v -E "monotonic_align|^torch$|^torchaudio$" requirements.txt > req2.txt
+          echo "numpy<2" >> req2.txt
+          pip install -q -r req2.txt huggingface_hub cython praat-parselmouth soundfile
+          pip install -q git+https://github.com/resemble-ai/monotonic_align.git || {
+            mkdir -p monotonic_align
+            printf 'def maximum_path(*a, **k):\n    raise NotImplementedError\ndef mask_from_lens(*a, **k):\n    raise NotImplementedError\n' > monotonic_align/__init__.py
+            printf 'def maximum_path_c(*a, **k):\n    raise NotImplementedError\n' > monotonic_align/core.py
+          }
+          mkdir -p Models/Basque_Multispeaker_Phoneme_wavlm_normal Utils/ASR_basque Utils/PLBERT_phoneme refs
+          python - <<'PY'
+          from huggingface_hub import hf_hub_download
+          import shutil
+          repo = "HiTZ/StyleTTS2-eu"
+          files = {
+              "config_basque_multispeaker_phoneme_wavlm.yml": "Models/Basque_Multispeaker_Phoneme_wavlm_normal/config_basque_multispeaker_phoneme_wavlm_800_2nd_normal.yml",
+              "epoch_2nd_00030.pth": "Models/Basque_Multispeaker_Phoneme_wavlm_normal/epoch_2nd_00030.pth",
+              "epoch_00200.pth": "Utils/ASR_basque/epoch_00200.pth",
+              "step_4000000.t7": "Utils/PLBERT_phoneme/step_4000000.t7",
+              "sample_antton.wav": "refs/antton.wav",
+              "sample_maider.wav": "refs/maider.wav",
+          }
+          for hf_name, local in files.items():
+              shutil.copy(hf_hub_download(repo_id=repo, filename=hf_name), local)
+          PY
+          chmod +x phonemizer/modulo1y2/modulo1y2
+
+      - name: Episodios ${{ matrix.bloque }}
+        run: |
+          set -o pipefail
+          guiones=""
+          for n in ${{ matrix.bloque }}; do
+            guiones="$guiones $(ls guiones/$(printf '%02d' $n)-*.md)"
+          done
+          echo "Guiones:$guiones"
+          # Mismos ajustes que los audios definitivos del A1: StyleTTS (Antton) + preguntas con subida
+          python generar_podcast.py $guiones --motor styletts --preguntas subida 2>&1 \
+            | grep -E "^->|pasos|Error|error|Traceback|File " | tail -100
+          ls -la podcasts
+
+      - name: Guardar MP3 del bloque
+        run: |
+          mkdir -p salida
+          for n in ${{ matrix.bloque }}; do cp "podcasts/$(printf '%02d' $n).mp3" salida/; done
+          echo "NOMBRE=mp3-$(echo '${{ matrix.bloque }}' | tr ' ' '_')" >> "$GITHUB_ENV"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.NOMBRE }}
+          path: salida/*.mp3
+          retention-days: 3
+
+  subir:
+    needs: audio
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: mp3-*
+          path: nuevos
+          merge-multiple: true
+
+      - name: Subir al repositorio
+        run: |
+          ls -la nuevos || { echo "No se genero ningun MP3"; exit 1; }
+          cp nuevos/*.mp3 podcasts/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add podcasts
+          git diff --cached --quiet && { echo "Nada que subir"; exit 0; }
+          git commit -m "Audios A2, B1 y B2 (StyleTTS Antton, preguntas con subida)"
+          git pull -q --rebase origin "${GITHUB_REF_NAME}" || true
+          git push
