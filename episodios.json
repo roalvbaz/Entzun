@@ -1,596 +1,596 @@
 {
- "niveles": [
-  {
-   "id": "A1",
-   "nombre": "Nivel A1",
-   "descripcion": "Primeros pasos: presentarse, lugares, cosas y personas",
-   "color": "#1e8a6a",
-   "episodios": [
+  "niveles": [
     {
-     "id": 1,
-     "titulo": "Ni Amaia naiz",
-     "bloque": "I",
-     "audio": "podcasts/01.mp3",
-     "disponible": true
+      "id": "A1",
+      "nombre": "Nivel A1",
+      "descripcion": "Primeros pasos: presentarse, lugares, cosas y personas",
+      "color": "#1e8a6a",
+      "episodios": [
+        {
+          "id": 1,
+          "titulo": "Ni Amaia naiz",
+          "bloque": "I",
+          "audio": "podcasts/01.mp3",
+          "disponible": true
+        },
+        {
+          "id": 2,
+          "titulo": "Auto hau berria da",
+          "bloque": "I",
+          "audio": "podcasts/02.mp3",
+          "disponible": true
+        },
+        {
+          "id": 3,
+          "titulo": "Nor zara zu? Ni Xabi naiz, Zarauzkoa",
+          "bloque": "I",
+          "audio": "podcasts/03.mp3",
+          "disponible": true
+        },
+        {
+          "id": 4,
+          "titulo": "Errepasoa I",
+          "bloque": "I",
+          "audio": "podcasts/04.mp3",
+          "disponible": true
+        },
+        {
+          "id": 5,
+          "titulo": "Nolakoa da autoa?",
+          "bloque": "II",
+          "audio": "podcasts/05.mp3",
+          "disponible": true
+        },
+        {
+          "id": 6,
+          "titulo": "Amaia Donostian bizi da",
+          "bloque": "II",
+          "audio": "podcasts/06.mp3",
+          "disponible": true
+        },
+        {
+          "id": 7,
+          "titulo": "Amaia etxean dago",
+          "bloque": "II",
+          "audio": "podcasts/07.mp3",
+          "disponible": true
+        },
+        {
+          "id": 8,
+          "titulo": "Errepasoa II",
+          "bloque": "II",
+          "audio": "podcasts/08.mp3",
+          "disponible": true
+        },
+        {
+          "id": 9,
+          "titulo": "Amaia haserre dago",
+          "bloque": "III",
+          "audio": "podcasts/09.mp3",
+          "disponible": true
+        },
+        {
+          "id": 10,
+          "titulo": "Noren autoa da hau?",
+          "bloque": "III",
+          "audio": "podcasts/10.mp3",
+          "disponible": true
+        },
+        {
+          "id": 11,
+          "titulo": "Norena da auto hau?",
+          "bloque": "III",
+          "audio": "podcasts/11.mp3",
+          "disponible": true
+        },
+        {
+          "id": 12,
+          "titulo": "Errepasoa III",
+          "bloque": "III",
+          "audio": "podcasts/12.mp3",
+          "disponible": true
+        },
+        {
+          "id": 13,
+          "titulo": "Amaia Mikelen ondoan dago",
+          "bloque": "IV",
+          "audio": "podcasts/13.mp3",
+          "disponible": true
+        },
+        {
+          "id": 14,
+          "titulo": "Amaiak liburu bat dauka",
+          "bloque": "IV",
+          "audio": "podcasts/14.mp3",
+          "disponible": true
+        },
+        {
+          "id": 15,
+          "titulo": "Neska horrek ez dauka libururik",
+          "bloque": "IV",
+          "audio": "podcasts/15.mp3",
+          "disponible": true
+        },
+        {
+          "id": 16,
+          "titulo": "Errepasoa IV",
+          "bloque": "IV",
+          "audio": "podcasts/16.mp3",
+          "disponible": true
+        },
+        {
+          "id": 17,
+          "titulo": "Amaia dendara doa",
+          "bloque": "V",
+          "audio": "podcasts/17.mp3",
+          "disponible": true
+        },
+        {
+          "id": 18,
+          "titulo": "Amaia amonarengana joan da",
+          "bloque": "V",
+          "audio": "podcasts/18.mp3",
+          "disponible": true
+        },
+        {
+          "id": 19,
+          "titulo": "Amaia amonaren etxetik dator",
+          "bloque": "V",
+          "audio": "podcasts/19.mp3",
+          "disponible": true
+        },
+        {
+          "id": 20,
+          "titulo": "Errepasoa V",
+          "bloque": "V",
+          "audio": "podcasts/20.mp3",
+          "disponible": true
+        },
+        {
+          "id": 21,
+          "titulo": "Amaiak sagar bat dakar bere amonarentzat",
+          "bloque": "VI",
+          "audio": "podcasts/21.mp3",
+          "disponible": true
+        },
+        {
+          "id": 22,
+          "titulo": "Amaiak sagar bat darama poltsan",
+          "bloque": "VI",
+          "audio": "podcasts/22.mp3",
+          "disponible": true
+        },
+        {
+          "id": 23,
+          "titulo": "Bai auto garestia!",
+          "bloque": "VI",
+          "audio": "podcasts/23.mp3",
+          "disponible": true
+        },
+        {
+          "id": 24,
+          "titulo": "Errepasoa VI",
+          "bloque": "VI",
+          "audio": "podcasts/24.mp3",
+          "disponible": true
+        }
+      ]
     },
     {
-     "id": 2,
-     "titulo": "Auto hau berria da",
-     "bloque": "I",
-     "audio": "podcasts/02.mp3",
-     "disponible": true
+      "id": "A2",
+      "nombre": "Nivel A2",
+      "descripcion": "Pasado, futuro y hablar de lo cotidiano",
+      "color": "#2d46b9",
+      "episodios": [
+        {
+          "id": 25,
+          "titulo": "Qué estás haciendo ahora",
+          "bloque": "I",
+          "audio": "podcasts/25.mp3",
+          "disponible": true
+        },
+        {
+          "id": 26,
+          "titulo": "Lo que hiciste ayer",
+          "bloque": "I",
+          "audio": "podcasts/26.mp3",
+          "disponible": true
+        },
+        {
+          "id": 27,
+          "titulo": "Lo que harás mañana y con quién",
+          "bloque": "I",
+          "audio": "podcasts/27.mp3",
+          "disponible": true
+        },
+        {
+          "id": 28,
+          "titulo": "Repaso I",
+          "bloque": "I",
+          "audio": "podcasts/28.mp3",
+          "disponible": true
+        },
+        {
+          "id": 29,
+          "titulo": "Lo que haces cada día",
+          "bloque": "II",
+          "audio": "podcasts/29.mp3",
+          "disponible": true
+        },
+        {
+          "id": 30,
+          "titulo": "Quién ve a quién, y poder hacer algo",
+          "bloque": "II",
+          "audio": "podcasts/30.mp3",
+          "disponible": true
+        },
+        {
+          "id": 31,
+          "titulo": "Comparar: más grande que",
+          "bloque": "II",
+          "audio": "podcasts/31.mp3",
+          "disponible": true
+        },
+        {
+          "id": 32,
+          "titulo": "Repaso II",
+          "bloque": "II",
+          "audio": "podcasts/32.mp3",
+          "disponible": true
+        },
+        {
+          "id": 33,
+          "titulo": "Andar y saber",
+          "bloque": "III",
+          "audio": "podcasts/33.mp3",
+          "disponible": true
+        },
+        {
+          "id": 34,
+          "titulo": "Decir y pensar que",
+          "bloque": "III",
+          "audio": "podcasts/34.mp3",
+          "disponible": true
+        },
+        {
+          "id": 35,
+          "titulo": "Lo que me gusta y lo que me pasa",
+          "bloque": "III",
+          "audio": "podcasts/35.mp3",
+          "disponible": true
+        },
+        {
+          "id": 36,
+          "titulo": "Repaso III",
+          "bloque": "III",
+          "audio": "podcasts/36.mp3",
+          "disponible": true
+        },
+        {
+          "id": 37,
+          "titulo": "Cuando era joven",
+          "bloque": "IV",
+          "audio": "podcasts/37.mp3",
+          "disponible": true
+        },
+        {
+          "id": 38,
+          "titulo": "Dar órdenes y pedir cosas",
+          "bloque": "IV",
+          "audio": "podcasts/38.mp3",
+          "disponible": true
+        },
+        {
+          "id": 39,
+          "titulo": "El libro que he comprado",
+          "bloque": "IV",
+          "audio": "podcasts/39.mp3",
+          "disponible": true
+        },
+        {
+          "id": 40,
+          "titulo": "Repaso IV",
+          "bloque": "IV",
+          "audio": "podcasts/40.mp3",
+          "disponible": true
+        },
+        {
+          "id": 41,
+          "titulo": "Por qué: porque",
+          "bloque": "V",
+          "audio": "podcasts/41.mp3",
+          "disponible": true
+        },
+        {
+          "id": 42,
+          "titulo": "Aunque: nahiz eta",
+          "bloque": "V",
+          "audio": "podcasts/42.mp3",
+          "disponible": true
+        },
+        {
+          "id": 43,
+          "titulo": "Dar algo a alguien",
+          "bloque": "V",
+          "audio": "podcasts/43.mp3",
+          "disponible": true
+        },
+        {
+          "id": 44,
+          "titulo": "Repaso V",
+          "bloque": "V",
+          "audio": "podcasts/44.mp3",
+          "disponible": true
+        },
+        {
+          "id": 45,
+          "titulo": "En tren, a mano, en euskera",
+          "bloque": "VI",
+          "audio": "podcasts/45.mp3",
+          "disponible": true
+        },
+        {
+          "id": 46,
+          "titulo": "Leer es bueno: hablar de acciones",
+          "bloque": "VI",
+          "audio": "podcasts/46.mp3",
+          "disponible": true
+        },
+        {
+          "id": 47,
+          "titulo": "Repaso VI",
+          "bloque": "VI",
+          "audio": "podcasts/47.mp3",
+          "disponible": true
+        }
+      ]
     },
     {
-     "id": 3,
-     "titulo": "Nor zara zu? Ni Xabi naiz, Zarauzkoa",
-     "bloque": "I",
-     "audio": "podcasts/03.mp3",
-     "disponible": true
+      "id": "B1",
+      "nombre": "Nivel B1",
+      "descripcion": "Frases más largas y matices",
+      "color": "#8d67ab",
+      "episodios": [
+        {
+          "id": 48,
+          "titulo": "Nosotros los vascos, y tú y yo",
+          "bloque": "I",
+          "audio": "podcasts/48.mp3",
+          "disponible": true
+        },
+        {
+          "id": 49,
+          "titulo": "Lo importante va delante del verbo",
+          "bloque": "I",
+          "audio": "podcasts/49.mp3",
+          "disponible": true
+        },
+        {
+          "id": 50,
+          "titulo": "Las palabras que ya terminan en a",
+          "bloque": "I",
+          "audio": "podcasts/50.mp3",
+          "disponible": true
+        },
+        {
+          "id": 51,
+          "titulo": "Poder hacer algo: etor naiteke",
+          "bloque": "I",
+          "audio": "podcasts/51.mp3",
+          "disponible": true
+        },
+        {
+          "id": 52,
+          "titulo": "Repaso I",
+          "bloque": "I",
+          "audio": "podcasts/52.mp3",
+          "disponible": true
+        },
+        {
+          "id": 53,
+          "titulo": "Antes, mientras y después",
+          "bloque": "II",
+          "audio": "podcasts/53.mp3",
+          "disponible": true
+        },
+        {
+          "id": 54,
+          "titulo": "Hasta dónde, y el mismo",
+          "bloque": "II",
+          "audio": "podcasts/54.mp3",
+          "disponible": true
+        },
+        {
+          "id": 55,
+          "titulo": "No sé dónde está",
+          "bloque": "II",
+          "audio": "podcasts/55.mp3",
+          "disponible": true
+        },
+        {
+          "id": 56,
+          "titulo": "Repaso II",
+          "bloque": "II",
+          "audio": "podcasts/56.mp3",
+          "disponible": true
+        },
+        {
+          "id": 57,
+          "titulo": "Mandar con cuidado: que venga",
+          "bloque": "III",
+          "audio": "podcasts/57.mp3",
+          "disponible": true
+        },
+        {
+          "id": 58,
+          "titulo": "Exclamar y decir la fecha",
+          "bloque": "III",
+          "audio": "podcasts/58.mp3",
+          "disponible": true
+        },
+        {
+          "id": 59,
+          "titulo": "Tanto uno como otro",
+          "bloque": "III",
+          "audio": "podcasts/59.mp3",
+          "disponible": true
+        },
+        {
+          "id": 60,
+          "titulo": "Repaso III",
+          "bloque": "III",
+          "audio": "podcasts/60.mp3",
+          "disponible": true
+        },
+        {
+          "id": 61,
+          "titulo": "Mucho y grande: asko y handia",
+          "bloque": "IV",
+          "audio": "podcasts/61.mp3",
+          "disponible": true
+        },
+        {
+          "id": 62,
+          "titulo": "Pensar en ti, y el segundo",
+          "bloque": "IV",
+          "audio": "podcasts/62.mp3",
+          "disponible": true
+        },
+        {
+          "id": 63,
+          "titulo": "Si llueve: el condicional real",
+          "bloque": "IV",
+          "audio": "podcasts/63.mp3",
+          "disponible": true
+        },
+        {
+          "id": 64,
+          "titulo": "Repaso IV",
+          "bloque": "IV",
+          "audio": "podcasts/64.mp3",
+          "disponible": true
+        }
+      ]
     },
     {
-     "id": 4,
-     "titulo": "Errepasoa I",
-     "bloque": "I",
-     "audio": "podcasts/04.mp3",
-     "disponible": true
-    },
-    {
-     "id": 5,
-     "titulo": "Nolakoa da autoa?",
-     "bloque": "II",
-     "audio": "podcasts/05.mp3",
-     "disponible": true
-    },
-    {
-     "id": 6,
-     "titulo": "Amaia Donostian bizi da",
-     "bloque": "II",
-     "audio": "podcasts/06.mp3",
-     "disponible": true
-    },
-    {
-     "id": 7,
-     "titulo": "Amaia etxean dago",
-     "bloque": "II",
-     "audio": "podcasts/07.mp3",
-     "disponible": true
-    },
-    {
-     "id": 8,
-     "titulo": "Errepasoa II",
-     "bloque": "II",
-     "audio": "podcasts/08.mp3",
-     "disponible": true
-    },
-    {
-     "id": 9,
-     "titulo": "Amaia haserre dago",
-     "bloque": "III",
-     "audio": "podcasts/09.mp3",
-     "disponible": true
-    },
-    {
-     "id": 10,
-     "titulo": "Noren autoa da hau?",
-     "bloque": "III",
-     "audio": "podcasts/10.mp3",
-     "disponible": true
-    },
-    {
-     "id": 11,
-     "titulo": "Norena da auto hau?",
-     "bloque": "III",
-     "audio": "podcasts/11.mp3",
-     "disponible": true
-    },
-    {
-     "id": 12,
-     "titulo": "Errepasoa III",
-     "bloque": "III",
-     "audio": "podcasts/12.mp3",
-     "disponible": true
-    },
-    {
-     "id": 13,
-     "titulo": "Amaia Mikelen ondoan dago",
-     "bloque": "IV",
-     "audio": "podcasts/13.mp3",
-     "disponible": true
-    },
-    {
-     "id": 14,
-     "titulo": "Amaiak liburu bat dauka",
-     "bloque": "IV",
-     "audio": "podcasts/14.mp3",
-     "disponible": true
-    },
-    {
-     "id": 15,
-     "titulo": "Neska horrek ez dauka libururik",
-     "bloque": "IV",
-     "audio": "podcasts/15.mp3",
-     "disponible": true
-    },
-    {
-     "id": 16,
-     "titulo": "Errepasoa IV",
-     "bloque": "IV",
-     "audio": "podcasts/16.mp3",
-     "disponible": true
-    },
-    {
-     "id": 17,
-     "titulo": "Amaia dendara doa",
-     "bloque": "V",
-     "audio": "podcasts/17.mp3",
-     "disponible": true
-    },
-    {
-     "id": 18,
-     "titulo": "Amaia amonarengana joan da",
-     "bloque": "V",
-     "audio": "podcasts/18.mp3",
-     "disponible": true
-    },
-    {
-     "id": 19,
-     "titulo": "Amaia amonaren etxetik dator",
-     "bloque": "V",
-     "audio": "podcasts/19.mp3",
-     "disponible": true
-    },
-    {
-     "id": 20,
-     "titulo": "Errepasoa V",
-     "bloque": "V",
-     "audio": "podcasts/20.mp3",
-     "disponible": true
-    },
-    {
-     "id": 21,
-     "titulo": "Amaiak sagar bat dakar bere amonarentzat",
-     "bloque": "VI",
-     "audio": "podcasts/21.mp3",
-     "disponible": true
-    },
-    {
-     "id": 22,
-     "titulo": "Amaiak sagar bat darama poltsan",
-     "bloque": "VI",
-     "audio": "podcasts/22.mp3",
-     "disponible": true
-    },
-    {
-     "id": 23,
-     "titulo": "Bai auto garestia!",
-     "bloque": "VI",
-     "audio": "podcasts/23.mp3",
-     "disponible": true
-    },
-    {
-     "id": 24,
-     "titulo": "Errepasoa VI",
-     "bloque": "VI",
-     "audio": "podcasts/24.mp3",
-     "disponible": true
+      "id": "B2",
+      "nombre": "Nivel B2",
+      "descripcion": "Lo imaginario, opiniones y expresiones",
+      "color": "#e8742a",
+      "episodios": [
+        {
+          "id": 65,
+          "titulo": "Si fuera rico: lo imaginario",
+          "bloque": "I",
+          "audio": "podcasts/65.mp3",
+          "disponible": true
+        },
+        {
+          "id": 66,
+          "titulo": "Si lo supiera, te lo diría",
+          "bloque": "I",
+          "audio": "podcasts/66.mp3",
+          "disponible": true
+        },
+        {
+          "id": 67,
+          "titulo": "Dicen que, ¿será que?, y como",
+          "bloque": "I",
+          "audio": "podcasts/67.mp3",
+          "disponible": true
+        },
+        {
+          "id": 68,
+          "titulo": "Repaso I",
+          "bloque": "I",
+          "audio": "podcasts/68.mp3",
+          "disponible": true
+        },
+        {
+          "id": 69,
+          "titulo": "Nada, bastante, muchísimo",
+          "bloque": "II",
+          "audio": "podcasts/69.mp3",
+          "disponible": true
+        },
+        {
+          "id": 70,
+          "titulo": "Yo mismo, y por ti",
+          "bloque": "II",
+          "audio": "podcasts/70.mp3",
+          "disponible": true
+        },
+        {
+          "id": 71,
+          "titulo": "Hacia dónde, y hacer que alguien haga",
+          "bloque": "II",
+          "audio": "podcasts/71.mp3",
+          "disponible": true
+        },
+        {
+          "id": 72,
+          "titulo": "Repaso II",
+          "bloque": "II",
+          "audio": "podcasts/72.mp3",
+          "disponible": true
+        },
+        {
+          "id": 73,
+          "titulo": "Para qué, y cualquier cosa",
+          "bloque": "III",
+          "audio": "podcasts/73.mp3",
+          "disponible": true
+        },
+        {
+          "id": 74,
+          "titulo": "Según sé, y de qué tamaño",
+          "bloque": "III",
+          "audio": "podcasts/74.mp3",
+          "disponible": true
+        },
+        {
+          "id": 75,
+          "titulo": "Tan como y tanto como",
+          "bloque": "III",
+          "audio": "podcasts/75.mp3",
+          "disponible": true
+        },
+        {
+          "id": 76,
+          "titulo": "Repaso III",
+          "bloque": "III",
+          "audio": "podcasts/76.mp3",
+          "disponible": true
+        },
+        {
+          "id": 77,
+          "titulo": "Opinar, hablar sobre, y de dos en dos",
+          "bloque": "IV",
+          "audio": "podcasts/77.mp3",
+          "disponible": true
+        },
+        {
+          "id": 78,
+          "titulo": "Cada vez mejor",
+          "bloque": "IV",
+          "audio": "podcasts/78.mp3",
+          "disponible": true
+        },
+        {
+          "id": 79,
+          "titulo": "El acento vasco y la hache",
+          "bloque": "IV",
+          "audio": "podcasts/79.mp3",
+          "disponible": true
+        },
+        {
+          "id": 80,
+          "titulo": "Repaso IV",
+          "bloque": "IV",
+          "audio": "podcasts/80.mp3",
+          "disponible": true
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "A2",
-   "nombre": "Nivel A2",
-   "descripcion": "Pasado, futuro y hablar de lo cotidiano",
-   "color": "#2d46b9",
-   "episodios": [
-    {
-     "id": 25,
-     "titulo": "Qué estás haciendo ahora",
-     "bloque": "I",
-     "audio": "podcasts/25.mp3",
-     "disponible": false
-    },
-    {
-     "id": 26,
-     "titulo": "Lo que hiciste ayer",
-     "bloque": "I",
-     "audio": "podcasts/26.mp3",
-     "disponible": false
-    },
-    {
-     "id": 27,
-     "titulo": "Lo que harás mañana y con quién",
-     "bloque": "I",
-     "audio": "podcasts/27.mp3",
-     "disponible": false
-    },
-    {
-     "id": 28,
-     "titulo": "Repaso I",
-     "bloque": "I",
-     "audio": "podcasts/28.mp3",
-     "disponible": false
-    },
-    {
-     "id": 29,
-     "titulo": "Lo que haces cada día",
-     "bloque": "II",
-     "audio": "podcasts/29.mp3",
-     "disponible": false
-    },
-    {
-     "id": 30,
-     "titulo": "Quién ve a quién, y poder hacer algo",
-     "bloque": "II",
-     "audio": "podcasts/30.mp3",
-     "disponible": false
-    },
-    {
-     "id": 31,
-     "titulo": "Comparar: más grande que",
-     "bloque": "II",
-     "audio": "podcasts/31.mp3",
-     "disponible": false
-    },
-    {
-     "id": 32,
-     "titulo": "Repaso II",
-     "bloque": "II",
-     "audio": "podcasts/32.mp3",
-     "disponible": false
-    },
-    {
-     "id": 33,
-     "titulo": "Andar y saber",
-     "bloque": "III",
-     "audio": "podcasts/33.mp3",
-     "disponible": false
-    },
-    {
-     "id": 34,
-     "titulo": "Decir y pensar que",
-     "bloque": "III",
-     "audio": "podcasts/34.mp3",
-     "disponible": false
-    },
-    {
-     "id": 35,
-     "titulo": "Lo que me gusta y lo que me pasa",
-     "bloque": "III",
-     "audio": "podcasts/35.mp3",
-     "disponible": false
-    },
-    {
-     "id": 36,
-     "titulo": "Repaso III",
-     "bloque": "III",
-     "audio": "podcasts/36.mp3",
-     "disponible": false
-    },
-    {
-     "id": 37,
-     "titulo": "Cuando era joven",
-     "bloque": "IV",
-     "audio": "podcasts/37.mp3",
-     "disponible": false
-    },
-    {
-     "id": 38,
-     "titulo": "Dar órdenes y pedir cosas",
-     "bloque": "IV",
-     "audio": "podcasts/38.mp3",
-     "disponible": false
-    },
-    {
-     "id": 39,
-     "titulo": "El libro que he comprado",
-     "bloque": "IV",
-     "audio": "podcasts/39.mp3",
-     "disponible": false
-    },
-    {
-     "id": 40,
-     "titulo": "Repaso IV",
-     "bloque": "IV",
-     "audio": "podcasts/40.mp3",
-     "disponible": false
-    },
-    {
-     "id": 41,
-     "titulo": "Por qué: porque",
-     "bloque": "V",
-     "audio": "podcasts/41.mp3",
-     "disponible": false
-    },
-    {
-     "id": 42,
-     "titulo": "Aunque: nahiz eta",
-     "bloque": "V",
-     "audio": "podcasts/42.mp3",
-     "disponible": false
-    },
-    {
-     "id": 43,
-     "titulo": "Dar algo a alguien",
-     "bloque": "V",
-     "audio": "podcasts/43.mp3",
-     "disponible": false
-    },
-    {
-     "id": 44,
-     "titulo": "Repaso V",
-     "bloque": "V",
-     "audio": "podcasts/44.mp3",
-     "disponible": false
-    },
-    {
-     "id": 45,
-     "titulo": "En tren, a mano, en euskera",
-     "bloque": "VI",
-     "audio": "podcasts/45.mp3",
-     "disponible": false
-    },
-    {
-     "id": 46,
-     "titulo": "Leer es bueno: hablar de acciones",
-     "bloque": "VI",
-     "audio": "podcasts/46.mp3",
-     "disponible": false
-    },
-    {
-     "id": 47,
-     "titulo": "Repaso VI",
-     "bloque": "VI",
-     "audio": "podcasts/47.mp3",
-     "disponible": false
-    }
-   ]
-  },
-  {
-   "id": "B1",
-   "nombre": "Nivel B1",
-   "descripcion": "Frases más largas y matices",
-   "color": "#8d67ab",
-   "episodios": [
-    {
-     "id": 48,
-     "titulo": "Nosotros los vascos, y tú y yo",
-     "bloque": "I",
-     "audio": "podcasts/48.mp3",
-     "disponible": false
-    },
-    {
-     "id": 49,
-     "titulo": "Lo importante va delante del verbo",
-     "bloque": "I",
-     "audio": "podcasts/49.mp3",
-     "disponible": false
-    },
-    {
-     "id": 50,
-     "titulo": "Las palabras que ya terminan en a",
-     "bloque": "I",
-     "audio": "podcasts/50.mp3",
-     "disponible": false
-    },
-    {
-     "id": 51,
-     "titulo": "Poder hacer algo: etor naiteke",
-     "bloque": "I",
-     "audio": "podcasts/51.mp3",
-     "disponible": false
-    },
-    {
-     "id": 52,
-     "titulo": "Repaso I",
-     "bloque": "I",
-     "audio": "podcasts/52.mp3",
-     "disponible": false
-    },
-    {
-     "id": 53,
-     "titulo": "Antes, mientras y después",
-     "bloque": "II",
-     "audio": "podcasts/53.mp3",
-     "disponible": false
-    },
-    {
-     "id": 54,
-     "titulo": "Hasta dónde, y el mismo",
-     "bloque": "II",
-     "audio": "podcasts/54.mp3",
-     "disponible": false
-    },
-    {
-     "id": 55,
-     "titulo": "No sé dónde está",
-     "bloque": "II",
-     "audio": "podcasts/55.mp3",
-     "disponible": false
-    },
-    {
-     "id": 56,
-     "titulo": "Repaso II",
-     "bloque": "II",
-     "audio": "podcasts/56.mp3",
-     "disponible": false
-    },
-    {
-     "id": 57,
-     "titulo": "Mandar con cuidado: que venga",
-     "bloque": "III",
-     "audio": "podcasts/57.mp3",
-     "disponible": false
-    },
-    {
-     "id": 58,
-     "titulo": "Exclamar y decir la fecha",
-     "bloque": "III",
-     "audio": "podcasts/58.mp3",
-     "disponible": false
-    },
-    {
-     "id": 59,
-     "titulo": "Tanto uno como otro",
-     "bloque": "III",
-     "audio": "podcasts/59.mp3",
-     "disponible": false
-    },
-    {
-     "id": 60,
-     "titulo": "Repaso III",
-     "bloque": "III",
-     "audio": "podcasts/60.mp3",
-     "disponible": false
-    },
-    {
-     "id": 61,
-     "titulo": "Mucho y grande: asko y handia",
-     "bloque": "IV",
-     "audio": "podcasts/61.mp3",
-     "disponible": false
-    },
-    {
-     "id": 62,
-     "titulo": "Pensar en ti, y el segundo",
-     "bloque": "IV",
-     "audio": "podcasts/62.mp3",
-     "disponible": false
-    },
-    {
-     "id": 63,
-     "titulo": "Si llueve: el condicional real",
-     "bloque": "IV",
-     "audio": "podcasts/63.mp3",
-     "disponible": false
-    },
-    {
-     "id": 64,
-     "titulo": "Repaso IV",
-     "bloque": "IV",
-     "audio": "podcasts/64.mp3",
-     "disponible": false
-    }
-   ]
-  },
-  {
-   "id": "B2",
-   "nombre": "Nivel B2",
-   "descripcion": "Lo imaginario, opiniones y expresiones",
-   "color": "#e8742a",
-   "episodios": [
-    {
-     "id": 65,
-     "titulo": "Si fuera rico: lo imaginario",
-     "bloque": "I",
-     "audio": "podcasts/65.mp3",
-     "disponible": false
-    },
-    {
-     "id": 66,
-     "titulo": "Si lo supiera, te lo diría",
-     "bloque": "I",
-     "audio": "podcasts/66.mp3",
-     "disponible": false
-    },
-    {
-     "id": 67,
-     "titulo": "Dicen que, ¿será que?, y como",
-     "bloque": "I",
-     "audio": "podcasts/67.mp3",
-     "disponible": false
-    },
-    {
-     "id": 68,
-     "titulo": "Repaso I",
-     "bloque": "I",
-     "audio": "podcasts/68.mp3",
-     "disponible": false
-    },
-    {
-     "id": 69,
-     "titulo": "Nada, bastante, muchísimo",
-     "bloque": "II",
-     "audio": "podcasts/69.mp3",
-     "disponible": false
-    },
-    {
-     "id": 70,
-     "titulo": "Yo mismo, y por ti",
-     "bloque": "II",
-     "audio": "podcasts/70.mp3",
-     "disponible": false
-    },
-    {
-     "id": 71,
-     "titulo": "Hacia dónde, y hacer que alguien haga",
-     "bloque": "II",
-     "audio": "podcasts/71.mp3",
-     "disponible": false
-    },
-    {
-     "id": 72,
-     "titulo": "Repaso II",
-     "bloque": "II",
-     "audio": "podcasts/72.mp3",
-     "disponible": false
-    },
-    {
-     "id": 73,
-     "titulo": "Para qué, y cualquier cosa",
-     "bloque": "III",
-     "audio": "podcasts/73.mp3",
-     "disponible": false
-    },
-    {
-     "id": 74,
-     "titulo": "Según sé, y de qué tamaño",
-     "bloque": "III",
-     "audio": "podcasts/74.mp3",
-     "disponible": false
-    },
-    {
-     "id": 75,
-     "titulo": "Tan como y tanto como",
-     "bloque": "III",
-     "audio": "podcasts/75.mp3",
-     "disponible": false
-    },
-    {
-     "id": 76,
-     "titulo": "Repaso III",
-     "bloque": "III",
-     "audio": "podcasts/76.mp3",
-     "disponible": false
-    },
-    {
-     "id": 77,
-     "titulo": "Opinar, hablar sobre, y de dos en dos",
-     "bloque": "IV",
-     "audio": "podcasts/77.mp3",
-     "disponible": false
-    },
-    {
-     "id": 78,
-     "titulo": "Cada vez mejor",
-     "bloque": "IV",
-     "audio": "podcasts/78.mp3",
-     "disponible": false
-    },
-    {
-     "id": 79,
-     "titulo": "El acento vasco y la hache",
-     "bloque": "IV",
-     "audio": "podcasts/79.mp3",
-     "disponible": false
-    },
-    {
-     "id": 80,
-     "titulo": "Repaso IV",
-     "bloque": "IV",
-     "audio": "podcasts/80.mp3",
-     "disponible": false
-    }
-   ]
-  }
- ]
+  ]
 }

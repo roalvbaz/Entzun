@@ -32,6 +32,7 @@ body{margin:0;background:var(--bg);color:var(--texto);
   -webkit-font-smoothing:antialiased}
 button{font:inherit;color:inherit;border:0;background:none;cursor:pointer;padding:0}
 svg{display:block;fill:currentColor}
+button svg,button .ondas{pointer-events:none}
 :focus-visible{outline:3px solid var(--verde);outline-offset:2px}
 [tabindex="-1"]:focus{outline:none}
 
@@ -192,7 +193,8 @@ header .fila-sup h1{margin:0;min-width:0;overflow-wrap:anywhere}
 
 /* ---------- Pestañas ---------- */
 .tabs{display:flex;gap:10px;padding:8px var(--lado) 0;position:sticky;top:env(safe-area-inset-top);background:var(--bg);z-index:3}
-.tabs::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:env(safe-area-inset-top);background:var(--bg)}
+.tabs::before{display:none;content:"";position:absolute;left:0;right:0;bottom:100%;height:env(safe-area-inset-top);background:var(--bg)}
+.tabs.pegada::before{display:block}
 .tabs button{flex:1;min-height:56px;border-radius:30px;background:var(--fila);color:var(--suave);font-weight:700;font-size:20px}
 .tabs button.on{background:var(--claro);color:var(--sobre-claro)}
 
@@ -530,7 +532,7 @@ function pintarNivel(n,tab){
   r.querySelector(".play-verde").innerHTML=ICO.play;
   r.querySelector("span:last-child").textContent=c&&(estado.pos[k(c)]||0)>5?"Continuar":"Reproducir";
   r.disabled=!c;
-  r.onclick=()=>{if(!c)return;(cur&&k(cur)===k(c))?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
+  r.onclick=()=>{if(!c)return;(cur&&k(cur)===k(c))?sonar():cargar(c,true);abrirFull()};
   for(const [id,on] of [["tab-ep",tab==="ep"],["tab-ej",tab==="ej"]]){$(id).classList.toggle("on",on);on?$(id).setAttribute("aria-current","page"):$(id).removeAttribute("aria-current")}
   $("lista").classList.toggle("oculto",tab!=="ep");$("lista-ej").classList.toggle("oculto",tab!=="ej");
   if(tab==="ep")pintarEpisodios(n);else pintarListaEj(n);
@@ -693,6 +695,10 @@ function mostrarInstalar(){
 }
 
 /* ================= Reproductor ================= */
+// Si el iPhone no deja reproducir, el boton vuelve a "play" en vez de quedarse cargando
+function sonar(){const p=audio.play();if(p&&p.catch)p.catch(()=>{if(typeof pintarPlay==="function")pintarPlay(false)})}
+// La franja que tapa la zona del reloj solo aparece cuando las pestanas estan pegadas arriba
+addEventListener("scroll",()=>{const t=document.querySelector(".tabs");if(!t)return;const top=parseFloat(getComputedStyle(t).top)||0;t.classList.toggle("pegada",t.getBoundingClientRect().top<=top+1&&scrollY>0)},{passive:true});
 function cargar(e,reproducir){
   cur=e;estado.actual=k(e);guardar();
   audio.src=e.audio;
@@ -705,7 +711,7 @@ function cargar(e,reproducir){
   $("mini").classList.add("on");
   $("anterior").disabled=!anteriorDe(e);$("siguiente").disabled=!siguienteDe(e);
   metadata();
-  if(reproducir)audio.play().catch(()=>{});
+  if(reproducir)sonar();
   if(usuario&&!$("vista-nivel").classList.contains("oculto"))repintar();
 }
 
@@ -716,7 +722,7 @@ function metadata(){
 const saltar=s=>{audio.currentTime=Math.min(Math.max(0,audio.currentTime+s),audio.duration||1e9)};
 const sig=()=>{const n=cur&&siguienteDe(cur);if(n)cargar(n,true)};
 function ant(){if(audio.currentTime>5){audio.currentTime=0;return}const p=cur&&anteriorDe(cur);if(p)cargar(p,true)}
-const toggle=()=>{if(!cur){const c=paraContinuar();if(c)cargar(c,true);return}audio.paused?audio.play().catch(()=>{}):audio.pause()};
+const toggle=()=>{if(!cur){const c=paraContinuar();if(c)cargar(c,true);return}audio.paused?sonar():audio.pause()};
 
 if("mediaSession" in navigator){
   const ms=navigator.mediaSession,set=(a,f)=>{try{ms.setActionHandler(a,f)}catch(e){}};
@@ -726,7 +732,7 @@ if("mediaSession" in navigator){
   set("seekto",d=>{audio.currentTime=d.seekTime});
 }
 
-$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&k(cur)===k(c))?audio.play().catch(()=>{}):cargar(c,true);abrirFull()};
+$("continuar").onclick=()=>{const c=paraContinuar();if(!c)return;(cur&&k(cur)===k(c))?sonar():cargar(c,true);abrirFull()};
 let focoPrevio=null;
 const fondoFull=v=>{for(const e of document.body.children)if(e.id!=="full"&&e.tagName!=="SCRIPT")e.inert=v};
 const abrirFull=()=>{if($("full").classList.contains("on"))return;focoPrevio=document.activeElement;$("full").classList.add("on");fondoFull(true);$("cerrar").focus({preventScroll:true})};
@@ -742,11 +748,17 @@ $("barra").onchange=()=>{if(audio.duration)audio.currentTime=$("barra").value/10
 
 const estadoPlay=p=>{$("play").innerHTML=p?ICO.pausa:ICO.play;$("m-play").innerHTML=p?ICO.pausa:ICO.play;for(const b of ["play","m-play"])$(b).setAttribute("aria-label",p?"Pausar":"Reproducir");
   if("mediaSession" in navigator)navigator.mediaSession.playbackState=p?"playing":"paused"};
-const cargandoAudio=()=>{for(const b of ["play","m-play"]){$(b).innerHTML=ONDAS;$(b).setAttribute("aria-label","Cargando")}};
+let tCarga=null;
+const estadoPlayReal=estadoPlay;
+const pintarPlay=p=>{clearTimeout(tCarga);tCarga=null;estadoPlayReal(p)};
+// Solo se ensena "cargando" si tarda mas de medio segundo y el audio de verdad quiere sonar
+const cargandoAudio=()=>{if(audio.paused||tCarga)return;tCarga=setTimeout(()=>{tCarga=null;if(audio.paused)return;for(const b of ["play","m-play"]){$(b).innerHTML=ONDAS;$(b).setAttribute("aria-label","Cargando")}},500)};
 audio.addEventListener("waiting",cargandoAudio);
-for(const ev of ["playing","canplay"])audio.addEventListener(ev,()=>estadoPlay(!audio.paused));
-audio.addEventListener("play",()=>{if(audio.readyState<3)cargandoAudio();else estadoPlay(true)});
-audio.addEventListener("pause",()=>{estadoPlay(false);if(cur){estado.pos[k(cur)]=audio.currentTime;guardar()}});
+audio.addEventListener("playing",()=>pintarPlay(true));
+audio.addEventListener("canplay",()=>{if(audio.paused)pintarPlay(false)});
+audio.addEventListener("play",()=>{if(audio.readyState<3)cargandoAudio();else pintarPlay(true)});
+audio.addEventListener("error",()=>pintarPlay(false));
+audio.addEventListener("pause",()=>{pintarPlay(false);if(cur){estado.pos[k(cur)]=audio.currentTime;guardar()}});
 audio.addEventListener("loadedmetadata",()=>{if(cur&&isFinite(audio.duration)){cur.dur=audio.duration;$("t-tot").textContent=fmt(audio.duration)}});
 audio.addEventListener("timeupdate",()=>{
   if(!cur)return;
