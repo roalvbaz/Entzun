@@ -169,6 +169,8 @@ h2 small{color:var(--suave);font-weight:500;font-size:17px;margin-left:8px}
 #reproducir-nivel{display:flex;align-items:center;gap:14px;background:var(--verde);color:var(--sobre-claro);font-weight:800;font-size:22px;border-radius:40px;padding:0 28px 0 12px;min-height:64px}
 #reproducir-nivel svg{width:34px;height:34px}
 .oculto{display:none!important}
+#bajar-nivel{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px 0 0;width:auto;padding:0 24px}
+#bajar-nivel svg{width:28px;height:28px}#bajar-nivel.ok{color:var(--verde)}
 
 /* ---------- Usuarios ---------- */
 .pad{padding:calc(20px + env(safe-area-inset-top)) var(--lado) 24px}
@@ -272,6 +274,7 @@ body.en-ejercicio #mini{display:none}
   <h1 id="n-tit"></h1>
   <p id="n-sub"></p>
   <button id="reproducir-nivel"><span class="play-verde" style="background:#000;color:var(--verde);width:44px;height:44px"></span><span>Reproducir</span></button>
+  <button id="bajar-nivel" class="btn-sec"></button>
 </div>
 <nav class="tabs" aria-label="Secciones del nivel"><button id="tab-ep" class="on">Episodios</button><button id="tab-ej">Ejercicios</button></nav>
 <main id="lista"></main>
@@ -534,6 +537,7 @@ function pintarNivel(n,tab){
   r.querySelector(".play-verde").innerHTML=ICO.play;
   r.querySelector("span:last-child").textContent=c&&(estado.pos[k(c)]||0)>5?"Continuar":"Reproducir";
   r.disabled=!c;
+  pintarBajarNivel(n);
   r.onclick=()=>{if(!c)return;(cur&&k(cur)===k(c))?sonar():cargar(c,true);abrirFull()};
   for(const [id,on] of [["tab-ep",tab==="ep"],["tab-ej",tab==="ej"]]){$(id).classList.toggle("on",on);on?$(id).setAttribute("aria-current","page"):$(id).removeAttribute("aria-current")}
   $("lista").classList.toggle("oculto",tab!=="ep");$("lista-ej").classList.toggle("oculto",tab!=="ej");
@@ -575,6 +579,41 @@ async function descargar(e,btn){
   btn.innerHTML=ONDAS;btn.setAttribute("aria-label","Descargando");
   try{const ca=await caches.open("audio-v1");const r=await fetch(e.audio);if(!r.ok)throw 0;await ca.put(e.audio,r);btn.innerHTML=ICO.ok;btn.classList.add("ok")}
   catch(_){btn.textContent="Error"}
+}
+
+// Descargar un nivel entero para escuchar sin conexion
+let bajandoNivel=null;
+async function contarBajados(n){
+  try{const ca=await caches.open("audio-v1");const eps=n.episodios.filter(disp);
+    const r=await Promise.all(eps.map(e=>ca.match(e.audio)));return [r.filter(Boolean).length,eps.length]}
+  catch(_){return [0,n.episodios.filter(disp).length]}
+}
+async function pintarBajarNivel(n){
+  const b=$("bajar-nivel");
+  if(!("caches" in window)){b.classList.add("oculto");return}
+  if(bajandoNivel===n.id)return;
+  const [h,t]=await contarBajados(n);
+  b.classList.toggle("ok",h===t&&t>0);
+  b.innerHTML=(h===t&&t>0?ICO.ok:ICO.bajar)+"<span></span>";
+  b.lastChild.textContent=h===t&&t>0?"Nivel descargado":h>0?`Descargar el resto (${h} de ${t})`:"Descargar nivel";
+  b.disabled=h===t&&t>0;
+  b.onclick=()=>bajarNivel(n);
+}
+async function bajarNivel(n){
+  const b=$("bajar-nivel");bajandoNivel=n.id;b.disabled=true;
+  try{if(navigator.storage&&navigator.storage.persist)await navigator.storage.persist()}catch(_){}
+  const eps=n.episodios.filter(disp);let hechos=0,fallos=0;
+  const ca=await caches.open("audio-v1");
+  for(const e of eps){
+    b.innerHTML=ONDAS+"<span></span>";b.lastChild.textContent=`Descargando ${hechos+1} de ${eps.length}…`;
+    try{if(!(await ca.match(e.audio))){const r=await fetch(e.audio);if(!r.ok)throw 0;await ca.put(e.audio,r)}}
+    catch(_){fallos++}
+    hechos++;
+  }
+  bajandoNivel=null;
+  await pintarBajarNivel(n);
+  if(fallos){b.disabled=false;b.lastChild.textContent=`Faltan ${fallos}: toca para reintentar`}
+  if(!$("lista").classList.contains("oculto"))pintarEpisodios(n);
 }
 
 /* ================= Ejercicios ================= */
